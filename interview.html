@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウェブサイト構築インタビュー</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --secondary: #06b6d4;
+            --success: #10b981;
+            --danger: #ef4444;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-900: #111827;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--gray-900);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .progress-container {
+            background: var(--gray-100);
+            padding: 20px 30px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--gray-200);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            margin-top: 10px;
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            text-align: center;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .question-section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .question-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .badge-required {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-recommended {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-optional {
+            background: #f3e8ff;
+            color: #6b21a8;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--gray-900);
+        }
+
+        .question-description {
+            color: var(--gray-600);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--gray-700);
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .text-input,
+        .textarea-input,
+        .select-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .text-input:focus,
+        .textarea-input:focus,
+        .select-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .textarea-input {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .voice-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .voice-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .voice-button.recording {
+            background: var(--danger);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .checkbox-item:hover {
+            border-color: var(--primary);
+            background: var(--gray-50);
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .url-input-section,
+        .file-input-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: 12px;
+        }
+
+        .file-upload-area {
+            border: 2px dashed var(--gray-300);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .file-upload-area:hover {
+            border-color: var(--primary);
+            background: white;
+        }
+
+        .file-upload-area.dragover {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: white;
+        }
+
+        .uploaded-files {
+            margin-top: 15px;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .file-item-name {
+            font-weight: 500;
+        }
+
+        .file-remove-btn {
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--gray-200);
+            color: var(--gray-700);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gray-300);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .completion-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .completion-screen.active {
+            display: block;
+        }
+
+        .completion-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .completion-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .completion-text {
+            color: var(--gray-600);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            background: var(--success);
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .url-preview {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .url-preview.active {
+            display: block;
+        }
+
+        .url-preview-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .url-preview-link {
+            color: var(--primary);
+            word-break: break-all;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .question-title {
+                font-size: 1.25rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 ウェブサイト構築インタビュー</h1>
+            <p>あなたのウェブサイトを作成するために必要な情報を教えてください</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">質問 1 / 17</div>
+        </div>
+
+        <div class="content" id="interviewContent">
+            <!-- 質問セクションがJavaScriptで動的に生成されます -->
+        </div>
+    </div>
+
+    <script>
+        // インタビュー質問データ
+        const questions = [
+            {
+                id: 'owner',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '1. サイトオーナー',
+                description: 'ウェブサイトの所有者とURLについて教えてください',
+                fields: [
+                    { name: 'name', label: '名前（ディレクトリ名とURLに使用）', type: 'text', required: true, voice: true },
+                    { name: 'nameRomaji', label: 'ローマ字表記', type: 'text', required: true, voice: true },
+                    { name: 'contact', label: '連絡先情報（メール、電話など）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'purpose',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '2. ウェブサイトの目的・用途',
+                description: 'ウェブサイトをどのような目的で使用しますか？',
+                fields: [
+                    {
+                        name: 'websiteType',
+                        label: 'ウェブサイトの種類',
+                        type: 'select',
+                        required: true,
+                        options: ['個人ポートフォリオ', 'ビジネス紹介', 'ランディングページ', 'Eコマース', 'ブログ/メディアサイト', '趣味のサイト', 'イベント告知', 'SaaS製品紹介', 'その他']
+                    },
+                    { name: 'otherPurpose', label: 'その他の場合は詳細を記入', type: 'text', voice: true }
+                ]
+            },
+            {
+                id: 'goals',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '3. ウェブサイトの主な目標',
+                description: 'ウェブサイトで何を達成したいですか？',
+                fields: [
+                    { name: 'mainGoal', label: '達成したいこと（例：問い合わせ獲得、商品販売など）', type: 'textarea', required: true, voice: true },
+                    { name: 'successMetrics', label: '成功の測定方法（例：月間訪問者数、問い合わせ件数など）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'audience',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '4. ターゲットオーディエンス',
+                description: 'ウェブサイトの訪問者について教えてください',
+                fields: [
+                    { name: 'targetAudience', label: 'ターゲットとなる主なオーディエンス', type: 'textarea', required: true, voice: true },
+                    { name: 'demographics', label: '年齢層、職業、興味関心など', type: 'textarea', voice: true },
+                    { name: 'userNeeds', label: 'ユーザーが求める重要な情報', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'visual',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '5. ビジュアル要素',
+                description: 'ブランドのビジュアルアイデンティティについて',
+                fields: [
+                    { name: 'hasLogo', label: 'ロゴの有無', type: 'select', options: ['ある', 'ない', '作成予定'] },
+                    { name: 'colorScheme', label: 'カラースキーム（好きな色、ブランドカラー）', type: 'textarea', voice: true },
+                    { name: 'avoidColors', label: '避けたい色', type: 'text', voice: true },
+                    { name: 'brandGuidelines', label: 'ブランドガイドラインの有無', type: 'select', options: ['ある', 'ない'] }
+                ]
+            },
+            {
+                id: 'design',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '6. デザイン嗜好',
+                description: '好きなデザインスタイルや参考サイトについて',
+                fields: [
+                    { name: 'designStyle', label: '好きなデザインスタイル', type: 'checkboxes', options: ['シンプル', 'モダン', 'クラシック', 'ミニマル', 'カラフル', 'エレガント', 'ポップ', 'プロフェッショナル'] },
+                    { name: 'referenceUrls', label: '参考になるウェブサイトのURL（複数可）', type: 'textarea', placeholder: 'https://example.com\nhttps://another-example.com', voice: true },
+                    { name: 'specialEffects', label: '特別な機能やエフェクトの要望', type: 'textarea', voice: true },
+                    { name: 'avoidDesign', label: '避けたいデザイン要素', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'structure',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '7. サイト構成',
+                description: 'ウェブサイトの構造について',
+                fields: [
+                    { name: 'pageCount', label: '予想されるページ数', type: 'select', options: ['1ページ', '2-5ページ', '6-10ページ', '11-20ページ', '20ページ以上'] },
+                    { name: 'sections', label: '必要なセクション', type: 'checkboxes', options: ['Hero', 'About', 'Services', 'Portfolio', 'Team', 'Testimonials', 'Blog', 'Contact', 'FAQ', 'Pricing'] },
+                    { name: 'otherSections', label: 'その他のセクション', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'content',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '8. コンテンツ素材',
+                description: '掲載するコンテンツについて',
+                fields: [
+                    { name: 'textContent', label: '掲載するテキスト内容の状況', type: 'select', options: ['完成版がある', '草案がある', 'これから作成', 'サポートが必要'] },
+                    { name: 'copywriting', label: 'コピーライティングサービスが必要か', type: 'select', options: ['必要', '不要', '一部のみ必要'] },
+                    { name: 'images', label: '画像の有無と種類', type: 'textarea', voice: true },
+                    { name: 'video', label: '動画コンテンツの有無', type: 'select', options: ['ある', 'ない', '作成予定'] }
+                ]
+            },
+            {
+                id: 'contact',
+                category: '必須',
+                categoryClass: 'badge-required',
+                title: '9. 連絡先・SNS情報',
+                description: '掲載する連絡先とSNS情報',
+                fields: [
+                    { name: 'contactInfo', label: '掲載する連絡先情報（住所、電話、メールなど）', type: 'textarea', voice: true },
+                    { name: 'socialMedia', label: 'SNSアカウント（URL）', type: 'textarea', placeholder: 'Instagram: https://instagram.com/...\nTwitter: https://twitter.com/...', voice: true },
+                    { name: 'socialIntegration', label: 'SNS統合の必要性', type: 'checkboxes', options: ['埋め込みフィード', 'シェアボタン', 'ソーシャルログイン', '不要'] }
+                ]
+            },
+            {
+                id: 'features',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '10. 必要な機能',
+                description: 'ウェブサイトに追加したい機能',
+                fields: [
+                    { name: 'features', label: '必要な機能', type: 'checkboxes', options: ['お問い合わせフォーム', 'ニュースレター登録', 'ブログ機能', '検索機能', '多言語対応', 'ダークモード', 'アニメーション・インタラクション', 'オンラインストア', '予約システム', 'ログイン/会員機能'] },
+                    { name: 'otherFeatures', label: 'その他の特殊機能', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'ecommerce',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '11. Eコマース詳細',
+                description: 'オンラインストアが必要な場合のみ',
+                fields: [
+                    { name: 'productCount', label: '商品数と種類', type: 'textarea', voice: true },
+                    { name: 'shipping', label: '配送方法', type: 'checkboxes', options: ['国内配送', '国際配送', '店舗ピックアップ', '該当なし'] },
+                    { name: 'payment', label: '決済方法の希望', type: 'textarea', voice: true },
+                    { name: 'productAssets', label: '商品画像と説明文の有無', type: 'select', options: ['すべて準備済み', '一部準備済み', 'これから準備', '該当なし'] }
+                ]
+            },
+            {
+                id: 'analytics',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '12. アナリティクス・統合',
+                description: 'アクセス解析とツール連携について',
+                fields: [
+                    { name: 'analytics', label: 'Google Analyticsの設定', type: 'select', options: ['必要', '不要', 'わからない'] },
+                    { name: 'existingData', label: '既存のアクセス解析データの有無', type: 'select', options: ['ある', 'ない'] },
+                    { name: 'integrations', label: '他ツールとの連携（CRM、メールマーケティングなど）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'competition',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '13. 競合分析',
+                description: '競合他社やサイトについて',
+                fields: [
+                    { name: 'competitors', label: '主な競合企業・サイト（URL）', type: 'textarea', placeholder: 'https://competitor1.com\nhttps://competitor2.com', voice: true },
+                    { name: 'differentiation', label: '競合との差別化ポイント', type: 'textarea', voice: true },
+                    { name: 'competitorStrengths', label: '競合が優れている点（参考にすべき点）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'technical',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '14. 既存の技術資産',
+                description: '現在の技術的な状況について',
+                fields: [
+                    { name: 'existingWebsite', label: '既存ウェブサイトのURL', type: 'text', voice: true },
+                    { name: 'platform', label: '使用しているプラットフォーム', type: 'text', voice: true },
+                    { name: 'domain', label: 'ドメインの有無とレジストラ', type: 'textarea', voice: true },
+                    { name: 'hosting', label: 'ウェブホスティングの有無とホスト企業', type: 'textarea', voice: true },
+                    { name: 'technicalRequirements', label: '技術的な制約や要件', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'schedule',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '15. スケジュール・予算',
+                description: 'プロジェクトのタイムラインについて',
+                fields: [
+                    { name: 'deadline', label: '希望する公開時期・期限', type: 'text', voice: true },
+                    { name: 'budget', label: '予算の目安', type: 'text', voice: true },
+                    { name: 'urgency', label: '急ぎの理由（期限がある場合）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'maintenance',
+                category: '推奨',
+                categoryClass: 'badge-recommended',
+                title: '16. メンテナンス・更新',
+                description: 'サイト公開後の更新について',
+                fields: [
+                    { name: 'updateNeeds', label: 'サイト公開後に更新する必要があるか', type: 'select', options: ['頻繁に更新', '月に数回', 'ほとんどなし', 'わからない'] },
+                    { name: 'updateResponsible', label: '更新責任者', type: 'text', voice: true },
+                    { name: 'training', label: '更新方法の研修が必要か', type: 'select', options: ['必要', '不要', 'わからない'] },
+                    { name: 'administrators', label: 'サイトにアクセスする必要がある人（複数の管理者）', type: 'textarea', voice: true }
+                ]
+            },
+            {
+                id: 'additional',
+                category: 'オプション',
+                categoryClass: 'badge-optional',
+                title: '17. 追加情報とリソース',
+                description: 'その他の情報や参考資料',
+                fields: [
+                    { name: 'userAttribute', label: 'あなたの属性', type: 'checkboxes', options: ['開発者', '起業家', 'デザイナー', 'マーケター', 'その他'] },
+                    { name: 'referralSource', label: 'このプロジェクトをどこで知ったか', type: 'text', voice: true },
+                    { name: 'team', label: 'チームメンバーや協力者の有無', type: 'textarea', voice: true },
+                    { name: 'specialRequests', label: '特別な要望や懸念事項', type: 'textarea', voice: true },
+                    { name: 'mission', label: 'ビジネスのミッションステートメント', type: 'textarea', voice: true }
+                ]
+            }
+        ];
+
+        let currentQuestion = 0;
+        let answers = {};
+        let uploadedFiles = [];
+        let referenceUrls = [];
+
+        // 音声認識の初期化
+        let recognition = null;
+        if ('webkitSpeechRecognition' in window) {
+            recognition = new webkitSpeechRecognition();
+            recognition.lang = 'ja-JP';
+            recognition.continuous = false;
+            recognition.interimResults = false;
+        }
+
+        // 初期化
+        function init() {
+            renderQuestion();
+            updateProgress();
+        }
+
+        // 質問をレンダリング
+        function renderQuestion() {
+            const question = questions[currentQuestion];
+            const content = document.getElementById('interviewContent');
+
+            let html = `
+                <div class="question-section active">
+                    <span class="category-badge ${question.categoryClass}">【${question.category}】</span>
+                    <h2 class="question-title">${question.title}</h2>
+                    <p class="question-description">${question.description}</p>
+            `;
+
+            question.fields.forEach(field => {
+                html += renderField(field);
+            });
+
+            // 最後の質問の場合、URL入力とファイルアップロードを追加
+            if (currentQuestion === questions.length - 1) {
+                html += `
+                    <div class="url-input-section">
+                        <h3 style="margin-bottom: 15px;">📎 参考URL</h3>
+                        <p style="color: var(--gray-600); margin-bottom: 15px;">参考にしたいウェブサイトのURLがあれば入力してください</p>
+                        <div class="input-wrapper">
+                            <input type="url" class="text-input" id="referenceUrl" placeholder="https://example.com">
+                            <button class="voice-button" onclick="addReferenceUrl()" style="position: static; transform: none; margin-left: 10px; width: auto; padding: 0 20px; border-radius: 8px;">追加</button>
+                        </div>
+                        <div id="urlList" style="margin-top: 15px;"></div>
+                    </div>
+
+                    <div class="file-input-section">
+                        <h3 style="margin-bottom: 15px;">📎 参考ファイル</h3>
+                        <p style="color: var(--gray-600); margin-bottom: 15px;">他に参考にできるファイル（画像、PDF、ドキュメントなど）があれば添付してください</p>
+                        <div class="file-upload-area" id="fileUploadArea" onclick="document.getElementById('fileInput').click()">
+                            <input type="file" id="fileInput" multiple style="display: none;" onchange="handleFiles(this.files)">
+                            <div style="font-size: 3rem; margin-bottom: 10px;">📁</div>
+                            <div style="font-weight: 600; margin-bottom: 5px;">ファイルを選択またはドラッグ&ドロップ</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">画像、PDF、Word、Excel、テキストファイルなど</div>
+                        </div>
+                        <div class="uploaded-files" id="uploadedFiles"></div>
+                    </div>
+                `;
+            }
+
+            html += `
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousQuestion()" ${currentQuestion === 0 ? 'disabled' : ''}>
+                        ← 前へ
+                    </button>
+                    <button class="btn btn-primary" onclick="nextQuestion()">
+                        ${currentQuestion === questions.length - 1 ? '完了' : '次へ →'}
+                    </button>
+                </div>
+            </div>
+            `;
+
+            content.innerHTML = html;
+
+            // 保存済みの回答を復元
+            restoreAnswers();
+
+            // ファイルドラッグ&ドロップの設定
+            if (currentQuestion === questions.length - 1) {
+                setupFileDragDrop();
+                renderUploadedFiles();
+                renderReferenceUrls();
+            }
+        }
+
+        // フィールドをレンダリング
+        function renderField(field) {
+            const fieldId = `${questions[currentQuestion].id}_${field.name}`;
+            let html = `<div class="input-group">`;
+            html += `<label class="input-label" for="${fieldId}">${field.label}${field.required ? ' *' : ''}</label>`;
+
+            switch (field.type) {
+                case 'text':
+                    html += `
+                        <div class="input-wrapper">
+                            <input type="text" class="text-input" id="${fieldId}" ${field.placeholder ? `placeholder="${field.placeholder}"` : ''}>
+                            ${field.voice ? `<button class="voice-button" onclick="startVoiceInput('${fieldId}')">🎤</button>` : ''}
+                        </div>
+                    `;
+                    break;
+                case 'textarea':
+                    html += `
+                        <div class="input-wrapper" style="position: relative;">
+                            <textarea class="textarea-input" id="${fieldId}" ${field.placeholder ? `placeholder="${field.placeholder}"` : ''}></textarea>
+                            ${field.voice ? `<button class="voice-button" onclick="startVoiceInput('${fieldId}')" style="top: 20px;">🎤</button>` : ''}
+                        </div>
+                    `;
+                    break;
+                case 'select':
+                    html += `
+                        <select class="select-input" id="${fieldId}">
+                            <option value="">選択してください</option>
+                            ${field.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+                        </select>
+                    `;
+                    break;
+                case 'checkboxes':
+                    html += `<div class="checkbox-group">`;
+                    field.options.forEach(opt => {
+                        html += `
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="${fieldId}" value="${opt}">
+                                <span>${opt}</span>
+                            </label>
+                        `;
+                    });
+                    html += `</div>`;
+                    break;
+            }
+
+            html += `</div>`;
+            return html;
+        }
+
+        // 音声入力を開始
+        function startVoiceInput(fieldId) {
+            if (!recognition) {
+                alert('お使いのブラウザは音声認識に対応していません。Chrome、Edge、Safariをお試しください。');
+                return;
+            }
+
+            const button = event.target;
+            const input = document.getElementById(fieldId);
+
+            button.classList.add('recording');
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                if (input.tagName === 'TEXTAREA' || input.tagName === 'INPUT') {
+                    input.value = input.value ? input.value + ' ' + transcript : transcript;
+                }
+            };
+
+            recognition.onend = () => {
+                button.classList.remove('recording');
+            };
+
+            recognition.onerror = () => {
+                button.classList.remove('recording');
+                alert('音声認識エラーが発生しました。もう一度お試しください。');
+            };
+
+            recognition.start();
+        }
+
+        // 回答を保存
+        function saveAnswers() {
+            const question = questions[currentQuestion];
+            question.fields.forEach(field => {
+                const fieldId = `${question.id}_${field.name}`;
+                const element = document.getElementById(fieldId);
+
+                if (field.type === 'checkboxes') {
+                    const checkboxes = document.querySelectorAll(`input[name="${fieldId}"]:checked`);
+                    answers[fieldId] = Array.from(checkboxes).map(cb => cb.value);
+                } else if (element) {
+                    answers[fieldId] = element.value;
+                }
+            });
+        }
+
+        // 回答を復元
+        function restoreAnswers() {
+            const question = questions[currentQuestion];
+            question.fields.forEach(field => {
+                const fieldId = `${question.id}_${field.name}`;
+                const savedValue = answers[fieldId];
+
+                if (savedValue !== undefined) {
+                    if (field.type === 'checkboxes') {
+                        savedValue.forEach(val => {
+                            const checkbox = document.querySelector(`input[name="${fieldId}"][value="${val}"]`);
+                            if (checkbox) checkbox.checked = true;
+                        });
+                    } else {
+                        const element = document.getElementById(fieldId);
+                        if (element) element.value = savedValue;
+                    }
+                }
+            });
+        }
+
+        // 次の質問へ
+        function nextQuestion() {
+            saveAnswers();
+
+            if (currentQuestion === questions.length - 1) {
+                showCompletion();
+            } else {
+                currentQuestion++;
+                renderQuestion();
+                updateProgress();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // 前の質問へ
+        function previousQuestion() {
+            saveAnswers();
+            currentQuestion--;
+            renderQuestion();
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 進捗を更新
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = `質問 ${currentQuestion + 1} / ${questions.length}`;
+        }
+
+        // 参考URLを追加
+        function addReferenceUrl() {
+            const urlInput = document.getElementById('referenceUrl');
+            const url = urlInput.value.trim();
+
+            if (url && url.startsWith('http')) {
+                referenceUrls.push({ url, timestamp: new Date().toISOString() });
+                urlInput.value = '';
+                renderReferenceUrls();
+            } else {
+                alert('有効なURLを入力してください（http://またはhttps://で始まる必要があります）');
+            }
+        }
+
+        // 参考URLを表示
+        function renderReferenceUrls() {
+            const urlList = document.getElementById('urlList');
+            if (!urlList) return;
+
+            if (referenceUrls.length === 0) {
+                urlList.innerHTML = '';
+                return;
+            }
+
+            let html = '<div style="margin-top: 15px;">';
+            referenceUrls.forEach((item, index) => {
+                html += `
+                    <div class="file-item">
+                        <div>
+                            <div class="file-item-name">🔗 ${item.url}</div>
+                        </div>
+                        <button class="file-remove-btn" onclick="removeUrl(${index})">削除</button>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            urlList.innerHTML = html;
+        }
+
+        // URLを削除
+        function removeUrl(index) {
+            referenceUrls.splice(index, 1);
+            renderReferenceUrls();
+        }
+
+        // ファイルドラッグ&ドロップの設定
+        function setupFileDragDrop() {
+            const dropArea = document.getElementById('fileUploadArea');
+            if (!dropArea) return;
+
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, () => {
+                    dropArea.classList.add('dragover');
+                }, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, () => {
+                    dropArea.classList.remove('dragover');
+                }, false);
+            });
+
+            dropArea.addEventListener('drop', (e) => {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }, false);
+        }
+
+        // ファイルを処理
+        function handleFiles(files) {
+            Array.from(files).forEach(file => {
+                uploadedFiles.push({
+                    name: file.name,
+                    size: file.size,
+                    type: file.type,
+                    file: file,
+                    timestamp: new Date().toISOString()
+                });
+            });
+            renderUploadedFiles();
+        }
+
+        // アップロード済みファイルを表示
+        function renderUploadedFiles() {
+            const container = document.getElementById('uploadedFiles');
+            if (!container) return;
+
+            if (uploadedFiles.length === 0) {
+                container.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            uploadedFiles.forEach((file, index) => {
+                const sizeKB = (file.size / 1024).toFixed(2);
+                html += `
+                    <div class="file-item">
+                        <div>
+                            <div class="file-item-name">📄 ${file.name}</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600); margin-top: 2px;">${sizeKB} KB</div>
+                        </div>
+                        <button class="file-remove-btn" onclick="removeFile(${index})">削除</button>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // ファイルを削除
+        function removeFile(index) {
+            uploadedFiles.splice(index, 1);
+            renderUploadedFiles();
+        }
+
+        // 完了画面を表示
+        function showCompletion() {
+            const content = document.getElementById('interviewContent');
+            content.innerHTML = `
+                <div class="completion-screen active">
+                    <div class="completion-icon">🎉</div>
+                    <h2 class="completion-title">インタビュー完了！</h2>
+                    <p class="completion-text">
+                        ありがとうございます！<br>
+                        収集した情報をもとに、素晴らしいウェブサイトを作成いたします。<br>
+                        下のボタンから回答データをダウンロードできます。
+                    </p>
+                    <button class="download-btn" onclick="downloadAnswers()">
+                        💾 回答データをダウンロード
+                    </button>
+                </div>
+            `;
+            document.getElementById('progressFill').style.width = '100%';
+            document.getElementById('progressText').textContent = '完了！';
+        }
+
+        // 回答をダウンロード
+        function downloadAnswers() {
+            const data = {
+                answers: answers,
+                referenceUrls: referenceUrls,
+                uploadedFiles: uploadedFiles.map(f => ({ name: f.name, size: f.size, type: f.type })),
+                timestamp: new Date().toISOString(),
+                metadata: {
+                    totalQuestions: questions.length,
+                    completedAt: new Date().toLocaleString('ja-JP')
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `website-interview-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // ページ読み込み時に初期化
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
