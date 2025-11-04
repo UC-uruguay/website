@@ -13,13 +13,13 @@
         }
 
         :root {
-            --primary-cyan: #06b6d4;
-            --primary-light: #67e8f9;
-            --primary-dark: #0891b2;
-            --accent: #f0abfc;
-            --dark: #0f172a;
-            --gray: #64748b;
-            --light: #f8fafc;
+            --primary: #1d1d1f;
+            --accent: #06b6d4;
+            --text-dark: #1d1d1f;
+            --text-light: #6e6e73;
+            --gray: #86868b;
+            --light: #fbfbfd;
+            --lighter: #f5f5f7;
             --white: #ffffff;
         }
 
@@ -28,10 +28,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-dark);
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         /* Header & Navigation */
@@ -40,79 +42,61 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            background: rgba(251, 251, 253, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             z-index: 1000;
             transition: all 0.3s ease;
         }
 
         nav {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 1.5rem 2rem;
+            padding: 16px 48px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--primary-cyan), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -1px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 40px;
             list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-cyan);
-            transition: width 0.3s ease;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: opacity 0.2s ease;
         }
 
         .nav-links a:hover {
-            color: var(--primary-cyan);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
+            opacity: 0.6;
         }
 
         .lang-switch {
-            background: var(--primary-cyan);
+            background: var(--primary);
             color: white;
             border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
+            padding: 8px 20px;
+            border-radius: 2px;
             cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: opacity 0.2s ease;
         }
 
         .lang-switch:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
+            opacity: 0.8;
         }
 
         /* Hero Section */
@@ -121,196 +105,178 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, var(--primary-cyan) 75%, var(--primary-light) 100%);
+            background: linear-gradient(to bottom, rgba(6, 182, 212, 0.03) 0%, rgba(251, 251, 253, 1) 100%);
             position: relative;
             overflow: hidden;
-            margin-top: 80px;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect fill="%23ffffff" fill-opacity="0.05" width="50" height="50"/><rect fill="%23ffffff" fill-opacity="0.05" width="50" height="50" x="50" y="50"/></svg>');
-            animation: slide 20s linear infinite;
-        }
-
-        @keyframes slide {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(100px, 100px); }
+            margin-top: 60px;
         }
 
         .hero-content {
             text-align: center;
-            color: white;
+            color: var(--primary);
             z-index: 1;
-            padding: 2rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            padding: 0 24px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .hero h1 {
             font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 900;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            margin-bottom: 24px;
             letter-spacing: -2px;
+            line-height: 1.05;
         }
 
         .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            margin-bottom: 2rem;
-            opacity: 0.95;
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            margin-bottom: 48px;
+            color: var(--text-light);
+            font-weight: 400;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1.2rem 3rem;
-            background: white;
-            color: var(--primary-cyan);
+            padding: 16px 40px;
+            background: var(--primary);
+            color: white;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: opacity 0.2s ease;
         }
 
         .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            opacity: 0.8;
         }
 
         /* Section Styles */
         section {
-            padding: 6rem 2rem;
-            max-width: 1200px;
+            padding: 120px 48px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .section-title {
             font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 900;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
             text-align: center;
-            background: linear-gradient(135deg, var(--primary-cyan), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--primary);
+            letter-spacing: -1px;
         }
 
         .section-subtitle {
             text-align: center;
-            color: var(--gray);
-            font-size: 1.2rem;
-            margin-bottom: 4rem;
+            color: var(--text-light);
+            font-size: 1.125rem;
+            margin-bottom: 80px;
+            font-weight: 400;
         }
 
         /* About Section */
         .about {
-            background: var(--light);
+            background: var(--white);
         }
 
         .about-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
             margin-top: 3rem;
         }
 
         .about-card {
             background: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.6s ease forwards;
+            overflow: hidden;
+            transition: transform 0.3s ease;
         }
 
-        .about-card:nth-child(1) { animation-delay: 0.1s; }
-        .about-card:nth-child(2) { animation-delay: 0.2s; }
-        .about-card:nth-child(3) { animation-delay: 0.3s; }
-
         .about-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(6, 182, 212, 0.2);
+            transform: scale(1.02);
         }
 
         .about-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: var(--lighter);
+        }
+
+        .about-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .about-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-cyan);
+            font-size: 1.25rem;
+            margin: 24px 0 12px 0;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .about-card p {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            line-height: 1.5;
         }
 
         /* Team Section */
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
             margin-top: 3rem;
         }
 
         .team-member {
             background: white;
-            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease forwards;
         }
 
-        .team-member:nth-child(1) { animation-delay: 0.1s; }
-        .team-member:nth-child(2) { animation-delay: 0.2s; }
-
         .team-member:hover {
-            transform: translateY(-10px);
+            transform: scale(1.02);
         }
 
         .team-image {
             width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, var(--primary-cyan), var(--accent));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
+            height: 400px;
+            background: var(--lighter);
+            overflow: hidden;
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .team-info {
-            padding: 2rem;
+            padding: 32px 0;
         }
 
         .team-name {
             font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
         .team-role {
-            color: var(--primary-cyan);
-            font-weight: 600;
-            margin-bottom: 1rem;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 16px;
+            font-size: 0.875rem;
+        }
+
+        .team-info p {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            line-height: 1.5;
         }
 
         /* Portfolio Section */
@@ -320,47 +286,49 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
             margin-top: 3rem;
         }
 
         .portfolio-item {
             background: white;
-            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease forwards;
         }
 
-        .portfolio-item:nth-child(1) { animation-delay: 0.1s; }
-        .portfolio-item:nth-child(2) { animation-delay: 0.2s; }
-        .portfolio-item:nth-child(3) { animation-delay: 0.3s; }
-
         .portfolio-item:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
 
         .portfolio-image {
             width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, var(--primary-light), var(--primary-cyan));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
+            height: 240px;
+            background: var(--lighter);
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .portfolio-content {
-            padding: 2rem;
+            padding: 24px 0;
         }
 
         .portfolio-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .portfolio-content p {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            line-height: 1.5;
         }
 
         /* Testimonials Section */
@@ -372,74 +340,89 @@
 
         .testimonial {
             background: white;
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            animation: fadeInUp 0.6s ease forwards;
+            padding: 64px 48px;
         }
 
         .testimonial-text {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-style: italic;
-            margin-bottom: 2rem;
-            color: var(--gray);
+            margin-bottom: 32px;
+            color: var(--text-light);
+            line-height: 1.6;
         }
 
         .testimonial-author {
-            font-weight: 700;
-            color: var(--primary-cyan);
-            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.875rem;
         }
 
         /* Contact Section */
         .contact {
-            background: linear-gradient(135deg, var(--primary-cyan), var(--primary-dark));
+            background: var(--primary);
             color: white;
             text-align: center;
         }
 
         .contact .section-title {
-            -webkit-text-fill-color: white;
             color: white;
+        }
+
+        .contact .section-subtitle {
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 24px;
             margin-top: 3rem;
+            flex-wrap: wrap;
         }
 
         .social-link {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 1.5rem 2.5rem;
-            border-radius: 50px;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 16px 32px;
             text-decoration: none;
             color: white;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: background 0.2s ease;
         }
 
         .social-link:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
         }
 
         .social-icon {
-            font-size: 2rem;
+            font-size: 1.25rem;
+        }
+
+        .contact p {
+            opacity: 0.7;
+            font-size: 0.875rem;
+        }
+
+        .contact a[href^="mailto"] {
+            opacity: 1;
+            font-weight: 500;
         }
 
         /* Footer */
         footer {
-            background: var(--dark);
-            color: white;
+            background: var(--lighter);
+            color: var(--text-light);
             text-align: center;
-            padding: 2rem;
+            padding: 24px 48px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        footer p {
+            font-size: 0.75rem;
+            opacity: 0.7;
         }
 
         /* Mobile Menu */
@@ -537,17 +520,23 @@
         <p class="section-subtitle" data-en="We travel to solve your IT challenges">地方のIT課題を旅しながら解決するプロフェッショナルチーム</p>
         <div class="about-content">
             <div class="about-card">
-                <div class="about-icon">🚀</div>
+                <div class="about-icon">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Quick Response">
+                </div>
                 <h3 data-en="Quick Response">即応力</h3>
                 <p data-en="We respond quickly to your needs and provide solutions on-site">必要な時に、必要な場所へ。短期間で問題解決に取り組みます。</p>
             </div>
             <div class="about-card">
-                <div class="about-icon">💡</div>
+                <div class="about-icon">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop" alt="Expertise">
+                </div>
                 <h3 data-en="Expertise">専門性</h3>
                 <p data-en="Our team has deep technical expertise in various IT fields">IT関連の幅広い分野で、確かな技術力と豊富な経験を提供します。</p>
             </div>
             <div class="about-card">
-                <div class="about-icon">🌏</div>
+                <div class="about-icon">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop" alt="Flexibility">
+                </div>
                 <h3 data-en="Flexibility">柔軟性</h3>
                 <p data-en="We travel anywhere to meet your needs">全国どこでも駆けつけます。場所を選ばずサポートします。</p>
             </div>
@@ -560,21 +549,27 @@
         <p class="section-subtitle" data-en="Our recent projects">これまでの取り組み</p>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <div class="portfolio-image">🏢</div>
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop" alt="Business System Development">
+                </div>
                 <div class="portfolio-content">
                     <h3 class="portfolio-title" data-en="Business System Development">業務システム開発</h3>
                     <p data-en="Developed custom business systems for local enterprises">地方企業向けカスタム業務システムの設計・開発</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-image">📱</div>
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=500&fit=crop" alt="Website & App Creation">
+                </div>
                 <div class="portfolio-content">
                     <h3 class="portfolio-title" data-en="Website & App Creation">ウェブサイト・アプリ制作</h3>
                     <p data-en="Modern, responsive websites and mobile applications">モダンでレスポンシブなウェブサイト・モバイルアプリの制作</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-image">🔧</div>
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop" alt="IT Consulting">
+                </div>
                 <div class="portfolio-content">
                     <h3 class="portfolio-title" data-en="IT Consulting">ITコンサルティング</h3>
                     <p data-en="Strategic IT planning and implementation support">戦略的なIT企画立案と実装支援</p>
@@ -589,7 +584,9 @@
         <p class="section-subtitle" data-en="Meet our traveling IT professionals">旅するIT人材</p>
         <div class="team-grid">
             <div class="team-member">
-                <div class="team-image">👨‍💻</div>
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop" alt="UC">
+                </div>
                 <div class="team-info">
                     <h3 class="team-name">UC</h3>
                     <p class="team-role" data-en="Co-Founder / Developer">共同創業者 / 開発者</p>
@@ -597,7 +594,9 @@
                 </div>
             </div>
             <div class="team-member">
-                <div class="team-image">👨‍💼</div>
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=1000&fit=crop" alt="Seki">
+                </div>
                 <div class="team-info">
                     <h3 class="team-name" data-en="Seki">関</h3>
                     <p class="team-role" data-en="Co-Founder / Consultant">共同創業者 / コンサルタント</p>
@@ -625,11 +624,15 @@
         <p class="section-subtitle" data-en="Get in touch via social media">SNSからお気軽にご連絡ください</p>
         <div class="social-links">
             <a href="https://www.instagram.com/toriaezu_uc" target="_blank" class="social-link">
-                <span class="social-icon">📷</span>
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
                 <span>Instagram</span>
             </a>
             <a href="https://x.com/TORIAEZU_OU" target="_blank" class="social-link">
-                <span class="social-icon">𝕏</span>
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
                 <span>X (Twitter)</span>
             </a>
         </div>
