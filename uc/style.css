@@ -1,0 +1,446 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray-light: #F5F5F5;
+    --color-gray-medium: #E0E0E0;
+    --color-gray-dark: #333333;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Language Toggle */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#lang-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 2px solid var(--color-black);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#lang-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-medium);
+    padding: var(--spacing-sm) 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.nav.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: var(--spacing-md);
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+    opacity: 0.6;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 400;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-description {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Section Styles */
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.section-dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: 2px;
+}
+
+/* Philosophy Section */
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.philosophy-card {
+    padding: var(--spacing-md);
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.philosophy-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0 var(--color-black);
+}
+
+.philosophy-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.philosophy-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Challenges Section */
+.challenge-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.challenge-item {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.5s ease;
+}
+
+.challenge-item.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.challenge-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-white);
+    opacity: 0.3;
+    min-width: 80px;
+}
+
+.challenge-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.challenge-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.project-card {
+    padding: var(--spacing-md);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 2px solid var(--color-black);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transform: scale(1.02);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Stories Section */
+.stories-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-item {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.story-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.story-item:last-child {
+    border-bottom: none;
+}
+
+.story-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.story-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Contact Section */
+.contact-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid var(--color-black);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transform: translateY(-3px);
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-md);
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: var(--spacing-sm);
+    }
+
+    .nav-menu a {
+        font-size: 0.85rem;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 8vw, 6rem);
+    }
+
+    .challenge-item {
+        flex-direction: column;
+    }
+
+    .challenge-number {
+        font-size: 2rem;
+        min-width: auto;
+    }
+
+    .philosophy-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lang-toggle {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+}
+
+/* Animation delays for staggered effects */
+.philosophy-card:nth-child(1) { transition-delay: 0.1s; }
+.philosophy-card:nth-child(2) { transition-delay: 0.2s; }
+.philosophy-card:nth-child(3) { transition-delay: 0.3s; }
+
+.project-card:nth-child(1) { transition-delay: 0.1s; }
+.project-card:nth-child(2) { transition-delay: 0.2s; }
+.project-card:nth-child(3) { transition-delay: 0.3s; }
+.project-card:nth-child(4) { transition-delay: 0.4s; }
+.project-card:nth-child(5) { transition-delay: 0.5s; }
+
+.challenge-item:nth-child(1) { transition-delay: 0.1s; }
+.challenge-item:nth-child(2) { transition-delay: 0.2s; }
+.challenge-item:nth-child(3) { transition-delay: 0.3s; }
+
+.story-item:nth-child(1) { transition-delay: 0.1s; }
+.story-item:nth-child(2) { transition-delay: 0.2s; }
+.story-item:nth-child(3) { transition-delay: 0.3s; }
+.story-item:nth-child(4) { transition-delay: 0.4s; }
+.story-item:nth-child(5) { transition-delay: 0.5s; }
+.story-item:nth-child(6) { transition-delay: 0.6s; }
+.story-item:nth-child(7) { transition-delay: 0.7s; }
