@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鳴沢村 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>鳴沢村</h1>
+            <p>鳴沢氷穴や富岳風穴が有名。自然の神秘を体験できます。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>鳴沢村の魅力</h2>
+            <p>
+                鳴沢村は、富士山の北西麓に位置し、村域の大半が富士山の裾野に広がる自然豊かな村です。
+                最大の見どころは、天然記念物に指定されている「鳴沢氷穴」と「富岳風穴」。
+                これらは富士山の噴火によって形成された溶岩洞窟で、年間を通じて氷や低温が保たれる神秘的な空間です。
+            </p>
+            <p>
+                標高900m〜1,200mに位置する高原地帯は、夏でも涼しく避暑地として人気があります。
+                また、富士山の絶景ビューポイントも多く、観光客が四季折々の富士山を楽しむことができます。
+                青木ヶ原樹海の一部も村内にあり、手つかずの自然が残る貴重な環境が保たれています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>鳴沢菜</h3>
+                    <p>高原の冷涼な気候で育つ伝統野菜。漬物にすると絶品です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>高原キャベツ</h3>
+                    <p>夏の冷涼な気候で育つ甘いキャベツ。シャキシャキ食感が魅力。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>とうもろこし</h3>
+                    <p>朝採りの甘いとうもろこし。夏季限定の人気商品です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ブルーベリー</h3>
+                    <p>観光農園で収穫体験も可能。新鮮なブルーベリーが楽しめます。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士山ソフトクリーム</h3>
+                    <p>濃厚なミルクを使用。氷穴見学後の定番デザート。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士山の天然水</h3>
+                    <p>富士山の伏流水をボトリング。まろやかな味わいです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>鳴沢氷穴</strong> - 天然記念物の溶岩洞窟。真夏でも氷が見られる神秘的な空間。</p>
+            <p><strong>富岳風穴</strong> - 総延長201mの横穴式溶岩洞窟。年中3度の涼しさを体験。</p>
+            <p><strong>道の駅なるさわ</strong> - 富士山の絶景と特産品が揃う道の駅。</p>
+            <p><strong>紅葉台</strong> - 富士山と青木ヶ原樹海を一望できる展望台。紅葉の名所。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>鳴沢村の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>高原野菜の季節販売</p>
+            <p>溶岩洞窟見学チケット情報</p>
+            <p>鳴沢菜の漬物販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

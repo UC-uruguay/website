@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南アルプス市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>南アルプス市</h1>
+            <p>南アルプスの麓。フルーツと自然が豊かな街</p>
+        </div>
+
+        <div class="content-section">
+            <h2>南アルプス市の魅力</h2>
+            <p>
+                南アルプス市は2003年に6つの町村が合併して誕生した比較的新しい市です。
+                その名の通り、日本第二の高峰・北岳を擁する南アルプス山麓に位置し、
+                雄大な自然と豊かな水資源に恵まれた地域です。
+            </p>
+            <p>
+                日照時間が長く、昼夜の寒暖差が大きい気候は果樹栽培に最適で、
+                特にさくらんぼやすももの生産量は全国トップクラスを誇ります。
+                また、南アルプスの伏流水を使った美味しいお米やワイン造りも盛んです。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>さくらんぼ</h3>
+                    <p>初夏の味覚。佐藤錦や紅秀峰など高級品種が豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>すもも</h3>
+                    <p>生産量日本一。甘酸っぱくてジューシーな夏の果実。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>とろけるような甘さ。山梨を代表するフルーツです。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>シャインマスカットやピオーネなど、多彩な品種が揃います。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>南アルプスワイン</h3>
+                    <p>地元産ぶどうと南アルプスの水で造られる上質なワイン。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>あけぼの大豆</h3>
+                    <p>幻の大豆と呼ばれる希少品種。甘みと旨味が濃厚。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>南アルプス市フルーツ公園</strong> - くだもの狩りが楽しめる観光農園。</p>
+            <p><strong>北岳</strong> - 標高3,193m、日本第二の高峰。登山者憧れの山。</p>
+            <p><strong>南アルプス芦安山岳館</strong> - 南アルプスの自然や歴史を学べる施設。</p>
+            <p><strong>安藤家住宅</strong> - 国の重要文化財。江戸時代の豪農の暮らしを知る。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>南アルプス市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>季節のフルーツの直売</p>
+            <p>南アルプスワインの試飲</p>
+            <p>あけぼの大豆製品の販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

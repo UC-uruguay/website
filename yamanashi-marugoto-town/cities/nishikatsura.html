@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西桂町 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>西桂町</h1>
+            <p>富士山の眺望が素晴らしい町。織物産業の歴史があります</p>
+        </div>
+
+        <div class="content-section">
+            <h2>西桂町の魅力</h2>
+            <p>
+                西桂町は、富士山の北麓に位置し、町のいたるところから雄大な富士山の姿を
+                望むことができる絶景の町です。標高500〜600mの高原地帯にあり、
+                夏は涼しく、冬は雪景色の富士山を楽しむことができます。
+            </p>
+            <p>
+                江戸時代から続く「郡内織物」の産地として知られ、高品質な織物製品を
+                生産してきた歴史があります。近年では、この伝統技術を活かした
+                現代的なテキスタイル製品も開発され、注目を集めています。
+                また、桂川沿いの自然環境も美しく、ハイキングや散策にも最適です。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>郡内織物</h3>
+                    <p>伝統的な織物技術で作られる高品質なテキスタイル。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士桜ポーク</h3>
+                    <p>富士山麓で育てられた高品質な豚肉。柔らかく美味。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>高原野菜</h3>
+                    <p>標高が高い地域で育つ新鮮で甘い野菜。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>とうもろこし</h3>
+                    <p>夏の味覚。甘みが強く人気の高原とうもろこし。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ブルーベリー</h3>
+                    <p>観光農園で人気。新鮮で甘酸っぱいブルーベリー。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桂川そば</h3>
+                    <p>清流・桂川の水で打つ手打ちそば。香り豊か。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>三ツ峠山</strong> - 富士山の絶景ポイント。登山やロッククライミングが楽しめます。</p>
+            <p><strong>富士見テラス</strong> - 町内随一の富士山ビュースポット。四季折々の富士を望めます。</p>
+            <p><strong>桂川ウェルネスパーク</strong> - 桂川沿いの公園。散策路や遊具が整備されています。</p>
+            <p><strong>織物資料館</strong> - 郡内織物の歴史と技術を学べる施設。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>西桂町の特産品の購入</p>
+            <p>郡内織物製品の展示販売</p>
+            <p>富士桜ポークの販売</p>
+            <p>高原野菜の季節販売</p>
+            <p>富士山撮影スポット情報</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

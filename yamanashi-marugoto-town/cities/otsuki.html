@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大月市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>大月市</h1>
+            <p>富士山の眺望が美しい街。鉄道ファンに人気の地域です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>大月市の魅力</h2>
+            <p>
+                大月市は山梨県東部に位置し、東京と山梨を結ぶ交通の要衝として栄えてきました。
+                中央本線の猿橋駅周辺は、日本三奇橋の一つ「猿橋」があることで知られ、
+                古くから多くの旅人が訪れる名勝地です。
+            </p>
+            <p>
+                市内からは富士山の美しい姿を望むことができ、特に岩殿山からの眺望は絶景です。
+                また、JR中央本線とリニア実験線が通る鉄道の街としても有名で、
+                鉄道ファンの聖地としても人気を集めています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>大月おつけだんご</h3>
+                    <p>地元で愛される郷土料理。野菜たっぷりの汁物です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>栗</h3>
+                    <p>秋の味覚。甘みが強く、栗ご飯や栗きんとんに最適。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>山菜</h3>
+                    <p>豊かな山々で採れる天然の山菜。春の恵みです。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>地酒</h3>
+                    <p>清らかな水で醸される日本酒。キレのある辛口が特徴。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>わさび</h3>
+                    <p>清流で育つ本わさび。香り高く、辛味が爽やか。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>猿橋まんじゅう</h3>
+                    <p>猿橋の名を冠した銘菓。お土産に人気です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>猿橋</strong> - 日本三奇橋の一つ。橋脚を使わない独特の構造が見事。</p>
+            <p><strong>岩殿山</strong> - 市内を見渡せる絶景スポット。ハイキングコースとしても人気。</p>
+            <p><strong>大月駅周辺</strong> - 中央本線とリニア実験線が見える鉄道撮影スポット。</p>
+            <p><strong>桂川</strong> - 清流沿いの散策路。四季折々の自然が楽しめます。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>大月市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>猿橋まんじゅうの販売</p>
+            <p>地酒の試飲</p>
+            <p>鉄道グッズの展示</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

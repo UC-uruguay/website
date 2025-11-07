@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中央市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>中央市</h1>
+            <p>県の中央に位置する新しい市。農業が盛んです</p>
+        </div>
+
+        <div class="content-section">
+            <h2>中央市の魅力</h2>
+            <p>
+                中央市は2006年に田富町、玉穂町、豊富村が合併して誕生した新しい市です。
+                山梨県のほぼ中央に位置することから「中央市」と名付けられました。
+                甲府市の南に隣接し、平坦な地形が広がる農業地帯です。
+            </p>
+            <p>
+                日照時間が長く水はけの良い土地は、桃やトマトなどの栽培に適しており、
+                特にフルーツトマトは糖度が高く人気を集めています。
+                また、シルクの街としての歴史も持ち、養蚕業が盛んだった名残が今も残っています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>フルーツトマト</h3>
+                    <p>高糖度で濃厚な味わい。甘みと酸味のバランスが絶妙。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>とろけるような甘さとジューシーさ。県内有数の産地。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>スイートコーン</h3>
+                    <p>夏の味覚。糖度が高く、みずみずしい食感が人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>米</h3>
+                    <p>甲府盆地の豊かな水で育つお米。粘りとツヤが特徴。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>シルク製品</h3>
+                    <p>養蚕の歴史を持つ地域ならではのシルク加工品。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>みそ</h3>
+                    <p>地元の大豆と米麹で作る伝統的な手作り味噌。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>シルクふれんどりぃ</strong> - 養蚕の歴史と文化を学べる資料館。</p>
+            <p><strong>豊富郷土資料館</strong> - 地域の歴史や文化財を展示。縄文土器など貴重な資料も。</p>
+            <p><strong>中央市豊富シルクの里公園</strong> - 広大な公園。家族連れに人気のスポット。</p>
+            <p><strong>農産物直売所</strong> - 新鮮な野菜や果物が並ぶ。地元の味を楽しめます。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>中央市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>フルーツトマトの直売</p>
+            <p>季節のフルーツの販売</p>
+            <p>シルク製品の展示・販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

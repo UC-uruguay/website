@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韮崎市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>韮崎市</h1>
+            <p>武田家ゆかりの地。桜と歴史が息づく街です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>韮崎市の魅力</h2>
+            <p>
+                韮崎市は山梨県北西部に位置し、武田信玄の先祖である武田氏発祥の地として知られています。
+                新府城跡をはじめとする歴史的遺産が数多く残り、歴史ファンにとって魅力的な街です。
+                また、わに塚の桜は山梨を代表する一本桜として全国的に有名です。
+            </p>
+            <p>
+                八ヶ岳や南アルプスに囲まれた自然豊かな環境で、日照時間が長く果樹栽培に適した気候です。
+                近年はワイン造りも盛んで、個性的なワイナリーが増えています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>甘くてジューシー。夏の風物詩として親しまれています。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>シャインマスカットやピオーネなど、高品質な品種が揃います。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>韮崎ワイン</h3>
+                    <p>地元産ぶどうを使った個性的なワイン。注目のワイナリーが集結。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>米</h3>
+                    <p>八ヶ岳の伏流水で育った美味しいお米。粘りとツヤが特徴。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>高原野菜</h3>
+                    <p>標高の高い地域で育つ新鮮な野菜たち。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>武田餅</h3>
+                    <p>武田家ゆかりの銘菓。上品な甘さが人気です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>わに塚の桜</strong> - 樹齢約330年の一本桜。春には多くのカメラマンが訪れます。</p>
+            <p><strong>新府城跡</strong> - 武田勝頼が築いた城の跡。歴史ロマンを感じる場所。</p>
+            <p><strong>願成寺</strong> - 武田信義（源氏）の菩提寺。国の重要文化財を所蔵。</p>
+            <p><strong>韮崎中央公園</strong> - 広大な公園。桜の名所としても知られています。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>韮崎市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>韮崎ワインの試飲</p>
+            <p>フルーツの直売</p>
+            <p>武田餅の販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

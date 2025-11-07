@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忍野村 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>忍野村</h1>
+            <p>忍野八海で有名。富士山の湧水が豊富です。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>忍野村の魅力</h2>
+            <p>
+                忍野村は、富士山の北麓に位置し、富士山の伏流水が湧き出る「忍野八海」で知られる美しい村です。
+                忍野八海は、富士山の雪解け水が地下の溶岩層を通って湧き出る8つの湧水池で、国の天然記念物に指定されています。
+                また、世界文化遺産「富士山」の構成資産の一部としても登録されています。
+            </p>
+            <p>
+                村内からは雄大な富士山を望むことができ、水と富士山が織りなす絶景が楽しめます。
+                清らかな水は、古くから生活や農業に利用され、この地域の文化と暮らしを支えてきました。
+                四季折々の表情を見せる忍野八海は、国内外から多くの観光客が訪れる人気スポットです。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>忍野そば</h3>
+                    <p>忍野八海の清らかな水で打つそば。コシと香りが自慢です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士桜ポーク</h3>
+                    <p>富士山麓で育てられた高品質な豚肉。柔らかく甘みがあります。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>わさび</h3>
+                    <p>湧水を利用して栽培される本わさび。ピリッとした辛味が特徴。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>湧水豆腐</h3>
+                    <p>忍野の湧水で作る豆腐。なめらかで甘みがあります。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>高原野菜</h3>
+                    <p>冷涼な気候で育つ新鮮な野菜。トウモロコシやレタスが人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>忍野銘水</h3>
+                    <p>忍野八海の湧水をボトリング。まろやかな口当たりです。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>忍野八海</strong> - 富士山の湧水池群。澄んだ水と神秘的な景観が魅力です。</p>
+            <p><strong>富士山世界遺産センター</strong> - 富士山の自然・歴史・文化を学べる施設。</p>
+            <p><strong>さかな公園</strong> - 淡水魚水族館や公園が楽しめる家族向けスポット。</p>
+            <p><strong>内野地区</strong> - 茅葺き屋根の民家が残る風情ある集落。撮影スポットとして人気。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>忍野村の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>忍野銘水の販売</p>
+            <p>わさび製品の試食販売</p>
+            <p>忍野八海散策マップ配布</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

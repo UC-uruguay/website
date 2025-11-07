@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昭和町 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>昭和町</h1>
+            <p>県内で最も面積が小さい町。住みやすさが魅力です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>昭和町の魅力</h2>
+            <p>
+                昭和町は、山梨県内で最も面積が小さい自治体ですが、人口密度は県内トップクラス。
+                コンパクトな町域の中に、商業施設や医療機関、教育施設などが充実しており、
+                生活の利便性が非常に高いことで知られています。
+            </p>
+            <p>
+                甲府市に隣接し、中央自動車道甲府昭和インターチェンジもあることから、
+                交通アクセスも良好です。住みやすさランキングでも常に上位にランクインし、
+                子育て世代を中心に人気を集めています。近年は大型商業施設の進出も進み、
+                ますます便利で活気ある町として発展を続けています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>甲府盆地の中心部で育つ甘くてジューシーな桃。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>シャインマスカットなど、高品質なぶどうが人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>いちご</h3>
+                    <p>観光農園で人気のいちご狩り。甘くて新鮮。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>トマト</h3>
+                    <p>昭和町産の甘みの強いトマト。地産地消に貢献。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>昭和町ワイン</h3>
+                    <p>地元のワイナリーが手がける高品質なワイン。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>地元パン</h3>
+                    <p>町内の人気ベーカリーの焼きたてパン。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>イオンモール甲府昭和</strong> - 大型ショッピングモール。ショッピングとグルメを満喫。</p>
+            <p><strong>昭和町風土記の丘</strong> - 古墳群や歴史資料館がある公園。歴史散策に最適。</p>
+            <p><strong>観光農園</strong> - いちご狩りや桃狩りが楽しめる農園が点在。</p>
+            <p><strong>押原公園</strong> - 町民の憩いの場。桜の名所としても知られています。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>昭和町の特産品の購入</p>
+            <p>フルーツの季節販売</p>
+            <p>地元ワインの試飲</p>
+            <p>観光農園情報の提供</p>
+            <p>住みやすさPR資料の配布</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>
