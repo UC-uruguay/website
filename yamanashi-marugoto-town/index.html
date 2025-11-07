@@ -13,27 +13,19 @@
 
         body {
             font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f5;
             color: #333;
-            overflow-x: hidden;
+            line-height: 1.6;
         }
 
         /* ヘッダー */
         header {
-            background: linear-gradient(90deg, #FF6B6B 0%, #FFE66D 25%, #4ECDC4 50%, #95E1D3 75%, #FF6B6B 100%);
+            background: #2c3e50;
             padding: 20px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
-            animation: headerGradient 10s ease infinite;
-            background-size: 200% 200%;
-        }
-
-        @keyframes headerGradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
 
         nav {
@@ -46,252 +38,159 @@
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: bold;
+            font-size: 22px;
+            font-weight: 600;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 0.5px;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 40px;
             list-style: none;
         }
 
         .nav-links a {
-            color: white;
+            color: #ecf0f1;
             text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.2);
+            font-size: 15px;
+            transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            background: white;
-            color: #FF6B6B;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            color: #3498db;
         }
 
         /* ヒーローセクション */
         .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: white;
+            padding: 100px 20px 80px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 42px;
             margin-bottom: 20px;
-            animation: bounceIn 1s ease;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-        }
-
-        @keyframes bounceIn {
-            0% { transform: scale(0); opacity: 0; }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); opacity: 1; }
+            color: #2c3e50;
+            font-weight: 600;
+            text-align: center;
         }
 
         .hero p {
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #7f8c8d;
+            text-align: center;
         }
 
         .hero-button {
             display: inline-block;
-            padding: 20px 50px;
-            background: linear-gradient(45deg, #FF6B6B, #FFE66D);
+            padding: 14px 40px;
+            background: #2c3e50;
             color: white;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 20px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            font-size: 16px;
+            transition: background 0.2s;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
         }
 
         .hero-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            background: #34495e;
         }
 
         /* メインコンテンツ */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 60px 20px;
         }
 
         .section-title {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 50px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            position: relative;
-            animation: fadeInUp 1s ease;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-weight: 600;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #2c3e50;
         }
 
         /* 市町村カードグリッド */
         .cities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
             margin-bottom: 60px;
         }
 
         .city-card {
             background: white;
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            animation: fadeInUp 0.8s ease backwards;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .city-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.5), transparent);
-            transform: rotate(45deg);
-            transition: all 0.5s ease;
-        }
-
-        .city-card:hover::before {
-            left: 100%;
+            border: 1px solid #e0e0e0;
+            padding: 24px;
+            transition: box-shadow 0.2s;
         }
 
         .city-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-
-        .city-card:nth-child(1) { animation-delay: 0.1s; }
-        .city-card:nth-child(2) { animation-delay: 0.2s; }
-        .city-card:nth-child(3) { animation-delay: 0.3s; }
-        .city-card:nth-child(4) { animation-delay: 0.4s; }
-        .city-card:nth-child(5) { animation-delay: 0.5s; }
-        .city-card:nth-child(6) { animation-delay: 0.6s; }
-
-        .city-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .city-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #333;
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         .city-card p {
-            color: #666;
+            color: #7f8c8d;
             line-height: 1.6;
             margin-bottom: 20px;
+            font-size: 14px;
         }
 
         .city-link {
             display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(45deg, #FF6B6B, #FFE66D);
+            padding: 10px 24px;
+            background: #2c3e50;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
+            font-size: 14px;
+            transition: background 0.2s;
         }
 
         .city-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background: #34495e;
         }
 
         /* カテゴリー別セクション */
         .category-section {
             background: white;
-            border-radius: 30px;
-            padding: 50px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
         }
 
         .category-section h2 {
-            font-size: 32px;
+            font-size: 24px;
             margin-bottom: 30px;
-            color: #667eea;
-            text-align: center;
-        }
-
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .category-item {
-            padding: 20px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .category-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         /* フッター */
         footer {
-            background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
-            color: white;
+            background: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
             padding: 40px 20px;
             margin-top: 60px;
         }
 
         footer p {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #bdc3c7;
         }
 
         .footer-links {
@@ -303,13 +202,14 @@
         }
 
         .footer-links a {
-            color: white;
+            color: #bdc3c7;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-size: 14px;
+            transition: color 0.2s;
         }
 
         .footer-links a:hover {
-            color: #FFE66D;
+            color: white;
         }
 
         /* レスポンシブデザイン */
@@ -319,12 +219,11 @@
             }
 
             .hero p {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .nav-links {
-                flex-direction: column;
-                gap: 10px;
+                gap: 20px;
             }
 
             .cities-grid {
@@ -338,29 +237,30 @@
 
         /* アクセス情報 */
         .access-info {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 20px;
+            background: white;
+            border-left: 4px solid #2c3e50;
+            padding: 30px;
             margin: 40px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .access-info h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         .access-info p {
-            font-size: 18px;
+            font-size: 15px;
             line-height: 1.8;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">🏔️ 山梨まるごとタウン</div>
+            <div class="logo">山梨まるごとタウン</div>
             <ul class="nav-links">
                 <li><a href="#home">ホーム</a></li>
                 <li><a href="#cities">市町村を探す</a></li>
@@ -370,14 +270,14 @@
     </header>
 
     <section class="hero" id="home">
-        <h1>🍑 山梨まるごとタウンへようこそ！ 🍇</h1>
-        <p>塩山駅周辺で山梨県27市町村の魅力を発見しよう</p>
-        <a href="#cities" class="hero-button">市町村を探検する</a>
+        <h1>山梨まるごとタウン</h1>
+        <p>塩山駅周辺で山梨県27市町村の魅力を発見</p>
+        <a href="#cities" class="hero-button">市町村を探す</a>
     </section>
 
     <div class="container">
         <div class="access-info">
-            <h2>📍 アクセス</h2>
+            <h2>アクセス</h2>
             <p>
                 <strong>場所：</strong>JR塩山駅周辺<br>
                 山梨県の全27市町村のアンテナショップが集結！<br>
@@ -385,98 +285,85 @@
             </p>
         </div>
 
-        <h2 class="section-title" id="cities">🏘️ 山梨27市町村アンテナショップ</h2>
+        <h2 class="section-title" id="cities">山梨27市町村アンテナショップ</h2>
 
         <!-- 市 -->
         <div class="category-section">
-            <h2>🏙️ 市（13市）</h2>
+            <h2>市（13市）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <div class="city-icon">🏯</div>
                     <h3>甲府市</h3>
                     <p>県庁所在地。甲府ブランド製品や武田信玄ゆかりの品々が魅力。</p>
                     <a href="cities/kofu.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🗻</div>
                     <h3>富士吉田市</h3>
                     <p>富士山の麓の街。有名な「吉田のうどん」が自慢です。</p>
                     <a href="cities/fujiyoshida.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🎋</div>
                     <h3>笛吹市</h3>
                     <p>フルーツ王国。桔梗屋信玄餅の工場テーマパークがあります。</p>
                     <a href="cities/fuefuki.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🍇</div>
                     <h3>甲州市</h3>
                     <p>ワインと干し柿（ころ柿）の名産地。歴史ある街並みが魅力。</p>
                     <a href="cities/koshu.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌲</div>
                     <h3>北杜市</h3>
                     <p>八ヶ岳の麓。北杜米を使った上質なスイーツが人気。</p>
                     <a href="cities/hokuto.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏔️</div>
                     <h3>南アルプス市</h3>
                     <p>南アルプスの玄関口。ころ柿や果物が有名です。</p>
                     <a href="cities/minamialps.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏞️</div>
                     <h3>都留市</h3>
                     <p>豊かな自然と水の都。大学の街としても知られています。</p>
                     <a href="cities/tsuru.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌉</div>
                     <h3>大月市</h3>
                     <p>富士山の眺望が美しい街。鉄道ファンに人気の地域です。</p>
                     <a href="cities/otsuki.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌸</div>
                     <h3>韮崎市</h3>
                     <p>武田家ゆかりの地。桜と歴史が息づく街です。</p>
                     <a href="cities/nirasaki.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🎨</div>
                     <h3>甲斐市</h3>
                     <p>文化芸術が盛んな街。快適な住環境が魅力です。</p>
                     <a href="cities/kai.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏔️</div>
                     <h3>山梨市</h3>
                     <p>フルーツの宝庫。桃やぶどうの名産地です。</p>
                     <a href="cities/yamanashi.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌲</div>
                     <h3>上野原市</h3>
                     <p>神奈川県境の街。自然豊かで都心へのアクセスも良好。</p>
                     <a href="cities/uenohara.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌾</div>
                     <h3>中央市</h3>
                     <p>県の中央に位置する新しい市。農業が盛んです。</p>
                     <a href="cities/chuo.html" class="city-link">詳しく見る</a>
@@ -486,59 +373,58 @@
 
         <!-- 町 -->
         <div class="category-section">
-            <h2>🏘️ 町（8町）</h2>
+            <h2>町（8町）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <div class="city-icon">🎆</div>
                     <h3>市川三郷町</h3>
                     <p>花火の町として有名。伝統工芸品も豊富です。</p>
                     <a href="cities/ichikawamisato.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">⛰️</div>
+                    
                     <h3>早川町</h3>
                     <p>日本一人口の少ない町。手つかずの自然が魅力。</p>
                     <a href="cities/hayakawa.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🙏</div>
+                    
                     <h3>身延町</h3>
                     <p>日蓮宗総本山・身延山久遠寺で有名。あけぼの大豆が特産品。</p>
                     <a href="cities/minobu.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌸</div>
+                    
                     <h3>南部町</h3>
                     <p>南部茶や南部の火祭りで知られる町です。</p>
                     <a href="cities/nambu.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌊</div>
+                    
                     <h3>富士川町</h3>
                     <p>富士川沿いの町。豊かな自然と温泉が魅力。</p>
                     <a href="cities/fujikawa.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏡</div>
+                    
                     <h3>昭和町</h3>
                     <p>県内で最も面積が小さい町。住みやすさが魅力です。</p>
                     <a href="cities/showa.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🗻</div>
+                    
                     <h3>西桂町</h3>
                     <p>富士山の眺望が素晴らしい町。織物産業の歴史があります。</p>
                     <a href="cities/nishikatsura.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏞️</div>
+                    
                     <h3>富士河口湖町</h3>
                     <p>河口湖と富士山の絶景。国際的な観光地です。</p>
                     <a href="cities/fujikawaguchiko.html" class="city-link">詳しく見る</a>
@@ -548,45 +434,44 @@
 
         <!-- 村 -->
         <div class="category-section">
-            <h2>🌳 村（6村）</h2>
+            <h2>村（6村）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <div class="city-icon">💧</div>
                     <h3>道志村</h3>
                     <p>道志川の清流が美しい村。キャンプで人気です。</p>
                     <a href="cities/doshi.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🗻</div>
+                    
                     <h3>忍野村</h3>
                     <p>忍野八海で有名。富士山の湧水が豊富です。</p>
                     <a href="cities/oshino.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏞️</div>
+                    
                     <h3>山中湖村</h3>
                     <p>富士五湖最大の山中湖がある村。観光とレジャーの中心地。</p>
                     <a href="cities/yamanakako.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌲</div>
+                    
                     <h3>鳴沢村</h3>
                     <p>鳴沢氷穴や富岳風穴が有名。自然の神秘を体験できます。</p>
                     <a href="cities/narusawa.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🌳</div>
+                    
                     <h3>小菅村</h3>
                     <p>多摩川源流の村。清らかな水と森林が魅力です。</p>
                     <a href="cities/kosuge.html" class="city-link">詳しく見る</a>
                 </div>
 
                 <div class="city-card">
-                    <div class="city-icon">🏔️</div>
+                    
                     <h3>丹波山村</h3>
                     <p>県の最東端の村。手つかずの自然が残る秘境です。</p>
                     <a href="cities/tabayama.html" class="city-link">詳しく見る</a>

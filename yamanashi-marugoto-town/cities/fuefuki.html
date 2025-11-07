@@ -13,15 +13,15 @@
 
         body {
             font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f5;
             color: #333;
-            min-height: 100vh;
+            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(90deg, #F093FB 0%, #F5576C 100%);
+            background: #2c3e50;
             padding: 20px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         nav {
@@ -34,180 +34,159 @@
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 600;
             color: white;
             text-decoration: none;
         }
 
         .back-button {
             display: inline-block;
-            padding: 10px 25px;
-            background: white;
-            color: #F5576C;
+            padding: 8px 20px;
+            background: #34495e;
+            color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
+            font-size: 14px;
+            transition: background 0.2s;
         }
 
         .back-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background: #3d566e;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
         .city-header {
             background: white;
-            border-radius: 30px;
-            padding: 60px;
-            text-align: center;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            margin-bottom: 40px;
-        }
-
-        .city-icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            background: linear-gradient(135deg, #F093FB, #F5576C);
-            color: white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2c3e50;
         }
 
         .city-header h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #333;
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         .city-header p {
-            font-size: 20px;
-            color: #666;
-            line-height: 1.8;
+            font-size: 16px;
+            color: #7f8c8d;
         }
 
         .content-section {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            padding: 30px;
+            margin-bottom: 20px;
         }
 
         .content-section h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
-            color: #F5576C;
-            border-left: 5px solid #F5576C;
-            padding-left: 20px;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         .content-section p {
-            font-size: 18px;
+            font-size: 15px;
             line-height: 1.8;
             color: #555;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .specialty-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
         }
 
         .specialty-item {
-            background: linear-gradient(135deg, #ffeef8 0%, #ffc4e8 100%);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .specialty-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #7f8c8d;
         }
 
         .specialty-item h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #333;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         .specialty-item p {
-            font-size: 16px;
-            color: #666;
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
         }
 
         .info-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #34495e;
             color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 30px;
+            padding: 24px;
+            margin-top: 20px;
         }
 
         .info-box h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .info-box p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: white;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #FFE66D 0%, #FFAA5A 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin: 30px 0;
-            text-align: center;
+            background: #ecf0f1;
+            padding: 24px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
         }
 
         .highlight-box h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: 600;
         }
 
         .highlight-box p {
-            font-size: 18px;
+            font-size: 15px;
             color: #555;
+            margin: 0;
         }
 
         footer {
-            background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
-            color: white;
+            background: #2c3e50;
+            color: #bdc3c7;
             text-align: center;
             padding: 30px 20px;
             margin-top: 60px;
+            font-size: 14px;
         }
 
         @media (max-width: 768px) {
             .city-header {
-                padding: 40px 30px;
+                padding: 30px 20px;
             }
 
             .city-header h1 {
-                font-size: 32px;
+                font-size: 28px;
             }
 
             .content-section {
-                padding: 30px 20px;
+                padding: 24px 20px;
             }
         }
     </style>
@@ -215,26 +194,24 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo">🏔️ 山梨まるごとタウン</a>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
             <a href="../index.html" class="back-button">← 戻る</a>
         </nav>
     </header>
 
     <div class="container">
         <div class="city-header">
-            <div class="city-icon">🎋</div>
             <h1>笛吹市</h1>
             <p>日本一のフルーツ王国、桃とぶどうの里</p>
         </div>
 
         <div class="highlight-box">
-            <h3>🍡 桔梗屋 信玄餅</h3>
-            <p>山梨を代表する銘菓！黒蜜ときな粉が絡む、もちもちのお餅。<br>
-            笛吹市にある「桔梗屋信玄餅工場テーマパーク」は大人気の観光スポットです！</p>
+            <h3>桔梗屋 信玄餅</h3>
+            <p>山梨を代表する銘菓。黒蜜ときな粉が絡む、もちもちのお餅。笛吹市にある「桔梗屋信玄餅工場テーマパーク」は大人気の観光スポット。</p>
         </div>
 
         <div class="content-section">
-            <h2>🎯 笛吹市の魅力</h2>
+            <h2>笛吹市の魅力</h2>
             <p>
                 笛吹市は、山梨県のほぼ中央に位置し、日本一の桃・ぶどうの生産量を誇る「フルーツ王国」です。
                 笛吹川とその支流沿いに広がる肥沃な土地と、盆地特有の気候が、
@@ -247,56 +224,56 @@
         </div>
 
         <div class="content-section">
-            <h2>🍑 特産品・名産品</h2>
+            <h2>特産品・名産品</h2>
             <div class="specialty-grid">
                 <div class="specialty-item">
-                    <h3>🍑 桃</h3>
+                    <h3>桃</h3>
                     <p>日本一の生産量。甘くてジューシーな桃は絶品です。</p>
                 </div>
                 <div class="specialty-item">
-                    <h3>🍇 ぶどう</h3>
+                    <h3>ぶどう</h3>
                     <p>シャインマスカット、巨峰、ピオーネなど多種多様。</p>
                 </div>
                 <div class="specialty-item">
-                    <h3>🍡 桔梗屋信玄餅</h3>
+                    <h3>桔梗屋信玄餅</h3>
                     <p>山梨を代表する銘菓。黒蜜ときな粉が絶妙。</p>
                 </div>
                 <div class="specialty-item">
-                    <h3>🍷 ワイン</h3>
+                    <h3>ワイン</h3>
                     <p>地元産ぶどうで造られた上質なワイン。</p>
                 </div>
                 <div class="specialty-item">
-                    <h3>♨️ 温泉まんじゅう</h3>
+                    <h3>温泉まんじゅう</h3>
                     <p>石和温泉の名物。ふわふわのお饅頭。</p>
                 </div>
                 <div class="specialty-item">
-                    <h3>🌸 桃スイーツ</h3>
+                    <h3>桃スイーツ</h3>
                     <p>桃を使ったケーキ、タルト、ゼリーなど多彩。</p>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <h2>🏛️ 観光スポット</h2>
-            <p><strong>桔梗屋信玄餅工場テーマパーク：</strong>信玄餅の製造過程を見学できる人気施設。</p>
-            <p><strong>石和温泉郷：</strong>山梨県最大の温泉街。フルーツ狩りと温泉を楽しめる。</p>
-            <p><strong>桃の花観光：</strong>春には一面桃の花が咲き誇る「桃源郷」の絶景。</p>
-            <p><strong>笛吹川フルーツ公園：</strong>新日本三大夜景の一つ。果物をテーマにした公園。</p>
+            <h2>観光スポット</h2>
+            <p><strong>桔梗屋信玄餅工場テーマパーク</strong> - 信玄餅の製造過程を見学できる人気施設。</p>
+            <p><strong>石和温泉郷</strong> - 山梨県最大の温泉街。フルーツ狩りと温泉を楽しめる。</p>
+            <p><strong>桃の花観光</strong> - 春には一面桃の花が咲き誇る「桃源郷」の絶景。</p>
+            <p><strong>笛吹川フルーツ公園</strong> - 新日本三大夜景の一つ。果物をテーマにした公園。</p>
         </div>
 
         <div class="info-box">
-            <h3>📍 塩山駅前アンテナショップでできること</h3>
-            <p>✓ 桔梗屋信玄餅の購入</p>
-            <p>✓ 季節のフルーツ（桃、ぶどう）の販売</p>
-            <p>✓ フルーツを使ったスイーツの試食・購入</p>
-            <p>✓ 笛吹産ワインの試飲・購入</p>
-            <p>✓ フルーツ狩り情報の提供</p>
-            <p>✓ 石和温泉の割引券配布</p>
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>桔梗屋信玄餅の購入</p>
+            <p>季節のフルーツ（桃、ぶどう）の販売</p>
+            <p>フルーツを使ったスイーツの試食・購入</p>
+            <p>笛吹産ワインの試飲・購入</p>
+            <p>フルーツ狩り情報の提供</p>
+            <p>石和温泉の割引券配布</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 山梨まるごとタウン - All Rights Reserved</p>
+        <p>&copy; 2025 山梨まるごとタウン</p>
     </footer>
 </body>
 </html>
