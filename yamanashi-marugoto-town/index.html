@@ -13,16 +13,16 @@
 
         body {
             font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-            background: #f5f5f5;
+            background: #fafbfc;
             color: #333;
             line-height: 1.6;
         }
 
         /* ヘッダー */
         header {
-            background: #2c3e50;
+            background: #4a90e2;
             padding: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -58,20 +58,20 @@
         }
 
         .nav-links a:hover {
-            color: #3498db;
+            color: #ffd54f;
         }
 
         /* ヒーローセクション */
         .hero {
             background: white;
             padding: 100px 20px 80px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e8eef3;
         }
 
         .hero h1 {
             font-size: 42px;
             margin-bottom: 20px;
-            color: #2c3e50;
+            color: #2d3748;
             font-weight: 600;
             text-align: center;
         }
@@ -86,18 +86,20 @@
         .hero-button {
             display: inline-block;
             padding: 14px 40px;
-            background: #2c3e50;
+            background: #4a90e2;
             color: white;
             text-decoration: none;
             font-size: 16px;
-            transition: background 0.2s;
+            transition: all 0.3s;
             display: block;
             width: fit-content;
             margin: 0 auto;
+            border-radius: 6px;
         }
 
         .hero-button:hover {
-            background: #34495e;
+            background: #357abd;
+            transform: translateY(-1px);
         }
 
         /* メインコンテンツ */
@@ -110,10 +112,10 @@
         .section-title {
             font-size: 28px;
             margin-bottom: 40px;
-            color: #2c3e50;
+            color: #2d3748;
             font-weight: 600;
             padding-bottom: 12px;
-            border-bottom: 2px solid #2c3e50;
+            border-bottom: 2px solid #4a90e2;
         }
 
         /* 市町村カードグリッド */
@@ -126,19 +128,22 @@
 
         .city-card {
             background: white;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #e8eef3;
+            border-radius: 8px;
             padding: 24px;
-            transition: box-shadow 0.2s;
+            transition: all 0.3s;
         }
 
         .city-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.12);
+            transform: translateY(-2px);
+            border-color: #4a90e2;
         }
 
         .city-card h3 {
             font-size: 20px;
             margin-bottom: 12px;
-            color: #2c3e50;
+            color: #2d3748;
             font-weight: 600;
         }
 
@@ -152,15 +157,16 @@
         .city-link {
             display: inline-block;
             padding: 10px 24px;
-            background: #2c3e50;
+            background: #4a90e2;
             color: white;
             text-decoration: none;
             font-size: 14px;
-            transition: background 0.2s;
+            transition: all 0.2s;
+            border-radius: 4px;
         }
 
         .city-link:hover {
-            background: #34495e;
+            background: #357abd;
         }
 
         /* カテゴリー別セクション */
@@ -168,20 +174,21 @@
             background: white;
             padding: 40px;
             margin-bottom: 30px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #e8eef3;
+            border-radius: 12px;
         }
 
         .category-section h2 {
             font-size: 24px;
             margin-bottom: 30px;
-            color: #2c3e50;
+            color: #2d3748;
             font-weight: 600;
         }
 
         /* フッター */
         footer {
-            background: #2c3e50;
-            color: #ecf0f1;
+            background: #2d3748;
+            color: #e2e8f0;
             text-align: center;
             padding: 40px 20px;
             margin-top: 60px;
@@ -237,8 +244,9 @@
 
         /* アクセス情報 */
         .access-info {
-            background: white;
-            border-left: 4px solid #2c3e50;
+            background: #f7fafc;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
             padding: 30px;
             margin: 40px 0;
         }
@@ -246,7 +254,7 @@
         .access-info h2 {
             font-size: 22px;
             margin-bottom: 16px;
-            color: #2c3e50;
+            color: #2d3748;
             font-weight: 600;
         }
 
