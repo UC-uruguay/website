@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲州市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>甲州市</h1>
+            <p>ワインと干し柿（ころ柿）の名産地。歴史ある街並みが魅力</p>
+        </div>
+
+        <div class="content-section">
+            <h2>甲州市の魅力</h2>
+            <p>
+                甲州市は山梨県の東部に位置し、日本のワイン発祥の地として知られています。
+                市内には多数のワイナリーが点在し、「勝沼ぶどう郷」として全国的に有名です。
+                また、塩山地区には武田家ゆかりの史跡も多く、歴史と文化が息づく街です。
+            </p>
+            <p>
+                秋から冬にかけて作られる「ころ柿」（干し柿）は、オレンジ色のカーテンのように
+                軒先に吊るされ、風物詩となっています。温泉地としても知られ、
+                大菩薩峠へのハイキングの拠点としても人気があります。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>ワイン（甲州種）</h3>
+                    <p>日本固有のぶどう品種「甲州」を使った上質なワイン。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>甲州、巨峰、ピオーネなど多彩な品種。生食用も美味。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ころ柿（干し柿）</h3>
+                    <p>深い甘みと上品な味わい。皇室献上品としても有名。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>甘くてジューシー。夏の味覚として人気です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>大和芋</h3>
+                    <p>粘りが強く風味豊かな山芋。塩山地区の特産品。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ワインビーフ</h3>
+                    <p>ワインの搾りかすを飼料に育てた牛肉。柔らかく旨味たっぷり。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>勝沼ぶどうの丘</strong> - ワインカーヴで約200種類のワインが試飲できます。</p>
+            <p><strong>大善寺</strong> - 国宝の本堂を有する古刹。ぶどう寺として親しまれています。</p>
+            <p><strong>恵林寺</strong> - 武田信玄の菩提寺。美しい庭園も見どころ。</p>
+            <p><strong>大菩薩峠</strong> - 日本百名山の一つ。登山やハイキングに人気。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>甲州市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>ワインの試飲・販売</p>
+            <p>ころ柿の販売（冬季）</p>
+            <p>ワイナリー巡りマップの配布</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

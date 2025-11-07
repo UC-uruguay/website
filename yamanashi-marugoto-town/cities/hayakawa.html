@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早川町 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>早川町</h1>
+            <p>日本一人口の少ない町。手つかずの自然が魅力</p>
+        </div>
+
+        <div class="content-section">
+            <h2>早川町の魅力</h2>
+            <p>
+                早川町は、日本一人口が少ない町として知られ、総面積の96%を森林が占める自然豊かな山間の町です。
+                南アルプスの山々に囲まれ、早川渓谷の清流が流れる美しい景観が広がっています。
+            </p>
+            <p>
+                人口は少ないながらも、豊かな自然を活かしたエコツーリズムや、伝統的な山の暮らしを体験できる
+                プログラムが充実しており、都会では味わえない静寂と癒しを求める人々に人気です。
+                星空観察の名所としても知られ、澄んだ空気の中で満天の星を眺めることができます。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>早川ジビエ</h3>
+                    <p>鹿肉や猪肉を使った料理。自然の恵みを活かした美味。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>雨畑硯</h3>
+                    <p>国の伝統工芸品。雨畑地区で採れる石で作られる高級硯。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>早川町産そば</h3>
+                    <p>清流と寒暖差が育てる香り高い蕎麦。手打ちそばが絶品。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>山菜</h3>
+                    <p>わらび、ぜんまい、ふきなど、豊富な山の幸。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>きのこ類</h3>
+                    <p>しいたけ、なめこなど、山の恵みのきのこが豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>手作り味噌</h3>
+                    <p>伝統製法で作られる無添加の味噌。深い味わいが特徴。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>南アルプス邑</strong> - エコツーリズムの拠点。自然体験プログラムや宿泊施設が充実。</p>
+            <p><strong>七面山</strong> - 日蓮宗の霊山。登山と信仰の両方が楽しめる山。</p>
+            <p><strong>奈良田温泉</strong> - 秘境の温泉地。美しい渓谷に囲まれた癒しの湯。</p>
+            <p><strong>早川渓谷</strong> - 清流と深い緑が織りなす絶景。ハイキングに最適。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>早川町の特産品の購入</p>
+            <p>ジビエ料理の試食</p>
+            <p>雨畑硯の展示</p>
+            <p>山菜加工品の販売</p>
+            <p>エコツアー情報の提供</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

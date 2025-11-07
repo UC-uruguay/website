@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹波山村 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>丹波山村</h1>
+            <p>県の最東端の村。手つかずの自然が残る秘境です。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>丹波山村の魅力</h2>
+            <p>
+                丹波山村は、山梨県の最東端に位置し、東京都・埼玉県との県境に接する山村です。
+                村の面積の約97%が森林に覆われ、「秘境」と呼ばれるほど手つかずの自然が残る貴重な地域です。
+                多摩川の最上流部に位置し、清らかな渓流と深い森林が織りなす景観は、訪れる人々を魅了します。
+            </p>
+            <p>
+                標高1,000m〜2,000m級の山々に囲まれ、奥秩父山塊の一角をなしています。
+                近年は、自然環境を活かした観光に力を入れており、トレッキング、渓流釣り、森林セラピーなど、
+                都会では味わえない自然体験が楽しめます。また、ジビエ料理の提供など、
+                地域資源を活かした取り組みも注目されており、「本物の自然」を求める人々が訪れています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>ヤマメ・イワナ</h3>
+                    <p>多摩川源流域の清流で育った川魚。甘露煮や塩焼きが絶品。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>丹波山ジビエ</h3>
+                    <p>鹿肉や猪肉を使った料理。高タンパク・低カロリーで健康的。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>山菜</h3>
+                    <p>わらび、こごみ、タラの芽など、春の山菜が豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>きのこ</h3>
+                    <p>天然のきのこが豊富。しいたけ、なめこ、舞茸など。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>源流水</h3>
+                    <p>多摩川最上流の天然水。清らかで美味しい水です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>丹波渓谷そば</h3>
+                    <p>渓谷の清流水で打つそば。香りとコシが自慢です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>丹波川渓谷</strong> - 手つかずの自然が残る美しい渓谷。トレッキングコースも充実。</p>
+            <p><strong>のめこい湯</strong> - 自然に囲まれた温泉施設。渓流を眺めながら入浴できます。</p>
+            <p><strong>七ツ釜五段の滝</strong> - 神秘的な滝と釜が連なる景勝地。パワースポットとしても人気。</p>
+            <p><strong>丹波山温泉郷</strong> - 秘境の温泉地。山の幸を味わいながらゆっくり過ごせます。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>丹波山村の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>ジビエ加工品の販売</p>
+            <p>川魚の甘露煮販売</p>
+            <p>トレッキング・温泉情報提供</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

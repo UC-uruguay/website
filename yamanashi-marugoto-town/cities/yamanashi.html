@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山梨市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>山梨市</h1>
+            <p>フルーツの宝庫。桃やぶどうの名産地です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>山梨市の魅力</h2>
+            <p>
+                山梨市は県の中東部に位置し、笛吹川と重川の流域に広がる盆地の街です。
+                日照時間が長く、昼夜の寒暖差が大きい気候は果樹栽培に最適で、
+                特に桃とぶどうの生産が盛んです。市の名前が県名と同じという珍しい自治体でもあります。
+            </p>
+            <p>
+                フルーツ王国として知られる山梨市は、春には桃の花、夏には桃狩り、
+                秋にはぶどう狩りと、一年を通じて果物の魅力を楽しむことができます。
+                また、西沢渓谷などの豊かな自然も魅力の一つです。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>とろけるような甘さとジューシーさ。県内トップクラスの生産量。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>巨峰、ピオーネ、シャインマスカットなど多彩な品種。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>さくらんぼ</h3>
+                    <p>初夏の宝石。佐藤錦や紅秀峰が人気です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ワイン</h3>
+                    <p>地元産ぶどうを使った上質なワイン。ワイナリー巡りも人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ころ柿</h3>
+                    <p>寒い時期に作られる干し柿。深い甘みが特徴です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>フルーツほうとう</h3>
+                    <p>地元のフルーツをトッピングした新感覚のほうとう。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>西沢渓谷</strong> - 日本の滝百選の一つ。紅葉の名所としても有名。</p>
+            <p><strong>笛吹川フルーツ公園</strong> - 果物のテーマパーク。夜景スポットとしても人気。</p>
+            <p><strong>ほったらかし温泉</strong> - 絶景の露天風呂。富士山と甲府盆地を一望。</p>
+            <p><strong>観光農園</strong> - 桃狩り、ぶどう狩りが楽しめる農園が多数。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>山梨市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>季節のフルーツの直売</p>
+            <p>ワインの試飲</p>
+            <p>ころ柿の販売（冬季）</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

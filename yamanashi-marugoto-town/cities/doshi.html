@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道志村 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>道志村</h1>
+            <p>道志川の清流が美しい村。キャンプで人気です。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>道志村の魅力</h2>
+            <p>
+                道志村は、神奈川県との県境に位置し、村の中央を流れる道志川の清流で知られています。
+                この美しい川は横浜市の水源地としても利用され、「横浜の水源」として横浜市民にも馴染み深い場所です。
+            </p>
+            <p>
+                村の面積の約95%が森林で覆われており、豊かな自然環境が魅力です。
+                夏には多くのキャンパーが訪れ、道志川沿いには約50ものキャンプ場が点在しています。
+                清流での川遊びや釣り、森林浴など、アウトドアアクティビティが充実しています。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>ヤマメ・イワナ</h3>
+                    <p>道志川の清流で育った新鮮な川魚。塩焼きが絶品です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>道志ポーク</h3>
+                    <p>清らかな水と自然環境で育てられた上質な豚肉。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>わさび</h3>
+                    <p>清流を活かして栽培される香り高い本わさび。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>山菜</h3>
+                    <p>豊かな森林で採れる山菜。わらび、ぜんまいなど種類豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>きのこ</h3>
+                    <p>しいたけ、なめこなど、道志の森で育つ天然きのこ。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>手打ちそば</h3>
+                    <p>清らかな水で打つそば。村内の蕎麦屋で味わえます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>道志川</strong> - 透明度の高い清流。川遊び、釣り、キャンプが楽しめます。</p>
+            <p><strong>道の駅どうし</strong> - 村の特産品や新鮮野菜が揃う道の駅。食事処も併設。</p>
+            <p><strong>道志の湯</strong> - 自然に囲まれた日帰り温泉施設。疲れを癒せます。</p>
+            <p><strong>キャンプ場群</strong> - 道志川沿いに約50のキャンプ場。初心者から上級者まで楽しめます。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>道志村の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>川魚の加工品販売</p>
+            <p>キャンプ場情報の提供</p>
+            <p>山菜・きのこの季節販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>
