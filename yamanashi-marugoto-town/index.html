@@ -13,16 +13,16 @@
 
         body {
             font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-            background: #fafbfc;
+            background: linear-gradient(to bottom, #f0f9ff 0%, #fef3c7 100%);
             color: #333;
             line-height: 1.6;
         }
 
         /* ヘッダー */
         header {
-            background: #4a90e2;
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
             padding: 20px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 12px rgba(74, 144, 226, 0.3);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -86,7 +86,7 @@
         .hero-button {
             display: inline-block;
             padding: 14px 40px;
-            background: #4a90e2;
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
             color: white;
             text-decoration: none;
             font-size: 16px;
@@ -94,12 +94,13 @@
             display: block;
             width: fit-content;
             margin: 0 auto;
-            border-radius: 6px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
         }
 
         .hero-button:hover {
-            background: #357abd;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
         }
 
         /* メインコンテンツ */
@@ -128,16 +129,34 @@
 
         .city-card {
             background: white;
-            border: 1px solid #e8eef3;
-            border-radius: 8px;
+            border: 2px solid transparent;
+            border-radius: 12px;
             padding: 24px;
             transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .city-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a90e2, #6366f1, #a855f7);
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
         .city-card:hover {
-            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.12);
-            transform: translateY(-2px);
-            border-color: #4a90e2;
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.2);
+            transform: translateY(-4px);
+            border-color: #e0e7ff;
+        }
+
+        .city-card:hover::before {
+            opacity: 1;
         }
 
         .city-card h3 {
@@ -157,16 +176,18 @@
         .city-link {
             display: inline-block;
             padding: 10px 24px;
-            background: #4a90e2;
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
             color: white;
             text-decoration: none;
             font-size: 14px;
-            transition: all 0.2s;
-            border-radius: 4px;
+            transition: all 0.3s;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
         }
 
         .city-link:hover {
-            background: #357abd;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
         }
 
         /* カテゴリー別セクション */
@@ -174,8 +195,8 @@
             background: white;
             padding: 40px;
             margin-bottom: 30px;
-            border: 1px solid #e8eef3;
-            border-radius: 12px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         .category-section h2 {
@@ -183,6 +204,9 @@
             margin-bottom: 30px;
             color: #2d3748;
             font-weight: 600;
+            display: inline-block;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #4a90e2;
         }
 
         /* フッター */
@@ -244,11 +268,12 @@
 
         /* アクセス情報 */
         .access-info {
-            background: #f7fafc;
-            border-left: 4px solid #4a90e2;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #dbeafe 0%, #fef3c7 100%);
+            border-left: 5px solid #4a90e2;
+            border-radius: 12px;
             padding: 30px;
             margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
         }
 
         .access-info h2 {
@@ -268,7 +293,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">山梨まるごとタウン</div>
+            <div class="logo">🏔️ 山梨まるごとタウン</div>
             <ul class="nav-links">
                 <li><a href="#home">ホーム</a></li>
                 <li><a href="#cities">市町村を探す</a></li>
@@ -285,7 +310,7 @@
 
     <div class="container">
         <div class="access-info">
-            <h2>アクセス</h2>
+            <h2>📍 アクセス</h2>
             <p>
                 <strong>場所：</strong>JR塩山駅周辺<br>
                 山梨県の全27市町村のアンテナショップが集結！<br>
@@ -293,11 +318,11 @@
             </p>
         </div>
 
-        <h2 class="section-title" id="cities">山梨27市町村アンテナショップ</h2>
+        <h2 class="section-title" id="cities">🏘️ 山梨27市町村アンテナショップ</h2>
 
         <!-- 市 -->
         <div class="category-section">
-            <h2>市（13市）</h2>
+            <h2>🏙️ 市（13市）</h2>
             <div class="cities-grid">
                 <div class="city-card">
                     <h3>甲府市</h3>
@@ -381,7 +406,7 @@
 
         <!-- 町 -->
         <div class="category-section">
-            <h2>町（8町）</h2>
+            <h2>🏘️ 町（8町）</h2>
             <div class="cities-grid">
                 <div class="city-card">
                     <h3>市川三郷町</h3>
@@ -442,7 +467,7 @@
 
         <!-- 村 -->
         <div class="category-section">
-            <h2>村（6村）</h2>
+            <h2>🌳 村（6村）</h2>
             <div class="cities-grid">
                 <div class="city-card">
                     <h3>道志村</h3>
