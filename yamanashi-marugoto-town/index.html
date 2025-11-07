@@ -63,7 +63,8 @@
 
         /* ヒーローセクション */
         .hero {
-            background: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)),
+                        url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1600&q=80') center/cover;
             padding: 100px 20px 80px;
             border-bottom: 1px solid #e8eef3;
         }
@@ -131,10 +132,21 @@
             background: white;
             border: 2px solid transparent;
             border-radius: 12px;
-            padding: 24px;
+            padding: 0;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
+        }
+
+        .city-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .city-content {
+            padding: 24px;
         }
 
         .city-card::before {
@@ -325,81 +337,120 @@
             <h2>🏙️ 市（13市）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <h3>甲府市</h3>
-                    <p>県庁所在地。甲府ブランド製品や武田信玄ゆかりの品々が魅力。</p>
-                    <a href="cities/kofu.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1566232392379-afd9298e6a46?w=600&q=80" alt="甲府市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲府市</h3>
+                        <p>県庁所在地。甲府ブランド製品や武田信玄ゆかりの品々が魅力。</p>
+                        <a href="cities/kofu.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>富士吉田市</h3>
-                    <p>富士山の麓の街。有名な「吉田のうどん」が自慢です。</p>
-                    <a href="cities/fujiyoshida.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="富士吉田市" class="city-image">
+                    <div class="city-content">
+                        <h3>富士吉田市</h3>
+                        <p>富士山の麓の街。有名な「吉田のうどん」が自慢です。</p>
+                        <a href="cities/fujiyoshida.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>笛吹市</h3>
-                    <p>フルーツ王国。桔梗屋信玄餅の工場テーマパークがあります。</p>
-                    <a href="cities/fuefuki.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1629828874514-7e1f6f362b90?w=600&q=80" alt="笛吹市" class="city-image">
+                    <div class="city-content">
+                        <h3>笛吹市</h3>
+                        <p>フルーツ王国。桔梗屋信玄餅の工場テーマパークがあります。</p>
+                        <a href="cities/fuefuki.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>甲州市</h3>
-                    <p>ワインと干し柿（ころ柿）の名産地。歴史ある街並みが魅力。</p>
-                    <a href="cities/koshu.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80" alt="甲州市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲州市</h3>
+                        <p>ワインと干し柿（ころ柿）の名産地。歴史ある街並みが魅力。</p>
+                        <a href="cities/koshu.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>北杜市</h3>
-                    <p>八ヶ岳の麓。北杜米を使った上質なスイーツが人気。</p>
-                    <a href="cities/hokuto.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="北杜市" class="city-image">
+                    <div class="city-content">
+                        <h3>北杜市</h3>
+                        <p>八ヶ岳の麓。北杜米を使った上質なスイーツが人気。</p>
+                        <a href="cities/hokuto.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>南アルプス市</h3>
-                    <p>南アルプスの玄関口。ころ柿や果物が有名です。</p>
-                    <a href="cities/minamialps.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&q=80" alt="南アルプス市" class="city-image">
+                    <div class="city-content">
+                        <h3>南アルプス市</h3>
+                        <p>南アルプスの玄関口。ころ柿や果物が有名です。</p>
+                        <a href="cities/minamialps.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>都留市</h3>
-                    <p>豊かな自然と水の都。大学の街としても知られています。</p>
-                    <a href="cities/tsuru.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="都留市" class="city-image">
+                    <div class="city-content">
+                        <h3>都留市</h3>
+                        <p>豊かな自然と水の都。大学の街としても知られています。</p>
+                        <a href="cities/tsuru.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>大月市</h3>
-                    <p>富士山の眺望が美しい街。鉄道ファンに人気の地域です。</p>
-                    <a href="cities/otsuki.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&q=80" alt="大月市" class="city-image">
+                    <div class="city-content">
+                        <h3>大月市</h3>
+                        <p>富士山の眺望が美しい街。鉄道ファンに人気の地域です。</p>
+                        <a href="cities/otsuki.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>韮崎市</h3>
-                    <p>武田家ゆかりの地。桜と歴史が息づく街です。</p>
-                    <a href="cities/nirasaki.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=600&q=80" alt="韮崎市" class="city-image">
+                    <div class="city-content">
+                        <h3>韮崎市</h3>
+                        <p>武田家ゆかりの地。桜と歴史が息づく街です。</p>
+                        <a href="cities/nirasaki.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>甲斐市</h3>
-                    <p>文化芸術が盛んな街。快適な住環境が魅力です。</p>
-                    <a href="cities/kai.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="甲斐市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲斐市</h3>
+                        <p>文化芸術が盛んな街。快適な住環境が魅力です。</p>
+                        <a href="cities/kai.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>山梨市</h3>
-                    <p>フルーツの宝庫。桃やぶどうの名産地です。</p>
-                    <a href="cities/yamanashi.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=600&q=80" alt="山梨市" class="city-image">
+                    <div class="city-content">
+                        <h3>山梨市</h3>
+                        <p>フルーツの宝庫。桃やぶどうの名産地です。</p>
+                        <a href="cities/yamanashi.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>上野原市</h3>
-                    <p>神奈川県境の街。自然豊かで都心へのアクセスも良好。</p>
-                    <a href="cities/uenohara.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600&q=80" alt="上野原市" class="city-image">
+                    <div class="city-content">
+                        <h3>上野原市</h3>
+                        <p>神奈川県境の街。自然豊かで都心へのアクセスも良好。</p>
+                        <a href="cities/uenohara.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    <h3>中央市</h3>
-                    <p>県の中央に位置する新しい市。農業が盛んです。</p>
-                    <a href="cities/chuo.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="中央市" class="city-image">
+                    <div class="city-content">
+                        <h3>中央市</h3>
+                        <p>県の中央に位置する新しい市。農業が盛んです。</p>
+                        <a href="cities/chuo.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -409,58 +460,75 @@
             <h2>🏘️ 町（8町）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <h3>市川三郷町</h3>
-                    <p>花火の町として有名。伝統工芸品も豊富です。</p>
-                    <a href="cities/ichikawamisato.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e6?w=600&q=80" alt="市川三郷町" class="city-image">
+                    <div class="city-content">
+                        <h3>市川三郷町</h3>
+                        <p>花火の町として有名。伝統工芸品も豊富です。</p>
+                        <a href="cities/ichikawamisato.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>早川町</h3>
-                    <p>日本一人口の少ない町。手つかずの自然が魅力。</p>
-                    <a href="cities/hayakawa.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="早川町" class="city-image">
+                    <div class="city-content">
+                        <h3>早川町</h3>
+                        <p>日本一人口の少ない町。手つかずの自然が魅力。</p>
+                        <a href="cities/hayakawa.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>身延町</h3>
-                    <p>日蓮宗総本山・身延山久遠寺で有名。あけぼの大豆が特産品。</p>
-                    <a href="cities/minobu.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600&q=80" alt="身延町" class="city-image">
+                    <div class="city-content">
+                        <h3>身延町</h3>
+                        <p>日蓮宗総本山・身延山久遠寺で有名。あけぼの大豆が特産品。</p>
+                        <a href="cities/minobu.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>南部町</h3>
-                    <p>南部茶や南部の火祭りで知られる町です。</p>
-                    <a href="cities/nambu.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1563223552-7f5474f04825?w=600&q=80" alt="南部町" class="city-image">
+                    <div class="city-content">
+                        <h3>南部町</h3>
+                        <p>南部茶や南部の火祭りで知られる町です。</p>
+                        <a href="cities/nambu.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>富士川町</h3>
-                    <p>富士川沿いの町。豊かな自然と温泉が魅力。</p>
-                    <a href="cities/fujikawa.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="富士川町" class="city-image">
+                    <div class="city-content">
+                        <h3>富士川町</h3>
+                        <p>富士川沿いの町。豊かな自然と温泉が魅力。</p>
+                        <a href="cities/fujikawa.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>昭和町</h3>
-                    <p>県内で最も面積が小さい町。住みやすさが魅力です。</p>
-                    <a href="cities/showa.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="昭和町" class="city-image">
+                    <div class="city-content">
+                        <h3>昭和町</h3>
+                        <p>県内で最も面積が小さい町。住みやすさが魅力です。</p>
+                        <a href="cities/showa.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>西桂町</h3>
-                    <p>富士山の眺望が素晴らしい町。織物産業の歴史があります。</p>
-                    <a href="cities/nishikatsura.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="西桂町" class="city-image">
+                    <div class="city-content">
+                        <h3>西桂町</h3>
+                        <p>富士山の眺望が素晴らしい町。織物産業の歴史があります。</p>
+                        <a href="cities/nishikatsura.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>富士河口湖町</h3>
-                    <p>河口湖と富士山の絶景。国際的な観光地です。</p>
-                    <a href="cities/fujikawaguchiko.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="富士河口湖町" class="city-image">
+                    <div class="city-content">
+                        <h3>富士河口湖町</h3>
+                        <p>河口湖と富士山の絶景。国際的な観光地です。</p>
+                        <a href="cities/fujikawaguchiko.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,44 +538,57 @@
             <h2>🌳 村（6村）</h2>
             <div class="cities-grid">
                 <div class="city-card">
-                    <h3>道志村</h3>
-                    <p>道志川の清流が美しい村。キャンプで人気です。</p>
-                    <a href="cities/doshi.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80" alt="道志村" class="city-image">
+                    <div class="city-content">
+                        <h3>道志村</h3>
+                        <p>道志川の清流が美しい村。キャンプで人気です。</p>
+                        <a href="cities/doshi.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>忍野村</h3>
-                    <p>忍野八海で有名。富士山の湧水が豊富です。</p>
-                    <a href="cities/oshino.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="忍野村" class="city-image">
+                    <div class="city-content">
+                        <h3>忍野村</h3>
+                        <p>忍野八海で有名。富士山の湧水が豊富です。</p>
+                        <a href="cities/oshino.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>山中湖村</h3>
-                    <p>富士五湖最大の山中湖がある村。観光とレジャーの中心地。</p>
-                    <a href="cities/yamanakako.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="山中湖村" class="city-image">
+                    <div class="city-content">
+                        <h3>山中湖村</h3>
+                        <p>富士五湖最大の山中湖がある村。観光とレジャーの中心地。</p>
+                        <a href="cities/yamanakako.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>鳴沢村</h3>
-                    <p>鳴沢氷穴や富岳風穴が有名。自然の神秘を体験できます。</p>
-                    <a href="cities/narusawa.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="鳴沢村" class="city-image">
+                    <div class="city-content">
+                        <h3>鳴沢村</h3>
+                        <p>鳴沢氷穴や富岳風穴が有名。自然の神秘を体験できます。</p>
+                        <a href="cities/narusawa.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>小菅村</h3>
-                    <p>多摩川源流の村。清らかな水と森林が魅力です。</p>
-                    <a href="cities/kosuge.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="小菅村" class="city-image">
+                    <div class="city-content">
+                        <h3>小菅村</h3>
+                        <p>多摩川源流の村。清らかな水と森林が魅力です。</p>
+                        <a href="cities/kosuge.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
 
                 <div class="city-card">
-                    
-                    <h3>丹波山村</h3>
-                    <p>県の最東端の村。手つかずの自然が残る秘境です。</p>
-                    <a href="cities/tabayama.html" class="city-link">詳しく見る</a>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="丹波山村" class="city-image">
+                    <div class="city-content">
+                        <h3>丹波山村</h3>
+                        <p>県の最東端の村。手つかずの自然が残る秘境です。</p>
+                        <a href="cities/tabayama.html" class="city-link">詳しく見る</a>
+                    </div>
                 </div>
             </div>
         </div>
