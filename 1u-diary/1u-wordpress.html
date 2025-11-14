@@ -1,0 +1,116 @@
+<div id="kids-diary-recorder" style="max-width:520px;margin:20px auto;padding:16px;border:1px solid #ddd;border-radius:12px;">
+  <h3 style="margin:0 0 12px;">いちゆう日記 レコーダー</h3>
+
+  <button id="btnToggle" style="padding:12px 18px;border-radius:10px;">
+    🎙️ 録音開始
+  </button>
+
+  <div id="status" style="margin-top:12px;color:#555;">準備OK（HTTPS必須）</div>
+  <audio id="preview" controls style="width:100%;margin-top:8px;display:none;"></audio>
+  <div id="result" style="margin-top:8px;"></div>
+</div>
+
+<script>
+(function() {
+  const btnToggle = document.getElementById('btnToggle');
+  const statusEl  = document.getElementById('status');
+  const audioEl   = document.getElementById('preview');
+  const resultEl  = document.getElementById('result');
+
+  // ← n8nのProduction URLに置き換え
+  const WEBHOOK_URL = 'http://35.200.56.246:5678/webhook/kids-diary-audio';
+
+  let mediaRecorder, chunks = [], stream, recording = false, mimeType, ext;
+
+  function setStatus(t){ statusEl.textContent = t; }
+  function ymdTokyo(){
+    const d = new Date();
+    const y = new Intl.DateTimeFormat('ja-JP',{year:'numeric', timeZone:'Asia/Tokyo'}).format(d);
+    const m = new Intl.DateTimeFormat('ja-JP',{month:'2-digit', timeZone:'Asia/Tokyo'}).format(d);
+    const dd= new Intl.DateTimeFormat('ja-JP',{day:'2-digit',   timeZone:'Asia/Tokyo'}).format(d);
+    return y + '/' + m + '/' + dd;
+  }
+  function pickMimeType(){
+    const candidates = ['audio/webm;codecs=opus','audio/webm','audio/mp4'];
+    for (const c of candidates){
+      if (window.MediaRecorder && MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(c)){
+        return c;
+      }
+    }
+    return '';
+  }
+
+  async function startRecording(){
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      chunks = [];
+      mimeType = pickMimeType();
+      ext = mimeType.includes('mp4') ? 'm4a' : 'webm';
+
+      mediaRecorder = new MediaRecorder(stream, mimeType ? { mimeType: mimeType } : undefined);
+      mediaRecorder.ondataavailable = function(e) { if (e.data.size > 0) chunks.push(e.data); };
+      mediaRecorder.onstop = onStop;
+
+      mediaRecorder.start();
+      recording = true;
+      btnToggle.textContent = '⏹️ 録音停止';
+      setStatus('録音中…話し終わったら「録音停止」を押してください');
+
+      setTimeout(function(){ if (mediaRecorder && mediaRecorder.state==='recording') stopRecording(); }, 5*60*1000);
+    } catch (e) {
+      console.error(e);
+      setStatus('マイクの許可が必要です（HTTPS必須）。');
+    }
+  }
+
+  function stopRecording(){
+    if (mediaRecorder && mediaRecorder.state === 'recording') {
+      mediaRecorder.stop();
+      setStatus('処理中…');
+    }
+  }
+
+  async function onStop(){
+    try {
+      const blob = new Blob(chunks, { type: mimeType || 'audio/webm' });
+      audioEl.src = URL.createObjectURL(blob);
+      audioEl.style.display = 'block';
+
+      setStatus('音声をアップロード中…');
+
+      const fd = new FormData();
+      fd.append('audio', blob, 'kids-diary.' + (ext || 'webm'));
+      fd.append('child_name', 'いちゆう');
+      fd.append('date', ymdTokyo());
+
+      const res = await fetch(WEBHOOK_URL, { method: 'POST', body: fd });
+      const data = await res.json().catch(function(){ return {}; });
+
+      if (res.ok) {
+        setStatus('公開完了！');
+        resultEl.innerHTML = data.link
+          ? '<a href="' + data.link + '" target="_blank" rel="noopener">公開ページを開く → ' + data.link + '</a>'
+          : '公開URLの取得に成功しました（レスポンスにlinkなし）';
+      } else {
+        setStatus('エラー発生');
+        resultEl.textContent = '詳細: ' + (data.message || res.status);
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('送信に失敗しました');
+      resultEl.textContent = '';
+    } finally {
+      try { if(stream) stream.getTracks().forEach(function(t){ t.stop(); }); } catch(e) {}
+      recording = false;
+      btnToggle.textContent = '🎙️ 録音開始';
+    }
+  }
+
+  btnToggle.addEventListener('click', function() {
+    if (!recording) startRecording();
+    else            stopRecording();
+  });
+
+  setStatus('準備OK（HTTPS必須）');
+})();
+</script>

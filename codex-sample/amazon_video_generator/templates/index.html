@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon書籍動画ジェネレーター</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon書籍 紹介動画ジェネレーター</h1>
+        <p>Amazonの書籍ページのURLを貼り付けてください</p>
+        <form action="/" method="POST">
+            <input type="url" name="amazon_url" placeholder="[https://www.amazon.co.jp/](https://www.amazon.co.jp/)..." required>
+            <button type="submit">動画を生成</button>
+        </form>
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

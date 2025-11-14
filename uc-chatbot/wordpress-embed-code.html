@@ -1,0 +1,462 @@
+<!--
+  UCチャットボット - WordPress埋め込みコード
+
+  使い方：
+  1. WordPressダッシュボードにログイン
+  2. 外観 > ウィジェット に移動
+  3. 「カスタムHTML」ウィジェットを追加
+  4. 以下のコードをコピー&ペースト
+
+  または：
+
+  1. 固定ページまたは投稿を編集
+  2. カスタムHTMLブロックを追加
+  3. 以下のコードをペースト
+-->
+
+<div id="uc-chatbot-embed"></div>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #uc-chatbot-embed .chatbot-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+
+    #uc-chatbot-embed .chatbot-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    #uc-chatbot-embed .chatbot-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #uc-chatbot-embed .chatbot-button svg {
+        width: 28px;
+        height: 28px;
+        fill: white;
+    }
+
+    #uc-chatbot-embed .chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        width: 380px;
+        height: 600px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        flex-direction: column;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    #uc-chatbot-embed .chatbot-window.active {
+        display: flex;
+    }
+
+    #uc-chatbot-embed .chatbot-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #uc-chatbot-embed .chatbot-header h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    #uc-chatbot-embed .chatbot-header p {
+        font-size: 12px;
+        opacity: 0.9;
+        margin: 4px 0 0 0;
+    }
+
+    #uc-chatbot-embed .chatbot-close {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    #uc-chatbot-embed .chatbot-close:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    #uc-chatbot-embed .chatbot-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px;
+        background: #f7f8fa;
+    }
+
+    #uc-chatbot-embed .message {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 8px;
+    }
+
+    #uc-chatbot-embed .message.user {
+        flex-direction: row-reverse;
+    }
+
+    #uc-chatbot-embed .message-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    #uc-chatbot-embed .message.bot .message-avatar {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+
+    #uc-chatbot-embed .message.user .message-avatar {
+        background: #e0e0e0;
+        color: #333;
+    }
+
+    #uc-chatbot-embed .message-content {
+        max-width: 70%;
+        padding: 12px 16px;
+        border-radius: 12px;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    #uc-chatbot-embed .message.bot .message-content {
+        background: white;
+        color: #333;
+        border-bottom-left-radius: 4px;
+    }
+
+    #uc-chatbot-embed .message.user .message-content {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-bottom-right-radius: 4px;
+    }
+
+    #uc-chatbot-embed .typing-indicator {
+        display: none;
+        padding: 12px 16px;
+        background: white;
+        border-radius: 12px;
+        width: fit-content;
+    }
+
+    #uc-chatbot-embed .typing-indicator.active {
+        display: block;
+    }
+
+    #uc-chatbot-embed .typing-indicator span {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #667eea;
+        margin: 0 2px;
+        animation: uc-typing 1.4s infinite;
+    }
+
+    #uc-chatbot-embed .typing-indicator span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    #uc-chatbot-embed .typing-indicator span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes uc-typing {
+        0%, 60%, 100% {
+            transform: translateY(0);
+            opacity: 0.7;
+        }
+        30% {
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+    }
+
+    #uc-chatbot-embed .chatbot-input-container {
+        padding: 16px;
+        background: white;
+        border-top: 1px solid #e0e0e0;
+        display: flex;
+        gap: 8px;
+    }
+
+    #uc-chatbot-embed .chatbot-input {
+        flex: 1;
+        border: 1px solid #e0e0e0;
+        border-radius: 24px;
+        padding: 12px 16px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.2s;
+        font-family: inherit;
+    }
+
+    #uc-chatbot-embed .chatbot-input:focus {
+        border-color: #667eea;
+    }
+
+    #uc-chatbot-embed .chatbot-send {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+    }
+
+    #uc-chatbot-embed .chatbot-send:hover {
+        transform: scale(1.05);
+    }
+
+    #uc-chatbot-embed .chatbot-send:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    #uc-chatbot-embed .quick-questions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    #uc-chatbot-embed .quick-question-btn {
+        background: white;
+        border: 1px solid #667eea;
+        color: #667eea;
+        padding: 8px 12px;
+        border-radius: 16px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    #uc-chatbot-embed .quick-question-btn:hover {
+        background: #667eea;
+        color: white;
+    }
+
+    @media (max-width: 480px) {
+        #uc-chatbot-embed .chatbot-window {
+            width: calc(100vw - 40px);
+            height: calc(100vh - 120px);
+            bottom: 90px;
+        }
+    }
+</style>
+
+<script>
+(function() {
+    // チャットボットAPIのURL（本番環境では適切なURLに変更してください）
+    const API_URL = 'http://localhost:3000/api/chat';
+
+    const container = document.getElementById('uc-chatbot-embed');
+
+    // チャットボットHTMLを作成
+    container.innerHTML = `
+        <div class="chatbot-container">
+            <button class="chatbot-button" id="uc-chatbot-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+                </svg>
+            </button>
+
+            <div class="chatbot-window" id="uc-chatbot-window">
+                <div class="chatbot-header">
+                    <div>
+                        <h3>UCについて聞いてみよう！</h3>
+                        <p>何でも質問してください</p>
+                    </div>
+                    <button class="chatbot-close" id="uc-chatbot-close">×</button>
+                </div>
+
+                <div class="chatbot-messages" id="uc-chatbot-messages">
+                    <div class="message bot">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            はじめまして！UCについて何でも聞いてください！<br><br>
+                            例えば：
+                            <div class="quick-questions">
+                                <button class="quick-question-btn" data-question="UCって誰ですか？">UCって誰？</button>
+                                <button class="quick-question-btn" data-question="どんな会社を経営していますか？">会社について</button>
+                                <button class="quick-question-btn" data-question="サハラマラソンについて教えて">サハラマラソン</button>
+                                <button class="quick-question-btn" data-question="とりあえず精神って何ですか？">とりあえず精神</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chatbot-input-container">
+                    <input type="text" class="chatbot-input" id="uc-chatbot-input" placeholder="メッセージを入力...">
+                    <button class="chatbot-send" id="uc-chatbot-send">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // 要素取得
+    const chatbotToggle = document.getElementById('uc-chatbot-toggle');
+    const chatbotWindow = document.getElementById('uc-chatbot-window');
+    const chatbotClose = document.getElementById('uc-chatbot-close');
+    const chatbotMessages = document.getElementById('uc-chatbot-messages');
+    const chatbotInput = document.getElementById('uc-chatbot-input');
+    const chatbotSend = document.getElementById('uc-chatbot-send');
+
+    let conversationHistory = [];
+
+    // トグル
+    chatbotToggle.addEventListener('click', function() {
+        chatbotWindow.classList.toggle('active');
+        if (chatbotWindow.classList.contains('active')) {
+            chatbotInput.focus();
+        }
+    });
+
+    chatbotClose.addEventListener('click', function() {
+        chatbotWindow.classList.remove('active');
+    });
+
+    // クイック質問ボタン
+    container.addEventListener('click', function(e) {
+        if (e.target.classList.contains('quick-question-btn')) {
+            const question = e.target.getAttribute('data-question');
+            sendMessage(question);
+        }
+    });
+
+    // メッセージ送信
+    async function sendMessage(message) {
+        const userMessage = message || chatbotInput.value.trim();
+        if (!userMessage) return;
+
+        addMessage(userMessage, 'user');
+        chatbotInput.value = '';
+
+        // タイピングインジケータ
+        const typingIndicator = document.createElement('div');
+        typingIndicator.className = 'typing-indicator active';
+        typingIndicator.innerHTML = '<span></span><span></span><span></span>';
+        chatbotMessages.appendChild(typingIndicator);
+        scrollToBottom();
+
+        chatbotSend.disabled = true;
+
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: userMessage,
+                    history: conversationHistory
+                })
+            });
+
+            const data = await response.json();
+            typingIndicator.remove();
+            addMessage(data.response, 'bot');
+
+            conversationHistory.push(
+                { role: 'user', content: userMessage },
+                { role: 'assistant', content: data.response }
+            );
+
+            if (conversationHistory.length > 20) {
+                conversationHistory = conversationHistory.slice(-20);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            typingIndicator.remove();
+            addMessage('申し訳ございません。エラーが発生しました。もう一度お試しください。', 'bot');
+        }
+
+        chatbotSend.disabled = false;
+        chatbotInput.focus();
+    }
+
+    // メッセージ追加
+    function addMessage(content, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'message ' + sender;
+
+        const avatar = document.createElement('div');
+        avatar.className = 'message-avatar';
+        avatar.textContent = sender === 'bot' ? '🤖' : '👤';
+
+        const messageContent = document.createElement('div');
+        messageContent.className = 'message-content';
+        messageContent.innerHTML = content.replace(/\n/g, '<br>');
+
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(messageContent);
+
+        chatbotMessages.appendChild(messageDiv);
+        scrollToBottom();
+    }
+
+    // スクロール
+    function scrollToBottom() {
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    // イベントリスナー
+    chatbotSend.addEventListener('click', function() {
+        sendMessage();
+    });
+
+    chatbotInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+})();
+</script>

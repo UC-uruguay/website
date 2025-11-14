@@ -1,0 +1,137 @@
+{
+  "personal_info": {
+    "name": "中嶋雄士",
+    "nickname": "UC (Yushi Nakashima)",
+    "birthYear": 1990,
+    "birthDate": "1990年8月12日",
+    "age": 35,
+    "birthplace": "栃木県宇都宮市（生まれ）",
+    "hometown": "福岡県（育ち・出身）",
+    "current_residence": "山梨県甲府市",
+    "family": {
+      "wife": "春日",
+      "son": "一遊 (Kazuyu)"
+    }
+  },
+  "philosophy": {
+    "motto": ["とりあえず (TORIAEZU - For now, Let's start with this)", "ちゃんとする (CHANT THROUGH - Push forward with determination)"],
+    "life_goal": "友達を沢山作って楽しく生きる",
+    "values": ["直感に従って即行動", "ノータイムポチ", "人と人を繋ぐこと"]
+  },
+  "strengths": {
+    "strength_finder": ["戦略性 (Strategic)", "社交性 (Winning others over)", "ポジティブ (Positivity)", "最上志向 (Maximizer)", "着想 (Ideation)"],
+    "skills": ["とりあえず行動すること", "仲間作り", "人と人を繋ぐこと", "成長都市の開拓"]
+  },
+  "career": [
+    {"year": 2014, "event": "立教大学理学部卒業"},
+    {"year": "2014-2015", "event": "インターナショナルニート、サハラマラソン250km走破"},
+    {"year": "2015-2018", "event": "TIS株式会社でITエンジニアとして勤務（銀行系システム保守）"},
+    {"year": 2018, "event": "エストニアに移住、TORIAEZU OÜ創業"},
+    {"year": 2019, "event": "ルワンダでChant-through創業"},
+    {"year": 2021, "event": "コロナで帰国、富良野移住"},
+    {"year": 2022, "event": "ゴルフコース副支配人として勤務"},
+    {"year": 2023, "event": "ウルグアイに移住"},
+    {"year": 2024, "event": "山梨県に定住"}
+  ],
+  "companies": [
+    {
+      "name": "TORIAEZU OÜ",
+      "location": "エストニア",
+      "role": "Founder & CEO",
+      "mission": "Empower your TORIAEZU mind",
+      "services": ["IT企業マッチング", "視察訪問企画", "内定書配布サービス", "イベント開催"]
+    },
+    {
+      "name": "Chant-through",
+      "location": "ルワンダ",
+      "role": "Founder & CEO",
+      "services": ["オンラインベビーシッター", "モデル事務所構想"]
+    }
+  ],
+  "achievements": [
+    "サハラマラソン250km走破",
+    "エベレストベースキャンプ(5356m)登頂",
+    "34カ国訪問",
+    "世界9拠点にタイムカプセルを埋める",
+    "例のプールパーティー開催（160人参加）",
+    "UC少額奨学金8年間運営（給料の1%を毎年増やして寄付）",
+    "47都道府県+1国を347日で旅行達成"
+  ],
+  "hobbies": ["タイムカプセルを埋めること", "友達作り", "旅行", "ラグビー", "ワイン"],
+  "countries_lived": ["日本", "エストニア", "ルワンダ", "ウルグアイ"],
+  "countries_visited": 34,
+  "positions": [
+    "一般社団法人日本エストニア商工協会 理事",
+    "富良野ブルーリッジ（独立リーグ野球）理事"
+  ],
+  "famous_projects": {
+    "sahara_marathon": {
+      "description": "世界一過酷なマラソンと言われる250kmのサハラ砂漠マラソン",
+      "year": 2014,
+      "impact": "「ノータイムポチ」との出会い、人生の転機"
+    },
+    "pool_party": {
+      "description": "新宿の「例のプール」を貸し切ってのパーティー",
+      "participants": 160,
+      "cost": "22万円",
+      "features": ["性癖ビンゴ", "プール騎馬戦", "撮影会", "宝探し"]
+    },
+    "uc_scholarship": {
+      "description": "UC少額奨学金 - 給料の1%を他人にあげる、毎年1人ずつ増やす",
+      "years": 8,
+      "current_rate": "給料の8%"
+    },
+    "time_capsules": {
+      "description": "世界各地にタイムカプセルを埋める",
+      "locations": 9,
+      "motivation": "小学校時代のタイムカプセル探しがテレビで成功した思い出"
+    },
+    "online_babysitter": {
+      "description": "ルワンダからのオンラインベビーシッターサービス",
+      "media_coverage": "日本7紙、イギリスのニュースでも報道",
+      "status": "2年以上継続中"
+    }
+  },
+  "personality": {
+    "traits": ["お調子者", "根拠のない自信", "イエスマン", "出会い中毒者", "ポジティブ", "行動力"],
+    "childhood": "両親に溺愛されて育つ。小学生時代は優秀な成績、バレンタインで26個のチョコをもらう記録",
+    "philosophy_origin": "サハラマラソンで「ノータイムポチ」を学び、「とりあえず」精神を確立"
+  },
+  "education": {
+    "elementary": "小学校（栃木）",
+    "junior_high": "中高一貫校",
+    "high_school": "同上、ラグビー部所属",
+    "university": "立教大学理学部"
+  },
+  "lifestyle": {
+    "rent_free_living": "過去3年間で5回引越し、全て家賃無料（実家、シェアハウス、民泊管理人、ゴルフ場副支配人の社宅など）",
+    "money_philosophy": "貯金はせず、経験に投資。株と仮想通貨で貯蓄",
+    "family_experiment": "息子（一遊）の口座を公開し、マネーネイティブ教育を実験中"
+  },
+  "future_goals": [
+    "全大陸制覇（南極以外の全大陸でサービスを生み出す）",
+    "スペイン語で生活（達成：ウルグアイ）",
+    "父とサハラマラソン出場（断られた）",
+    "結婚式開催（達成）",
+    "多数決ファミリーの実践",
+    "一遊との2人旅",
+    "宇宙に行く"
+  ],
+  "friend_philosophy": {
+    "importance": "人生は友達の質と量で決まる",
+    "strategy": "誘われたら全部参加、イエスマン",
+    "technique": "毎日友達を作る。できなかった日は飲みに行く",
+    "weak_ties": "弱い繋がりの強み - たまに会う人からの方が新しいアイデアをもらえる"
+  },
+  "interesting_facts": [
+    "会社員時代、3年で辞めると決めてカレンダーに登録して入社",
+    "睡眠時間を2時間にできるアメリカのアイマスクを4万円で購入（すぐ壊れた）",
+    "本を読んだら著者にDMを送る習慣",
+    "絶対嘘をつかない友達、給料の5%をくれる友達など、ユニークな友人多数",
+    "エストニアでは毎晩バーに行って友達作り",
+    "ルワンダではカジノでクレジットカードから現金を得ていた",
+    "小学校のタイムカプセルをテレビの力で発掘成功"
+  ],
+  "contact_preference": "本を読んだらすぐDMください！",
+  "languages": ["日本語 (ネイティブ)", "英語 (日常会話レベル)", "スペイン語 (学習中)"]
+}

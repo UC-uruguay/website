@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶 Bar 〜茶婆場〜 | 2025年10月開催</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(40, 60, 40, 0.7), rgba(40, 60, 40, 0.7)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23228B22" width="1200" height="800"/><circle cx="300" cy="200" r="50" fill="%23F4E4BC" opacity="0.3"/><circle cx="900" cy="600" r="80" fill="%23D2691E" opacity="0.2"/><path d="M0,400 Q300,200 600,400 T1200,400 V800 H0 Z" fill="%23F5E6D3" opacity="0.1"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content .date {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            margin-bottom: 0.5rem;
+            color: #FFD700;
+        }
+
+        .hero-content .location {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content .catchphrase {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f8f6f0;
+        }
+
+        .section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2F5233;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: #FF8C00;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Concept Section */
+        .concept-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .concept-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .concept-text .belief {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2F5233;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+
+        /* Menu Section */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-top: 4px solid #FF8C00;
+        }
+
+        .menu-card h3 {
+            color: #2F5233;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .menu-card ul {
+            list-style: none;
+        }
+
+        .menu-card li {
+            padding: 0.3rem 0;
+            color: #666;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .menu-card li::before {
+            content: '🍵';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Fun Activities Section */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .activity-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .activity-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-item .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .activity-item h4 {
+            color: #2F5233;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Info Section */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .info-text h3 {
+            color: #2F5233;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-text p {
+            margin-bottom: 0.8rem;
+            color: #666;
+        }
+
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Goods Section */
+        .goods-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .goods-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #FF8C00;
+        }
+
+        /* Members Section */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .member-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(45deg, #2F5233, #228B22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .member-card h4 {
+            color: #2F5233;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .member-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2F5233;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .menu-boy-image {
+                right: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><img src="chalogo.png" alt="茶 Bar 〜茶婆場〜" style="max-width: 400px; width: 100%;"></h1>
+            <div class="date">2025年10月19日(日) 14:30-17:30</div>
+            <div class="location">えびすや (山梨県甲府市丸の内1-14-14)</div>
+            <div class="catchphrase">「一杯のお茶から始まる、特別な一日。」</div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="section">
+        <div class="container">
+            <h2>コンセプト</h2>
+            <div class="concept-text">
+                <p>お茶飲みながらチャ友を沢山作ろう！</p>
+                <p>スタッフおすすめのお茶が楽しめる、一日限定の特別な茶Barです。</p>
+                <p>初めてあった人と、次茶をしばく日程をきめチャってください。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <div style="position: relative; margin-bottom: 2rem;">
+                <h2>メニュー</h2>
+                <img src="boy.png" alt="500円" class="menu-boy-image" style="position: absolute; right: 10%; top: 50%; transform: translateY(-65%); height: 120px; width: auto; max-width: 30%;">
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="font-size: 1.1rem; color: #FF8C00; font-weight: 500;">※新しい友達連れてきてくれた人にはサービスあり！</p>
+                </div>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <h3>🍵 お茶メニュー</h3>
+                    <ul>
+                        <li>4種飲み比べ（お茶4種＋お菓子2種）…1,000円</li>
+                        <li>春日のお茶（藤かおり）…500円</li>
+                        <li>UCのお茶（ベトナム茶）…500円</li>
+                        <li>こまっ茶（アールグレイティー）…500円</li>
+                        <li>なっ茶（クロモジ茶）…500円</li>
+                        <li>お茶割り（お茶割り＋漬物3種）…500円</li>
+                        <li>全員に奢り茶（おまかせ）…1,000円</li>
+                    </ul>
+                </div>
+                <div class="menu-card">
+                    <h3>🍰 フードメニュー</h3>
+                    <ul>
+                        <li>お団子セット（3個＋きなこ/黒胡麻/こしあん）…500円</li>
+                        <li>抹茶ティラミス（数量限定）…500円</li>
+                        <li>あちらのお客様へ（抹茶のお菓子）…500円</li>
+                        <li>お茶漬け（お茶漬けのもと＋好きなお茶＋漬物3種）…500円</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Activities Section -->
+    <section class="section">
+        <div class="container">
+            <h2>イベント</h2>
+            <p style="text-align: center; font-size: 0.95rem; color: #666; margin-bottom: 2rem;">内容は変更する可能性大</p>
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <div class="icon">🏆</div>
+                    <h4>お茶割り選手権</h4>
+                    <p>一番うまいお茶割りを決める</p>
+                </div>
+                <div class="activity-item">
+                    <div class="icon">🔮</div>
+                    <h4>お茶占い</h4>
+                    <p>あなたの運勢を占う</p>
+                </div>
+                <div class="activity-item">
+                    <div class="icon">🗾</div>
+                    <h4>都道府県お茶当てクイズ</h4>
+                    <p>出身地を当てる</p>
+                </div>
+                <div class="activity-item">
+                    <div class="icon">🍀</div>
+                    <h4>茶柱チャレンジ</h4>
+                    <p>最もラッキーな人を決める</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; text-align: center;">
+                <h3 style="color: #2F5233; font-size: 1.8rem; margin-bottom: 2rem;">🍵 チャイさつ</h3>
+                <div style="background: white; border-radius: 15px; padding: 2.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 700px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; line-height: 2; color: #333;">
+                        <strong style="color: #FF8C00;">ちゃんぱい</strong> - 乾杯の代わりに<br>
+                        <strong style="color: #FF8C00;">こんにちゃー</strong> - こんにちはの代わりに<br>
+                        <strong style="color: #FF8C00;">いらっちゃいませ</strong> - いらっしゃいませの代わりに<br>
+                        <strong style="color: #FF8C00;">ありがとうございまっちゃー</strong> - ありがとうございますの代わりに<br>
+                        <strong style="color: #FF8C00;">ちゃおー</strong> - さようならの代わりに
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info & Access Section -->
+    <section class="section">
+        <div class="container">
+            <h2>アクセス</h2>
+            <div class="info-grid">
+                <div class="info-text">
+                    <h3>📅 開催日時</h3>
+                    <p>2025年10月19日(日) 14:30-17:30</p>
+                    
+                    <h3>📍 場所</h3>
+                    <p>えびすや<br>〒400-0031 山梨県甲府市丸の内1-14-14<br>
+                    <a href="https://maps.app.goo.gl/7vQLnBWcyo2RXE4y5" target="_blank" style="color: #FFD700; text-decoration: underline;">Google Mapsで見る</a></p>
+                    
+                    <h3>💳 決済手段</h3>
+                    <p>現金、PayPay</p>
+
+                    <h3 style="margin-top: 2rem;">📷 Instagram</h3>
+                    <p>
+                        <a href="https://www.instagram.com/chaba_ba1019/" target="_blank" style="color: #FFD700; text-decoration: none; display: inline-block; padding: 0.8rem 1.5rem; background: rgba(255, 215, 0, 0.2); border-radius: 8px; font-size: 1.1rem;">
+                            @chaba_ba1019
+                        </a>
+                    </p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.9999814033243!2d138.5647953763266!3d35.66774252257647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c0f7b0b0b0b0b%3A0x0!2zMzXCsDQwJzAzLjkiTiAxMzjCsDMzJzUzLjMiRQ!5e0!3m2!1sja!2sjp!4v1694100000000!5m2!1sja!2sjp" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Teaム</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-photo">UC</div>
+                    <h4>UC</h4>
+                    <p>福岡出身。男。好きなお茶は緑茶。</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-photo">春</div>
+                    <h4>春日</h4>
+                    <p>広島出身。1児の母。ジュエリー業界で働きながら、自分でもハンドメイドアクセサリーの制作やシャツアパレルの運営を行う。好きなお茶は緑茶。</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-photo">な</div>
+                    <h4>なっちゃん</h4>
+                    <p>栃木出身。独身。多拠点生活推進プラットフォームADDress甲府拠点の家守。好きなお茶はレモングラスティー。</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-photo">こ</div>
+                    <h4>こまっちゃん</h4>
+                    <p>山梨出身。独身。暇な日は天井を見て一日が終わってしまう。好きなお茶は緑茶。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 茶 Bar 〜茶婆場〜</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://www.instagram.com/chaba_ba1019/" target="_blank" style="color: white; text-decoration: none;">
+                    📷 Instagram: @chaba_ba1019
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

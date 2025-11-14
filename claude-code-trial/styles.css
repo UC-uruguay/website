@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    transition: all 0.5s ease;
+}
+
+.president-photo {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="35" r="15" fill="%23fdbcb4"/><ellipse cx="50" cy="65" rx="20" ry="25" fill="%234a90e2"/><text x="50" y="90" text-anchor="middle" font-size="8" fill="%23333">CEO</text></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0.3;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.mushroom-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+}
+
+/* Mushroom levels - pixel art style */
+.mushroom-level-1 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #ff6b6b 8px, transparent 8px),
+        radial-gradient(circle at 80% 70%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-2 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #ff4757 10px, transparent 10px),
+        radial-gradient(circle at 80% 70%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 60% 85%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-3 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #ff3838 12px, transparent 12px),
+        radial-gradient(circle at 80% 70%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 60% 85%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 40% 75%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-4 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #ff2929 14px, transparent 14px),
+        radial-gradient(circle at 80% 70%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 60% 85%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 40% 75%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 30% 90%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-5 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #e55353 16px, transparent 16px),
+        radial-gradient(circle at 80% 70%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 60% 85%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 40% 75%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 30% 90%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 70% 60%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-6 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #d63031 18px, transparent 18px),
+        radial-gradient(circle at 80% 70%, #d63031 16px, transparent 16px),
+        radial-gradient(circle at 60% 85%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 40% 75%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 30% 90%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 70% 60%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 90% 80%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-7 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #c0392b 20px, transparent 20px),
+        radial-gradient(circle at 80% 70%, #c0392b 18px, transparent 18px),
+        radial-gradient(circle at 60% 85%, #d63031 16px, transparent 16px),
+        radial-gradient(circle at 40% 75%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 30% 90%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 70% 60%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 90% 80%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 10% 60%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-8 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #a93226 22px, transparent 22px),
+        radial-gradient(circle at 80% 70%, #a93226 20px, transparent 20px),
+        radial-gradient(circle at 60% 85%, #c0392b 18px, transparent 18px),
+        radial-gradient(circle at 40% 75%, #d63031 16px, transparent 16px),
+        radial-gradient(circle at 30% 90%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 70% 60%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 90% 80%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 10% 60%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 50% 50%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-9 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #922b21 24px, transparent 24px),
+        radial-gradient(circle at 80% 70%, #922b21 22px, transparent 22px),
+        radial-gradient(circle at 60% 85%, #a93226 20px, transparent 20px),
+        radial-gradient(circle at 40% 75%, #c0392b 18px, transparent 18px),
+        radial-gradient(circle at 30% 90%, #d63031 16px, transparent 16px),
+        radial-gradient(circle at 70% 60%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 90% 80%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 10% 60%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 50% 50%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 75% 40%, #ff6b6b 6px, transparent 6px);
+}
+
+.mushroom-level-10 { 
+    background-image: 
+        radial-gradient(circle at 20% 80%, #7b241c 26px, transparent 26px),
+        radial-gradient(circle at 80% 70%, #7b241c 24px, transparent 24px),
+        radial-gradient(circle at 60% 85%, #922b21 22px, transparent 22px),
+        radial-gradient(circle at 40% 75%, #a93226 20px, transparent 20px),
+        radial-gradient(circle at 30% 90%, #c0392b 18px, transparent 18px),
+        radial-gradient(circle at 70% 60%, #d63031 16px, transparent 16px),
+        radial-gradient(circle at 90% 80%, #e55353 14px, transparent 14px),
+        radial-gradient(circle at 10% 60%, #ff2929 12px, transparent 12px),
+        radial-gradient(circle at 50% 50%, #ff3838 10px, transparent 10px),
+        radial-gradient(circle at 75% 40%, #ff4757 8px, transparent 8px),
+        radial-gradient(circle at 25% 40%, #ff6b6b 6px, transparent 6px);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.coin-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 4rem;
+    z-index: 1000;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+}
+
+.coin-animation.active {
+    animation: coinBounce 1s ease-out;
+}
+
+@keyframes coinBounce {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0) rotate(0deg);
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.2) rotate(72deg);
+    }
+    40% {
+        transform: translate(-50%, -50%) scale(0.9) rotate(144deg);
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1.1) rotate(216deg);
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(0.95) rotate(288deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(360deg);
+    }
+}
+
+header {
+    position: relative;
+    z-index: 100;
+    padding: 1rem;
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ff6b6b;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    background: #ff6b6b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+main {
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.mission-statement {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 800px;
+    border: 3px solid #ff6b6b;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.mission-statement p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.balance-display {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 30px;
+    margin: 3rem auto;
+    max-width: 600px;
+    border: 4px solid #ff6b6b;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.balance-amount {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Courier New', monospace;
+}
+
+.capital-amount {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.balance-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.balance-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.balance-btn:active {
+    transform: translateY(0);
+}
+
+.activities {
+    margin: 4rem 0;
+}
+
+.activities h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.activity-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 3px solid #3498db;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.activity-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.activity-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.activity-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6b6b;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .balance-amount {
+        font-size: 2.5rem;
+    }
+    
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}

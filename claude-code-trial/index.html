@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="The Corporation That Will Shut Down in 50 Years" data-ja="50年後に閉鎖する株式会社">The Corporation That Will Shut Down in 50 Years</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container" id="background-container">
+        <div class="president-photo"></div>
+        <div class="mushroom-layer" id="mushroom-layer"></div>
+    </div>
+    
+    <div class="coin-animation" id="coin-animation">💰</div>
+    
+    <header>
+        <nav>
+            <div class="language-switcher">
+                <button onclick="switchLanguage('en')" class="lang-btn" id="lang-en">EN</button>
+                <button onclick="switchLanguage('ja')" class="lang-btn" id="lang-ja">日本語</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-en="The Corporation That Will Shut Down in 50 Years" data-ja="50年後に閉鎖する株式会社">
+                The Corporation That Will Shut Down in 50 Years
+            </h1>
+            
+            <div class="mission-statement">
+                <p data-en="We embrace the beauty of impermanence while building something meaningful. Our mission is to create joy, foster connections, and cultivate wonder in the time we have together. We believe in transparency, playfulness, and the courage to set an end date." data-ja="私たちは無常の美しさを受け入れながら、意味のあるものを築きます。共に過ごす時間の中で喜びを創造し、つながりを育み、驚きを培うことが私たちの使命です。透明性、遊び心、そして終了日を設定する勇気を信じています。">
+                    We embrace the beauty of impermanence while building something meaningful. Our mission is to create joy, foster connections, and cultivate wonder in the time we have together. We believe in transparency, playfulness, and the courage to set an end date.
+                </p>
+            </div>
+
+            <div class="balance-display">
+                <div class="balance-amount" id="balance-amount">$1,247</div>
+                <div class="capital-amount" data-en="(Capital: $1,000)" data-ja="(資本金: $1,000)">(Capital: $1,000)</div>
+                <button class="balance-btn" onclick="increaseBalance()" data-en="💰 Earn Revenue" data-ja="💰 売上を上げる">💰 Earn Revenue</button>
+            </div>
+        </section>
+
+        <section class="activities">
+            <h2 data-en="Our Business Activities" data-ja="事業内容">Our Business Activities</h2>
+            
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">🍄</div>
+                    <h3 data-en="Mushroom Cultivation" data-ja="きのこ栽培">Mushroom Cultivation</h3>
+                    <p data-en="We grow the finest mushrooms with love and care, believing that good things take time - just like our company's 50-year journey." data-ja="愛情と注意深さで最高のきのこを育てています。良いものには時間がかかると信じています - 我が社の50年の旅のように。">
+                        We grow the finest mushrooms with love and care, believing that good things take time - just like our company's 50-year journey.
+                    </p>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-icon">👨‍👨‍👦</div>
+                    <h3 data-en="Dad-Friends Travel Project" data-ja="パパ友旅行プロジェクト">Dad-Friends Travel Project</h3>
+                    <p data-en="Connecting fathers through meaningful travel experiences, because life's too short not to make memories with your fellow dads." data-ja="意味のある旅行体験を通じてお父さんたちをつなげます。人生は短すぎて、仲間のお父さんたちと思い出を作らないわけにはいきません。">
+                        Connecting fathers through meaningful travel experiences, because life's too short not to make memories with your fellow dads.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://twitter.com/corp50years" target="_blank" data-en="Follow us on X" data-ja="Xでフォロー">Follow us on X</a>
+                <a href="privacy-policy.html" data-en="Privacy Policy" data-ja="プライバシーポリシー">Privacy Policy</a>
+                <a href="https://github.com/corp50years/articles-of-incorporation" target="_blank" data-en="Articles of Incorporation" data-ja="定款">Articles of Incorporation</a>
+            </div>
+            <p class="footer-note" data-en="Our Articles of Incorporation are hosted on GitHub and can be improved via pull requests. They are formally revised once a year." data-ja="当社の定款はGitHubでホストされており、プルリクエストを通じて改善できます。年に一回正式に改訂されます。">
+                Our Articles of Incorporation are hosted on GitHub and can be improved via pull requests. They are formally revised once a year.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

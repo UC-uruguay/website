@@ -1,0 +1,197 @@
+{
+  "name": "Kids Diary (Audio) -> Whisper -> Chat -> WordPress",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kids-diary-audio",
+        "responseMode": "responseNode",
+        "options": { "binaryData": true, "responseCode": 200 }
+      },
+      "id": "Webhook_Audio",
+      "name": "Webhook (Audio)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [-920, 120]
+    },
+    {
+      "parameters": {
+        "jsCode": "// バイナリデータのファイル名とMIMEタイプを修正（webm固定）\nconst binary = $input.item.binary;\nif (binary && binary.data) {\n  // ファイル名とMIMEタイプをwebmに固定\n  binary.data.fileName = 'kids-diary.webm';\n  binary.data.mimeType = 'audio/webm';\n  \n  return { binary: binary };\n}\n\nreturn $input.item;"
+      },
+      "id": "FixBinaryMeta",
+      "name": "Fix Binary Metadata",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-820, 20]
+    },
+    {
+      "parameters": {
+        "jsCode": "const childName = $input.item.json.body?.child_name || 'いちゆう';\nconst date = $input.item.json.body?.date || '';\nreturn { child_name: childName, date: date };"
+      },
+      "id": "PickMeta",
+      "name": "Pick child_name/date",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-820, 220]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/audio/transcriptions",
+        "method": "POST",
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "options": { "bodyContentType": "multipart-form-data" },
+        "jsonParameters": false,
+        "headerParametersUi": {
+          "parameter": [
+            { "name": "Authorization", "value": "Bearer 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" }
+          ]
+        },
+        "bodyParametersUi": {
+          "parameter": [
+            { "name": "model", "value": "whisper-1" },
+            { "name": "language", "value": "ja" },
+            { "name": "response_format", "value": "text" }
+          ]
+        }
+      },
+      "id": "HTTP_Whisper",
+      "name": "OpenAI Whisper (HTTP)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [-620, 20]
+    },
+    {
+      "parameters": {
+        "mode": "mergeByPosition"
+      },
+      "id": "Merge",
+      "name": "Merge transcript+meta",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [-480, 120]
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.item.json;\nconst transcript = body.body || body.text || body;\nconst child = body.child_name || '';\nconst date = body.date || '';\nconst system = 'あなたは日本語の編集者。保育園帰りの子どもの口語メモを、読みやすい短いブログ記事に整える。事実は変えない。3〜6歳らしさは軽く残す。出力はJSON（title/excerpt/content_html）。';\nconst user = `子どもの名前: ${child}\\n日付: ${date}\\n文字起こし:\\n${transcript}`;\nreturn { system, user };"
+      },
+      "id": "Fn_Prompt",
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-300, 120]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/chat/completions",
+        "method": "POST",
+        "sendBody": true,
+        "jsonParameters": true,
+        "headerParametersUi": {
+          "parameter": [
+            { "name": "Authorization", "value": "Bearer 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" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "options": {},
+        "bodyParametersJson": "={\n  \"model\": \"gpt-4o-mini\",\n  \"response_format\": {\"type\":\"json_object\"},\n  \"messages\": [\n    {\"role\":\"system\",\"content\": $json.system},\n    {\"role\":\"user\",\"content\": `次の要件で生成：\\n- タイトル（最大28文字）\\n- 抜粋（70-120文字）\\n- 本文（HTML、<p>段落、必要なら<ul><li>）\\n- date/child_nameがあれば本文冒頭に小さく表記\\n- 会話は—で表現\\n\\n入力:\\n${$json.user}\\n\\n出力は必ず JSON で: {\\n  \\\"title\\\": \\\"...\\\",\\n  \\\"excerpt\\\": \\\"...\\\",\\n  \\\"content_html\\\": \\\"...\\\"\\n}`} \n  ]\n}"
+      },
+      "id": "HTTP_Chat",
+      "name": "OpenAI Chat (HTTP)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [-80, 120]
+    },
+    {
+      "parameters": {
+        "jsCode": "const choice = $input.item.json.body?.choices?.[0]?.message?.content || $input.item.json.choices?.[0]?.message?.content;\nlet payload;\ntry { payload = JSON.parse(choice); } catch(e) { throw new Error('AI出力のJSONパース失敗: ' + e.message + '\\n' + choice); }\nif (!payload.title || !payload.content_html) throw new Error('AI出力に title / content_html がありません');\nreturn { title: payload.title, excerpt: payload.excerpt || '', content: payload.content_html, status: 'publish' };"
+      },
+      "id": "Fn_BuildWP",
+      "name": "Build WP Body",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [120, 120]
+    },
+    {
+      "parameters": {
+        "url": "https://uc.x0.com/wp-json/wp/v2/posts",
+        "method": "POST",
+        "sendBody": true,
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "={{$json}}",
+        "headerParametersUi": {
+          "parameter": [
+            { "name": "Authorization", "value": "Basic dWMtamFwYW46bHpHZyA5UVN3IFFFemkgUlVMZiBvVWhvIDhGNWE=" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        }
+      },
+      "id": "HTTP_WP_Post",
+      "name": "WordPress Create Post (HTTP)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [340, 120]
+    },
+    {
+      "parameters": {
+        "responseBody": "={{ { ok: true, link: $json.link, id: $json.id } }}",
+        "responseCode": 200
+      },
+      "id": "Respond",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [560, 120]
+    }
+  ],
+  "connections": {
+    "Webhook (Audio)": {
+      "main": [
+        [ { "node": "Fix Binary Metadata", "type": "main", "index": 0 } ],
+        [ { "node": "Pick child_name/date", "type": "main", "index": 0 } ]
+      ]
+    },
+    "Fix Binary Metadata": {
+      "main": [
+        [ { "node": "OpenAI Whisper (HTTP)", "type": "main", "index": 0 } ]
+      ]
+    },
+    "OpenAI Whisper (HTTP)": {
+      "main": [
+        [ { "node": "Merge transcript+meta", "type": "main", "index": 0 } ]
+      ]
+    },
+    "Pick child_name/date": {
+      "main": [
+        [ { "node": "Merge transcript+meta", "type": "main", "index": 1 } ]
+      ]
+    },
+    "Merge transcript+meta": {
+      "main": [
+        [ { "node": "Build Prompt", "type": "main", "index": 0 } ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [ { "node": "OpenAI Chat (HTTP)", "type": "main", "index": 0 } ]
+      ]
+    },
+    "OpenAI Chat (HTTP)": {
+      "main": [
+        [ { "node": "Build WP Body", "type": "main", "index": 0 } ]
+      ]
+    },
+    "Build WP Body": {
+      "main": [
+        [ { "node": "WordPress Create Post (HTTP)", "type": "main", "index": 0 } ]
+      ]
+    },
+    "WordPress Create Post (HTTP)": {
+      "main": [
+        [ { "node": "Respond to Webhook", "type": "main", "index": 0 } ]
+      ]
+    }
+  },
+  "settings": { "timezone": "Asia/Tokyo" }
+}

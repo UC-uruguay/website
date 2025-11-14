@@ -1,0 +1,39 @@
+# システムファイル
+.cache/
+.config/
+.local/
+.ssh/
+.nvm/
+.npm/
+.docker/
+.android/
+.gemini/
+.codex/
+
+# Claude設定
+.claude/
+.claude.json
+.claude.json.backup
+
+# 一時ファイル
+*.log
+.bash_history
+.viminfo
+.lesshst
+.wget-hsts
+.motd_shown
+.sudo_as_admin_successful
+
+# 認証情報
+.wp_credentials
+*.key.pub
+*:Zone.Identifier
+
+# バックアップ
+phone_backup_*/
+
+# 大きなファイル（100MB超）
+java/
+claude-code-trial/java/
+*.tar.gz
+*.zip

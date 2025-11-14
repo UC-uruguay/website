@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="新人研修・企業研修・ワーケーションならOTERA STAY（お寺ステイ）
+お気軽にお問い合わせください。" />
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P3P3FL3F');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css?247309" />
+
+  <title>新人研修・企業研修ならOTERA STAY（お寺ステイ）</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F9HJ5YK3X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6F9HJ5YK3X');
+  </script>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3P3FL3F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <header id="header" class="lp-header">
+    <div class="lp-header__inner">
+      <nav class="lp-header__col">
+        <div class="lp-header__logo"><img src="./assets/img/glogo_t.svg" width="300" height="97" alt="LOGO"></div>
+        <div class="lp-header__tip">
+          <div class="lp-header__dl"><a class="dl-btn" href="#lp-form">資料ダウンロード</a></div>
+          <div class="lp-header__co"><a class="co-btn" href="https://oterastay.com/form/contact"><span class="hid-pc"><i
+                  class="far fa-envelope"></i></span><span class="hid-sp">お問い合わせ</span></a></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="lp-main" style="text-align: center;">
+           <style>
+        .lp-main {
+            text-align: center;
+        }
+        .lp-main__visual {
+            display: inline-block;
+            margin: 0 auto;
+        }
+    </style>
+        <h1 class="lp-main__visual fade-up" style="text-align: center;">
+        <picture>
+          <source srcset="./assets/img/mv_pc.png?2474" media="(min-width: 770px)" />
+          <img src="./assets/img/mv_sp.png?2474" width="920" height="1120" alt="お寺で企業研修・ワーケーション">
+        </picture>
+      </h1>
+    </div>
+
+
+    <div class="lp-concept fade-up">
+      <div class="lp-concept__inner">
+        <div class="lp-concept__thumb">
+          <picture>
+            <source srcset="./assets/img/concept-main_pc.png" media="(min-width: 770px)" />
+            <img src="./assets/img/concept-main_sp.png" width="920" height="600" alt="OTERA STAYの企業研修・ワーケーション">
+          </picture>
+        </div>
+        <div class="lp-container lp-concept__col">
+          <h2 class="lp-content-title lp-concept__title">OTERA STAYの<br>企業研修・ワーケーションは<br>静寂な場所に身を置くことで<br>心と身体を整え、五感を研ぎ澄ます。</h2>
+          <p class="lp-concept__note">
+            歴史と伝統を持つ場で<br>研ぎ澄まされる五感を通して、<br>今この瞬間と対話し、「自分の軸」を見つめ直す。<br>直感的・感性的スキルを磨き、<br>組織・事業の未来を語っていく。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-point lp-column my-default fade-up">
+      <div class="lp-content-title__sub">
+        <p class="lp-content-title__sub--inner">POINT</p>
+      </div>
+      <h2 class="lp-content-title">お寺で企業研修・<br>ワーケーション合宿の特徴</h2>
+      <div class="lp-container">
+        <ul class="lp-column__inner">
+          <li>
+            <img src="./assets/img/point_01.png" width="840" height="550" alt="心が穏やかになる静寂の場">
+            <p class="lp-column__note">モノや情報に溢れた騒がしい日常から離れ、歴史と伝統をもつ静寂な場所に身を置くことで、心が穏やかになり、創造的思考を育みます。</p>
+          </li>
+          <li>
+            <img src="./assets/img/point_02.png" width="840" height="550" alt="社員一人ひとりが自分自身と深く向き合う場">
+            <p class="lp-column__note">坐禅や瞑想によりマインドフルネスを体験することで、自分自身と向き合う。折れない心、「レジリエンス」の強化、感情整理力の向上、自己肯定感や思いやりが育まれることで、良好な人間関係を築きます。</p>
+          </li>
+          <li>
+            <img src="./assets/img/point_03.png" width="840" height="550" alt="精進料理で心体のコンディションを整える場">
+            <p class="lp-column__note">心身のコンディションを支えるのは食事。<br>忙しい毎日だと食事がおざなりになり、気付かない間に老廃物が溜まります。精進料理は、身体をリセットするのに最適。必要な栄養を取りながら、本来の健康状態に戻します。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lp-service lp-column my-default fade-up">
+      <div class="lp-content-title__sub">
+        <p class="lp-content-title__sub--inner">SERVICE</p>
+      </div>
+      <h2 class="lp-content-title">OTERA STAY提供サービス</h2>
+      <ul class="lp-column__inner">
+        <li>
+          <img src="./assets/img/service_01.png" width="920" height="480" alt="寺院のご紹介">
+          <p class="lp-column__note">提携する全国60以上の寺院から移動時間や、利用人数など、ご希望に沿ってご提案します。</p>
+        </li>
+        <li>
+          <img src="./assets/img/service_02.png" width="920" height="480" alt="研修施設">
+          <p class="lp-column__note">研修や合宿をスムーズに実施頂くために通信環境設備はもちろん、その他必要な備品もご用意します。</p>
+        </li>
+        <li>
+          <img src="./assets/img/service_03.png" width="920" height="480" alt="宿泊施設">
+          <p class="lp-column__note">和室をベースとした、冷暖房完備の清潔なお部屋をご用意しております。</p>
+        </li>
+        <li>
+          <img src="./assets/img/service_04.png" width="920" height="480" alt="お食事">
+          <p class="lp-column__note">地域の野菜や豆腐を使った、野菜中心のヘルシーなお料理を提供。ご希望があればビール・ワイン等の各種アルコールもお楽しみいただけます。※精進料理以外のお食事もご提供できます</p>
+        </li>
+        <li>
+          <img src="./assets/img/service_05.png" width="920" height="480" alt="アクティビティ">
+          <p class="lp-column__note">坐禅・写経・ヨガ等お寺ならではの各アクティビティもご体験いただけます。</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="lp-slide swiper fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-01.jpg" width="466" height="480" alt="OTERA STAY_01">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-02.jpg" width="466" height="480" alt="OTERA STAY_02">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-03.jpg" width="466" height="480" alt="OTERA STAY_03">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-04.jpg" width="466" height="480" alt="OTERA STAY_04">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-05.jpg" width="466" height="480" alt="OTERA STAY_05">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-06.jpg" width="466" height="480" alt="OTERA STAY_06">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-07.jpg" width="466" height="480" alt="OTERA STAY_07">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-08.jpg" width="466" height="480" alt="OTERA STAY_08">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-09.jpg" width="466" height="480" alt="OTERA STAY_09">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/slide-10.jpg" width="466" height="480" alt="OTERA STAY_10">
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-voice lp-column my-default fade-up">
+      <div class="lp-content-title__sub">
+        <p class="lp-content-title__sub--inner">VOICE</p>
+      </div>
+      <h2 class="lp-content-title">ご利用企業様の声</h2>
+      <div class="lp-container">
+        <ul class="lp-column__inner">
+          <li class="lp-voice__inner">
+            <div class="lp-voice__inner--col"><img src="./assets/img/voice_01.jpg" width="840" height="435" alt="Gaiax様"></div>
+            <p class="lp-column__note">
+              <span class="lp-voice__company">Gaiax様（ワーケーション合宿実施）</span>
+              コロナが明け、再度自分と向き合い、チームと向き合う機会を作るために利用させていただきました。<br>神聖な空気と山のエネルギーに包まれながら、ワークを通して再度自分やチームと向き合い、とても有意義な合宿になりました。お寺で合宿する大きな魅力は深い内省と気づきを得ることができることです。
+            </p>
+          </li>
+          <li class="lp-voice__inner">
+            <div class="lp-voice__inner--col"><img src="./assets/img/voice_02.jpg" width="840" height="435" alt="ヤマヒロ様"></div>
+            <p class="lp-column__note">
+              <span class="lp-voice__company">ヤマヒロ様（幹部合宿実施）</span>
+              都会から離れ、企業のあり方を再度定義しなおしたいと考え利用させていただきました。<br>お寺といういつもと違う環境だからこそ、幹部同志も納得するまで議論ができました。またWifiなどの通信環境も整っていたり、夜の懇親会ではアルコールの提供もあり、幅広い使い方ができることを学びました。
+            </p>
+          </li>
+          <li class="lp-voice__inner">
+            <div class="lp-voice__inner--col"><img src="./assets/img/voice_03.jpg" width="840" height="435" alt="大手サービス会社様"></div>
+            <p class="lp-column__note">
+              <span class="lp-voice__company">大手サービス会社様（新人研修実施）</span>
+              社会人としてのあるべき考え方や姿勢を身につけて欲しいと考え利用させて頂きました。<br>住職様からの話法や坐禅体験を行い、普段とは違う環境で自己を見つめ直したり、仲間と本音で話し合うことができました。また次回も利用させていただきたいと思います。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lp-partnership my-default fade-up">
+      <div class="lp-container">
+        <div class="lp-partnership__title">
+          <h2>提携先の会場一例<span class="lp-partnership__title--note">最適な会場をご提案いたします。</span></h2>
+          <div class="lp-partnership__title--icon"><img src="./assets/img/partnership-icon.png" width="228" height="229" alt="提携先の会場一例"></div>
+        </div>
+        <div class="map-wrap">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-flow fade-up">
+      <div class="lp-content-title__sub">
+        <p class="lp-content-title__sub--inner">FLOW</p>
+      </div>
+      <h2 class="lp-content-title">ご利用までの流れ</h2>
+      <div class="lp-container">
+        <picture>
+          <source srcset="./assets/img/flow_pc.png" media="(min-width: 770px)" />
+          <img src="./assets/img/flow_sp.png" width="920" height="1600" alt="ご利用までの流れ">
+        </picture>
+       </div>
+      </div>
+
+<div class="lp-faq my-default fade-up">
+    <div class="lp-content-title__sub"><p class="lp-content-title__sub--inner">FAQ</p></div>
+    <h2 class="lp-content-title">よくあるご質問</h2>
+    <dl class="lp-container">
+        <!--1-->
+        <dt class="lp-faq__q">アルコールなどは飲めますでしょうか？</dt>
+        <dd class="lp-faq__a">
+            はい、どの宿坊でも飲酒可能です。<br>宿坊によっては、宴会場所を限定させていただくことがあります。<br>お食事の際に提供をご希望の場合は事前にご連絡ください。2次会などの場合は、お持ち込みいただいております。
+        </dd>
+        <!--2-->
+        <dt class="lp-faq__q">Wi-Fiは使えますか？</dt>
+        <dd class="lp-faq__a">
+            はい。ほとんどの宿坊の本堂、宿泊場所、広間でご利用いただけます。
+        </dd>
+        <!--3-->
+        <dt class="lp-faq__q">備品は何がありますか？</dt>
+        <dd class="lp-faq__a">
+            ホワイトボード、スクリーン、プロジェクター、座布団、椅子、机などがございます。<br>※宿坊によってご用意できるものが変わります。お問い合わせください。
+        </dd>
+        <!--4-->
+        <dt class="lp-faq__q">食事の手配はしてくれますか？</dt>
+        <dd class="lp-faq__a">
+            はい、どのお宿でも手配可能です。何日目の朝食・昼食・夕食が必要かご連絡ください。<br>※一部、お弁当でのみの対応になることがあります。
+        </dd>
+        <!--5-->
+        <dt class="lp-faq__q">冷暖房はありますか？</dt>
+        <dd class="lp-faq__a">
+            宿泊のお部屋には、完備しております。本堂、広間には一部ないところもございます。ご了承ください。
+        </dd>
+        <!--6-->
+        <dt class="lp-faq__q">門限などはありますか？</dt>
+        <dd class="lp-faq__a">
+            基本的にはございません。<br>ただし、お食事をご希望の場合は対応可能なお時間帯にお越しいただけますようお願いしております。
+        </dd>
+        <!--7-->
+        <dt class="lp-faq__q">早めにチェックインして会議できますか？</dt>
+        <dd class="lp-faq__a">
+            はい、可能です。<br>ご希望のお時間をご連絡ください。また、チェックアウト日のレイトチェックアウトも対応可能です。<br>※前後の予約状況により、お時間のご相談をすることがあります。
+        </dd>
+    </dl>
+    </div>
+
+
+    <div id="lp-form" class="lp-main__info fade-up" style="margin-bottom: 3rem; padding-top: 3rem;">
+      <div class="form-container">
+        <form action="php/mailform.php" method="post" id="mail_form">
+          <div class="form-title"><span class="form-title__note">OTERA STAYのサービスをさらに詳しく解説</span>資料ダウンロードはこちら</div>
+          <dl>
+            <dt>会社名<i></i></dt>
+            <dd class="required"><input type="text" name="company" value="" /></dd>
+            <dt>役職<i></i></dt>
+            <dd class="required"><input type="text" name="position" value="" /></dd>
+            <dt>部署</dt>
+            <dd><input type="text" name="department" value="" /></dd>
+            <dt>お名前<i></i></dt>
+            <dd class="required"><input type="text" name="name_1" value="" /></dd>
+            <dt>メールアドレス<i></i></dt>
+            <dd class="required"><input type="email" name="mail_address" value="" /></dd>
+            <dt>電話番号<i></i></dt>
+            <dd class="required"><input type="tel" name="phone" value="" /></dd>
+          </dl>
+          <p id="form_submit"><input type="button" id="form_submit_button" class="form-button" value="資料ダウンロード" /></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="lp-info fade-up">
+      <div class="lp-container">
+        <h2 class="lp-info__title">お寺を活用した<br>研修・合宿をしてみませんか？</h2>
+        <div class="lp-info__note">
+          企業さまの研修や<br>合宿の目的に合わせた内容を<br>ご提案します。<br>ぜひお気軽にお問い合わせ下さい。<br>宿泊だけでなく、日中利用のご相談も大歓迎です。
+        </div>
+        <ul class="lp-info__reserve">
+          <li><a class="dl-btn" href="#lp-form">資料ダウンロード</a></li>
+          <li><a class="co-btn" href="https://oterastay.com/form/contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <footer class="lp-footer">
+      <div class="lp-footer__mark"><img src="./assets/img/glogo_rw.svg" width="75" height="75" alt="OTERA STAY"></div>
+      <ul class="lp-footer__sns">
+        <li><a href="https://www.facebook.com/oterastay/" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/oterastay.official/" target="blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCsmm_9MwdHdFZmtpopFySig/featured" target="blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a href="https://note.com/oterastay/" target="blank"><svg version="1.1" id="note-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+              <g>
+                <path class="st0" d="M10.8,79.9c-4,0-5.8-1.9-5.8-5.9V24.9c0-2.7,0.9-4.9,2.8-6.8L22,3.9c2.1-2.1,4.5-3,7.4-3h39.3c4.5,0,6.2,1.8,6.2,6.3l0,66.7c0,4.1-1.8,6-5.8,6H10.8z M63.5,70.5c2,0,2.6-0.7,2.6-2.6l0-54.4c0-1.8-0.6-2.4-2.5-2.4h-32c-1.4,0-3.1,0.8-4.1,1.7l-11.3,11c-0.9,1-1.7,2.5-1.7,3.8v40.2c0,1.9,0.6,2.6,2.5,2.6L63.5,70.5z" />
+                <path class="st0" d="M39.4,31.4c-0.1,2.4-1.4,3.8-3.8,3.8H25c-2.3,0-3.9-1.6-3.9-3.6c0-2,1.6-3.6,3.8-3.7l5.1,0c1.5,0,2-0.6,2-2v-5.1c0.1-2.3,1.5-3.7,3.8-3.6c2.2,0.1,3.4,1.4,3.6,3.6V31.4z" />
+              </g>
+            </svg></a></li>
+      </ul>
+      <ul class="lp-footer__menu">
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/brand">Brand</a></li>
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/service/">Service &amp; Contents</a></li>
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/partner/">Partner</a></li>
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/company/">About Our Team</a></li>
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/information/">News</a></li>
+        <li class="lp-footer__menu--item"><a href="https://oterastay.com/form/contact/">Contact</a></li>
+      </ul>
+      <ul class="lp-footer__nav">
+        <li class="lp-footer__nav--item"><a href="https://oterastay.com/terms/">利用者規約</a></li>
+        <li class="lp-footer__nav--item"><a href="https://oterastay.com/privacy/">プライバシーポリシー</a></li>
+        <li class="lp-footer__nav--item"><a href="https://oterastay.com/company/">運営者情報</a></li>
+        <li class="lp-footer__nav--item"><a href="https://oterastay.com/form/contact">お問い合わせ</a></li>
+      </ul>
+      <p class="lp-copyright">&copy; OTERASTAY / お寺ステイ</p>
+    </footer>
+
+    <div class="lp-fix">
+      <ul class="lp-fix__sp">
+        <li><a class="dl-btn" href="#lp-form">資料ダウンロード</a></li>
+        <li><a class="co-btn" href="https://oterastay.com/form/contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+    <p class="page-top"><a href="#"></a></p>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./assets/js/common.js?2473"></script>
+  <script src="./assets/js/map.js" async></script>
+  <script type="text/javascript" src="./assets/js/pc.js" media="screen and (min-width: 768px)"></script>
+  <script type="text/javascript" src="./assets/js/sp.js" media="screen and (max-width: 767px)"></script>
+  <script src="js/mailform-js.php"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz8q2by56mLuRBnyYf9gMShf-t4UbTvfE&callback=initMap" async defer></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.1.1/css/all.min.css">
+</body>
+</html>

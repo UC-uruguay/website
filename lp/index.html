@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本の人気アニメキャラクター紹介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideDown 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .character-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .character-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-card h3 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .character-card .anime-title {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 1rem;
+        }
+
+        .character-card p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .character-traits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .trait {
+            background: #f0f0f0;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro, .cta-section {
+                padding: 2rem;
+            }
+
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌸 日本の人気アニメキャラクター 🌸</h1>
+        <p>心に残る名キャラクターたちをご紹介</p>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>日本のアニメ文化へようこそ</h2>
+            <p>日本のアニメは世界中で愛されており、多くの魅力的なキャラクターが生まれています。彼らの個性、成長、そして物語は、私たちの心に深く刻まれます。ここでは、特に人気のあるキャラクタータイプをご紹介します。</p>
+        </div>
+
+        <div class="characters-grid">
+            <div class="character-card">
+                <div class="character-icon">⚔️</div>
+                <h3>熱血主人公タイプ</h3>
+                <div class="anime-title">バトル系アニメの定番</div>
+                <p>仲間を大切にし、決して諦めない強い意志を持つキャラクター。困難に立ち向かい、成長していく姿が多くのファンを魅了します。</p>
+                <div class="character-traits">
+                    <span class="trait">勇気</span>
+                    <span class="trait">友情</span>
+                    <span class="trait">成長</span>
+                    <span class="trait">正義感</span>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-icon">🎭</div>
+                <h3>クールな天才タイプ</h3>
+                <div class="anime-title">知略系アニメで活躍</div>
+                <p>冷静沈着で頭脳明晰。戦略を練り、敵を出し抜く姿が印象的です。表面はクールでも、仲間への深い思いやりを持っています。</p>
+                <div class="character-traits">
+                    <span class="trait">知性</span>
+                    <span class="trait">冷静</span>
+                    <span class="trait">戦略家</span>
+                    <span class="trait">ミステリアス</span>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-icon">🌟</div>
+                <h3>元気な少女タイプ</h3>
+                <div class="anime-title">日常系・学園アニメに登場</div>
+                <p>明るく前向きで、周りを笑顔にする力を持つキャラクター。時に天然な一面も見せながら、仲間を支える存在です。</p>
+                <div class="character-traits">
+                    <span class="trait">明るさ</span>
+                    <span class="trait">ポジティブ</span>
+                    <span class="trait">純粋</span>
+                    <span class="trait">活発</span>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-icon">🗡️</div>
+                <h3>ダークヒーロータイプ</h3>
+                <div class="anime-title">ダークファンタジーの主役</div>
+                <p>過去の悲しみや葛藤を抱えながらも、自分の信念を貫くキャラクター。正義と悪の境界線で苦悩する姿が深い共感を呼びます。</p>
+                <div class="character-traits">
+                    <span class="trait">複雑</span>
+                    <span class="trait">強さ</span>
+                    <span class="trait">葛藤</span>
+                    <span class="trait">孤独</span>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-icon">💫</div>
+                <h3>癒し系キャラ</h3>
+                <div class="anime-title">ファンタジー・日常系に登場</div>
+                <p>優しく穏やかな性格で、見ているだけで心が温かくなるキャラクター。時には不思議な力を持ち、物語の鍵を握ることも。</p>
+                <div class="character-traits">
+                    <span class="trait">優しさ</span>
+                    <span class="trait">癒し</span>
+                    <span class="trait">神秘的</span>
+                    <span class="trait">思いやり</span>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-icon">🔥</div>
+                <h3>ライバルキャラ</h3>
+                <div class="anime-title">スポーツ・バトルアニメに必須</div>
+                <p>主人公と切磋琢磨し合う存在。時には敵として、時には仲間として、物語に深みを与える重要なキャラクターです。</p>
+                <div class="character-traits">
+                    <span class="trait">プライド</span>
+                    <span class="trait">実力</span>
+                    <span class="trait">ライバル心</span>
+                    <span class="trait">尊敬</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>アニメの世界をもっと楽しもう！</h2>
+            <p>あなたのお気に入りのキャラクタータイプは見つかりましたか？<br>日本のアニメには、まだまだ魅力的なキャラクターがたくさんいます。</p>
+            <button class="cta-button">もっと詳しく見る</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 日本アニメキャラクター紹介 | Made with ❤️ for anime fans</p>
+    </div>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('日本のアニメキャラクターの世界へようこそ！🎌');
+        });
+    </script>
+</body>
+</html>

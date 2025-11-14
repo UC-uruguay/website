@@ -1,0 +1,195 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.hero {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				min-height: 70vh;
+				justify-content: center;
+				position: relative;
+				margin: -2em -1em 4em -1em;
+				padding: 4em 2em;
+			}
+			
+			.hero-title {
+				font-size: 4rem;
+				font-weight: 700;
+				margin: 0 0 1rem 0;
+				background: var(--gradient);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				line-height: 1.1;
+			}
+			
+			.hero-subtitle {
+				font-size: 1.5rem;
+				color: rgba(255, 255, 255, 0.8);
+				margin: 0 0 2rem 0;
+				max-width: 600px;
+			}
+			
+			.cta-button {
+				background: var(--gradient);
+				color: white;
+				padding: 1rem 2.5rem;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 1.1rem;
+				transition: all 0.3s ease;
+				box-shadow: var(--box-shadow);
+			}
+			
+			.cta-button:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+			}
+			
+			.cards-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin: 4rem 0;
+			}
+			
+			.card {
+				background: var(--card-bg);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 16px;
+				padding: 2rem;
+				backdrop-filter: blur(20px);
+				transition: all 0.3s ease;
+			}
+			
+			.card:hover {
+				transform: translateY(-4px);
+				border-color: rgba(253, 55, 160, 0.3);
+				box-shadow: var(--box-shadow);
+			}
+			
+			.card h3 {
+				color: var(--accent);
+				margin: 0 0 1rem 0;
+				font-size: 1.3rem;
+			}
+			
+			.card p {
+				color: rgba(255, 255, 255, 0.7);
+				margin: 0;
+				line-height: 1.6;
+			}
+			
+			.social-links {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				margin: 3rem 0;
+				flex-wrap: wrap;
+			}
+			
+			.social-link {
+				background: var(--card-bg);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 12px;
+				padding: 0.8rem 1.5rem;
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.8);
+				font-weight: 500;
+				transition: all 0.3s ease;
+				backdrop-filter: blur(20px);
+			}
+			
+			.social-link:hover {
+				color: var(--accent);
+				border-color: var(--accent);
+				transform: translateY(-2px);
+			}
+			
+			.quote-section {
+				background: var(--card-bg);
+				border-radius: 20px;
+				padding: 3rem;
+				margin: 4rem 0;
+				text-align: center;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(20px);
+			}
+			
+			.quote-text {
+				font-size: 1.3rem;
+				font-style: italic;
+				color: rgba(255, 255, 255, 0.9);
+				margin: 0;
+				line-height: 1.7;
+			}
+			
+			@media (max-width: 768px) {
+				.hero-title {
+					font-size: 2.5rem;
+				}
+				.hero-subtitle {
+					font-size: 1.2rem;
+				}
+				.cards-grid {
+					grid-template-columns: 1fr;
+				}
+				.social-links {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<h1 class="hero-title">Yushi Nakashima</h1>
+				<p class="hero-subtitle">Creative Soul from Yamanashi, Japan</p>
+				<a href="/blog" class="cta-button">Explore My Journey</a>
+			</section>
+			
+			<section class="cards-grid">
+				<div class="card">
+					<h3>Personal Story</h3>
+					<p>Married father from Kōfu, Yamanashi, with a son named Ichiyu (Ichikun). I believe in connecting with others through vision and empathy, creating world-wide understanding beyond religion.</p>
+				</div>
+				
+				<div class="card">
+					<h3>Passions</h3>
+					<p>Making meaningful friendships, exploring wine culture, discovering amazing food, traveling the world, and diving deep into different cultures and experiences.</p>
+				</div>
+				
+				<div class="card">
+					<h3>Philosophy</h3>
+					<p>Building bridges between people from different backgrounds, fostering understanding, and creating a global community through shared experiences and empathy.</p>
+				</div>
+			</section>
+			
+			<section class="social-links">
+				<a href="https://www.instagram.com/toriaezu_uc" class="social-link" target="_blank">Instagram</a>
+				<a href="https://twitter.com/TORIAEZU_OU" class="social-link" target="_blank">X (Twitter)</a>
+				<a href="https://www.facebook.com/profile.php?id=yushi.nakashima" class="social-link" target="_blank">Facebook</a>
+				<a href="https://www.tiktok.com/@ucjapan360" class="social-link" target="_blank">TikTok</a>
+				<a href="https://www.linkedin.com/in/yushi-nakashima" class="social-link" target="_blank">LinkedIn</a>
+			</section>
+			
+			<section class="quote-section">
+				<p class="quote-text">"I believe in connecting with others through vision and empathy. Let's create a world-wide common understanding beyond religion and build meaningful friendships together!"</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

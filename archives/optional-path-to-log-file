@@ -1,0 +1,3187 @@
+2025-08-29T06:09:54.128Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-29T06:09:54.129Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-29T06:09:54.129Z [INFO] [API] Request method: initialize
+2025-08-29T06:09:54.129Z [DEBUG] [API] Request args: {}
+2025-08-29T06:09:54.129Z [INFO] [AUTH] Using JWT token authentication
+2025-08-29T06:09:54.129Z [DEBUG] [AUTH] Token length: 233
+2025-08-29T06:09:54.129Z [DEBUG] [API] Environment: development
+2025-08-29T06:09:54.129Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-29T06:09:54.130Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:09:54.130Z [INFO] [API] Sending request to WordPress API...
+2025-08-29T06:09:54.130Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:09:54.130Z [DEBUG] [API] Request method: POST
+2025-08-29T06:10:04.680Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-08-29T06:10:12.437Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-29T06:10:12.437Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-29T06:10:12.438Z [INFO] [API] Request method: initialize
+2025-08-29T06:10:12.438Z [DEBUG] [API] Request args: {}
+2025-08-29T06:10:12.438Z [INFO] [AUTH] Using JWT token authentication
+2025-08-29T06:10:12.438Z [DEBUG] [AUTH] Token length: 233
+2025-08-29T06:10:12.438Z [DEBUG] [API] Environment: development
+2025-08-29T06:10:12.438Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-29T06:10:12.438Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:10:12.438Z [INFO] [API] Sending request to WordPress API...
+2025-08-29T06:10:12.438Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:10:12.438Z [DEBUG] [API] Request method: POST
+2025-08-29T06:10:22.992Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-08-29T06:15:29.683Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-29T06:15:29.684Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-29T06:15:29.684Z [INFO] [API] Request method: initialize
+2025-08-29T06:15:29.684Z [DEBUG] [API] Request args: {}
+2025-08-29T06:15:29.684Z [INFO] [AUTH] Using JWT token authentication
+2025-08-29T06:15:29.684Z [DEBUG] [AUTH] Token length: 233
+2025-08-29T06:15:29.684Z [DEBUG] [API] Environment: development
+2025-08-29T06:15:29.684Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-29T06:15:29.684Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:15:29.685Z [INFO] [API] Sending request to WordPress API...
+2025-08-29T06:15:29.685Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:15:29.685Z [DEBUG] [API] Request method: POST
+2025-08-29T06:15:40.223Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-08-29T06:15:45.608Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-29T06:15:45.609Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-29T06:15:45.610Z [INFO] [API] Request method: initialize
+2025-08-29T06:15:45.610Z [DEBUG] [API] Request args: {}
+2025-08-29T06:15:45.610Z [INFO] [AUTH] Using JWT token authentication
+2025-08-29T06:15:45.610Z [DEBUG] [AUTH] Token length: 233
+2025-08-29T06:15:45.610Z [DEBUG] [API] Environment: development
+2025-08-29T06:15:45.610Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-29T06:15:45.610Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:15:45.610Z [INFO] [API] Sending request to WordPress API...
+2025-08-29T06:15:45.611Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T06:15:45.611Z [DEBUG] [API] Request method: POST
+2025-08-29T06:15:56.158Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-08-29T09:34:00.857Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-29T09:34:00.859Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-29T09:34:00.859Z [INFO] [API] Request method: initialize
+2025-08-29T09:34:00.859Z [DEBUG] [API] Request args: {}
+2025-08-29T09:34:00.859Z [INFO] [AUTH] Using JWT token authentication
+2025-08-29T09:34:00.859Z [DEBUG] [AUTH] Token length: 233
+2025-08-29T09:34:00.859Z [DEBUG] [API] Environment: development
+2025-08-29T09:34:00.859Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-29T09:34:00.860Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T09:34:00.860Z [INFO] [API] Sending request to WordPress API...
+2025-08-29T09:34:00.860Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-29T09:34:00.860Z [DEBUG] [API] Request method: POST
+2025-08-29T09:34:11.412Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-08-30T08:36:05.472Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-08-30T08:36:05.475Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-08-30T08:36:05.476Z [INFO] [API] Request method: initialize
+2025-08-30T08:36:05.476Z [DEBUG] [API] Request args: {}
+2025-08-30T08:36:05.476Z [INFO] [AUTH] Using JWT token authentication
+2025-08-30T08:36:05.476Z [DEBUG] [AUTH] Token length: 233
+2025-08-30T08:36:05.476Z [DEBUG] [API] Environment: development
+2025-08-30T08:36:05.476Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-08-30T08:36:05.477Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-30T08:36:05.478Z [INFO] [API] Sending request to WordPress API...
+2025-08-30T08:36:05.478Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-08-30T08:36:05.478Z [DEBUG] [API] Request method: POST
+2025-08-30T08:36:16.122Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-01T13:35:08.814Z [INFO] [SYSTEM] Using native fetch API
+2025-09-01T13:35:08.858Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-01T13:35:08.859Z [INFO] [PROXY] Generated session ID: c181e8fc-1d33-46a8-b394-9fd95cc6d92b
+2025-09-01T13:35:08.859Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-01T13:35:08.860Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "c181e8fc-1d33-46a8-b394-9fd95cc6d92b",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-01T13:35:08.860Z [INFO] [API] Request method: initialize
+2025-09-01T13:35:08.860Z [DEBUG] [API] Request args: {}
+2025-09-01T13:35:08.860Z [INFO] [AUTH] Using JWT token authentication
+2025-09-01T13:35:08.860Z [DEBUG] [AUTH] Token length: 233
+2025-09-01T13:35:08.861Z [DEBUG] [API] Environment: development
+2025-09-01T13:35:08.861Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-01T13:35:08.861Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-01T13:35:08.861Z [INFO] [API] Sending request to WordPress API...
+2025-09-01T13:35:08.862Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-01T13:35:08.862Z [DEBUG] [API] Request method: POST
+2025-09-01T13:35:19.403Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-02T05:47:55.708Z [INFO] [SYSTEM] Using native fetch API
+2025-09-02T05:47:55.709Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-02T05:47:55.709Z [INFO] [PROXY] Generated session ID: 58a8ec6c-6909-4aab-a17c-c78e22c204df
+2025-09-02T05:47:55.709Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-02T05:47:55.709Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "58a8ec6c-6909-4aab-a17c-c78e22c204df",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-02T05:47:55.710Z [INFO] [API] Request method: initialize
+2025-09-02T05:47:55.710Z [DEBUG] [API] Request args: {}
+2025-09-02T05:47:55.710Z [INFO] [AUTH] Using JWT token authentication
+2025-09-02T05:47:55.710Z [DEBUG] [AUTH] Token length: 233
+2025-09-02T05:47:55.710Z [DEBUG] [API] Environment: development
+2025-09-02T05:47:55.710Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-02T05:47:55.710Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-02T05:47:55.710Z [INFO] [API] Sending request to WordPress API...
+2025-09-02T05:47:55.710Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-02T05:47:55.710Z [DEBUG] [API] Request method: POST
+2025-09-02T05:48:06.238Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-03T04:31:56.836Z [INFO] [SYSTEM] Using native fetch API
+2025-09-03T04:31:56.839Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-03T04:31:56.840Z [INFO] [PROXY] Generated session ID: acd00f3e-49cf-4a7e-bb3e-db3086b69f9c
+2025-09-03T04:31:56.840Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-03T04:31:56.841Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "acd00f3e-49cf-4a7e-bb3e-db3086b69f9c",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-03T04:31:56.841Z [INFO] [API] Request method: initialize
+2025-09-03T04:31:56.841Z [DEBUG] [API] Request args: {}
+2025-09-03T04:31:56.841Z [INFO] [AUTH] Using JWT token authentication
+2025-09-03T04:31:56.842Z [DEBUG] [AUTH] Token length: 233
+2025-09-03T04:31:56.842Z [DEBUG] [API] Environment: development
+2025-09-03T04:31:56.842Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-03T04:31:56.842Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-03T04:31:56.842Z [INFO] [API] Sending request to WordPress API...
+2025-09-03T04:31:56.843Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-03T04:31:56.843Z [DEBUG] [API] Request method: POST
+2025-09-03T04:32:07.394Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-05T23:58:42.069Z [INFO] [SYSTEM] Using native fetch API
+2025-09-05T23:58:42.076Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-05T23:58:42.077Z [INFO] [PROXY] Generated session ID: 99e5e399-7396-4494-974d-ff75f331297f
+2025-09-05T23:58:42.077Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-05T23:58:42.077Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "99e5e399-7396-4494-974d-ff75f331297f",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-05T23:58:42.077Z [INFO] [API] Request method: initialize
+2025-09-05T23:58:42.077Z [DEBUG] [API] Request args: {}
+2025-09-05T23:58:42.077Z [INFO] [AUTH] Using JWT token authentication
+2025-09-05T23:58:42.078Z [DEBUG] [AUTH] Token length: 233
+2025-09-05T23:58:42.078Z [DEBUG] [API] Environment: development
+2025-09-05T23:58:42.078Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-05T23:58:42.078Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-05T23:58:42.078Z [INFO] [API] Sending request to WordPress API...
+2025-09-05T23:58:42.078Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-05T23:58:42.078Z [DEBUG] [API] Request method: POST
+2025-09-05T23:58:52.606Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-06T14:42:21.707Z [INFO] [SYSTEM] Using native fetch API
+2025-09-06T14:42:21.712Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-06T14:42:21.713Z [INFO] [PROXY] Generated session ID: 64c39eb8-9e0b-43f6-bd80-524f8164bc05
+2025-09-06T14:42:21.714Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-06T14:42:21.714Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "64c39eb8-9e0b-43f6-bd80-524f8164bc05",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-06T14:42:21.714Z [INFO] [API] Request method: initialize
+2025-09-06T14:42:21.714Z [DEBUG] [API] Request args: {}
+2025-09-06T14:42:21.714Z [INFO] [AUTH] Using JWT token authentication
+2025-09-06T14:42:21.714Z [DEBUG] [AUTH] Token length: 233
+2025-09-06T14:42:21.715Z [DEBUG] [API] Environment: development
+2025-09-06T14:42:21.715Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-06T14:42:21.715Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-06T14:42:21.715Z [INFO] [API] Sending request to WordPress API...
+2025-09-06T14:42:21.715Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-06T14:42:21.715Z [DEBUG] [API] Request method: POST
+2025-09-06T14:42:32.268Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-06T15:50:28.892Z [INFO] [SYSTEM] Using native fetch API
+2025-09-06T15:50:28.896Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-06T15:50:28.897Z [INFO] [PROXY] Generated session ID: 36899f1b-59d5-499d-b019-215ae5f5f46c
+2025-09-06T15:50:28.897Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-06T15:50:28.897Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "36899f1b-59d5-499d-b019-215ae5f5f46c",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-06T15:50:28.898Z [INFO] [API] Request method: initialize
+2025-09-06T15:50:28.898Z [DEBUG] [API] Request args: {}
+2025-09-06T15:50:28.898Z [INFO] [AUTH] Using JWT token authentication
+2025-09-06T15:50:28.898Z [DEBUG] [AUTH] Token length: 233
+2025-09-06T15:50:28.899Z [DEBUG] [API] Environment: development
+2025-09-06T15:50:28.899Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-06T15:50:28.899Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-06T15:50:28.899Z [INFO] [API] Sending request to WordPress API...
+2025-09-06T15:50:28.899Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-06T15:50:28.899Z [DEBUG] [API] Request method: POST
+2025-09-06T15:50:39.454Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-08T12:56:40.162Z [INFO] [SYSTEM] Using native fetch API
+2025-09-08T12:56:40.163Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-08T12:56:40.164Z [INFO] [PROXY] Generated session ID: e9d65ced-8989-4905-a413-1bbdb250bec5
+2025-09-08T12:56:40.164Z [INFO] [PROXY] Initializing connection to WordPress API...
+2025-09-08T12:56:40.164Z [DEBUG] [SESSION] Session info being sent to WordPress:
+{
+  "id": 1,
+  "session_id": "e9d65ced-8989-4905-a413-1bbdb250bec5",
+  "method": "initialize",
+  "original_mcp_id": "none"
+}
+2025-09-08T12:56:40.164Z [INFO] [API] Request method: initialize
+2025-09-08T12:56:40.164Z [DEBUG] [API] Request args: {}
+2025-09-08T12:56:40.164Z [INFO] [AUTH] Using JWT token authentication
+2025-09-08T12:56:40.164Z [DEBUG] [AUTH] Token length: 233
+2025-09-08T12:56:40.164Z [DEBUG] [API] Environment: development
+2025-09-08T12:56:40.164Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-08T12:56:40.165Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-08T12:56:40.165Z [INFO] [API] Sending request to WordPress API...
+2025-09-08T12:56:40.165Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-08T12:56:40.165Z [DEBUG] [API] Request method: POST
+2025-09-08T12:56:50.685Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-09T09:59:44.616Z [INFO] [SYSTEM] Using native fetch API
+2025-09-09T09:59:44.619Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-09T09:59:44.619Z [INFO] [PROXY] Initializing connection to WordPress API with transport detection...
+2025-09-09T09:59:44.619Z [INFO] [PROXY] Attempting JSON-RPC transport...
+2025-09-09T09:59:44.619Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-09T09:59:44.620Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-09T09:59:44.620Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"_proxy_request_id":1}}
+2025-09-09T09:59:44.620Z [INFO] [AUTH] Using JWT token authentication
+2025-09-09T09:59:44.620Z [DEBUG] [AUTH] Token length: 233
+2025-09-09T09:59:44.620Z [DEBUG] [API] Environment: development
+2025-09-09T09:59:44.620Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-09T09:59:44.621Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T09:59:44.621Z [INFO] [API] Sending request to WordPress API...
+2025-09-09T09:59:44.621Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T09:59:44.621Z [DEBUG] [API] Request method: POST
+2025-09-09T09:59:55.177Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-09T09:59:55.177Z [WARN] [PROXY] JSON-RPC transport failed, trying simple transport...
+2025-09-09T09:59:55.177Z [DEBUG] [PROXY] JSON-RPC error:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-09T09:59:55.177Z [INFO] [API] Request method: initialize (Simple)
+2025-09-09T09:59:55.177Z [DEBUG] [API] Simple request: {"method":"initialize"}
+2025-09-09T09:59:55.178Z [INFO] [AUTH] Using JWT token authentication
+2025-09-09T09:59:55.178Z [DEBUG] [AUTH] Token length: 233
+2025-09-09T09:59:55.178Z [DEBUG] [API] Environment: development
+2025-09-09T09:59:55.178Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-09T09:59:55.178Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T09:59:55.178Z [INFO] [API] Sending request to WordPress API...
+2025-09-09T09:59:55.178Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T09:59:55.178Z [DEBUG] [API] Request method: POST
+2025-09-09T10:00:05.685Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-09T10:00:05.685Z [ERROR] [PROXY] Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-09T10:00:43.271Z [INFO] [SYSTEM] Using native fetch API
+2025-09-09T10:00:43.272Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-09T10:00:43.273Z [INFO] [PROXY] Initializing connection to WordPress API with transport detection...
+2025-09-09T10:00:43.273Z [INFO] [PROXY] Attempting JSON-RPC transport...
+2025-09-09T10:00:43.274Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-09T10:00:43.274Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-09T10:00:43.274Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"_proxy_request_id":1}}
+2025-09-09T10:00:43.275Z [INFO] [AUTH] Using JWT token authentication
+2025-09-09T10:00:43.278Z [DEBUG] [AUTH] Token length: 233
+2025-09-09T10:00:43.278Z [DEBUG] [API] Environment: development
+2025-09-09T10:00:43.278Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-09T10:00:43.279Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T10:00:43.279Z [INFO] [API] Sending request to WordPress API...
+2025-09-09T10:00:43.280Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T10:00:43.280Z [DEBUG] [API] Request method: POST
+2025-09-09T10:00:53.838Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-09T10:00:53.838Z [WARN] [PROXY] JSON-RPC transport failed, trying simple transport...
+2025-09-09T10:00:53.839Z [DEBUG] [PROXY] JSON-RPC error:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-09T10:00:53.839Z [INFO] [API] Request method: initialize (Simple)
+2025-09-09T10:00:53.839Z [DEBUG] [API] Simple request: {"method":"initialize"}
+2025-09-09T10:00:53.839Z [INFO] [AUTH] Using JWT token authentication
+2025-09-09T10:00:53.839Z [DEBUG] [AUTH] Token length: 233
+2025-09-09T10:00:53.839Z [DEBUG] [API] Environment: development
+2025-09-09T10:00:53.839Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-09T10:00:53.839Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T10:00:53.839Z [INFO] [API] Sending request to WordPress API...
+2025-09-09T10:00:53.839Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-09T10:00:53.839Z [DEBUG] [API] Request method: POST
+2025-09-09T10:01:04.347Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-09T10:01:04.348Z [ERROR] [PROXY] Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-16T14:19:53.051Z [INFO] [SYSTEM] Using native fetch API
+2025-09-16T14:19:53.054Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-16T14:19:53.055Z [INFO] [PROXY] Initializing connection to WordPress API with transport detection...
+2025-09-16T14:19:53.055Z [INFO] [PROXY] Attempting JSON-RPC transport...
+2025-09-16T14:19:53.055Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-16T14:19:53.056Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-16T14:19:53.056Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"_proxy_request_id":1}}
+2025-09-16T14:19:53.056Z [INFO] [AUTH] Using JWT token authentication
+2025-09-16T14:19:53.056Z [DEBUG] [AUTH] Token length: 233
+2025-09-16T14:19:53.056Z [DEBUG] [API] Environment: development
+2025-09-16T14:19:53.056Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-16T14:19:53.056Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-16T14:19:53.057Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-16T14:19:53.057Z [INFO] [API] Sending request to WordPress API...
+2025-09-16T14:19:53.057Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-16T14:19:53.057Z [DEBUG] [API] Request method: POST
+2025-09-16T14:20:03.604Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-16T14:20:03.605Z [WARN] [PROXY] JSON-RPC transport failed, trying simple transport...
+2025-09-16T14:20:03.605Z [DEBUG] [PROXY] JSON-RPC error:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-16T14:20:03.605Z [INFO] [API] Request method: initialize (Simple)
+2025-09-16T14:20:03.606Z [DEBUG] [API] Simple request: {"method":"initialize"}
+2025-09-16T14:20:03.606Z [INFO] [AUTH] Using JWT token authentication
+2025-09-16T14:20:03.606Z [DEBUG] [AUTH] Token length: 233
+2025-09-16T14:20:03.606Z [DEBUG] [API] Environment: development
+2025-09-16T14:20:03.606Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-16T14:20:03.606Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-16T14:20:03.606Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-16T14:20:03.606Z [INFO] [API] Sending request to WordPress API...
+2025-09-16T14:20:03.607Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-16T14:20:03.607Z [DEBUG] [API] Request method: POST
+2025-09-16T14:20:14.824Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-16T14:20:14.825Z [ERROR] [PROXY] Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-25T14:11:11.272Z [INFO] [SYSTEM] Using native fetch API
+2025-09-25T14:11:11.274Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-25T14:11:11.275Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-09-25T14:11:11.278Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-09-25T14:11:11.278Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.115"
+    }
+  }
+}
+2025-09-25T14:11:11.278Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-09-25T14:11:11.279Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-09-25T14:11:11.279Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-09-25T14:11:11.279Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-09-25T14:11:11.279Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-25T14:11:11.279Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-09-25T14:11:11.279Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.115",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-09-25T14:11:11.279Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-25T14:11:11.279Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.115","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-09-25T14:11:11.279Z [INFO] [AUTH] Using JWT token authentication
+2025-09-25T14:11:11.279Z [DEBUG] [AUTH] Token length: 233
+2025-09-25T14:11:11.279Z [DEBUG] [API] Environment: development
+2025-09-25T14:11:11.279Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-25T14:11:11.279Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:11.279Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-25T14:11:11.279Z [INFO] [API] Sending request to WordPress API...
+2025-09-25T14:11:11.279Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:11.279Z [DEBUG] [API] Request method: POST
+2025-09-25T14:11:21.816Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-25T14:11:21.816Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-09-25T14:11:21.816Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-25T14:11:21.816Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-09-25T14:11:21.816Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "1.0.115",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-09-25T14:11:21.816Z [INFO] [API] Request method: initialize (Simple)
+2025-09-25T14:11:21.816Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.115","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-09-25T14:11:21.816Z [INFO] [AUTH] Using JWT token authentication
+2025-09-25T14:11:21.816Z [DEBUG] [AUTH] Token length: 233
+2025-09-25T14:11:21.816Z [DEBUG] [API] Environment: development
+2025-09-25T14:11:21.816Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-25T14:11:21.816Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:21.816Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-25T14:11:21.816Z [INFO] [API] Sending request to WordPress API...
+2025-09-25T14:11:21.816Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:21.817Z [DEBUG] [API] Request method: POST
+2025-09-25T14:11:32.351Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-25T14:11:32.352Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-25T14:11:32.352Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-09-25T14:11:32.352Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-09-25T14:11:33.403Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-09-25T14:11:33.403Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-09-25T14:11:33.403Z [INFO] [CLIENT] No request parameters
+2025-09-25T14:11:33.403Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-25T14:11:33.403Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-09-25T14:11:33.403Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-09-25T14:11:33.403Z [INFO] [API] Request method: tools/list (Simple)
+2025-09-25T14:11:33.403Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-09-25T14:11:33.403Z [INFO] [AUTH] Using JWT token authentication
+2025-09-25T14:11:33.403Z [DEBUG] [AUTH] Token length: 233
+2025-09-25T14:11:33.403Z [DEBUG] [API] Environment: development
+2025-09-25T14:11:33.403Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-25T14:11:33.403Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.403Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-25T14:11:33.403Z [INFO] [API] Sending request to WordPress API...
+2025-09-25T14:11:33.403Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.403Z [DEBUG] [API] Request method: POST
+2025-09-25T14:11:33.406Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-09-25T14:11:33.406Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-09-25T14:11:33.406Z [INFO] [CLIENT] No request parameters
+2025-09-25T14:11:33.406Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-25T14:11:33.406Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-09-25T14:11:33.406Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-09-25T14:11:33.406Z [INFO] [API] Request method: prompts/list (Simple)
+2025-09-25T14:11:33.406Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-09-25T14:11:33.406Z [INFO] [AUTH] Using JWT token authentication
+2025-09-25T14:11:33.406Z [DEBUG] [AUTH] Token length: 233
+2025-09-25T14:11:33.406Z [DEBUG] [API] Environment: development
+2025-09-25T14:11:33.406Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-25T14:11:33.406Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.406Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-25T14:11:33.406Z [INFO] [API] Sending request to WordPress API...
+2025-09-25T14:11:33.406Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.406Z [DEBUG] [API] Request method: POST
+2025-09-25T14:11:33.407Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-09-25T14:11:33.407Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-09-25T14:11:33.407Z [INFO] [CLIENT] No request parameters
+2025-09-25T14:11:33.407Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-25T14:11:33.407Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-09-25T14:11:33.407Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-09-25T14:11:33.407Z [INFO] [API] Request method: resources/list (Simple)
+2025-09-25T14:11:33.407Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-09-25T14:11:33.407Z [INFO] [AUTH] Using JWT token authentication
+2025-09-25T14:11:33.407Z [DEBUG] [AUTH] Token length: 233
+2025-09-25T14:11:33.407Z [DEBUG] [API] Environment: development
+2025-09-25T14:11:33.407Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-25T14:11:33.407Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.407Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-25T14:11:33.407Z [INFO] [API] Sending request to WordPress API...
+2025-09-25T14:11:33.407Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-25T14:11:33.407Z [DEBUG] [API] Request method: POST
+2025-09-25T14:11:42.552Z [DEBUG] [API] Response status: 403
+2025-09-25T14:11:42.555Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-09-25T14:11:42.555Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 9149ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-09-25T14:11:43.902Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-25T14:11:43.902Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10499ms
+{
+  "error": "fetch failed"
+}
+2025-09-25T14:11:43.903Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-25T14:11:43.903Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10496ms
+{
+  "error": "fetch failed"
+}
+2025-09-29T07:05:46.079Z [INFO] [SYSTEM] Using native fetch API
+2025-09-29T07:05:46.081Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-29T07:05:46.081Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-09-29T07:05:46.085Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-09-29T07:05:46.085Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.124"
+    }
+  }
+}
+2025-09-29T07:05:46.085Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-09-29T07:05:46.085Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-09-29T07:05:46.085Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-09-29T07:05:46.085Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-09-29T07:05:46.086Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-29T07:05:46.086Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-09-29T07:05:46.086Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.124",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-09-29T07:05:46.086Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-29T07:05:46.086Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.124","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-09-29T07:05:46.086Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T07:05:46.086Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T07:05:46.086Z [DEBUG] [API] Environment: development
+2025-09-29T07:05:46.086Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T07:05:46.086Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:05:46.086Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T07:05:46.086Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T07:05:46.086Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:05:46.086Z [DEBUG] [API] Request method: POST
+2025-09-29T07:05:56.802Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T07:05:56.802Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-09-29T07:05:56.802Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-29T07:05:56.802Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-09-29T07:05:56.802Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "1.0.124",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-09-29T07:05:56.802Z [INFO] [API] Request method: initialize (Simple)
+2025-09-29T07:05:56.802Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.124","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-09-29T07:05:56.802Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T07:05:56.802Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T07:05:56.803Z [DEBUG] [API] Environment: development
+2025-09-29T07:05:56.803Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T07:05:56.803Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:05:56.803Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T07:05:56.803Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T07:05:56.803Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:05:56.803Z [DEBUG] [API] Request method: POST
+2025-09-29T07:06:06.872Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T07:06:06.872Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-29T07:06:06.872Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-09-29T07:06:06.872Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-09-29T07:06:06.880Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-09-29T07:06:06.880Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-09-29T07:06:06.880Z [INFO] [CLIENT] No request parameters
+2025-09-29T07:06:06.880Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T07:06:06.880Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-09-29T07:06:06.880Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-09-29T07:06:06.881Z [INFO] [API] Request method: tools/list (Simple)
+2025-09-29T07:06:06.881Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-09-29T07:06:06.881Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T07:06:06.881Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T07:06:06.881Z [DEBUG] [API] Environment: development
+2025-09-29T07:06:06.881Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T07:06:06.881Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.881Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T07:06:06.881Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T07:06:06.881Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.881Z [DEBUG] [API] Request method: POST
+2025-09-29T07:06:06.882Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-09-29T07:06:06.882Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-09-29T07:06:06.882Z [INFO] [CLIENT] No request parameters
+2025-09-29T07:06:06.882Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T07:06:06.882Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-09-29T07:06:06.882Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-09-29T07:06:06.882Z [INFO] [API] Request method: prompts/list (Simple)
+2025-09-29T07:06:06.882Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-09-29T07:06:06.882Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T07:06:06.882Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T07:06:06.882Z [DEBUG] [API] Environment: development
+2025-09-29T07:06:06.882Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T07:06:06.882Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.883Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T07:06:06.883Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T07:06:06.883Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.883Z [DEBUG] [API] Request method: POST
+2025-09-29T07:06:06.883Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-09-29T07:06:06.883Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-09-29T07:06:06.883Z [INFO] [CLIENT] No request parameters
+2025-09-29T07:06:06.883Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T07:06:06.883Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-09-29T07:06:06.883Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-09-29T07:06:06.884Z [INFO] [API] Request method: resources/list (Simple)
+2025-09-29T07:06:06.884Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-09-29T07:06:06.884Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T07:06:06.884Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T07:06:06.884Z [DEBUG] [API] Environment: development
+2025-09-29T07:06:06.884Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T07:06:06.884Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.884Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T07:06:06.884Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T07:06:06.884Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T07:06:06.884Z [DEBUG] [API] Request method: POST
+2025-09-29T07:06:16.504Z [DEBUG] [API] Response status: 403
+2025-09-29T07:06:16.508Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-09-29T07:06:16.508Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 9626ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-09-29T07:06:17.580Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T07:06:17.580Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10700ms
+{
+  "error": "fetch failed"
+}
+2025-09-29T07:06:17.581Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T07:06:17.581Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10698ms
+{
+  "error": "fetch failed"
+}
+2025-09-29T22:54:28.887Z [INFO] [SYSTEM] Using native fetch API
+2025-09-29T22:54:28.888Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-29T22:54:28.889Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-09-29T22:54:28.894Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-09-29T22:54:28.894Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.128"
+    }
+  }
+}
+2025-09-29T22:54:28.894Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-09-29T22:54:28.894Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-09-29T22:54:28.894Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-09-29T22:54:28.894Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-09-29T22:54:28.894Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-29T22:54:28.894Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-09-29T22:54:28.894Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "1.0.128",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-09-29T22:54:28.895Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-29T22:54:28.895Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.128","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-09-29T22:54:28.895Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T22:54:28.895Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T22:54:28.895Z [DEBUG] [API] Environment: development
+2025-09-29T22:54:28.895Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T22:54:28.895Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:28.895Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T22:54:28.895Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T22:54:28.895Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:28.895Z [DEBUG] [API] Request method: POST
+2025-09-29T22:54:39.429Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T22:54:39.430Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-09-29T22:54:39.430Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-29T22:54:39.430Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-09-29T22:54:39.430Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "1.0.128",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-09-29T22:54:39.430Z [INFO] [API] Request method: initialize (Simple)
+2025-09-29T22:54:39.430Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"1.0.128","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-09-29T22:54:39.430Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T22:54:39.430Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T22:54:39.430Z [DEBUG] [API] Environment: development
+2025-09-29T22:54:39.430Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T22:54:39.430Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:39.430Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T22:54:39.430Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T22:54:39.430Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:39.430Z [DEBUG] [API] Request method: POST
+2025-09-29T22:54:49.945Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T22:54:49.945Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-29T22:54:49.945Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-09-29T22:54:49.945Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-09-29T22:54:49.950Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-09-29T22:54:49.950Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-09-29T22:54:49.950Z [INFO] [CLIENT] No request parameters
+2025-09-29T22:54:49.950Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T22:54:49.950Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-09-29T22:54:49.950Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-09-29T22:54:49.950Z [INFO] [API] Request method: tools/list (Simple)
+2025-09-29T22:54:49.950Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-09-29T22:54:49.950Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T22:54:49.950Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T22:54:49.950Z [DEBUG] [API] Environment: development
+2025-09-29T22:54:49.950Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T22:54:49.950Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.950Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T22:54:49.950Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T22:54:49.950Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.950Z [DEBUG] [API] Request method: POST
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] No request parameters
+2025-09-29T22:54:49.951Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T22:54:49.951Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-09-29T22:54:49.951Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-09-29T22:54:49.951Z [INFO] [API] Request method: prompts/list (Simple)
+2025-09-29T22:54:49.951Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-09-29T22:54:49.951Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T22:54:49.951Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T22:54:49.951Z [DEBUG] [API] Environment: development
+2025-09-29T22:54:49.951Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T22:54:49.951Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.951Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T22:54:49.951Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T22:54:49.951Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.951Z [DEBUG] [API] Request method: POST
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-09-29T22:54:49.951Z [INFO] [CLIENT] No request parameters
+2025-09-29T22:54:49.951Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-29T22:54:49.951Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-09-29T22:54:49.951Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-09-29T22:54:49.951Z [INFO] [API] Request method: resources/list (Simple)
+2025-09-29T22:54:49.951Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-09-29T22:54:49.951Z [INFO] [AUTH] Using JWT token authentication
+2025-09-29T22:54:49.951Z [DEBUG] [AUTH] Token length: 233
+2025-09-29T22:54:49.951Z [DEBUG] [API] Environment: development
+2025-09-29T22:54:49.951Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-29T22:54:49.951Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.951Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-29T22:54:49.951Z [INFO] [API] Sending request to WordPress API...
+2025-09-29T22:54:49.951Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-29T22:54:49.951Z [DEBUG] [API] Request method: POST
+2025-09-29T22:55:00.504Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T22:55:00.504Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10554ms
+{
+  "error": "fetch failed"
+}
+2025-09-29T22:55:00.505Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-29T22:55:00.505Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10554ms
+{
+  "error": "fetch failed"
+}
+2025-09-29T22:55:02.277Z [DEBUG] [API] Response status: 403
+2025-09-29T22:55:02.278Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-09-29T22:55:02.279Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 12328ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-09-30T07:19:29.627Z [INFO] [SYSTEM] Using native fetch API
+2025-09-30T07:19:29.639Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-09-30T07:19:29.641Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-09-30T07:19:29.647Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-09-30T07:19:29.647Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1"
+    }
+  }
+}
+2025-09-30T07:19:29.647Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-09-30T07:19:29.648Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-09-30T07:19:29.648Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-09-30T07:19:29.648Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-09-30T07:19:29.648Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-09-30T07:19:29.648Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-09-30T07:19:29.648Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-09-30T07:19:29.649Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-09-30T07:19:29.649Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-09-30T07:19:29.649Z [INFO] [AUTH] Using JWT token authentication
+2025-09-30T07:19:29.649Z [DEBUG] [AUTH] Token length: 233
+2025-09-30T07:19:29.649Z [DEBUG] [API] Environment: development
+2025-09-30T07:19:29.649Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-30T07:19:29.649Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:29.649Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-30T07:19:29.649Z [INFO] [API] Sending request to WordPress API...
+2025-09-30T07:19:29.649Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:29.649Z [DEBUG] [API] Request method: POST
+2025-09-30T07:19:40.211Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-30T07:19:40.211Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-09-30T07:19:40.211Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-30T07:19:40.211Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-09-30T07:19:40.211Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.1",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-09-30T07:19:40.211Z [INFO] [API] Request method: initialize (Simple)
+2025-09-30T07:19:40.211Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-09-30T07:19:40.211Z [INFO] [AUTH] Using JWT token authentication
+2025-09-30T07:19:40.211Z [DEBUG] [AUTH] Token length: 233
+2025-09-30T07:19:40.211Z [DEBUG] [API] Environment: development
+2025-09-30T07:19:40.211Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-30T07:19:40.212Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:40.212Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-30T07:19:40.212Z [INFO] [API] Sending request to WordPress API...
+2025-09-30T07:19:40.212Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:40.212Z [DEBUG] [API] Request method: POST
+2025-09-30T07:19:50.720Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-30T07:19:50.720Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-09-30T07:19:50.720Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-09-30T07:19:50.720Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-09-30T07:19:50.734Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-09-30T07:19:50.734Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-09-30T07:19:50.734Z [INFO] [CLIENT] No request parameters
+2025-09-30T07:19:50.734Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-30T07:19:50.734Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-09-30T07:19:50.734Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-09-30T07:19:50.735Z [INFO] [API] Request method: tools/list (Simple)
+2025-09-30T07:19:50.735Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-09-30T07:19:50.735Z [INFO] [AUTH] Using JWT token authentication
+2025-09-30T07:19:50.735Z [DEBUG] [AUTH] Token length: 233
+2025-09-30T07:19:50.735Z [DEBUG] [API] Environment: development
+2025-09-30T07:19:50.735Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-30T07:19:50.735Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.735Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-30T07:19:50.735Z [INFO] [API] Sending request to WordPress API...
+2025-09-30T07:19:50.735Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.735Z [DEBUG] [API] Request method: POST
+2025-09-30T07:19:50.741Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-09-30T07:19:50.741Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-09-30T07:19:50.741Z [INFO] [CLIENT] No request parameters
+2025-09-30T07:19:50.741Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-30T07:19:50.741Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-09-30T07:19:50.741Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-09-30T07:19:50.741Z [INFO] [API] Request method: prompts/list (Simple)
+2025-09-30T07:19:50.741Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-09-30T07:19:50.741Z [INFO] [AUTH] Using JWT token authentication
+2025-09-30T07:19:50.741Z [DEBUG] [AUTH] Token length: 233
+2025-09-30T07:19:50.741Z [DEBUG] [API] Environment: development
+2025-09-30T07:19:50.741Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-30T07:19:50.741Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.741Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-30T07:19:50.741Z [INFO] [API] Sending request to WordPress API...
+2025-09-30T07:19:50.741Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.741Z [DEBUG] [API] Request method: POST
+2025-09-30T07:19:50.742Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-09-30T07:19:50.742Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-09-30T07:19:50.742Z [INFO] [CLIENT] No request parameters
+2025-09-30T07:19:50.742Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-09-30T07:19:50.742Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-09-30T07:19:50.742Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-09-30T07:19:50.742Z [INFO] [API] Request method: resources/list (Simple)
+2025-09-30T07:19:50.742Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-09-30T07:19:50.742Z [INFO] [AUTH] Using JWT token authentication
+2025-09-30T07:19:50.742Z [DEBUG] [AUTH] Token length: 233
+2025-09-30T07:19:50.743Z [DEBUG] [API] Environment: development
+2025-09-30T07:19:50.743Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-09-30T07:19:50.743Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.743Z [DEBUG] [API] Using Authorization header for authentication
+2025-09-30T07:19:50.743Z [INFO] [API] Sending request to WordPress API...
+2025-09-30T07:19:50.743Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-09-30T07:19:50.743Z [DEBUG] [API] Request method: POST
+2025-09-30T07:20:01.240Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-30T07:20:01.241Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10507ms
+{
+  "error": "fetch failed"
+}
+2025-09-30T07:20:01.242Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-09-30T07:20:01.242Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10500ms
+{
+  "error": "fetch failed"
+}
+2025-09-30T07:20:04.104Z [DEBUG] [API] Response status: 403
+2025-09-30T07:20:04.107Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-09-30T07:20:04.108Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 13367ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-01T05:33:21.179Z [INFO] [SYSTEM] Using native fetch API
+2025-10-01T05:33:21.181Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-01T05:33:21.182Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-01T05:33:21.187Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-01T05:33:21.187Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1"
+    }
+  }
+}
+2025-10-01T05:33:21.187Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-01T05:33:21.187Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-01T05:33:21.188Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-01T05:33:21.188Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-01T05:33:21.188Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-01T05:33:21.188Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-01T05:33:21.188Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-01T05:33:21.188Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-01T05:33:21.188Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-01T05:33:21.189Z [INFO] [AUTH] Using JWT token authentication
+2025-10-01T05:33:21.189Z [DEBUG] [AUTH] Token length: 233
+2025-10-01T05:33:21.189Z [DEBUG] [API] Environment: development
+2025-10-01T05:33:21.189Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-01T05:33:21.189Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:21.189Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-01T05:33:21.189Z [INFO] [API] Sending request to WordPress API...
+2025-10-01T05:33:21.189Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:21.189Z [DEBUG] [API] Request method: POST
+2025-10-01T05:33:31.746Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-01T05:33:31.747Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-01T05:33:31.747Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-01T05:33:31.747Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-01T05:33:31.747Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.1",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-01T05:33:31.747Z [INFO] [API] Request method: initialize (Simple)
+2025-10-01T05:33:31.747Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-01T05:33:31.747Z [INFO] [AUTH] Using JWT token authentication
+2025-10-01T05:33:31.747Z [DEBUG] [AUTH] Token length: 233
+2025-10-01T05:33:31.747Z [DEBUG] [API] Environment: development
+2025-10-01T05:33:31.747Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-01T05:33:31.747Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:31.747Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-01T05:33:31.747Z [INFO] [API] Sending request to WordPress API...
+2025-10-01T05:33:31.747Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:31.747Z [DEBUG] [API] Request method: POST
+2025-10-01T05:33:42.248Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-01T05:33:42.248Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-01T05:33:42.248Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-01T05:33:42.249Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-01T05:33:42.264Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-01T05:33:42.264Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-01T05:33:42.264Z [INFO] [CLIENT] No request parameters
+2025-10-01T05:33:42.264Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-01T05:33:42.264Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-01T05:33:42.264Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-01T05:33:42.264Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-01T05:33:42.264Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-01T05:33:42.264Z [INFO] [AUTH] Using JWT token authentication
+2025-10-01T05:33:42.264Z [DEBUG] [AUTH] Token length: 233
+2025-10-01T05:33:42.264Z [DEBUG] [API] Environment: development
+2025-10-01T05:33:42.264Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-01T05:33:42.265Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.265Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-01T05:33:42.265Z [INFO] [API] Sending request to WordPress API...
+2025-10-01T05:33:42.265Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.265Z [DEBUG] [API] Request method: POST
+2025-10-01T05:33:42.267Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-01T05:33:42.267Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-01T05:33:42.267Z [INFO] [CLIENT] No request parameters
+2025-10-01T05:33:42.267Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-01T05:33:42.267Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-01T05:33:42.267Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-01T05:33:42.267Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-01T05:33:42.267Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-01T05:33:42.267Z [INFO] [AUTH] Using JWT token authentication
+2025-10-01T05:33:42.267Z [DEBUG] [AUTH] Token length: 233
+2025-10-01T05:33:42.267Z [DEBUG] [API] Environment: development
+2025-10-01T05:33:42.268Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-01T05:33:42.268Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.268Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-01T05:33:42.268Z [INFO] [API] Sending request to WordPress API...
+2025-10-01T05:33:42.268Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.268Z [DEBUG] [API] Request method: POST
+2025-10-01T05:33:42.269Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-01T05:33:42.269Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-01T05:33:42.269Z [INFO] [CLIENT] No request parameters
+2025-10-01T05:33:42.269Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-01T05:33:42.269Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-01T05:33:42.269Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-01T05:33:42.269Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-01T05:33:42.269Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-01T05:33:42.269Z [INFO] [AUTH] Using JWT token authentication
+2025-10-01T05:33:42.269Z [DEBUG] [AUTH] Token length: 233
+2025-10-01T05:33:42.269Z [DEBUG] [API] Environment: development
+2025-10-01T05:33:42.269Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-01T05:33:42.269Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.269Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-01T05:33:42.269Z [INFO] [API] Sending request to WordPress API...
+2025-10-01T05:33:42.269Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-01T05:33:42.269Z [DEBUG] [API] Request method: POST
+2025-10-01T05:33:52.773Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-01T05:33:52.773Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10509ms
+{
+  "error": "fetch failed"
+}
+2025-10-01T05:33:52.774Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-01T05:33:52.774Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10505ms
+{
+  "error": "fetch failed"
+}
+2025-10-01T05:33:56.083Z [DEBUG] [API] Response status: 403
+2025-10-01T05:33:56.086Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-01T05:33:56.086Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 13819ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T12:23:48.850Z [INFO] [SYSTEM] Using native fetch API
+2025-10-03T12:23:48.853Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-03T12:23:48.854Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-03T12:23:48.859Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-03T12:23:48.859Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1"
+    }
+  }
+}
+2025-10-03T12:23:48.859Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-03T12:23:48.859Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-03T12:23:48.860Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-03T12:23:48.860Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-03T12:23:48.860Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-03T12:23:48.860Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-03T12:23:48.860Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.1",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-03T12:23:48.861Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-03T12:23:48.861Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-03T12:23:48.861Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T12:23:48.861Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T12:23:48.861Z [DEBUG] [API] Environment: development
+2025-10-03T12:23:48.861Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T12:23:48.861Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:48.861Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T12:23:48.861Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T12:23:48.861Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:48.861Z [DEBUG] [API] Request method: POST
+2025-10-03T12:23:50.678Z [DEBUG] [API] Response status: 403
+2025-10-03T12:23:50.681Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T12:23:50.681Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-03T12:23:50.681Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 403,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp",
+  "response": "{\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T12:23:50.681Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-03T12:23:50.681Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.1",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-03T12:23:50.681Z [INFO] [API] Request method: initialize (Simple)
+2025-10-03T12:23:50.681Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.1","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-03T12:23:50.681Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T12:23:50.681Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T12:23:50.681Z [DEBUG] [API] Environment: development
+2025-10-03T12:23:50.681Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T12:23:50.681Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.681Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T12:23:50.681Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T12:23:50.681Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.681Z [DEBUG] [API] Request method: POST
+2025-10-03T12:23:50.897Z [DEBUG] [API] Response status: 403
+2025-10-03T12:23:50.898Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T12:23:50.898Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 403,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp",
+  "response": "{\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T12:23:50.898Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-03T12:23:50.898Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-03T12:23:50.908Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-03T12:23:50.908Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-03T12:23:50.908Z [INFO] [CLIENT] No request parameters
+2025-10-03T12:23:50.908Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T12:23:50.908Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-03T12:23:50.908Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-03T12:23:50.908Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-03T12:23:50.908Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-03T12:23:50.908Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T12:23:50.908Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T12:23:50.908Z [DEBUG] [API] Environment: development
+2025-10-03T12:23:50.908Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T12:23:50.908Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.908Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T12:23:50.908Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T12:23:50.909Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.909Z [DEBUG] [API] Request method: POST
+2025-10-03T12:23:50.911Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-03T12:23:50.911Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-03T12:23:50.911Z [INFO] [CLIENT] No request parameters
+2025-10-03T12:23:50.911Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T12:23:50.911Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-03T12:23:50.911Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-03T12:23:50.911Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-03T12:23:50.911Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-03T12:23:50.912Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T12:23:50.912Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T12:23:50.912Z [DEBUG] [API] Environment: development
+2025-10-03T12:23:50.912Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T12:23:50.912Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.912Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T12:23:50.912Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T12:23:50.912Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.912Z [DEBUG] [API] Request method: POST
+2025-10-03T12:23:50.912Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-03T12:23:50.912Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-03T12:23:50.912Z [INFO] [CLIENT] No request parameters
+2025-10-03T12:23:50.912Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T12:23:50.912Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-03T12:23:50.912Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-03T12:23:50.912Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-03T12:23:50.912Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-03T12:23:50.912Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T12:23:50.913Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T12:23:50.913Z [DEBUG] [API] Environment: development
+2025-10-03T12:23:50.913Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T12:23:50.913Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.913Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T12:23:50.913Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T12:23:50.913Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T12:23:50.913Z [DEBUG] [API] Request method: POST
+2025-10-03T12:23:51.306Z [DEBUG] [API] Response status: 403
+2025-10-03T12:23:51.308Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T12:23:51.309Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 397ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T12:23:51.339Z [DEBUG] [API] Response status: 403
+2025-10-03T12:23:51.340Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T12:23:51.340Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 432ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T12:23:51.627Z [DEBUG] [API] Response status: 403
+2025-10-03T12:23:51.628Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T12:23:51.628Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 717ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T15:58:04.423Z [INFO] [SYSTEM] Using native fetch API
+2025-10-03T15:58:04.425Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-03T15:58:04.427Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-03T15:58:04.432Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-03T15:58:04.432Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5"
+    }
+  }
+}
+2025-10-03T15:58:04.432Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-03T15:58:04.433Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-03T15:58:04.433Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-03T15:58:04.433Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-03T15:58:04.433Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-03T15:58:04.433Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-03T15:58:04.433Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-03T15:58:04.435Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-03T15:58:04.436Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-03T15:58:04.436Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T15:58:04.436Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T15:58:04.436Z [DEBUG] [API] Environment: development
+2025-10-03T15:58:04.436Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T15:58:04.437Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:04.437Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T15:58:04.437Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T15:58:04.437Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:04.437Z [DEBUG] [API] Request method: POST
+2025-10-03T15:58:15.116Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T15:58:15.116Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-03T15:58:15.116Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T15:58:15.116Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-03T15:58:15.116Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.5",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-03T15:58:15.116Z [INFO] [API] Request method: initialize (Simple)
+2025-10-03T15:58:15.116Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-03T15:58:15.116Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T15:58:15.116Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T15:58:15.116Z [DEBUG] [API] Environment: development
+2025-10-03T15:58:15.116Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T15:58:15.116Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:15.116Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T15:58:15.116Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T15:58:15.116Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:15.116Z [DEBUG] [API] Request method: POST
+2025-10-03T15:58:25.766Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T15:58:25.767Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T15:58:25.769Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-03T15:58:25.769Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-03T15:58:25.801Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-03T15:58:25.801Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-03T15:58:25.801Z [INFO] [CLIENT] No request parameters
+2025-10-03T15:58:25.801Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T15:58:25.801Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-03T15:58:25.801Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-03T15:58:25.801Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-03T15:58:25.801Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-03T15:58:25.801Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T15:58:25.801Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T15:58:25.802Z [DEBUG] [API] Environment: development
+2025-10-03T15:58:25.802Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T15:58:25.802Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.802Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T15:58:25.802Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T15:58:25.802Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.802Z [DEBUG] [API] Request method: POST
+2025-10-03T15:58:25.807Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-03T15:58:25.808Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-03T15:58:25.808Z [INFO] [CLIENT] No request parameters
+2025-10-03T15:58:25.808Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T15:58:25.808Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-03T15:58:25.808Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-03T15:58:25.808Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-03T15:58:25.808Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-03T15:58:25.808Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T15:58:25.808Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T15:58:25.808Z [DEBUG] [API] Environment: development
+2025-10-03T15:58:25.808Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T15:58:25.808Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.808Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T15:58:25.808Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T15:58:25.808Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.808Z [DEBUG] [API] Request method: POST
+2025-10-03T15:58:25.810Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-03T15:58:25.810Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-03T15:58:25.810Z [INFO] [CLIENT] No request parameters
+2025-10-03T15:58:25.810Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T15:58:25.810Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-03T15:58:25.810Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-03T15:58:25.810Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-03T15:58:25.810Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-03T15:58:25.810Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T15:58:25.810Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T15:58:25.810Z [DEBUG] [API] Environment: development
+2025-10-03T15:58:25.810Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T15:58:25.810Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.810Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T15:58:25.810Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T15:58:25.810Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T15:58:25.810Z [DEBUG] [API] Request method: POST
+2025-10-03T15:58:35.802Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T15:58:35.802Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10001ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T15:58:35.804Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T15:58:35.804Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 9994ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T15:58:36.180Z [DEBUG] [API] Response status: 403
+2025-10-03T15:58:36.186Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T15:58:36.186Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 10378ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T22:31:32.632Z [INFO] [SYSTEM] Using native fetch API
+2025-10-03T22:31:32.635Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-03T22:31:32.637Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-03T22:31:32.643Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-03T22:31:32.643Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5"
+    }
+  }
+}
+2025-10-03T22:31:32.644Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-03T22:31:32.644Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-03T22:31:32.644Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-03T22:31:32.644Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-03T22:31:32.644Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-03T22:31:32.644Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-03T22:31:32.644Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-03T22:31:32.645Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-03T22:31:32.645Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-03T22:31:32.645Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:31:32.645Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:31:32.645Z [DEBUG] [API] Environment: development
+2025-10-03T22:31:32.645Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:31:32.645Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:32.645Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:31:32.645Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:31:32.645Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:32.645Z [DEBUG] [API] Request method: POST
+2025-10-03T22:31:43.196Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:31:43.196Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-03T22:31:43.196Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T22:31:43.196Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-03T22:31:43.196Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.5",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-03T22:31:43.196Z [INFO] [API] Request method: initialize (Simple)
+2025-10-03T22:31:43.196Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-03T22:31:43.196Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:31:43.196Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:31:43.196Z [DEBUG] [API] Environment: development
+2025-10-03T22:31:43.197Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:31:43.197Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:43.197Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:31:43.197Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:31:43.197Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:43.197Z [DEBUG] [API] Request method: POST
+2025-10-03T22:31:53.770Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:31:53.770Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T22:31:53.770Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-03T22:31:53.771Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-03T22:31:53.783Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-03T22:31:53.783Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-03T22:31:53.783Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:31:53.783Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:31:53.783Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-03T22:31:53.783Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-03T22:31:53.783Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-03T22:31:53.783Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-03T22:31:53.783Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:31:53.783Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:31:53.783Z [DEBUG] [API] Environment: development
+2025-10-03T22:31:53.784Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:31:53.784Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.784Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:31:53.784Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:31:53.784Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.784Z [DEBUG] [API] Request method: POST
+2025-10-03T22:31:53.787Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-03T22:31:53.787Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-03T22:31:53.787Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:31:53.787Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:31:53.787Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-03T22:31:53.787Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-03T22:31:53.787Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-03T22:31:53.787Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-03T22:31:53.787Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:31:53.787Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:31:53.787Z [DEBUG] [API] Environment: development
+2025-10-03T22:31:53.787Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:31:53.787Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.787Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:31:53.787Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:31:53.787Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.787Z [DEBUG] [API] Request method: POST
+2025-10-03T22:31:53.788Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-03T22:31:53.788Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-03T22:31:53.788Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:31:53.788Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:31:53.788Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-03T22:31:53.788Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-03T22:31:53.788Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-03T22:31:53.788Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-03T22:31:53.788Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:31:53.788Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:31:53.788Z [DEBUG] [API] Environment: development
+2025-10-03T22:31:53.788Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:31:53.788Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.788Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:31:53.788Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:31:53.788Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:31:53.788Z [DEBUG] [API] Request method: POST
+2025-10-03T22:32:03.675Z [DEBUG] [API] Response status: 403
+2025-10-03T22:32:03.680Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T22:32:03.680Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 9893ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-03T22:32:04.314Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:32:04.315Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10532ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T22:32:04.316Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:32:04.316Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10528ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T22:46:07.719Z [INFO] [SYSTEM] Using native fetch API
+2025-10-03T22:46:07.723Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-03T22:46:07.724Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-03T22:46:07.848Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-03T22:46:07.848Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5"
+    }
+  }
+}
+2025-10-03T22:46:07.848Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-03T22:46:07.848Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-03T22:46:07.848Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-03T22:46:07.848Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-03T22:46:07.848Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-03T22:46:07.849Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-03T22:46:07.849Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-03T22:46:07.849Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-03T22:46:07.849Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-03T22:46:07.850Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:46:07.850Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:46:07.850Z [DEBUG] [API] Environment: development
+2025-10-03T22:46:07.850Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:46:07.850Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:07.850Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:46:07.850Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:46:07.850Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:07.850Z [DEBUG] [API] Request method: POST
+2025-10-03T22:46:18.400Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:46:18.401Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-03T22:46:18.401Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T22:46:18.401Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-03T22:46:18.401Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.5",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-03T22:46:18.401Z [INFO] [API] Request method: initialize (Simple)
+2025-10-03T22:46:18.401Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-03T22:46:18.401Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:46:18.401Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:46:18.401Z [DEBUG] [API] Environment: development
+2025-10-03T22:46:18.401Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:46:18.401Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:18.401Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:46:18.401Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:46:18.401Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:18.401Z [DEBUG] [API] Request method: POST
+2025-10-03T22:46:28.929Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:46:28.929Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-03T22:46:28.929Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-03T22:46:28.929Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-03T22:46:28.941Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-03T22:46:28.941Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-03T22:46:28.941Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:46:28.941Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:46:28.941Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-03T22:46:28.942Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-03T22:46:28.942Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-03T22:46:28.942Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-03T22:46:28.942Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:46:28.942Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:46:28.942Z [DEBUG] [API] Environment: development
+2025-10-03T22:46:28.942Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:46:28.942Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.942Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:46:28.942Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:46:28.942Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.942Z [DEBUG] [API] Request method: POST
+2025-10-03T22:46:28.947Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-03T22:46:28.947Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-03T22:46:28.947Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:46:28.947Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:46:28.948Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-03T22:46:28.948Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-03T22:46:28.948Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-03T22:46:28.948Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-03T22:46:28.948Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:46:28.948Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:46:28.948Z [DEBUG] [API] Environment: development
+2025-10-03T22:46:28.948Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:46:28.948Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.948Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:46:28.949Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:46:28.949Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.949Z [DEBUG] [API] Request method: POST
+2025-10-03T22:46:28.950Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-03T22:46:28.950Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-03T22:46:28.950Z [INFO] [CLIENT] No request parameters
+2025-10-03T22:46:28.950Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-03T22:46:28.950Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-03T22:46:28.950Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-03T22:46:28.950Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-03T22:46:28.950Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-03T22:46:28.950Z [INFO] [AUTH] Using JWT token authentication
+2025-10-03T22:46:28.950Z [DEBUG] [AUTH] Token length: 233
+2025-10-03T22:46:28.950Z [DEBUG] [API] Environment: development
+2025-10-03T22:46:28.951Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-03T22:46:28.951Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.951Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-03T22:46:28.951Z [INFO] [API] Sending request to WordPress API...
+2025-10-03T22:46:28.951Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-03T22:46:28.951Z [DEBUG] [API] Request method: POST
+2025-10-03T22:46:39.509Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:46:39.509Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10568ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T22:46:39.510Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-03T22:46:39.510Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10560ms
+{
+  "error": "fetch failed"
+}
+2025-10-03T22:46:39.590Z [DEBUG] [API] Response status: 403
+2025-10-03T22:46:39.593Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-03T22:46:39.593Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 10645ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-06T01:10:04.637Z [INFO] [SYSTEM] Using native fetch API
+2025-10-06T01:10:04.640Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-06T01:10:04.640Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-06T01:10:04.643Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-06T01:10:04.643Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5"
+    }
+  }
+}
+2025-10-06T01:10:04.644Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-06T01:10:04.644Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-06T01:10:04.644Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-06T01:10:04.644Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-06T01:10:04.644Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-06T01:10:04.644Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-06T01:10:04.644Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.5",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-06T01:10:04.644Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-06T01:10:04.644Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-06T01:10:04.644Z [INFO] [AUTH] Using JWT token authentication
+2025-10-06T01:10:04.644Z [DEBUG] [AUTH] Token length: 233
+2025-10-06T01:10:04.644Z [DEBUG] [API] Environment: development
+2025-10-06T01:10:04.644Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-06T01:10:04.644Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:04.645Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-06T01:10:04.645Z [INFO] [API] Sending request to WordPress API...
+2025-10-06T01:10:04.645Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:04.645Z [DEBUG] [API] Request method: POST
+2025-10-06T01:10:15.182Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-06T01:10:15.183Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-06T01:10:15.183Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-06T01:10:15.183Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-06T01:10:15.183Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.5",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-06T01:10:15.183Z [INFO] [API] Request method: initialize (Simple)
+2025-10-06T01:10:15.183Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.5","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-06T01:10:15.183Z [INFO] [AUTH] Using JWT token authentication
+2025-10-06T01:10:15.183Z [DEBUG] [AUTH] Token length: 233
+2025-10-06T01:10:15.183Z [DEBUG] [API] Environment: development
+2025-10-06T01:10:15.183Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-06T01:10:15.183Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:15.183Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-06T01:10:15.183Z [INFO] [API] Sending request to WordPress API...
+2025-10-06T01:10:15.183Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:15.183Z [DEBUG] [API] Request method: POST
+2025-10-06T01:10:25.686Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-06T01:10:25.686Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-06T01:10:25.686Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-06T01:10:25.686Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-06T01:10:25.751Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-06T01:10:25.751Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-06T01:10:25.751Z [INFO] [CLIENT] No request parameters
+2025-10-06T01:10:25.751Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-06T01:10:25.751Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-06T01:10:25.751Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-06T01:10:25.751Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-06T01:10:25.752Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-06T01:10:25.752Z [INFO] [AUTH] Using JWT token authentication
+2025-10-06T01:10:25.752Z [DEBUG] [AUTH] Token length: 233
+2025-10-06T01:10:25.752Z [DEBUG] [API] Environment: development
+2025-10-06T01:10:25.752Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-06T01:10:25.752Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.752Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-06T01:10:25.752Z [INFO] [API] Sending request to WordPress API...
+2025-10-06T01:10:25.752Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.752Z [DEBUG] [API] Request method: POST
+2025-10-06T01:10:25.754Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-06T01:10:25.754Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-06T01:10:25.754Z [INFO] [CLIENT] No request parameters
+2025-10-06T01:10:25.754Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-06T01:10:25.754Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-06T01:10:25.754Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-06T01:10:25.754Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-06T01:10:25.754Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-06T01:10:25.754Z [INFO] [AUTH] Using JWT token authentication
+2025-10-06T01:10:25.754Z [DEBUG] [AUTH] Token length: 233
+2025-10-06T01:10:25.754Z [DEBUG] [API] Environment: development
+2025-10-06T01:10:25.754Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-06T01:10:25.754Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.754Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-06T01:10:25.754Z [INFO] [API] Sending request to WordPress API...
+2025-10-06T01:10:25.754Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.754Z [DEBUG] [API] Request method: POST
+2025-10-06T01:10:25.755Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-06T01:10:25.755Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-06T01:10:25.755Z [INFO] [CLIENT] No request parameters
+2025-10-06T01:10:25.755Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-06T01:10:25.755Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-06T01:10:25.755Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-06T01:10:25.755Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-06T01:10:25.755Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-06T01:10:25.755Z [INFO] [AUTH] Using JWT token authentication
+2025-10-06T01:10:25.755Z [DEBUG] [AUTH] Token length: 233
+2025-10-06T01:10:25.755Z [DEBUG] [API] Environment: development
+2025-10-06T01:10:25.756Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-06T01:10:25.756Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.756Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-06T01:10:25.756Z [INFO] [API] Sending request to WordPress API...
+2025-10-06T01:10:25.756Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-06T01:10:25.756Z [DEBUG] [API] Request method: POST
+2025-10-06T01:10:35.582Z [DEBUG] [API] Response status: 403
+2025-10-06T01:10:35.586Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-06T01:10:35.586Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 9832ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-06T01:10:36.264Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-06T01:10:36.264Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10513ms
+{
+  "error": "fetch failed"
+}
+2025-10-06T01:10:36.265Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-06T01:10:36.265Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10510ms
+{
+  "error": "fetch failed"
+}
+2025-10-09T02:00:43.663Z [INFO] [SYSTEM] Using native fetch API
+2025-10-09T02:00:43.664Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-09T02:00:43.665Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-09T02:00:43.668Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-09T02:00:43.668Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.9"
+    }
+  }
+}
+2025-10-09T02:00:43.668Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-09T02:00:43.668Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-09T02:00:43.668Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-09T02:00:43.668Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-09T02:00:43.668Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-09T02:00:43.668Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-09T02:00:43.668Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.9",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-09T02:00:43.669Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-09T02:00:43.669Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.9","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-09T02:00:43.669Z [INFO] [AUTH] Using JWT token authentication
+2025-10-09T02:00:43.669Z [DEBUG] [AUTH] Token length: 233
+2025-10-09T02:00:43.669Z [DEBUG] [API] Environment: development
+2025-10-09T02:00:43.669Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-09T02:00:43.669Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:00:43.669Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-09T02:00:43.669Z [INFO] [API] Sending request to WordPress API...
+2025-10-09T02:00:43.669Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:00:43.669Z [DEBUG] [API] Request method: POST
+2025-10-09T02:00:54.213Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-09T02:00:54.213Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-09T02:00:54.213Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-09T02:00:54.213Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-09T02:00:54.213Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.9",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-09T02:00:54.214Z [INFO] [API] Request method: initialize (Simple)
+2025-10-09T02:00:54.214Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.9","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-09T02:00:54.214Z [INFO] [AUTH] Using JWT token authentication
+2025-10-09T02:00:54.214Z [DEBUG] [AUTH] Token length: 233
+2025-10-09T02:00:54.214Z [DEBUG] [API] Environment: development
+2025-10-09T02:00:54.214Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-09T02:00:54.214Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:00:54.214Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-09T02:00:54.214Z [INFO] [API] Sending request to WordPress API...
+2025-10-09T02:00:54.214Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:00:54.214Z [DEBUG] [API] Request method: POST
+2025-10-09T02:01:04.711Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-09T02:01:04.711Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-09T02:01:04.711Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-09T02:01:04.711Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-09T02:01:04.891Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-09T02:01:04.891Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-09T02:01:04.891Z [INFO] [CLIENT] No request parameters
+2025-10-09T02:01:04.891Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-09T02:01:04.891Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-09T02:01:04.891Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-09T02:01:04.891Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-09T02:01:04.891Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-09T02:01:04.891Z [INFO] [AUTH] Using JWT token authentication
+2025-10-09T02:01:04.891Z [DEBUG] [AUTH] Token length: 233
+2025-10-09T02:01:04.891Z [DEBUG] [API] Environment: development
+2025-10-09T02:01:04.891Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-09T02:01:04.891Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.891Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-09T02:01:04.892Z [INFO] [API] Sending request to WordPress API...
+2025-10-09T02:01:04.892Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.892Z [DEBUG] [API] Request method: POST
+2025-10-09T02:01:04.893Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-09T02:01:04.893Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-09T02:01:04.893Z [INFO] [CLIENT] No request parameters
+2025-10-09T02:01:04.893Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-09T02:01:04.893Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-09T02:01:04.893Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-09T02:01:04.893Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-09T02:01:04.893Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-09T02:01:04.893Z [INFO] [AUTH] Using JWT token authentication
+2025-10-09T02:01:04.893Z [DEBUG] [AUTH] Token length: 233
+2025-10-09T02:01:04.893Z [DEBUG] [API] Environment: development
+2025-10-09T02:01:04.893Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-09T02:01:04.893Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.893Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-09T02:01:04.894Z [INFO] [API] Sending request to WordPress API...
+2025-10-09T02:01:04.894Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.894Z [DEBUG] [API] Request method: POST
+2025-10-09T02:01:04.894Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-09T02:01:04.894Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-09T02:01:04.894Z [INFO] [CLIENT] No request parameters
+2025-10-09T02:01:04.894Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-09T02:01:04.894Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-09T02:01:04.894Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-09T02:01:04.894Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-09T02:01:04.894Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-09T02:01:04.894Z [INFO] [AUTH] Using JWT token authentication
+2025-10-09T02:01:04.894Z [DEBUG] [AUTH] Token length: 233
+2025-10-09T02:01:04.894Z [DEBUG] [API] Environment: development
+2025-10-09T02:01:04.894Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-09T02:01:04.895Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.895Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-09T02:01:04.895Z [INFO] [API] Sending request to WordPress API...
+2025-10-09T02:01:04.895Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-09T02:01:04.895Z [DEBUG] [API] Request method: POST
+2025-10-09T02:01:16.022Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-09T02:01:16.022Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 11131ms
+{
+  "error": "fetch failed"
+}
+2025-10-09T02:01:16.023Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-09T02:01:16.024Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 11130ms
+{
+  "error": "fetch failed"
+}
+2025-10-09T02:01:16.877Z [DEBUG] [API] Response status: 403
+2025-10-09T02:01:16.882Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-09T02:01:16.882Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 11989ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-17T11:14:20.188Z [INFO] [SYSTEM] Using native fetch API
+2025-10-17T11:14:20.190Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-17T11:14:20.192Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-17T11:14:20.197Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-17T11:14:20.197Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.19"
+    }
+  }
+}
+2025-10-17T11:14:20.197Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-17T11:14:20.197Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-17T11:14:20.197Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-17T11:14:20.198Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-17T11:14:20.198Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-17T11:14:20.198Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-17T11:14:20.198Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.19",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-17T11:14:20.198Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-17T11:14:20.198Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.19","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-17T11:14:20.198Z [INFO] [AUTH] Using JWT token authentication
+2025-10-17T11:14:20.198Z [DEBUG] [AUTH] Token length: 233
+2025-10-17T11:14:20.198Z [DEBUG] [API] Environment: development
+2025-10-17T11:14:20.199Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-17T11:14:20.199Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:20.199Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-17T11:14:20.199Z [INFO] [API] Sending request to WordPress API...
+2025-10-17T11:14:20.199Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:20.199Z [DEBUG] [API] Request method: POST
+2025-10-17T11:14:21.128Z [DEBUG] [API] Response status: 403
+2025-10-17T11:14:21.133Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-17T11:14:21.133Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-17T11:14:21.133Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 403,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp",
+  "response": "{\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-17T11:14:21.133Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-17T11:14:21.134Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.19",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-17T11:14:21.134Z [INFO] [API] Request method: initialize (Simple)
+2025-10-17T11:14:21.134Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.19","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-17T11:14:21.134Z [INFO] [AUTH] Using JWT token authentication
+2025-10-17T11:14:21.134Z [DEBUG] [AUTH] Token length: 233
+2025-10-17T11:14:21.134Z [DEBUG] [API] Environment: development
+2025-10-17T11:14:21.134Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-17T11:14:21.134Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.134Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-17T11:14:21.134Z [INFO] [API] Sending request to WordPress API...
+2025-10-17T11:14:21.134Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.134Z [DEBUG] [API] Request method: POST
+2025-10-17T11:14:21.475Z [DEBUG] [API] Response status: 403
+2025-10-17T11:14:21.477Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-17T11:14:21.477Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 403,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp",
+  "response": "{\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-17T11:14:21.477Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-17T11:14:21.477Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-17T11:14:21.636Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-17T11:14:21.636Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-17T11:14:21.636Z [INFO] [CLIENT] No request parameters
+2025-10-17T11:14:21.636Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-17T11:14:21.636Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-17T11:14:21.636Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-17T11:14:21.636Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-17T11:14:21.636Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-17T11:14:21.636Z [INFO] [AUTH] Using JWT token authentication
+2025-10-17T11:14:21.636Z [DEBUG] [AUTH] Token length: 233
+2025-10-17T11:14:21.636Z [DEBUG] [API] Environment: development
+2025-10-17T11:14:21.636Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-17T11:14:21.636Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.636Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-17T11:14:21.636Z [INFO] [API] Sending request to WordPress API...
+2025-10-17T11:14:21.636Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.636Z [DEBUG] [API] Request method: POST
+2025-10-17T11:14:21.637Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-17T11:14:21.637Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-17T11:14:21.637Z [INFO] [CLIENT] No request parameters
+2025-10-17T11:14:21.637Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-17T11:14:21.637Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-17T11:14:21.637Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-17T11:14:21.638Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-17T11:14:21.638Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-17T11:14:21.638Z [INFO] [AUTH] Using JWT token authentication
+2025-10-17T11:14:21.638Z [DEBUG] [AUTH] Token length: 233
+2025-10-17T11:14:21.638Z [DEBUG] [API] Environment: development
+2025-10-17T11:14:21.638Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-17T11:14:21.638Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.638Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-17T11:14:21.638Z [INFO] [API] Sending request to WordPress API...
+2025-10-17T11:14:21.638Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.638Z [DEBUG] [API] Request method: POST
+2025-10-17T11:14:21.638Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-17T11:14:21.638Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-17T11:14:21.638Z [INFO] [CLIENT] No request parameters
+2025-10-17T11:14:21.639Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-17T11:14:21.639Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-17T11:14:21.639Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-17T11:14:21.639Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-17T11:14:21.639Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-17T11:14:21.639Z [INFO] [AUTH] Using JWT token authentication
+2025-10-17T11:14:21.639Z [DEBUG] [AUTH] Token length: 233
+2025-10-17T11:14:21.639Z [DEBUG] [API] Environment: development
+2025-10-17T11:14:21.639Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-17T11:14:21.639Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.639Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-17T11:14:21.639Z [INFO] [API] Sending request to WordPress API...
+2025-10-17T11:14:21.639Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-17T11:14:21.639Z [DEBUG] [API] Request method: POST
+2025-10-17T11:14:21.950Z [DEBUG] [API] Response status: 403
+2025-10-17T11:14:21.951Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-17T11:14:21.951Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 315ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-17T11:14:22.102Z [DEBUG] [API] Response status: 403
+2025-10-17T11:14:22.103Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-17T11:14:22.103Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 466ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-17T11:14:22.165Z [DEBUG] [API] Response status: 403
+2025-10-17T11:14:22.166Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-17T11:14:22.166Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 527ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-10-22T04:02:26.680Z [INFO] [SYSTEM] Using native fetch API
+2025-10-22T04:02:26.682Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-10-22T04:02:26.683Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-10-22T04:02:26.687Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-10-22T04:02:26.687Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.21"
+    }
+  }
+}
+2025-10-22T04:02:26.687Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-10-22T04:02:26.687Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-10-22T04:02:26.687Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-10-22T04:02:26.688Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-10-22T04:02:26.688Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-10-22T04:02:26.688Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-10-22T04:02:26.688Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.21",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-10-22T04:02:26.688Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-10-22T04:02:26.688Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.21","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-10-22T04:02:26.688Z [INFO] [AUTH] Using JWT token authentication
+2025-10-22T04:02:26.688Z [DEBUG] [AUTH] Token length: 233
+2025-10-22T04:02:26.689Z [DEBUG] [API] Environment: development
+2025-10-22T04:02:26.689Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-22T04:02:26.689Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:26.689Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-22T04:02:26.689Z [INFO] [API] Sending request to WordPress API...
+2025-10-22T04:02:26.689Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:26.689Z [DEBUG] [API] Request method: POST
+2025-10-22T04:02:34.274Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-22T04:02:34.274Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-10-22T04:02:34.274Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-22T04:02:34.275Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-10-22T04:02:34.275Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.21",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-10-22T04:02:34.275Z [INFO] [API] Request method: initialize (Simple)
+2025-10-22T04:02:34.275Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.21","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-10-22T04:02:34.275Z [INFO] [AUTH] Using JWT token authentication
+2025-10-22T04:02:34.275Z [DEBUG] [AUTH] Token length: 233
+2025-10-22T04:02:34.275Z [DEBUG] [API] Environment: development
+2025-10-22T04:02:34.275Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-22T04:02:34.275Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:34.275Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-22T04:02:34.275Z [INFO] [API] Sending request to WordPress API...
+2025-10-22T04:02:34.275Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:34.275Z [DEBUG] [API] Request method: POST
+2025-10-22T04:02:44.775Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-22T04:02:44.775Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-10-22T04:02:44.775Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-10-22T04:02:44.775Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-10-22T04:02:44.781Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-10-22T04:02:44.781Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-10-22T04:02:44.781Z [INFO] [CLIENT] No request parameters
+2025-10-22T04:02:44.781Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-22T04:02:44.781Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-10-22T04:02:44.781Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-10-22T04:02:44.781Z [INFO] [API] Request method: tools/list (Simple)
+2025-10-22T04:02:44.781Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-10-22T04:02:44.782Z [INFO] [AUTH] Using JWT token authentication
+2025-10-22T04:02:44.782Z [DEBUG] [AUTH] Token length: 233
+2025-10-22T04:02:44.782Z [DEBUG] [API] Environment: development
+2025-10-22T04:02:44.782Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-22T04:02:44.782Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.782Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-22T04:02:44.782Z [INFO] [API] Sending request to WordPress API...
+2025-10-22T04:02:44.782Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.782Z [DEBUG] [API] Request method: POST
+2025-10-22T04:02:44.784Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-10-22T04:02:44.784Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-10-22T04:02:44.784Z [INFO] [CLIENT] No request parameters
+2025-10-22T04:02:44.784Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-22T04:02:44.785Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-10-22T04:02:44.785Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-10-22T04:02:44.785Z [INFO] [API] Request method: prompts/list (Simple)
+2025-10-22T04:02:44.785Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-10-22T04:02:44.785Z [INFO] [AUTH] Using JWT token authentication
+2025-10-22T04:02:44.785Z [DEBUG] [AUTH] Token length: 233
+2025-10-22T04:02:44.785Z [DEBUG] [API] Environment: development
+2025-10-22T04:02:44.785Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-22T04:02:44.785Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.785Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-22T04:02:44.785Z [INFO] [API] Sending request to WordPress API...
+2025-10-22T04:02:44.785Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.785Z [DEBUG] [API] Request method: POST
+2025-10-22T04:02:44.785Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-10-22T04:02:44.785Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-10-22T04:02:44.785Z [INFO] [CLIENT] No request parameters
+2025-10-22T04:02:44.785Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-10-22T04:02:44.785Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-10-22T04:02:44.785Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-10-22T04:02:44.786Z [INFO] [API] Request method: resources/list (Simple)
+2025-10-22T04:02:44.786Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-10-22T04:02:44.786Z [INFO] [AUTH] Using JWT token authentication
+2025-10-22T04:02:44.786Z [DEBUG] [AUTH] Token length: 233
+2025-10-22T04:02:44.786Z [DEBUG] [API] Environment: development
+2025-10-22T04:02:44.786Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-10-22T04:02:44.786Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.786Z [DEBUG] [API] Using Authorization header for authentication
+2025-10-22T04:02:44.786Z [INFO] [API] Sending request to WordPress API...
+2025-10-22T04:02:44.786Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-10-22T04:02:44.786Z [DEBUG] [API] Request method: POST
+2025-10-22T04:02:55.288Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-22T04:02:55.290Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10508ms
+{
+  "error": "fetch failed"
+}
+2025-10-22T04:02:55.293Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-10-22T04:02:55.293Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10508ms
+{
+  "error": "fetch failed"
+}
+2025-10-22T04:02:55.676Z [DEBUG] [API] Response status: 403
+2025-10-22T04:02:55.681Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-10-22T04:02:55.682Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 10897ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-11-14T15:08:12.317Z [INFO] [SYSTEM] Using native fetch API
+2025-11-14T15:08:12.320Z [INFO] [PROXY] Starting WordPress MCP Proxy with enhanced authentication
+2025-11-14T15:08:12.322Z [INFO] [PROXY] MCP server connected to transport successfully
+2025-11-14T15:08:12.327Z [INFO] [INIT] 📩 Client Initialize Request received
+2025-11-14T15:08:12.328Z [DEBUG] [INIT] Initialize request details:
+{
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.37"
+    }
+  }
+}
+2025-11-14T15:08:12.328Z [INFO] [INIT] 🔄 Initializing WordPress connection with client parameters
+2025-11-14T15:08:12.328Z [INFO] [TRANSPORT_DETECT] 🔍 Starting transport detection and WordPress API initialization...
+2025-11-14T15:08:12.328Z [INFO] [TRANSPORT_DETECT] 📋 Added proxy information to clientInfo
+{
+  "originalClient": "claude-code",
+  "proxyName": "@automattic/mcp-wordpress-remote",
+  "proxyVersion": "0.2.18"
+}
+2025-11-14T15:08:12.328Z [INFO] [TRANSPORT_DETECT] 📡 Attempting JSON-RPC transport...
+2025-11-14T15:08:12.328Z [DEBUG] [SESSION] MCP JSON-RPC message being sent to WordPress:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "original_mcp_id": "none",
+  "session_id": "not-yet-obtained"
+}
+2025-11-14T15:08:12.328Z [INFO] [TRANSPORT_DETECT] Sending initialization message via JSON-RPC:
+{
+  "method": "initialize",
+  "id": 1,
+  "jsonrpc": "2.0",
+  "hasParams": true
+}
+2025-11-14T15:08:12.328Z [DEBUG] [TRANSPORT_DETECT] Complete JSON-RPC init message:
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "id": 1,
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code",
+      "version": "2.0.37",
+      "proxied": {
+        "name": "@automattic/mcp-wordpress-remote",
+        "version": "0.2.18"
+      }
+    },
+    "_proxy_request_id": 1
+  }
+}
+2025-11-14T15:08:12.329Z [INFO] [API] Request method: initialize (JSON-RPC)
+2025-11-14T15:08:12.329Z [DEBUG] [API] JSON-RPC message: {"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.37","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}},"_proxy_request_id":1}}
+2025-11-14T15:08:12.329Z [INFO] [AUTH] Using JWT token authentication
+2025-11-14T15:08:12.329Z [DEBUG] [AUTH] Token length: 233
+2025-11-14T15:08:12.329Z [DEBUG] [API] Environment: development
+2025-11-14T15:08:12.329Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-11-14T15:08:12.329Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:12.329Z [DEBUG] [API] Using Authorization header for authentication
+2025-11-14T15:08:12.329Z [INFO] [API] Sending request to WordPress API...
+2025-11-14T15:08:12.329Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:12.329Z [DEBUG] [API] Request method: POST
+2025-11-14T15:08:22.879Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-11-14T15:08:22.880Z [WARN] [TRANSPORT_DETECT] ⚠️  JSON-RPC transport failed, trying simple transport...
+2025-11-14T15:08:22.880Z [DEBUG] [TRANSPORT_DETECT] JSON-RPC error details:
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-11-14T15:08:22.881Z [INFO] [TRANSPORT_DETECT] Sending initialization message via Simple transport:
+{
+  "method": "initialize",
+  "hasParams": true
+}
+2025-11-14T15:08:22.881Z [DEBUG] [TRANSPORT_DETECT] Complete Simple init message:
+{
+  "method": "initialize",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "roots": {}
+  },
+  "clientInfo": {
+    "name": "claude-code",
+    "version": "2.0.37",
+    "proxied": {
+      "name": "@automattic/mcp-wordpress-remote",
+      "version": "0.2.18"
+    }
+  }
+}
+2025-11-14T15:08:22.881Z [INFO] [API] Request method: initialize (Simple)
+2025-11-14T15:08:22.881Z [DEBUG] [API] Simple request: {"method":"initialize","protocolVersion":"2025-06-18","capabilities":{"roots":{}},"clientInfo":{"name":"claude-code","version":"2.0.37","proxied":{"name":"@automattic/mcp-wordpress-remote","version":"0.2.18"}}}
+2025-11-14T15:08:22.881Z [INFO] [AUTH] Using JWT token authentication
+2025-11-14T15:08:22.881Z [DEBUG] [AUTH] Token length: 233
+2025-11-14T15:08:22.881Z [DEBUG] [API] Environment: development
+2025-11-14T15:08:22.881Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-11-14T15:08:22.881Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:22.881Z [DEBUG] [API] Using Authorization header for authentication
+2025-11-14T15:08:22.881Z [INFO] [API] Sending request to WordPress API...
+2025-11-14T15:08:22.881Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:22.881Z [DEBUG] [API] Request method: POST
+2025-11-14T15:08:33.381Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-11-14T15:08:33.381Z [ERROR] [TRANSPORT_DETECT] ❌ Both JSON-RPC and simple transports failed
+{
+  "name": "APIError",
+  "statusCode": 0,
+  "endpoint": "https://uc.x0.com/?rest_route=/wp/v2/wpmcp"
+}
+2025-11-14T15:08:33.381Z [ERROR] [INIT] ❌ Failed to initialize WordPress connection with client parameters
+{}
+2025-11-14T15:08:33.381Z [WARN] [INIT] ⚠️ Using fallback initialize response
+2025-11-14T15:08:34.036Z [INFO] [CLIENT] 📩 Client Message: ListTools
+2025-11-14T15:08:34.036Z [INFO] [CLIENT] Request ID: none | Method: tools/list
+2025-11-14T15:08:34.036Z [INFO] [CLIENT] No request parameters
+2025-11-14T15:08:34.036Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-11-14T15:08:34.036Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "tools/list"
+}
+2025-11-14T15:08:34.036Z [DEBUG] [MCP] Processing ListToolsRequest
+2025-11-14T15:08:34.036Z [INFO] [API] Request method: tools/list (Simple)
+2025-11-14T15:08:34.036Z [DEBUG] [API] Simple request: {"method":"tools/list"}
+2025-11-14T15:08:34.036Z [INFO] [AUTH] Using JWT token authentication
+2025-11-14T15:08:34.036Z [DEBUG] [AUTH] Token length: 233
+2025-11-14T15:08:34.036Z [DEBUG] [API] Environment: development
+2025-11-14T15:08:34.036Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-11-14T15:08:34.036Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.036Z [DEBUG] [API] Using Authorization header for authentication
+2025-11-14T15:08:34.036Z [INFO] [API] Sending request to WordPress API...
+2025-11-14T15:08:34.036Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.036Z [DEBUG] [API] Request method: POST
+2025-11-14T15:08:34.040Z [INFO] [CLIENT] 📩 Client Message: ListPrompts
+2025-11-14T15:08:34.041Z [INFO] [CLIENT] Request ID: none | Method: prompts/list
+2025-11-14T15:08:34.041Z [INFO] [CLIENT] No request parameters
+2025-11-14T15:08:34.041Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-11-14T15:08:34.041Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "prompts/list"
+}
+2025-11-14T15:08:34.041Z [DEBUG] [MCP] Processing ListPromptsRequest
+2025-11-14T15:08:34.041Z [INFO] [API] Request method: prompts/list (Simple)
+2025-11-14T15:08:34.041Z [DEBUG] [API] Simple request: {"method":"prompts/list"}
+2025-11-14T15:08:34.041Z [INFO] [AUTH] Using JWT token authentication
+2025-11-14T15:08:34.041Z [DEBUG] [AUTH] Token length: 233
+2025-11-14T15:08:34.041Z [DEBUG] [API] Environment: development
+2025-11-14T15:08:34.041Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-11-14T15:08:34.041Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.041Z [DEBUG] [API] Using Authorization header for authentication
+2025-11-14T15:08:34.041Z [INFO] [API] Sending request to WordPress API...
+2025-11-14T15:08:34.041Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.041Z [DEBUG] [API] Request method: POST
+2025-11-14T15:08:34.042Z [INFO] [CLIENT] 📩 Client Message: ListResources
+2025-11-14T15:08:34.042Z [INFO] [CLIENT] Request ID: none | Method: resources/list
+2025-11-14T15:08:34.042Z [INFO] [CLIENT] No request parameters
+2025-11-14T15:08:34.042Z [DEBUG] [CLIENT] Session context - ID: none, Transport: detecting, Counter: 1
+2025-11-14T15:08:34.042Z [DEBUG] [CLIENT] Complete client request object:
+{
+  "method": "resources/list"
+}
+2025-11-14T15:08:34.042Z [DEBUG] [MCP] Processing ListResourcesRequest
+2025-11-14T15:08:34.042Z [INFO] [API] Request method: resources/list (Simple)
+2025-11-14T15:08:34.042Z [DEBUG] [API] Simple request: {"method":"resources/list"}
+2025-11-14T15:08:34.042Z [INFO] [AUTH] Using JWT token authentication
+2025-11-14T15:08:34.042Z [DEBUG] [AUTH] Token length: 233
+2025-11-14T15:08:34.042Z [DEBUG] [API] Environment: development
+2025-11-14T15:08:34.042Z [DEBUG] [API] Base API URL: https://uc.x0.com/
+2025-11-14T15:08:34.043Z [DEBUG] [API] Final requesting URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.043Z [DEBUG] [API] Using Authorization header for authentication
+2025-11-14T15:08:34.043Z [INFO] [API] Sending request to WordPress API...
+2025-11-14T15:08:34.043Z [DEBUG] [API] Request URL: https://uc.x0.com/?rest_route=/wp/v2/wpmcp
+2025-11-14T15:08:34.043Z [DEBUG] [API] Request method: POST
+2025-11-14T15:08:43.327Z [DEBUG] [API] Response status: 403
+2025-11-14T15:08:43.332Z [ERROR] [API] API error response: {"code":"invalid_token","message":"Token validation failed: Expired token","data":{"status":403}}
+2025-11-14T15:08:43.334Z [ERROR] [CLIENT] ❌ Client Error: ListPrompts failed after 9291ms
+{
+  "error": "WordPress API error (403): {\"code\":\"invalid_token\",\"message\":\"Token validation failed: Expired token\",\"data\":{\"status\":403}}"
+}
+2025-11-14T15:08:44.539Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-11-14T15:08:44.539Z [ERROR] [CLIENT] ❌ Client Error: ListTools failed after 10503ms
+{
+  "error": "fetch failed"
+}
+2025-11-14T15:08:44.540Z [ERROR] [API] Error in wpRequest: fetch failed
+2025-11-14T15:08:44.541Z [ERROR] [CLIENT] ❌ Client Error: ListResources failed after 10499ms
+{
+  "error": "fetch failed"
+}

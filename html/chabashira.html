@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶柱落としゲーム | 茶Bar 〜茶婆場〜</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', sans-serif;
+            line-height: 1.6;
+            color: #2c3e2d;
+            background: linear-gradient(135deg, #faf9f7 0%, #f8f6f0 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #4a5d23 0%, #6b7c32 100%);
+            color: white;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .post-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4a5d23;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #c8d5b9;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #4a5d23;
+        }
+
+        .form-group input[type="number"] {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .submit-btn {
+            background: #4a5d23;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #6b7c32;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .ranking-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .ranking-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #4a5d23;
+            margin-bottom: 2rem;
+        }
+
+        .ranking-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8f9f5 0%, #ffffff 100%);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ranking-item:hover {
+            transform: translateX(5px);
+        }
+
+        .ranking-item.top1 {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            border: 3px solid #DAA520;
+        }
+
+        .ranking-item.top2 {
+            background: linear-gradient(135deg, #C0C0C0 0%, #A8A8A8 100%);
+            border: 3px solid #909090;
+        }
+
+        .ranking-item.top3 {
+            background: linear-gradient(135deg, #CD7F32 0%, #B8860B 100%);
+            border: 3px solid #8B7355;
+        }
+
+        .rank-badge {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4a5d23;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .ranking-item.top1 .rank-badge,
+        .ranking-item.top2 .rank-badge,
+        .ranking-item.top3 .rank-badge {
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .player-name {
+            flex: 1;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e2d;
+            margin: 0 1rem;
+        }
+
+        .ranking-item.top1 .player-name,
+        .ranking-item.top2 .player-name,
+        .ranking-item.top3 .player-name {
+            color: white;
+        }
+
+        .score-badge {
+            background: #4a5d23;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .ranking-item.top1 .score-badge,
+        .ranking-item.top2 .score-badge,
+        .ranking-item.top3 .score-badge {
+            background: white;
+            color: #4a5d23;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7c32;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #6b7c32;
+            font-size: 1.1rem;
+        }
+
+        .update-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4a5d23;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .update-indicator.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .post-form {
+                padding: 1.5rem;
+            }
+
+            .ranking-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .player-name {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="update-indicator" id="updateIndicator">更新中...</div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🎯 茶柱落としゲーム</h1>
+            <p>茶柱に見立てたビーズを何個入れられるかチャレンジ！</p>
+        </div>
+
+        <div class="post-form">
+            <h2 style="color: #4a5d23; margin-bottom: 1.5rem;">記録を登録</h2>
+            <form id="scoreForm">
+                <div class="form-group">
+                    <label for="name">お名前（ニックネームOK）</label>
+                    <input type="text" id="name" required placeholder="例：茶々丸">
+                </div>
+                <div class="form-group">
+                    <label for="count">入れた個数</label>
+                    <input type="number" id="count" required min="0" placeholder="0">
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">記録を登録</button>
+            </form>
+        </div>
+
+        <div class="ranking-section">
+            <h2 class="ranking-title">🏆 ランキング</h2>
+            <div id="rankingList">
+                <div class="loading">読み込み中...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'chabashira_api.php';
+        let currentScores = [];
+
+        // スコアを取得
+        async function fetchScores() {
+            try {
+                const response = await fetch(API_URL);
+                const scores = await response.json();
+
+                if (JSON.stringify(scores) !== JSON.stringify(currentScores)) {
+                    currentScores = scores;
+                    displayRanking(scores);
+                    showUpdateIndicator();
+                }
+            } catch (error) {
+                console.error('取得エラー:', error);
+            }
+        }
+
+        // ランキングを表示
+        function displayRanking(scores) {
+            const rankingList = document.getElementById('rankingList');
+
+            if (scores.length === 0) {
+                rankingList.innerHTML = '<div class="empty-state">まだ記録が登録されていません。<br>最初のチャレンジャーになりましょう！</div>';
+                return;
+            }
+
+            rankingList.innerHTML = '';
+            let currentRank = 1;
+
+            scores.forEach((score, index) => {
+                // 前の人と同じ個数でなければ、順位を更新
+                if (index > 0 && scores[index - 1].count !== score.count) {
+                    currentRank = index + 1;
+                }
+
+                const rank = currentRank;
+                const item = document.createElement('div');
+
+                let rankClass = '';
+                let rankText = `${rank}位`;
+
+                if (rank === 1) {
+                    rankClass = 'top1';
+                    rankText = '🥇 1位';
+                } else if (rank === 2) {
+                    rankClass = 'top2';
+                    rankText = '🥈 2位';
+                } else if (rank === 3) {
+                    rankClass = 'top3';
+                    rankText = '🥉 3位';
+                }
+
+                item.className = `ranking-item ${rankClass}`;
+                item.innerHTML = `
+                    <div class="rank-badge">${rankText}</div>
+                    <div class="player-name">${score.name}</div>
+                    <div class="score-badge">${score.count}個</div>
+                `;
+
+                rankingList.appendChild(item);
+            });
+        }
+
+        // スコアを登録
+        document.getElementById('scoreForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const count = parseInt(document.getElementById('count').value);
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (!name || count < 0) return;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = '登録中...';
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        action: 'post',
+                        name: name,
+                        count: count
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('scoreForm').reset();
+                    alert('記録を登録しました！');
+                    fetchScores();
+                }
+            } catch (error) {
+                console.error('登録エラー:', error);
+                alert('登録に失敗しました。もう一度お試しください。');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '記録を登録';
+            }
+        });
+
+        // 更新インジケーターを表示
+        function showUpdateIndicator() {
+            const indicator = document.getElementById('updateIndicator');
+            indicator.classList.add('show');
+            setTimeout(() => {
+                indicator.classList.remove('show');
+            }, 1000);
+        }
+
+        // 初回読み込み
+        fetchScores();
+
+        // 3秒ごとに自動更新
+        setInterval(fetchScores, 3000);
+    </script>
+</body>
+</html>

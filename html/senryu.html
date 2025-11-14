@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaンリュウ（川柳） | 茶Bar 〜茶婆場〜</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', sans-serif;
+            line-height: 1.6;
+            color: #2c3e2d;
+            background: linear-gradient(135deg, #faf9f7 0%, #f8f6f0 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #4a5d23 0%, #6b7c32 100%);
+            color: white;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .post-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4a5d23;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #c8d5b9;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4a5d23;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background: #4a5d23;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #6b7c32;
+        }
+
+        .senryu-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .senryu-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .senryu-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .senryu-text {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #2c3e2d;
+            margin-bottom: 1rem;
+            white-space: pre-line;
+        }
+
+        .senryu-author {
+            color: #6b7c32;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .like-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .like-btn {
+            background: transparent;
+            border: 2px solid #4a5d23;
+            color: #4a5d23;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .like-btn:hover {
+            background: #4a5d23;
+            color: white;
+        }
+
+        .like-btn.liked {
+            background: #4a5d23;
+            color: white;
+        }
+
+        .like-count {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #4a5d23;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7c32;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #6b7c32;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .post-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍵 Teaンリュウ（川柳）</h1>
+            <p>お茶に関する川柳を投稿して、みんなで楽しもう！</p>
+        </div>
+
+        <div class="post-form">
+            <h2 style="color: #4a5d23; margin-bottom: 1.5rem;">川柳を投稿</h2>
+            <form id="senryuForm">
+                <div class="form-group">
+                    <label for="author">お名前（ニックネームOK）</label>
+                    <input type="text" id="author" required placeholder="例：茶々丸">
+                </div>
+                <div class="form-group">
+                    <label for="senryu">川柳（五・七・五）</label>
+                    <textarea id="senryu" required placeholder="例：&#10;お茶飲んで&#10;心も体も&#10;ほっこりと"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">投稿する</button>
+            </form>
+        </div>
+
+        <div id="senryuList">
+            <div class="loading">読み込み中...</div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKの読み込み -->
+    <script type="module">
+        // TODO: 以下のFirebase設定を自分のプロジェクトの設定に置き換えてください
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getDatabase, ref, push, onValue, update, get } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js';
+
+        // Firebase設定（ここを自分のプロジェクトの設定に置き換える）
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Firebaseの初期化
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const senryuRef = ref(database, 'senryus');
+
+        // フォーム送信処理
+        document.getElementById('senryuForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const author = document.getElementById('author').value.trim();
+            const senryu = document.getElementById('senryu').value.trim();
+
+            if (!author || !senryu) return;
+
+            try {
+                await push(senryuRef, {
+                    author: author,
+                    text: senryu,
+                    likes: 0,
+                    timestamp: Date.now()
+                });
+
+                // フォームをリセット
+                document.getElementById('senryuForm').reset();
+                alert('投稿しました！');
+            } catch (error) {
+                console.error('投稿エラー:', error);
+                alert('投稿に失敗しました。もう一度お試しください。');
+            }
+        });
+
+        // いいねボタンのクリック処理
+        async function handleLike(senryuId) {
+            const likedKey = `liked_${senryuId}`;
+            const hasLiked = localStorage.getItem(likedKey);
+
+            if (hasLiked) {
+                alert('既にいいねしています！');
+                return;
+            }
+
+            try {
+                const senryuSnapshot = await get(ref(database, `senryus/${senryuId}`));
+                const currentLikes = senryuSnapshot.val().likes || 0;
+
+                await update(ref(database, `senryus/${senryuId}`), {
+                    likes: currentLikes + 1
+                });
+
+                localStorage.setItem(likedKey, 'true');
+            } catch (error) {
+                console.error('いいねエラー:', error);
+            }
+        }
+
+        // 川柳リストの表示
+        onValue(senryuRef, (snapshot) => {
+            const senryuList = document.getElementById('senryuList');
+            senryuList.innerHTML = '';
+
+            const senryus = [];
+            snapshot.forEach((childSnapshot) => {
+                senryus.push({
+                    id: childSnapshot.key,
+                    ...childSnapshot.val()
+                });
+            });
+
+            if (senryus.length === 0) {
+                senryuList.innerHTML = '<div class="empty-state">まだ川柳が投稿されていません。<br>最初の投稿者になりましょう！</div>';
+                return;
+            }
+
+            // 新しい順に並び替え
+            senryus.sort((a, b) => b.timestamp - a.timestamp);
+
+            senryus.forEach(senryu => {
+                const card = document.createElement('div');
+                card.className = 'senryu-card';
+
+                const hasLiked = localStorage.getItem(`liked_${senryu.id}`);
+
+                card.innerHTML = `
+                    <div class="senryu-text">${senryu.text}</div>
+                    <div class="senryu-author">— ${senryu.author}</div>
+                    <div class="like-section">
+                        <button class="like-btn ${hasLiked ? 'liked' : ''}" onclick="window.handleLike('${senryu.id}')">
+                            👍 いいね
+                        </button>
+                        <span class="like-count">${senryu.likes || 0}</span>
+                    </div>
+                `;
+
+                senryuList.appendChild(card);
+            });
+        });
+
+        // グローバルスコープに関数を登録
+        window.handleLike = handleLike;
+    </script>
+</body>
+</html>

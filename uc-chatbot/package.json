@@ -1,0 +1,25 @@
+{
+  "name": "uc-chatbot",
+  "version": "1.0.0",
+  "description": "UCについての質問に答えるチャットボット",
+  "main": "chatbot-server.js",
+  "scripts": {
+    "start": "node chatbot-server.js",
+    "dev": "nodemon chatbot-server.js"
+  },
+  "keywords": [
+    "chatbot",
+    "uc",
+    "ai"
+  ],
+  "author": "UC",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶Bar 〜茶婆場〜 | Chaっと広がる、Chaんと繫がる、友だち作りの大Chaンス！</title>
+    <meta name="description" content="2025年10月19日（日）14:30-17:30開催！お茶飲みながらチャ友を沢山作ろう。えびすやで開催する一日限定の茶Bar「茶Bar 〜茶婆場〜」">
+    <meta name="keywords" content="お茶, 茶バー, 日本茶, 抹茶, ほうじ茶, お茶体験, イベント">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', sans-serif;
+            line-height: 1.6;
+            color: #2c3e2d;
+            background-color: #faf9f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            height: 50vh;
+            background: linear-gradient(135deg, #2c3e2d 0%, #4a5d23 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content img {
+            max-width: 800px;
+            width: 90%;
+            height: auto;
+            background: transparent;
+            mix-blend-mode: normal;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h1 img {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .hero-content .date {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            margin-bottom: 0.5rem;
+            color: #FFD700;
+        }
+
+        .hero-content .location {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content .catchphrase {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4a5d23;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #4a5d23, #c8d5b9);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        .concept {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .concept p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #2c3e2d;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #4a5d23;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card li::before {
+            content: '🍃';
+            margin-right: 0.5rem;
+        }
+
+        .card li.gift-item::before {
+            content: '🎁';
+        }
+
+        .card li.cheers-item::before {
+            content: '🥂';
+        }
+
+        .note {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #6b7c32;
+            font-size: 0.9rem;
+        }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .member-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            border: 4px solid #c8d5b9;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4a5d23;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-origin {
+            color: #6b7c32;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-tea {
+            color: #2c3e2d;
+            font-style: italic;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .event-card {
+            background: linear-gradient(135deg, #f8f9f5 0%, #ffffff 100%);
+            border: 2px solid #c8d5b9;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .event-card:hover {
+            border-color: #4a5d23;
+            box-shadow: 0 10px 25px rgba(74, 93, 35, 0.1);
+        }
+
+        .event-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-card h3 {
+            color: #4a5d23;
+            margin-bottom: 1rem;
+        }
+
+        .access-info {
+            background: linear-gradient(135deg, #4a5d23 0%, #6b7c32 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .access-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .access-info p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #2c3e2d;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content img {
+                max-width: 400px;
+            }
+
+            .grid, .members, .events-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            .menu-boy-image {
+                right: 0 !important;
+            }
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #4a5d23;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background: #6b7c32;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="chalogo.png" alt="茶 Bar 〜茶婆場〜">
+        </div>
+    </section>
+
+    <section style="padding: 3rem 0; text-align: center; background: linear-gradient(135deg, #f8f9f5 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(74, 93, 35, 0.15); max-width: 600px; margin: 0 auto; border: 2px solid #c8d5b9;">
+                <div style="font-size: 1.8rem; font-weight: 600; color: #4a5d23; margin-bottom: 1rem;">
+                    📅 2025年10月19日(日) 14:30-17:30
+                </div>
+                <div style="font-size: 1.4rem; color: #2c3e2d; font-weight: 500;">
+                    📍 えびすや<br>
+                    <span style="font-size: 1.1rem; color: #6b7c32;">山梨県甲府市丸の内1-14-14</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="concept">
+        <div class="container">
+            <h2 class="section-title">コンセプト</h2>
+            <div class="concept fade-in">
+                <p>
+                    ここは一日限定、あなたのための特別なコミュニティーBarです。
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    スタッフおすすめの一杯で、心と身体をハッピー茶ージ！
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    一杯のお茶が、一生の茶ンスになるかも？<br>
+                    気軽にお茶べりして、たくさんのチャ友をつくろう！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <div style="position: relative; margin-bottom: 2rem;">
+                <h2 class="section-title">メニュー</h2>
+                <img src="boy.png" alt="500円" class="menu-boy-image" style="position: absolute; right: 10%; top: 50%; transform: translateY(-65%); height: 120px; width: auto; max-width: 30%;">
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="font-size: 1.1rem; color: #FF8C00; font-weight: 500;">※新しい友達連れてきてくれた人にはサービスあり！</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="card fade-in">
+                    <h3>🍃 お茶メニュー</h3>
+                    <ul>
+                        <li><strong>4種飲み比べ</strong>：お茶4種＋お菓子2種 1,000円</li>
+                        <li><strong>春日のお茶</strong>：藤かおり 500円</li>
+                        <li><strong>UCのお茶</strong>：ベトナム茶 500円</li>
+                        <li><strong>こまっ茶</strong>：アールグレイティー 500円</li>
+                        <li><strong>なっ茶</strong>：クロモジ茶 500円</li>
+                        <li><strong>お茶割り</strong>：お茶割り＋漬物3種 500円</li>
+                        <li class="cheers-item">
+                            <strong>全員に奢っ茶う（ミニカップ）</strong>：1,000円
+                            <button onclick="document.getElementById('ttAudio').play()" style="margin-left: 10px; background: #4a5d23; color: white; border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; font-size: 16px; transition: background 0.3s ease; vertical-align: middle;" onmouseover="this.style.background='#6b7c32'" onmouseout="this.style.background='#4a5d23'">▶</button>
+                            <audio id="ttAudio" src="tt.mp3" preload="auto"></audio>
+                        </li>
+                    </ul>
+                    <p class="note">※HOT or ICE選べます（4種飲み比べはICEのみ）</p>
+                </div>
+
+                <div class="card fade-in">
+                    <h3>🍰 フードメニュー</h3>
+                    <ul>
+                        <li><strong>お団子セット</strong>：5個+味付けは自由にどうぞ(きなこ/黒胡麻/こしあん)</li>
+                        <li><strong>抹茶ティラミス</strong>：数量限定 500円</li>
+                        <li class="gift-item"><strong>あちらのお客様からです</strong>：抹茶のお菓子 500円</li>
+                        <li><strong>お茶漬け</strong>：お茶漬けのもと＋好きなお茶＋漬物3種 500円</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2 class="section-title">茶クティビティ</h2>
+            <p style="text-align: center; font-size: 1rem; color: #666; margin-bottom: 2rem;">内容は変更する可能性大</p>
+
+            <div class="events-grid">
+                <div class="event-card fade-in">
+                    <div class="event-icon">🎯</div>
+                    <h3>茶柱落としゲーム</h3>
+                    <p style="margin-bottom: 1rem;">コップに水を入れ、茶柱に見立てたビーズをカップの中に落とす楽しいゲームです。</p>
+                    <a href="chabashira.html" style="display: inline-block; background: #4a5d23; color: white; padding: 0.6rem 1.5rem; border-radius: 20px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.background='#6b7c32'" onmouseout="this.style.background='#4a5d23'">ランキングを見る</a>
+                </div>
+
+                <div class="event-card fade-in">
+                    <div class="event-icon">🍌</div>
+                    <h3>マジカルお茶</h3>
+                    <p>マジカルバナナのお茶バージョン！連想ゲームでお茶の世界を楽しもう。</p>
+                </div>
+
+                <div class="event-card fade-in">
+                    <div class="event-icon">🗣️</div>
+                    <h3>茶柱早口言葉</h3>
+                    <p>「ちゃちゃっと茶柱ちゃっかり立った」を何回言えるかチャレンジ！</p>
+                </div>
+
+                <div class="event-card fade-in" style="background: linear-gradient(135deg, #4a5d23 0%, #6b7c32 100%); border-color: #4a5d23;">
+                    <div class="event-icon">✍️</div>
+                    <h3 style="color: white;">Teaンリュウ（川柳）</h3>
+                    <p style="color: white; margin-bottom: 1.5rem;">お茶に関する川柳を投稿して、みんなで楽しもう！</p>
+                    <a href="senryu_simple.html" style="display: inline-block; background: white; color: #4a5d23; padding: 0.8rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">川柳を投稿する</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; text-align: center;">
+                <h3 style="color: #4a5d23; font-size: 2rem; margin-bottom: 2rem;">🍵 チャイさつ</h3>
+                <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 5px 20px rgba(0,0,0,0.08); max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.2rem; line-height: 2; color: #2c3e2d;">
+                        <strong style="color: #6b7c32;">ちゃんぱい</strong> - 乾杯の代わりに<br>
+                        <strong style="color: #6b7c32;">こんにちゃー</strong> - こんにちはの代わりに<br>
+                        <strong style="color: #6b7c32;">いらっちゃいませ</strong> - いらっしゃいませの代わりに<br>
+                        <strong style="color: #6b7c32;">ありがとうございまっちゃー</strong> - ありがとうございますの代わりに<br>
+                        <strong style="color: #6b7c32;">ちゃおー</strong> - さようならの代わりに
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="members">
+        <div class="container">
+            <h2 class="section-title">Teaム</h2>
+            
+            <div class="members">
+                <div class="member-card fade-in">
+                    <img src="uc.jpg" alt="UC" class="member-photo">
+                    <div class="member-name">UC</div>
+                    <div class="member-origin">福岡県出身</div>
+                    <div class="member-tea">好きなお茶：緑茶</div>
+                </div>
+
+                <div class="member-card fade-in">
+                    <img src="haruhi.jpg" alt="春日" class="member-photo">
+                    <div class="member-name">春日</div>
+                    <div class="member-origin">広島県出身</div>
+                    <div class="member-tea">好きなお茶：緑茶</div>
+                </div>
+
+                <div class="member-card fade-in">
+                    <img src="na.jpg" alt="なっちゃん" class="member-photo">
+                    <div class="member-name">なっちゃん</div>
+                    <div class="member-origin">栃木県出身</div>
+                    <div class="member-tea">好きなお茶：レモングラスティー</div>
+                </div>
+
+                <div class="member-card fade-in">
+                    <img src="ko.jpg" alt="こまっちゃん" class="member-photo">
+                    <div class="member-name">こまっちゃん</div>
+                    <div class="member-origin">山梨県出身</div>
+                    <div class="member-tea">好きなお茶：緑茶</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="what-is-t" style="background: #f8f6f0;">
+        <div class="container">
+            <h2 class="section-title">What is ティー?</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zA17namdjfE?si=AbfJNP2HYL23n2OE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="access">
+        <div class="container">
+            <h2 class="section-title">茶クセス</h2>
+
+            <div class="access-info fade-in">
+                <h3>📍 えびすや</h3>
+                <p>
+                    〒400-0031 山梨県甲府市丸の内1-14-14<br>
+                    <a href="https://maps.app.goo.gl/7vQLnBWcyo2RXE4y5" target="_blank" style="color: #FFD700; text-decoration: underline;">Google Mapsで見る</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 3rem 0; text-align: center; background: #f8f6f0;">
+        <div class="container">
+            <h2 class="section-title">💬 チャ友の声</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #6b7c32; margin-bottom: 2rem;">来場者の皆さんの一言とSNSを紹介！</p>
+            <a href="voices.html" style="display: inline-block; background: linear-gradient(135deg, #4a5d23 0%, #6b7c32 100%); color: white; padding: 1rem 2.5rem; border-radius: 30px; text-decoration: none; font-size: 1.1rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(74, 93, 35, 0.3);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">みんなの声を見る・投稿する</a>
+        </div>
+    </section>
+
+    <section style="padding: 3rem 0; text-align: center; background: white;">
+        <div class="container">
+            <a href="https://www.instagram.com/chaba_ba1019/" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.3s ease; margin-bottom: 2rem;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                    <rect width="24" height="24" rx="6" fill="url(#instagram-gradient)"/>
+                    <path d="M12 7.5C9.51 7.5 7.5 9.51 7.5 12C7.5 14.49 9.51 16.5 12 16.5C14.49 16.5 16.5 14.49 16.5 12C16.5 9.51 14.49 7.5 12 7.5ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z" fill="white"/>
+                    <circle cx="16.8" cy="7.2" r="1.1" fill="white"/>
+                    <path d="M16 3H8C5.24 3 3 5.24 3 8V16C3 18.76 5.24 21 8 21H16C18.76 21 21 18.76 21 16V8C21 5.24 18.76 3 16 3ZM19.5 16C19.5 17.93 17.93 19.5 16 19.5H8C6.07 19.5 4.5 17.93 4.5 16V8C4.5 6.07 6.07 4.5 8 4.5H16C17.93 4.5 19.5 6.07 19.5 8V16Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="instagram-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#833AB4"/>
+                            <stop offset="0.5" stop-color="#FD1D1D"/>
+                            <stop offset="1" stop-color="#FCB045"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            <div style="max-width: 700px; margin: 0 auto; padding: 2rem; background: #f8f6f0; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #2c3e2d;">
+                    お茶の精神「一期一会」とは、「この出会いは生涯一度きり」ということ。<br>
+                    めっ茶友だちになって解散しましょう！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 茶Bar 〜茶婆場〜 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" onclick="scrollToTop()" id="scrollToTop">↑</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.getElementById('scrollToTop');
+            if (window.pageYOffset > 300) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "flat": "^5.0.0",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
+    "react-intl": "^4.3.1",
+    "react-intl-redux": "^2.2.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.4.1",
+    "react-slick": "^0.25.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "semantic-ui-carousel-react": "^1.1.1",
+    "semantic-ui-css": "^2.4.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.0.1",
+    "styled-media-query": "^2.1.2"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.development react-scripts start",
+    "start:local": " env-cmd -f .env.local react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
