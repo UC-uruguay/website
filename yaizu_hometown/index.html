@@ -14,11 +14,16 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">ゆーこす</div>
-            <ul class="nav-menu">
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#activities">活動内容</a></li>
-                <li><a href="#gallery">ギャラリー</a></li>
-                <li><a href="#contact">お問合せ</a></li>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">自己紹介</a></li>
+                <li><a href="#activities" class="nav-link">活動内容</a></li>
+                <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+                <li><a href="#contact" class="nav-link">お問合せ</a></li>
             </ul>
         </nav>
     </header>
@@ -201,5 +206,34 @@
             <p class="footer-love">Made with ♥ for 焼津</p>
         </div>
     </footer>
+
+    <script>
+        // ハンバーガーメニューの動作
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // ハンバーガーボタンのクリックイベント
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // メニューリンクのクリックでメニューを閉じる
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // メニュー外をクリックしたら閉じる
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
