@@ -11,12 +11,17 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">Wine Silver Study</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#study">学習</a></li>
-                <li><a href="#quiz">クイズ</a></li>
-                <li><a href="#flashcards">フラッシュカード</a></li>
-                <li><a href="#progress">進捗</a></li>
+                <li><a href="#home" onclick="closeMenu()">ホーム</a></li>
+                <li><a href="#study" onclick="closeMenu()">学習</a></li>
+                <li><a href="#quiz" onclick="closeMenu()">クイズ</a></li>
+                <li><a href="#flashcards" onclick="closeMenu()">フラッシュカード</a></li>
+                <li><a href="#progress" onclick="closeMenu()">進捗</a></li>
             </ul>
         </div>
     </nav>

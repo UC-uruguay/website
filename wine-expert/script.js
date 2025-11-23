@@ -1,3 +1,18 @@
+// ===== ハンバーガーメニュー機能 =====
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+
+function closeMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    navMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+}
+
 // ===== コンテンツカードのトグル機能 =====
 function toggleContent(id) {
     const content = document.getElementById(id);
