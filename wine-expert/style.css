@@ -708,6 +708,17 @@ section {
     margin: 0 auto;
 }
 
+.progress-note {
+    text-align: center;
+    color: var(--platinum);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(184, 163, 85, 0.1);
+    border-radius: 8px;
+    border: 1px solid var(--gold-accent);
+}
+
 .progress-item {
     background-color: var(--card-bg);
     padding: 1.8rem;
@@ -721,6 +732,13 @@ section {
     color: var(--platinum);
     margin-bottom: 1.2rem;
     font-weight: 400;
+}
+
+.stats-text {
+    font-size: 0.9rem;
+    color: var(--gold-accent);
+    font-weight: normal;
+    margin-left: 0.5rem;
 }
 
 .progress-bar {

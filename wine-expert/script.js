@@ -37,7 +37,8 @@ const quizQuestions = [
             "シャトー・レオヴィル・ラス・カーズ",
             "シャトー・ピション・ロングヴィル・バロン"
         ],
-        correct: 0
+        correct: 0,
+        category: "france"
     },
     {
         question: "ブルゴーニュで最も多くのグラン・クリュを持つ村は？",
@@ -47,7 +48,8 @@ const quizQuestions = [
             "シャンボール・ミュジニー",
             "モレ・サン・ドニ"
         ],
-        correct: 1
+        correct: 1,
+        category: "france"
     },
     {
         question: "DRC（ドメーヌ・ド・ラ・ロマネ・コンティ）が単独所有するモノポールのグラン・クリュは？",
@@ -57,7 +59,8 @@ const quizQuestions = [
             "ラ・ターシュとロマネ・サン・ヴィヴァン",
             "ロマネ・コンティとグラン・エシェゾー"
         ],
-        correct: 0
+        correct: 0,
+        category: "france"
     },
     {
         question: "シャンパーニュのグラン・クリュ村は全部でいくつ？",
@@ -67,7 +70,8 @@ const quizQuestions = [
             "19村",
             "21村"
         ],
-        correct: 1
+        correct: 1,
+        category: "france"
     },
     {
         question: "バローロのMGA（追加地理的表示）制度で最も有名な畑「カンヌビ」があるコムーネは？",
@@ -77,7 +81,8 @@ const quizQuestions = [
             "セッラルンガ・ダルバ",
             "モンフォルテ・ダルバ"
         ],
-        correct: 1
+        correct: 1,
+        category: "italy"
     },
     {
         question: "ブルネッロ・ディ・モンタルチーノ DOCGの最低熟成期間（リゼルヴァを除く）は？",
@@ -87,7 +92,8 @@ const quizQuestions = [
             "最低5年（うち3年樽熟成）",
             "最低6年（うち2年樽熟成）"
         ],
-        correct: 1
+        correct: 1,
+        category: "italy"
     },
     {
         question: "ポート・ワインの「ヴィンテージ・ポート」の最低樽熟成期間は？",
@@ -97,7 +103,8 @@ const quizQuestions = [
             "最低3年",
             "最低4年"
         ],
-        correct: 1
+        correct: 1,
+        category: "portugal"
     },
     {
         question: "ドイツワインの品質分類で、Trockenbeerenauslese（TBA）の最低果汁糖度（Öchsle度）は？",
@@ -107,7 +114,8 @@ const quizQuestions = [
             "150-154度",
             "154度以上"
         ],
-        correct: 2
+        correct: 2,
+        category: "germany"
     },
     {
         question: "オーストリアのヴァッハウで最も格が高く、アルコール度数が最も高いカテゴリーは？",
@@ -117,7 +125,8 @@ const quizQuestions = [
             "Smaragd（スマラクト）",
             "Auslese（アウスレーゼ）"
         ],
-        correct: 2
+        correct: 2,
+        category: "germany"
     },
     {
         question: "カリフォルニアの「パリスの審判（1976年）」で白ワイン部門1位を獲得したワイナリーは？",
@@ -127,7 +136,8 @@ const quizQuestions = [
             "Ridge Vineyards",
             "Heitz Cellar"
         ],
-        correct: 1
+        correct: 1,
+        category: "new-world"
     },
     {
         question: "オーストラリアのバロッサ・ヴァレーで主に栽培される「GSM」ブレンドの品種の組み合わせは？",
@@ -137,7 +147,8 @@ const quizQuestions = [
             "ガルナッチャ、サンジョヴェーゼ、モナストレル",
             "グルナッシュ、セミヨン、マスカット"
         ],
-        correct: 1
+        correct: 1,
+        category: "new-world"
     },
     {
         question: "アルゼンチンを代表する白ブドウ品種「トロンテス」の主要産地は？",
@@ -147,7 +158,8 @@ const quizQuestions = [
             "パタゴニア",
             "サン・ファン"
         ],
-        correct: 1
+        correct: 1,
+        category: "new-world"
     },
     {
         question: "南アフリカ固有の交配品種「ピノタージュ」の親品種は？",
@@ -157,7 +169,8 @@ const quizQuestions = [
             "ピノ・ノワール × シラー",
             "ピノ・グリ × カリニャン"
         ],
-        correct: 1
+        correct: 1,
+        category: "grapes"
     },
     {
         question: "カベルネ・ソーヴィニヨンの親品種の組み合わせは？",
@@ -167,7 +180,8 @@ const quizQuestions = [
             "メルロー × ソーヴィニヨン・ブラン",
             "カベルネ・フラン × シャルドネ"
         ],
-        correct: 1
+        correct: 1,
+        category: "grapes"
     },
     {
         question: "シャトーヌフ・デュ・パプ AOPで使用可能なブドウ品種は最大何種類？",
@@ -177,7 +191,8 @@ const quizQuestions = [
             "13品種",
             "15品種"
         ],
-        correct: 2
+        correct: 2,
+        category: "france"
     },
     {
         question: "リオハ DOCaのグラン・レセルバ（赤）の最低熟成期間は？",
@@ -187,7 +202,8 @@ const quizQuestions = [
             "最低60ヶ月（うち18ヶ月樽熟成）",
             "最低72ヶ月（うち24ヶ月樽熟成）"
         ],
-        correct: 1
+        correct: 1,
+        category: "spain"
     },
     {
         question: "アルザスのグラン・クリュは全部でいくつ？",
@@ -197,7 +213,8 @@ const quizQuestions = [
             "51",
             "53"
         ],
-        correct: 2
+        correct: 2,
+        category: "france"
     },
     {
         question: "プロセッコ DOCG（最高格付け）の生産地域は？",
@@ -207,7 +224,8 @@ const quizQuestions = [
             "アゾロ・モンテッロ",
             "コネリアーノ・ヴァルドッビアーデネとアゾロ・モンテッロ"
         ],
-        correct: 3
+        correct: 3,
+        category: "italy"
     },
     {
         question: "マデイラワインの4つの主要品種のうち、最も辛口なのは？",
@@ -217,7 +235,8 @@ const quizQuestions = [
             "ボアル",
             "マルムジー"
         ],
-        correct: 0
+        correct: 0,
+        category: "portugal"
     },
     {
         question: "ニュージーランドで世界最南端のワイン産地として知られるのは？",
@@ -227,7 +246,8 @@ const quizQuestions = [
             "セントラル・オタゴ",
             "マーティンボロ"
         ],
-        correct: 2
+        correct: 2,
+        category: "new-world"
     },
     {
         question: "ドイツのVDP格付けで最高峰の畑を表すのは？",
@@ -237,7 +257,8 @@ const quizQuestions = [
             "VDP.ERSTE LAGE",
             "VDP.GROSSE LAGE"
         ],
-        correct: 3
+        correct: 3,
+        category: "germany"
     },
     {
         question: "シャブリのグラン・クリュは全部でいくつ？",
@@ -247,7 +268,8 @@ const quizQuestions = [
             "9",
             "11"
         ],
-        correct: 1
+        correct: 1,
+        category: "france"
     },
     {
         question: "ナパ・ヴァレーの中で、1976年「パリスの審判」で赤ワイン部門1位を獲得したワイナリーがあるサブAVAは？",
@@ -257,7 +279,8 @@ const quizQuestions = [
             "スタッグス・リープ・ディストリクト",
             "ホーウェル・マウンテン"
         ],
-        correct: 2
+        correct: 2,
+        category: "new-world"
     },
     {
         question: "「スーパータスカン」の先駆けとなった1970年代のワインで、サンジョヴェーゼとカベルネ・ソーヴィニヨンのブレンドで有名なのは？",
@@ -267,7 +290,8 @@ const quizQuestions = [
             "オルネッライア",
             "ソライア"
         ],
-        correct: 1
+        correct: 1,
+        category: "italy"
     },
     {
         question: "コート・ロティの2つの斜面の名前は？",
@@ -277,7 +301,8 @@ const quizQuestions = [
             "コート・オリエンタルとコート・オクシデンタル",
             "コート・ド・ニュイとコート・ド・ボーヌ"
         ],
-        correct: 0
+        correct: 0,
+        category: "france"
     }
 ];
 
@@ -338,11 +363,92 @@ function loadQuestion() {
     document.getElementById('quiz-progress-fill').style.width = progressPercentage + '%';
 }
 
+// ===== クイズ回答履歴の管理 =====
+function saveQuizResult(questionIndex, isCorrect) {
+    const question = quizQuestions[questionIndex];
+    const history = getQuizHistory();
+
+    history.push({
+        questionIndex: questionIndex,
+        category: question.category,
+        isCorrect: isCorrect,
+        timestamp: Date.now()
+    });
+
+    localStorage.setItem('wineExpertQuizHistory', JSON.stringify(history));
+
+    // 進捗を更新
+    updateProgressFromQuizHistory();
+}
+
+function getQuizHistory() {
+    const saved = localStorage.getItem('wineExpertQuizHistory');
+    return saved ? JSON.parse(saved) : [];
+}
+
+function calculateCategoryStats() {
+    const history = getQuizHistory();
+    const stats = {};
+
+    // 各カテゴリーの統計を初期化
+    const categories = ['france', 'italy', 'spain', 'portugal', 'germany', 'new-world', 'grapes'];
+    categories.forEach(cat => {
+        stats[cat] = { correct: 0, total: 0, percentage: 0 };
+    });
+
+    // 履歴から統計を計算
+    history.forEach(entry => {
+        const cat = entry.category;
+        if (stats[cat]) {
+            stats[cat].total++;
+            if (entry.isCorrect) {
+                stats[cat].correct++;
+            }
+        }
+    });
+
+    // パーセンテージを計算
+    Object.keys(stats).forEach(cat => {
+        if (stats[cat].total > 0) {
+            stats[cat].percentage = (stats[cat].correct / stats[cat].total) * 100;
+        }
+    });
+
+    return stats;
+}
+
+function updateProgressFromQuizHistory() {
+    const stats = calculateCategoryStats();
+
+    // カテゴリー名をマッピング（new-world → newworld）
+    const categoryMap = {
+        'france': 'france',
+        'italy': 'italy',
+        'spain': 'spain',
+        'portugal': 'spain', // portugalをspainにマージ
+        'germany': 'germany',
+        'new-world': 'newworld',
+        'grapes': 'grapes'
+    };
+
+    // 進捗データを更新
+    Object.keys(categoryMap).forEach(key => {
+        const mapped = categoryMap[key];
+        if (stats[key] && stats[key].total > 0) {
+            progressData[mapped] = Math.round(stats[key].percentage);
+        }
+    });
+
+    saveProgress();
+    updateAllProgress();
+}
+
 function checkAnswer(questionIndex, selectedIndex) {
     const question = quizQuestions[questionIndex];
     const buttons = document.querySelectorAll('.option-btn');
 
     totalQuestions++;
+    const isCorrect = selectedIndex === question.correct;
 
     buttons.forEach((btn, index) => {
         btn.disabled = true;
@@ -353,7 +459,7 @@ function checkAnswer(questionIndex, selectedIndex) {
         }
     });
 
-    if (selectedIndex === question.correct) {
+    if (isCorrect) {
         correctAnswers++;
         document.getElementById('result-display').innerHTML =
             '<span style="color: #4ade80;">✓ 正解！</span>';
@@ -365,6 +471,9 @@ function checkAnswer(questionIndex, selectedIndex) {
     document.getElementById('correct-count').textContent = correctAnswers;
     document.getElementById('total-count').textContent = totalQuestions;
     document.getElementById('next-btn').style.display = 'inline-block';
+
+    // 回答を履歴に保存
+    saveQuizResult(questionIndex, isCorrect);
 }
 
 function nextQuestion() {
@@ -480,28 +589,45 @@ function updateProgress(category, maxValue) {
 // すべての進捗バーを更新
 function updateAllProgress() {
     const categories = ['france', 'italy', 'spain', 'germany', 'newworld', 'grapes', 'tasting'];
-    const maxValues = {
-        france: 25,
-        italy: 20,
-        spain: 15,
-        germany: 10,
-        newworld: 15,
-        grapes: 10,
-        tasting: 5
+    const stats = calculateCategoryStats();
+
+    // カテゴリー名をマッピング
+    const categoryMap = {
+        'france': 'france',
+        'italy': 'italy',
+        'spain': 'spain',
+        'portugal': 'spain',
+        'germany': 'germany',
+        'new-world': 'newworld',
+        'grapes': 'grapes'
     };
 
+    // 各カテゴリーの進捗を更新
     categories.forEach(category => {
-        const percentage = (progressData[category] / maxValues[category]) * 100;
+        const percentage = progressData[category] || 0;
         const element = document.getElementById(`progress-${category}`);
         if (element) {
             element.style.width = percentage + '%';
         }
+
+        // 詳細統計を表示（正解数/総問題数）
+        const statsElement = document.getElementById(`stats-${category}`);
+        if (statsElement) {
+            // 対応するstatsを検索
+            const statsKey = Object.keys(categoryMap).find(k => categoryMap[k] === category);
+            if (stats[statsKey] && stats[statsKey].total > 0) {
+                statsElement.textContent = `(${stats[statsKey].correct}/${stats[statsKey].total}問)`;
+            } else {
+                statsElement.textContent = '(未挑戦)';
+            }
+        }
     });
 
-    // 全体の進捗を計算
-    const totalMax = Object.values(maxValues).reduce((a, b) => a + b, 0);
-    const totalProgress = Object.values(progressData).reduce((a, b) => a + b, 0);
-    const totalPercentage = (totalProgress / totalMax) * 100;
+    // 全体の進捗を計算（全カテゴリーの平均正答率）
+    const validCategories = Object.values(progressData).filter(v => v > 0);
+    const totalPercentage = validCategories.length > 0
+        ? validCategories.reduce((a, b) => a + b, 0) / categories.length
+        : 0;
 
     document.getElementById('progress-total').style.width = totalPercentage + '%';
     document.getElementById('total-percentage').textContent = Math.round(totalPercentage);
@@ -509,7 +635,8 @@ function updateAllProgress() {
 
 // 進捗をリセット
 function resetProgress() {
-    if (confirm('進捗をリセットしてもよろしいですか？')) {
+    if (confirm('進捗とクイズ履歴をすべてリセットしてもよろしいですか？')) {
+        // 進捗データをリセット
         progressData = {
             france: 0,
             italy: 0,
@@ -520,7 +647,12 @@ function resetProgress() {
             tasting: 0
         };
         saveProgress();
+
+        // クイズ履歴をリセット
+        localStorage.removeItem('wineExpertQuizHistory');
+
         updateAllProgress();
+        alert('進捗とクイズ履歴をリセットしました');
     }
 }
 
