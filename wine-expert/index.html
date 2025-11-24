@@ -48,6 +48,40 @@
                     <button class="toggle-btn" onclick="toggleContent('france')">▼</button>
                 </div>
                 <div id="france" class="card-content">
+                    <!-- フランスワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">フランス主要ワイン産地</h4>
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- フランスの簡略化された輪郭 -->
+                            <path d="M 200 50 L 350 150 L 350 350 L 280 450 L 120 450 L 50 350 L 50 150 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- シャンパーニュ (北東) -->
+                            <circle cx="280" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="295" y="125" fill="#e5e4e2" font-size="14" class="region-label">シャンパーニュ</text>
+
+                            <!-- アルザス (東) -->
+                            <circle cx="320" cy="200" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="330" y="205" fill="#e5e4e2" font-size="14" class="region-label">アルザス</text>
+
+                            <!-- ブルゴーニュ (東中央) -->
+                            <circle cx="260" cy="240" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="270" y="245" fill="#e5e4e2" font-size="14" class="region-label">ブルゴーニュ</text>
+
+                            <!-- ロワール (中央西) -->
+                            <circle cx="140" cy="220" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="225" fill="#e5e4e2" font-size="14" class="region-label">ロワール</text>
+
+                            <!-- ボルドー (南西) -->
+                            <circle cx="110" cy="350" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="355" fill="#e5e4e2" font-size="14" class="region-label">ボルドー</text>
+
+                            <!-- ローヌ (南東) -->
+                            <circle cx="250" cy="370" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="260" y="375" fill="#e5e4e2" font-size="14" class="region-label">ローヌ</text>
+                        </svg>
+                    </div>
+
                     <div class="region">
                         <h4>ボルドー - メドック格付け（1855年）</h4>
                         <ul>

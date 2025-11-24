@@ -425,6 +425,57 @@ section {
     font-weight: 600;
 }
 
+/* ===== ワイン産地地図 ===== */
+.wine-map {
+    background: linear-gradient(135deg, rgba(184, 163, 85, 0.05) 0%, rgba(10, 25, 41, 0.3) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid var(--gold-accent);
+    box-shadow: 0 4px 15px rgba(184, 163, 85, 0.2);
+}
+
+.map-title {
+    color: var(--gold-accent);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.region-map {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.region-marker {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.region-marker:hover {
+    r: 12;
+    filter: drop-shadow(0 0 8px rgba(184, 163, 85, 0.8));
+}
+
+.region-label {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .wine-map {
+        padding: 1rem;
+    }
+
+    .region-label {
+        font-size: 12px;
+    }
+}
+
 /* ===== クイズセクション ===== */
 .quiz-section {
     background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-navy) 100%);
