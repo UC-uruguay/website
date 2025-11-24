@@ -730,6 +730,12 @@
                     </div>
                     <div class="quiz-options" id="options-display"></div>
                     <div class="quiz-result" id="result-display"></div>
+                    <div class="quiz-progress-info">
+                        <p class="progress-text">進捗: <span id="quiz-current">0</span> / <span id="quiz-total">25</span> 問</p>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                    </div>
                     <div class="quiz-controls">
                         <button class="btn-secondary" onclick="startQuiz()">開始する</button>
                         <button class="btn-secondary" onclick="nextQuestion()" id="next-btn" style="display:none;">次の問題</button>

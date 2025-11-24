@@ -194,6 +194,9 @@ function startQuiz() {
     document.getElementById('correct-count').textContent = '0';
     document.getElementById('total-count').textContent = '0';
     document.getElementById('result-display').textContent = '';
+    document.getElementById('quiz-current').textContent = '0';
+    document.getElementById('quiz-total').textContent = quizQuestions.length;
+    document.getElementById('quiz-progress-fill').style.width = '0%';
     loadQuestion();
 }
 
@@ -228,6 +231,11 @@ function loadQuestion() {
     document.getElementById('result-display').textContent = '';
     document.getElementById('next-btn').style.display = 'none';
     document.querySelector('.quiz-controls button:first-child').style.display = 'none';
+
+    // 進捗バーを更新
+    document.getElementById('quiz-current').textContent = usedQuestions.length;
+    const progressPercentage = (usedQuestions.length / quizQuestions.length) * 100;
+    document.getElementById('quiz-progress-fill').style.width = progressPercentage + '%';
 }
 
 function checkAnswer(questionIndex, selectedIndex) {
