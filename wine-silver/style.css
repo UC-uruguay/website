@@ -41,6 +41,12 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 
 .navbar .container {
@@ -565,6 +571,24 @@ section {
     margin: 0 auto;
 }
 
+.progress-note {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(107, 27, 61, 0.3) 0%, rgba(74, 18, 41, 0.3) 100%);
+    border-radius: 8px;
+    border: 2px solid var(--gold);
+}
+
+.stats-text {
+    color: var(--light-gold);
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
 .progress-item {
     background-color: var(--medium-gray);
     padding: 1.5rem;
@@ -628,6 +652,46 @@ section {
     font-size: 2rem;
     color: var(--gold);
     font-weight: bold;
+}
+
+/* ===== ワイン産地地図 ===== */
+.wine-map {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(42, 42, 42, 0.3) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.map-title {
+    color: var(--gold);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.region-map {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.region-marker {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.region-marker:hover {
+    r: 12;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.8));
+}
+
+.region-label {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 14px;
+    pointer-events: none;
 }
 
 /* ===== フッター ===== */

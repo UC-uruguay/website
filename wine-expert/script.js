@@ -674,3 +674,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ナビバー自動非表示機能
+let lastScrollTop = 0;
+let scrollThreshold = 10;
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // スクロール量が閾値より小さい場合は何もしない
+    if (Math.abs(currentScroll - lastScrollTop) < scrollThreshold) {
+        return;
+    }
+
+    // 下にスクロールしている場合は非表示
+    if (currentScroll > lastScrollTop && currentScroll > 80) {
+        navbar.classList.add('hidden');
+    } else {
+        // 上にスクロールしている場合は表示
+        navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

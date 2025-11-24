@@ -27,6 +27,89 @@ function toggleContent(id) {
     }
 }
 
+// ===== クイズ履歴管理 =====
+function saveQuizResult(questionIndex, isCorrect) {
+    const question = quizQuestions[questionIndex];
+    const history = getQuizHistory();
+    history.push({
+        questionIndex: questionIndex,
+        category: question.category,
+        isCorrect: isCorrect,
+        timestamp: Date.now()
+    });
+    localStorage.setItem('wineSilverQuizHistory', JSON.stringify(history));
+    updateProgressFromQuizHistory();
+}
+
+function getQuizHistory() {
+    const saved = localStorage.getItem('wineSilverQuizHistory');
+    return saved ? JSON.parse(saved) : [];
+}
+
+function calculateCategoryStats() {
+    const history = getQuizHistory();
+    const stats = {};
+    const categories = ['france', 'italy', 'spain', 'portugal', 'germany', 'japan', 'grapes', 'tasting'];
+
+    categories.forEach(cat => {
+        stats[cat] = { correct: 0, total: 0, percentage: 0 };
+    });
+
+    history.forEach(entry => {
+        const cat = entry.category;
+        if (stats[cat]) {
+            stats[cat].total++;
+            if (entry.isCorrect) {
+                stats[cat].correct++;
+            }
+        }
+    });
+
+    Object.keys(stats).forEach(cat => {
+        if (stats[cat].total > 0) {
+            stats[cat].percentage = (stats[cat].correct / stats[cat].total) * 100;
+        }
+    });
+
+    return stats;
+}
+
+function updateProgressFromQuizHistory() {
+    const stats = calculateCategoryStats();
+    const maxValues = {
+        france: 20,
+        italy: 20,
+        spain: 15,
+        portugal: 10,
+        germany: 15,
+        japan: 10,
+        grapes: 10,
+        tasting: 10
+    };
+
+    // カテゴリー別の進捗を更新
+    Object.keys(stats).forEach(category => {
+        const percentage = stats[category].percentage;
+        const maxValue = maxValues[category];
+        if (maxValue) {
+            progressData[category] = Math.round((percentage / 100) * maxValue);
+        }
+
+        // 統計表示を更新
+        const statsElement = document.getElementById(`stats-${category}`);
+        if (statsElement) {
+            if (stats[category].total > 0) {
+                statsElement.textContent = `(${stats[category].correct}/${stats[category].total})`;
+            } else {
+                statsElement.textContent = '(未挑戦)';
+            }
+        }
+    });
+
+    saveProgress();
+    updateAllProgress();
+}
+
 // ===== クイズ機能 =====
 const quizQuestions = [
     {
@@ -37,7 +120,8 @@ const quizQuestions = [
             "シラー、グルナッシュ、ムールヴェードル",
             "リースリング、ミュラー・トゥルガウ、シルヴァーナー"
         ],
-        correct: 0
+        correct: 0,
+        category: "france"
     },
     {
         question: "ブルゴーニュの赤ワインに使用される主要品種は？",
@@ -47,7 +131,8 @@ const quizQuestions = [
             "シラー",
             "メルロー"
         ],
-        correct: 1
+        correct: 1,
+        category: "france"
     },
     {
         question: "シャンパーニュの製法は何と呼ばれる？",
@@ -57,7 +142,8 @@ const quizQuestions = [
             "メトード・シャンプノワーズ（瓶内二次発酵）",
             "トランスファー方式"
         ],
-        correct: 2
+        correct: 2,
+        category: "france"
     },
     {
         question: "イタリアワインの最高品質保証格付けは？",
@@ -67,7 +153,8 @@ const quizQuestions = [
             "IGT",
             "VDT"
         ],
-        correct: 1
+        correct: 1,
+        category: "italy"
     },
     {
         question: "バローロとバルバレスコに使用される主要品種は？",
@@ -77,7 +164,8 @@ const quizQuestions = [
             "ネッビオーロ",
             "モンテプルチャーノ"
         ],
-        correct: 2
+        correct: 2,
+        category: "italy"
     },
     {
         question: "スペインのリオハで主に使用される品種は？",
@@ -87,7 +175,8 @@ const quizQuestions = [
             "モナストレル",
             "カベルネ・ソーヴィニヨン"
         ],
-        correct: 0
+        correct: 0,
+        category: "spain"
     },
     {
         question: "ドイツワインの品質分類で、最も遅く収穫されるのは？",
@@ -97,7 +186,8 @@ const quizQuestions = [
             "Auslese",
             "Trockenbeerenauslese"
         ],
-        correct: 3
+        correct: 3,
+        category: "germany"
     },
     {
         question: "日本を代表する白ブドウ品種は？",
@@ -107,7 +197,8 @@ const quizQuestions = [
             "デラウェア",
             "シャルドネ"
         ],
-        correct: 1
+        correct: 1,
+        category: "japan"
     },
     {
         question: "ワインのテイスティングの正しい順序は？",
@@ -117,7 +208,8 @@ const quizQuestions = [
             "外観 → 香り → 味わい",
             "味わい → 香り → 外観"
         ],
-        correct: 2
+        correct: 2,
+        category: "tasting"
     },
     {
         question: "スパークリングワインの適正温度は？",
@@ -127,7 +219,8 @@ const quizQuestions = [
             "8-12℃",
             "6-8℃"
         ],
-        correct: 3
+        correct: 3,
+        category: "tasting"
     },
     {
         question: "プロセッコの製造方法は？",
@@ -137,7 +230,8 @@ const quizQuestions = [
             "炭酸ガス注入法",
             "メトード・アンセストラル"
         ],
-        correct: 1
+        correct: 1,
+        category: "italy"
     },
     {
         question: "キャンティ・クラシコの主要品種は？",
@@ -147,7 +241,8 @@ const quizQuestions = [
             "サンジョヴェーゼ",
             "モンテプルチャーノ"
         ],
-        correct: 2
+        correct: 2,
+        category: "italy"
     },
     {
         question: "ポートワインの産地は？",
@@ -157,7 +252,8 @@ const quizQuestions = [
             "イタリア・シチリア",
             "フランス・ローヌ"
         ],
-        correct: 1
+        correct: 1,
+        category: "portugal"
     },
     {
         question: "赤ワインと白ワインの製造における最大の違いは？",
@@ -167,7 +263,8 @@ const quizQuestions = [
             "果皮と共に発酵するかどうか",
             "熟成期間"
         ],
-        correct: 2
+        correct: 2,
+        category: "grapes"
     },
     {
         question: "ブラン・ド・ブランとは何を意味する？",
@@ -177,7 +274,8 @@ const quizQuestions = [
             "ロゼのシャンパーニュ",
             "甘口のシャンパーニュ"
         ],
-        correct: 0
+        correct: 0,
+        category: "france"
     }
 ];
 
@@ -244,6 +342,8 @@ function checkAnswer(questionIndex, selectedIndex) {
 
     totalQuestions++;
 
+    const isCorrect = selectedIndex === question.correct;
+
     buttons.forEach((btn, index) => {
         btn.disabled = true;
         if (index === question.correct) {
@@ -253,7 +353,7 @@ function checkAnswer(questionIndex, selectedIndex) {
         }
     });
 
-    if (selectedIndex === question.correct) {
+    if (isCorrect) {
         correctAnswers++;
         document.getElementById('result-display').innerHTML =
             '<span style="color: #4caf50;">✓ 正解！</span>';
@@ -265,6 +365,9 @@ function checkAnswer(questionIndex, selectedIndex) {
     document.getElementById('correct-count').textContent = correctAnswers;
     document.getElementById('total-count').textContent = totalQuestions;
     document.getElementById('next-btn').style.display = 'inline-block';
+
+    // クイズ結果を保存
+    saveQuizResult(questionIndex, isCorrect);
 }
 
 function nextQuestion() {
@@ -338,6 +441,7 @@ let progressData = {
     france: 0,
     italy: 0,
     spain: 0,
+    portugal: 0,
     germany: 0,
     japan: 0,
     grapes: 0,
@@ -369,11 +473,12 @@ function updateProgress(category, maxValue) {
 
 // すべての進捗バーを更新
 function updateAllProgress() {
-    const categories = ['france', 'italy', 'spain', 'germany', 'japan', 'grapes', 'tasting'];
+    const categories = ['france', 'italy', 'spain', 'portugal', 'germany', 'japan', 'grapes', 'tasting'];
     const maxValues = {
         france: 20,
         italy: 20,
         spain: 15,
+        portugal: 10,
         germany: 15,
         japan: 10,
         grapes: 10,
@@ -399,24 +504,31 @@ function updateAllProgress() {
 
 // 進捗をリセット
 function resetProgress() {
-    if (confirm('進捗をリセットしてもよろしいですか？')) {
+    if (confirm('進捗とクイズ履歴をすべてリセットしてもよろしいですか？')) {
         progressData = {
             france: 0,
             italy: 0,
             spain: 0,
+            portugal: 0,
             germany: 0,
             japan: 0,
             grapes: 0,
             tasting: 0
         };
         saveProgress();
+
+        // クイズ履歴をリセット
+        localStorage.removeItem('wineSilverQuizHistory');
+
         updateAllProgress();
+        alert('進捗とクイズ履歴をリセットしました');
     }
 }
 
 // ページ読み込み時に進捗を復元
 window.addEventListener('DOMContentLoaded', () => {
     loadProgress();
+    updateProgressFromQuizHistory();
 });
 
 // スムーススクロール
@@ -431,4 +543,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+// ナビバー自動非表示機能
+let lastScrollTop = 0;
+let scrollThreshold = 10;
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // スクロール量が閾値より小さい場合は何もしない
+    if (Math.abs(currentScroll - lastScrollTop) < scrollThreshold) {
+        return;
+    }
+
+    // 下にスクロールしている場合は非表示
+    if (currentScroll > lastScrollTop && currentScroll > 80) {
+        navbar.classList.add('hidden');
+    } else {
+        // 上にスクロールしている場合は表示
+        navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
