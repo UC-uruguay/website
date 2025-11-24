@@ -160,6 +160,40 @@
                     <button class="toggle-btn" onclick="toggleContent('italy')">▼</button>
                 </div>
                 <div id="italy" class="card-content">
+                    <!-- イタリアワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">イタリア主要ワイン産地</h4>
+                        <svg viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- イタリアの簡略化された輪郭（長靴型） -->
+                            <path d="M 150 50 L 200 80 L 220 150 L 200 220 L 180 280 L 160 350 L 140 420 L 100 480 L 80 460 L 90 420 L 120 380 L 140 320 L 130 260 L 100 200 L 80 140 L 100 80 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- シチリア島 -->
+                            <path d="M 120 470 L 140 465 L 150 475 L 135 485 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="1.5" opacity="0.3"/>
+
+                            <!-- ピエモンテ (北西) -->
+                            <circle cx="110" cy="100" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="105" fill="#e5e4e2" font-size="13" class="region-label">ピエモンテ</text>
+
+                            <!-- ヴェネト (北東) -->
+                            <circle cx="190" cy="130" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="200" y="135" fill="#e5e4e2" font-size="13" class="region-label">ヴェネト</text>
+
+                            <!-- トスカーナ (中央) -->
+                            <circle cx="140" cy="240" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="150" y="245" fill="#e5e4e2" font-size="13" class="region-label">トスカーナ</text>
+
+                            <!-- プーリア (南東) -->
+                            <circle cx="180" cy="380" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="190" y="385" fill="#e5e4e2" font-size="13" class="region-label">プーリア</text>
+
+                            <!-- シチリア (南) -->
+                            <circle cx="135" cy="475" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="70" y="480" fill="#e5e4e2" font-size="13" class="region-label">シチリア</text>
+                        </svg>
+                    </div>
+
                     <div class="region">
                         <h4>ピエモンテ - 主要DOCG</h4>
                         <ul>
@@ -206,6 +240,40 @@
                     <button class="toggle-btn" onclick="toggleContent('spain')">▼</button>
                 </div>
                 <div id="spain" class="card-content">
+                    <!-- スペイン・ポルトガルワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">スペイン・ポルトガル主要ワイン産地</h4>
+                        <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- スペインの簡略化された輪郭 -->
+                            <path d="M 150 50 L 450 50 L 470 150 L 450 250 L 350 300 L 250 310 L 200 250 L 180 150 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- ポルトガルの簡略化された輪郭 -->
+                            <path d="M 50 80 L 150 50 L 180 150 L 150 280 L 80 300 L 50 200 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- ポルトガル - ドウロ (北) -->
+                            <circle cx="110" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="50" y="115" fill="#e5e4e2" font-size="13" class="region-label">ドウロ(PT)</text>
+
+                            <!-- スペイン - リオハ (北) -->
+                            <circle cx="280" cy="100" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="290" y="105" fill="#e5e4e2" font-size="13" class="region-label">リオハ</text>
+
+                            <!-- スペイン - リベラ・デル・ドゥエロ (中北) -->
+                            <circle cx="230" cy="130" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="180" y="125" fill="#e5e4e2" font-size="12" class="region-label">リベラ・デル・ドゥエロ</text>
+
+                            <!-- スペイン - プリオラート (北東) -->
+                            <circle cx="380" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="315" y="140" fill="#e5e4e2" font-size="13" class="region-label">プリオラート</text>
+
+                            <!-- スペイン - ヘレス (南西) -->
+                            <circle cx="240" cy="270" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="250" y="275" fill="#e5e4e2" font-size="13" class="region-label">ヘレス</text>
+                        </svg>
+                    </div>
+
                     <div class="region">
                         <h4>スペイン - リオハ DOCa 熟成規定</h4>
                         <ul>
@@ -252,6 +320,32 @@
                     <button class="toggle-btn" onclick="toggleContent('germany')">▼</button>
                 </div>
                 <div id="germany" class="card-content">
+                    <!-- ドイツワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">ドイツ主要ワイン産地</h4>
+                        <svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- ドイツの簡略化された輪郭 -->
+                            <path d="M 150 50 L 250 80 L 270 150 L 250 250 L 220 350 L 180 400 L 100 380 L 80 300 L 70 200 L 90 120 L 120 80 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- モーゼル (西) -->
+                            <circle cx="100" cy="200" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="40" y="205" fill="#e5e4e2" font-size="13" class="region-label">モーゼル</text>
+
+                            <!-- ラインガウ (中西) -->
+                            <circle cx="140" cy="230" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="150" y="235" fill="#e5e4e2" font-size="13" class="region-label">ラインガウ</text>
+
+                            <!-- ラインヘッセン (中) -->
+                            <circle cx="160" cy="270" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="170" y="275" fill="#e5e4e2" font-size="12" class="region-label">ラインヘッセン</text>
+
+                            <!-- ファルツ (南西) -->
+                            <circle cx="150" cy="330" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="160" y="335" fill="#e5e4e2" font-size="13" class="region-label">ファルツ</text>
+                        </svg>
+                    </div>
+
                     <div class="region">
                         <h4>品質分類（糖度による分類）</h4>
                         <ul>
