@@ -218,7 +218,7 @@ function loadQuestion() {
     const question = quizQuestions[randomIndex];
 
     document.getElementById('question-display').innerHTML =
-        `<p class="question-text">${question.question}</p>`;
+        `<p class="question-text"><strong>問題 ${usedQuestions.length} / ${quizQuestions.length}</strong><br><br>${question.question}</p>`;
 
     const optionsHtml = question.options.map((option, index) =>
         `<button class="option-btn" onclick="checkAnswer(${randomIndex}, ${index})">${option}</button>`
