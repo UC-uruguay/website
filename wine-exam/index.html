@@ -4,33 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ワイン検定対策サイト - ブロンズ・シルバー・エキスパート</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%238b2332' d='M50 20 Q40 30 40 45 L40 70 Q40 75 45 75 L55 75 Q60 75 60 70 L60 45 Q60 30 50 20 Z'/><path fill='%238b2332' d='M35 75 L65 75 L60 85 Q55 90 50 90 Q45 90 40 85 Z'/></svg>">
     <style>
+        /* ===== プロフェッショナルデザインシステム - メイン ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        :root {
+            /* カラーパレット */
+            --bronze: #b8956f;
+            --silver: #c0c0c0;
+            --gold: #d4af37;
+
+            /* ニュートラルカラー */
+            --neutral-900: #0a0a0a;
+            --neutral-800: #1a1a1a;
+            --neutral-700: #2d2d2d;
+            --neutral-600: #404040;
+            --neutral-400: #999999;
+            --neutral-300: #cccccc;
+            --neutral-100: #f5f5f5;
+
+            /* スペーシング */
+            --space-2: 16px;
+            --space-3: 24px;
+            --space-4: 32px;
+            --space-5: 40px;
+            --space-6: 48px;
+            --space-8: 64px;
+            --space-10: 80px;
+
+            /* フォント */
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            --font-heading: 'Georgia', 'Times New Roman', serif;
+
+            /* シャドウ */
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
+        }
+
         body {
-            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #e5e4e2;
+            font-family: var(--font-primary);
+            background-color: var(--neutral-900);
+            color: var(--neutral-100);
             line-height: 1.6;
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--space-3);
         }
 
         /* Header */
         header {
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            padding: 20px 0;
-            border-bottom: 2px solid rgba(184, 163, 85, 0.3);
+            background: var(--neutral-800);
+            border-bottom: 1px solid var(--neutral-700);
+            padding: var(--space-3) 0;
+            box-shadow: var(--shadow-md);
         }
 
         .header-content {
@@ -38,178 +76,173 @@
         }
 
         .site-title {
-            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            font-size: 40px;
             font-weight: 700;
-            background: linear-gradient(135deg, #d4af37 0%, #f2e5ac 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
+            color: var(--gold);
+            margin-bottom: var(--space-2);
+            letter-spacing: -0.3px;
         }
 
         .site-subtitle {
-            font-size: 1.1rem;
-            color: #b0aead;
+            font-size: 18px;
+            color: var(--neutral-400);
+            letter-spacing: 0.3px;
         }
 
         /* Hero Section */
         .hero {
-            padding: 80px 20px;
+            background: linear-gradient(180deg, var(--neutral-800) 0%, var(--neutral-900) 100%);
+            border-bottom: 2px solid var(--neutral-700);
+            padding: var(--space-10) var(--space-3);
             text-align: center;
         }
 
         .hero-title {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #e5e4e2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-family: var(--font-heading);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--neutral-100);
+            margin-bottom: var(--space-3);
+            letter-spacing: -0.5px;
         }
 
         .hero-description {
-            font-size: 1.3rem;
-            color: #b0aead;
-            margin-bottom: 50px;
-            line-height: 1.8;
+            font-size: 20px;
+            color: var(--neutral-400);
+            margin-bottom: var(--space-6);
+            line-height: 1.7;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* Level Cards */
         .levels-section {
-            padding: 60px 20px;
+            padding: var(--space-10) var(--space-3);
         }
 
         .section-title {
+            font-family: var(--font-heading);
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #d4af37;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: var(--space-6);
+            color: var(--gold);
+            letter-spacing: -0.3px;
         }
 
         .levels-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            gap: var(--space-4);
+            margin-bottom: var(--space-8);
         }
 
         .level-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(184, 163, 85, 0.2);
-            border-radius: 15px;
-            padding: 40px 30px;
-            transition: all 0.3s ease;
+            background: var(--neutral-800);
+            border: 1px solid var(--neutral-700);
+            padding: var(--space-5) var(--space-4);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             text-align: center;
+            box-shadow: var(--shadow-md);
         }
 
         .level-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(184, 163, 85, 0.3);
-            border-color: rgba(184, 163, 85, 0.5);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
         }
 
         .level-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
+            font-size: 64px;
+            margin-bottom: var(--space-3);
         }
 
         .level-card.bronze {
-            border-color: rgba(205, 127, 50, 0.3);
-        }
-
-        .level-card.bronze:hover {
-            border-color: rgba(205, 127, 50, 0.6);
-            box-shadow: 0 15px 40px rgba(205, 127, 50, 0.3);
+            border-left: 3px solid var(--bronze);
         }
 
         .level-card.silver {
-            border-color: rgba(192, 192, 192, 0.3);
-        }
-
-        .level-card.silver:hover {
-            border-color: rgba(192, 192, 192, 0.6);
-            box-shadow: 0 15px 40px rgba(192, 192, 192, 0.3);
+            border-left: 3px solid var(--silver);
         }
 
         .level-card.expert {
-            border-color: rgba(255, 215, 0, 0.3);
-        }
-
-        .level-card.expert:hover {
-            border-color: rgba(255, 215, 0, 0.6);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+            border-left: 3px solid var(--gold);
         }
 
         .level-name {
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-family: var(--font-heading);
+            font-size: 28px;
+            margin-bottom: var(--space-2);
             font-weight: 700;
+            letter-spacing: -0.2px;
         }
 
         .level-card.bronze .level-name {
-            color: #CD7F32;
+            color: var(--bronze);
         }
 
         .level-card.silver .level-name {
-            color: #C0C0C0;
+            color: var(--silver);
         }
 
         .level-card.expert .level-name {
-            color: #FFD700;
+            color: var(--gold);
         }
 
         .level-description {
-            color: #b0aead;
-            margin-bottom: 20px;
-            font-size: 1.05rem;
+            color: var(--neutral-400);
+            margin-bottom: var(--space-3);
+            font-size: 16px;
             line-height: 1.6;
         }
 
         .level-features {
             text-align: left;
-            margin: 20px 0;
-            padding: 0 20px;
+            margin: var(--space-3) 0;
+            padding: 0 var(--space-3);
         }
 
         .level-features li {
-            margin-bottom: 10px;
-            color: #e5e4e2;
+            margin-bottom: var(--space-2);
+            color: var(--neutral-300);
+            font-size: 15px;
         }
 
         .level-link {
             display: inline-block;
-            margin-top: 20px;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #b8a355 0%, #d4af37 100%);
-            color: #1a1a2e;
+            margin-top: var(--space-3);
+            padding: var(--space-2) var(--space-5);
+            color: var(--neutral-900);
             text-decoration: none;
-            border-radius: 30px;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            font-size: 16px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.3px;
         }
 
         .level-card.bronze .level-link {
-            background: linear-gradient(135deg, #CD7F32 0%, #E89B5A 100%);
+            background: var(--bronze);
         }
 
         .level-card.silver .level-link {
-            background: linear-gradient(135deg, #C0C0C0 0%, #E0E0E0 100%);
+            background: var(--silver);
         }
 
         .level-card.expert .level-link {
-            background: linear-gradient(135deg, #FFD700 0%, #FFF4A3 100%);
+            background: var(--gold);
         }
 
         .level-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(184, 163, 85, 0.4);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         /* About Section */
         .about-section {
-            padding: 60px 20px;
-            background: rgba(255, 255, 255, 0.03);
+            padding: var(--space-10) var(--space-3);
+            background: var(--neutral-800);
         }
 
         .about-content {
@@ -219,37 +252,42 @@
         }
 
         .about-text {
-            font-size: 1.1rem;
-            color: #b0aead;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            font-size: 17px;
+            color: var(--neutral-400);
+            line-height: 1.7;
+            margin-bottom: var(--space-3);
         }
 
         /* Footer */
         footer {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 30px 20px;
+            background: var(--neutral-800);
+            padding: var(--space-4) var(--space-3);
             text-align: center;
-            border-top: 2px solid rgba(184, 163, 85, 0.2);
-            margin-top: 60px;
+            border-top: 1px solid var(--neutral-700);
+            margin-top: var(--space-10);
         }
 
         footer p {
-            color: #b0aead;
+            color: var(--neutral-400);
+            font-size: 14px;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 2rem;
+                font-size: 32px;
             }
 
             .hero-description {
-                font-size: 1.1rem;
+                font-size: 18px;
             }
 
             .site-title {
-                font-size: 1.8rem;
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
             }
 
             .levels-grid {
@@ -257,11 +295,11 @@
             }
 
             .level-icon {
-                font-size: 3rem;
+                font-size: 48px;
             }
 
             .level-name {
-                font-size: 1.5rem;
+                font-size: 24px;
             }
         }
     </style>
