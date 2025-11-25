@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワイン検定対策サイト - ブロンズ・シルバー・エキスパート</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e5e4e2;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            border-bottom: 2px solid rgba(184, 163, 85, 0.3);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #d4af37 0%, #f2e5ac 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .site-subtitle {
+            font-size: 1.1rem;
+            color: #b0aead;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #e5e4e2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            color: #b0aead;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+
+        /* Level Cards */
+        .levels-section {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #d4af37;
+        }
+
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .level-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(184, 163, 85, 0.2);
+            border-radius: 15px;
+            padding: 40px 30px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .level-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(184, 163, 85, 0.3);
+            border-color: rgba(184, 163, 85, 0.5);
+        }
+
+        .level-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .level-card.bronze {
+            border-color: rgba(205, 127, 50, 0.3);
+        }
+
+        .level-card.bronze:hover {
+            border-color: rgba(205, 127, 50, 0.6);
+            box-shadow: 0 15px 40px rgba(205, 127, 50, 0.3);
+        }
+
+        .level-card.silver {
+            border-color: rgba(192, 192, 192, 0.3);
+        }
+
+        .level-card.silver:hover {
+            border-color: rgba(192, 192, 192, 0.6);
+            box-shadow: 0 15px 40px rgba(192, 192, 192, 0.3);
+        }
+
+        .level-card.expert {
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .level-card.expert:hover {
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+        }
+
+        .level-name {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .level-card.bronze .level-name {
+            color: #CD7F32;
+        }
+
+        .level-card.silver .level-name {
+            color: #C0C0C0;
+        }
+
+        .level-card.expert .level-name {
+            color: #FFD700;
+        }
+
+        .level-description {
+            color: #b0aead;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .level-features {
+            text-align: left;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .level-features li {
+            margin-bottom: 10px;
+            color: #e5e4e2;
+        }
+
+        .level-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #b8a355 0%, #d4af37 100%);
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .level-card.bronze .level-link {
+            background: linear-gradient(135deg, #CD7F32 0%, #E89B5A 100%);
+        }
+
+        .level-card.silver .level-link {
+            background: linear-gradient(135deg, #C0C0C0 0%, #E0E0E0 100%);
+        }
+
+        .level-card.expert .level-link {
+            background: linear-gradient(135deg, #FFD700 0%, #FFF4A3 100%);
+        }
+
+        .level-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(184, 163, 85, 0.4);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #b0aead;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid rgba(184, 163, 85, 0.2);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #b0aead;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .site-title {
+                font-size: 1.8rem;
+            }
+
+            .levels-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .level-icon {
+                font-size: 3rem;
+            }
+
+            .level-name {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">ワイン検定対策サイト</h1>
+                <p class="site-subtitle">J.S.A.ワイン検定 完全対策ガイド</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">あなたのワイン検定合格を<br>全力でサポート</h2>
+            <p class="hero-description">
+                ブロンズクラスからエキスパートクラスまで、<br>
+                体系的な学習とクイズで、自信を持って試験に臨めます
+            </p>
+        </div>
+    </section>
+
+    <!-- Levels Section -->
+    <section class="levels-section">
+        <div class="container">
+            <h2 class="section-title">各クラスを選択</h2>
+            <div class="levels-grid">
+                <!-- Bronze Level -->
+                <div class="level-card bronze">
+                    <div class="level-icon">🥉</div>
+                    <h3 class="level-name">ブロンズクラス</h3>
+                    <p class="level-description">
+                        ワインの基礎を学ぶ入門クラス。28種類のブドウ品種を中心に、ワインの基本知識を習得します。
+                    </p>
+                    <ul class="level-features">
+                        <li>✓ 28種類のブドウ品種学習</li>
+                        <li>✓ ワインの分類と製法</li>
+                        <li>✓ 50問クイズ（合格基準70%）</li>
+                        <li>✓ フラッシュカード機能</li>
+                        <li>✓ 進捗管理システム</li>
+                    </ul>
+                    <a href="bronze/index.html" class="level-link">ブロンズクラスを学習</a>
+                </div>
+
+                <!-- Silver Level -->
+                <div class="level-card silver">
+                    <div class="level-icon">🥈</div>
+                    <h3 class="level-name">シルバークラス</h3>
+                    <p class="level-description">
+                        世界の主要ワイン産地を詳しく学ぶ中級クラス。フランス、イタリア、スペインを中心に13カ国のワインについて学習します。
+                    </p>
+                    <ul class="level-features">
+                        <li>✓ 13カ国のワイン産地</li>
+                        <li>✓ 主要産地の地図と解説</li>
+                        <li>✓ 70問以上のクイズ</li>
+                        <li>✓ フラッシュカード機能</li>
+                        <li>✓ 正答率ベース進捗管理</li>
+                    </ul>
+                    <a href="silver/index.html" class="level-link">シルバークラスを学習</a>
+                </div>
+
+                <!-- Expert Level -->
+                <div class="level-card expert">
+                    <div class="level-icon">🏆</div>
+                    <h3 class="level-name">エキスパートクラス</h3>
+                    <p class="level-description">
+                        ワインのプロフェッショナルを目指す最上級クラス。世界中のワイン産地を網羅し、ヴィンテージ情報や格付けを詳しく学習します。
+                    </p>
+                    <ul class="level-features">
+                        <li>✓ 全世界のワイン産地網羅</li>
+                        <li>✓ 詳細な地図とヴィンテージ情報</li>
+                        <li>✓ 100問以上のクイズ</li>
+                        <li>✓ フラッシュカード機能</li>
+                        <li>✓ 高度な進捗管理</li>
+                    </ul>
+                    <a href="expert/index.html" class="level-link">エキスパートクラスを学習</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">このサイトについて</h2>
+                <p class="about-text">
+                    このサイトは、J.S.A.ワイン検定（ブロンズクラス、シルバークラス）の合格を目指す方のための学習支援サイトです。
+                    各クラスの出題範囲に沿った学習コンテンツ、クイズ、フラッシュカードを提供し、効率的な学習をサポートします。
+                </p>
+                <p class="about-text">
+                    クイズの正答率に基づく進捗管理機能により、自分の弱点を把握し、重点的に学習できます。
+                    すべての機能は無料でご利用いただけます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ワイン検定対策サイト. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
