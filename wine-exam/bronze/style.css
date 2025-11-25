@@ -6,16 +6,17 @@
 }
 
 :root {
-    --primary-bronze: #CD7F32;
-    --dark-bronze: #A0622C;
-    --light-bronze: #E6A95F;
+    --primary-bronze: #b8956f;
+    --dark-bronze: #8b6f47;
+    --light-bronze: #d4b896;
     --gold: #d4af37;
     --light-gold: #f4e5a8;
-    --dark-gray: #2b2b2b;
-    --medium-gray: #4a4a4a;
+    --dark-gray: #1a1a1a;
+    --medium-gray: #2d2d2d;
     --light-gray: #e8e8e8;
-    --background-dark: #1a1a1a;
-    --text-light: #f5f5f5;
+    --background-dark: #0d0d0d;
+    --background-medium: #1a1a1a;
+    --text-light: #e5e4e2;
     --text-dark: #333;
 }
 
@@ -155,11 +156,12 @@ body {
 
 /* ===== Hero セクション ===== */
 .hero {
-    background: linear-gradient(135deg, var(--primary-bronze) 0%, var(--dark-bronze) 100%);
+    background: linear-gradient(135deg, #1a1410 0%, #2d2419 100%);
     padding: 8rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-bottom: 3px solid var(--primary-bronze);
 }
 
 .hero::before {
@@ -288,31 +290,33 @@ section {
 
 /* ===== 学習コンテンツカード ===== */
 .study-section {
-    background-color: var(--dark-gray);
+    background-color: var(--background-dark);
 }
 
 .content-card {
-    background: linear-gradient(135deg, var(--medium-gray) 0%, var(--dark-gray) 100%);
-    border: 1px solid var(--primary-bronze);
+    background: linear-gradient(135deg, var(--background-medium) 0%, #151515 100%);
+    border: 2px solid rgba(184, 149, 111, 0.3);
     border-radius: 12px;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
 
 .content-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(205, 127, 50, 0.2);
+    box-shadow: 0 6px 20px rgba(184, 149, 111, 0.4);
+    border-color: rgba(184, 149, 111, 0.6);
 }
 
 .card-header {
-    background: linear-gradient(135deg, var(--primary-bronze) 0%, var(--dark-bronze) 100%);
+    background: linear-gradient(135deg, #2d2419 0%, #1a1410 100%);
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    border-bottom: 2px solid rgba(184, 149, 111, 0.3);
 }
 
 .card-header h3 {
