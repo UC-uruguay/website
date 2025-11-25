@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富士河口湖町 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>富士河口湖町</h1>
+            <p>河口湖と富士山の絶景。国際的な観光地です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>富士河口湖町の魅力</h2>
+            <p>
+                富士河口湖町は、世界遺産・富士山の北麓に位置し、河口湖、西湖、精進湖、本栖湖の
+                富士五湖のうち4つの湖を有する国際的な観光リゾート地です。
+                湖面に映る「逆さ富士」の絶景は、国内外から多くの観光客を魅了しています。
+            </p>
+            <p>
+                四季折々の自然美が楽しめ、春の桜、夏の緑、秋の紅葉、冬の雪景色と、
+                年間を通じて様々な表情を見せます。美術館、博物館、温泉、アクティビティ施設が充実し、
+                また国際的なイベントも多数開催される、山梨県を代表する観光地です。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>ほうとう</h3>
+                    <p>山梨の郷土料理。野菜たっぷりの温かい麺料理。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>吉田うどん</h3>
+                    <p>コシが強い独特の麺。地元民のソウルフード。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士桜ポーク</h3>
+                    <p>富士山麓で育てられた高品質な豚肉。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ブルーベリー</h3>
+                    <p>観光農園で人気。高原育ちの甘いブルーベリー。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士桜</h3>
+                    <p>富士山麓固有の桜。関連商品も人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ワイン</h3>
+                    <p>富士山麓ワインとして知られる高品質ワイン。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>河口湖</strong> - 富士五湖最大の湖。遊覧船やカヌー、ハイキングが楽しめます。</p>
+            <p><strong>河口湖ハーブ館</strong> - 季節の花々と富士山の絶景コラボレーション。</p>
+            <p><strong>富士急ハイランド</strong> - 絶叫マシンで有名な遊園地。富士山を背景にスリル満点。</p>
+            <p><strong>本栖湖</strong> - 千円札の裏面に描かれた富士山の撮影地。透明度が高い神秘的な湖。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>富士河口湖町の特産品の購入</p>
+            <p>ほうとう・吉田うどんの試食</p>
+            <p>富士山グッズの販売</p>
+            <p>ワインの試飲</p>
+            <p>観光情報・宿泊案内</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

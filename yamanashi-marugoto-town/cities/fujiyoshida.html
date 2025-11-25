@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富士吉田市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #ecf0f1;
+            padding: 24px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa726;
+        }
+
+        .highlight-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .highlight-box p {
+            font-size: 15px;
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>富士吉田市</h1>
+            <p>富士山の麓、標高約750mに位置する高原都市</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>吉田のうどん</h3>
+            <p>富士山の伏流水で打つコシの強い麺と、馬肉やキャベツをトッピング。赤唐辛子ベースの「すりだね」が決め手の、富士吉田を代表するソウルフード。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>富士吉田市の魅力</h2>
+            <p>
+                富士吉田市は、富士山の北麓、標高約750メートルに位置する高原都市です。
+                富士山の恵みである豊富な湧水と、美しい自然環境に恵まれています。
+            </p>
+            <p>
+                古くから富士山信仰の拠点として栄え、富士登山の吉田口登山道の起点として
+                多くの登山者を迎えてきました。また、江戸時代から続く「富士山麓の織物産業」は、
+                日本を代表する繊維産地として発展してきた歴史があります。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>吉田のうどん</h3>
+                    <p>富士山の湧水で打つコシの強い麺。馬肉とキャベツが特徴的。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士山麓の織物</h3>
+                    <p>江戸時代から続く伝統の織物。高品質な生地が自慢。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士山の天然水</h3>
+                    <p>富士山の伏流水を使用した清涼飲料水。ミネラル豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>地酒</h3>
+                    <p>富士山の伏流水で仕込んだ日本酒。キレのある味わい。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>富士山グッズ</h3>
+                    <p>富士山モチーフの雑貨や工芸品。お土産に最適。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ネクタイ</h3>
+                    <p>国内生産シェアトップクラスのネクタイ。高品質で人気。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>北口本宮冨士浅間神社</strong> - 富士登山吉田口の起点。荘厳な雰囲気の神社。</p>
+            <p><strong>新倉山浅間公園</strong> - 五重塔と富士山の絶景が撮れる人気スポット。</p>
+            <p><strong>富士急ハイランド</strong> - 世界最高クラスの絶叫マシンが楽しめる遊園地。</p>
+            <p><strong>道の駅 富士吉田</strong> - 地元の特産品が揃う人気の道の駅。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>吉田のうどんの試食・販売（乾麺、冷凍麺）</p>
+            <p>富士山の天然水の試飲・購入</p>
+            <p>富士吉田産ネクタイ・織物製品の販売</p>
+            <p>富士登山情報の提供</p>
+            <p>富士山グッズの販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

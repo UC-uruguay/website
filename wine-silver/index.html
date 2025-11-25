@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワイン検定 シルバークラス 対策</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Wine Silver Study</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="closeMenu()">ホーム</a></li>
+                <li><a href="#study" onclick="closeMenu()">学習</a></li>
+                <li><a href="#quiz" onclick="closeMenu()">クイズ</a></li>
+                <li><a href="#flashcards" onclick="closeMenu()">フラッシュカード</a></li>
+                <li><a href="#progress" onclick="closeMenu()">進捗</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero セクション -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">ワイン検定シルバークラス<br>対策ガイド</h1>
+            <p class="hero-subtitle">体系的な学習で、自信を持って試験に臨もう</p>
+            <a href="#study" class="btn-primary">学習を始める</a>
+        </div>
+    </section>
+
+    <!-- 学習コンテンツ -->
+    <section id="study" class="study-section">
+        <div class="container">
+            <h2 class="section-title">学習コンテンツ</h2>
+
+            <!-- フランスワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇫🇷 フランスワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('france')">▼</button>
+                </div>
+                <div id="france" class="card-content">
+                    <div class="region">
+                        <h4>ボルドー (Bordeaux)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>カベルネ・ソーヴィニヨン、メルロー、カベルネ・フラン</li>
+                            <li><strong>特徴：</strong>ブレンドワインの産地、格付けシステム（メドック、サンテミリオンなど）</li>
+                            <li><strong>主要AOC：</strong>メドック、ポムロール、サンテミリオン、ペサック・レオニャン</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ブルゴーニュ (Bourgogne)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>ピノ・ノワール（赤）、シャルドネ（白）</li>
+                            <li><strong>特徴：</strong>単一品種、テロワール重視、複雑な格付けシステム</li>
+                            <li><strong>主要地区：</strong>コート・ドール（コート・ド・ニュイ、コート・ド・ボーヌ）、シャブリ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>シャンパーニュ (Champagne)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>シャルドネ、ピノ・ノワール、ピノ・ムニエ</li>
+                            <li><strong>製法：</strong>瓶内二次発酵（メトード・シャンプノワーズ）</li>
+                            <li><strong>スタイル：</strong>ノン・ヴィンテージ、ヴィンテージ、ブラン・ド・ブラン、ブラン・ド・ノワール</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ローヌ (Rhône)</h4>
+                        <ul>
+                            <li><strong>北部品種：</strong>シラー（赤）、ヴィオニエ（白）</li>
+                            <li><strong>南部品種：</strong>グルナッシュ、ムールヴェードル、シラーのブレンド</li>
+                            <li><strong>主要AOC：</strong>コート・ロティ、エルミタージュ、シャトーヌフ・デュ・パプ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ロワール (Loire)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>ソーヴィニヨン・ブラン、シュナン・ブラン、カベルネ・フラン</li>
+                            <li><strong>主要AOC：</strong>サンセール、プイィ・フュメ、ヴーヴレ、ミュスカデ</li>
+                        </ul>
+                    </div>
+
+                    <div class="wine-map">
+                        <h4 class="map-title">フランス主要ワイン産地</h4>
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <path d="M200 50 L350 150 L350 350 L280 450 L120 450 L50 350 L50 150 Z" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <circle cx="280" cy="120" r="8" fill="#d4af37" class="region-marker"/><text x="295" y="125" fill="#f5f5f5" font-size="14" class="region-label">シャンパーニュ</text>
+                            <circle cx="100" cy="180" r="8" fill="#d4af37" class="region-marker"/><text x="115" y="185" fill="#f5f5f5" font-size="14" class="region-label">ロワール</text>
+                            <circle cx="270" cy="220" r="8" fill="#d4af37" class="region-marker"/><text x="285" y="225" fill="#f5f5f5" font-size="14" class="region-label">ブルゴーニュ</text>
+                            <circle cx="140" cy="300" r="8" fill="#d4af37" class="region-marker"/><text x="155" y="305" fill="#f5f5f5" font-size="14" class="region-label">ボルドー</text>
+                            <circle cx="260" cy="360" r="8" fill="#d4af37" class="region-marker"/><text x="275" y="365" fill="#f5f5f5" font-size="14" class="region-label">ローヌ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- イタリアワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇮🇹 イタリアワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('italy')">▼</button>
+                </div>
+                <div id="italy" class="card-content">
+                    <div class="region">
+                        <h4>格付けシステム</h4>
+                        <ul>
+                            <li><strong>DOCG：</strong>最高品質保証（Denominazione di Origine Controllata e Garantita）</li>
+                            <li><strong>DOC：</strong>原産地統制呼称（Denominazione di Origine Controllata）</li>
+                            <li><strong>IGT：</strong>地理的表示付きワイン</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ピエモンテ (Piemonte)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>ネッビオーロ、バルベーラ、ドルチェット</li>
+                            <li><strong>代表的DOCG：</strong>バローロ、バルバレスコ</li>
+                            <li><strong>特徴：</strong>高品質赤ワイン、長期熟成向き</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>トスカーナ (Toscana)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>サンジョヴェーゼ</li>
+                            <li><strong>代表的DOCG：</strong>キャンティ・クラシコ、ブルネッロ・ディ・モンタルチーノ</li>
+                            <li><strong>スーパータスカン：</strong>伝統を超えた高品質ワイン</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ヴェネト (Veneto)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>コルヴィーナ、ガルガーネガ、グレーラ</li>
+                            <li><strong>代表的ワイン：</strong>ヴァルポリチェッラ、アマローネ、ソアーヴェ、プロセッコ</li>
+                        </ul>
+                    </div>
+
+                    <div class="wine-map">
+                        <h4 class="map-title">イタリア主要ワイン産地</h4>
+                        <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <path d="M220 100 L280 120 L300 200 L280 350 L250 450 L200 500 L180 460 L170 380 L150 280 L160 150 Z" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <ellipse cx="240" cy="540" rx="30" ry="20" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <circle cx="160" cy="140" r="8" fill="#d4af37" class="region-marker"/><text x="40" y="145" fill="#f5f5f5" font-size="14" class="region-label">ピエモンテ</text>
+                            <circle cx="270" cy="180" r="8" fill="#d4af37" class="region-marker"/><text x="285" y="185" fill="#f5f5f5" font-size="14" class="region-label">ヴェネト</text>
+                            <circle cx="200" cy="280" r="8" fill="#d4af37" class="region-marker"/><text x="215" y="285" fill="#f5f5f5" font-size="14" class="region-label">トスカーナ</text>
+                            <circle cx="240" cy="540" r="8" fill="#d4af37" class="region-marker"/><text x="255" y="545" fill="#f5f5f5" font-size="14" class="region-label">シチリア</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スペイン・ポルトガル -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇪🇸 スペイン・ポルトガルワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('spain')">▼</button>
+                </div>
+                <div id="spain" class="card-content">
+                    <div class="region">
+                        <h4>スペイン - リオハ (Rioja)</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>テンプラニーリョ</li>
+                            <li><strong>熟成規定：</strong>クリアンサ、レセルバ、グラン・レセルバ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>スペイン - その他主要産地</h4>
+                        <ul>
+                            <li><strong>リベラ・デル・ドゥエロ：</strong>高品質テンプラニーリョ</li>
+                            <li><strong>プリオラート：</strong>濃厚な赤ワイン</li>
+                            <li><strong>ヘレス：</strong>シェリー（酒精強化ワイン）</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ポルトガル</h4>
+                        <ul>
+                            <li><strong>ポート：</strong>酒精強化ワイン（ドウロ地方）</li>
+                            <li><strong>主要品種：</strong>トウリガ・ナシオナル、アルヴァリーニョ</li>
+                            <li><strong>主要産地：</strong>ドウロ、ダン、ヴィーニョ・ヴェルデ</li>
+                        </ul>
+                    </div>
+
+                    <div class="wine-map">
+                        <h4 class="map-title">スペイン・ポルトガル主要ワイン産地</h4>
+                        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <path d="M350 100 L480 150 L480 350 L350 380 L200 350 L200 150 Z" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <path d="M50 150 L200 150 L200 350 L50 350 Z" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <circle cx="380" cy="160" r="8" fill="#d4af37" class="region-marker"/><text x="395" y="165" fill="#f5f5f5" font-size="14" class="region-label">リオハ</text>
+                            <circle cx="350" cy="240" r="8" fill="#d4af37" class="region-marker"/><text x="365" y="245" fill="#f5f5f5" font-size="14" class="region-label">リベラ・デル・ドゥエロ</text>
+                            <circle cx="450" cy="320" r="8" fill="#d4af37" class="region-marker"/><text x="350" y="325" fill="#f5f5f5" font-size="14" class="region-label">ヘレス</text>
+                            <circle cx="120" cy="170" r="8" fill="#d4af37" class="region-marker"/><text x="30" y="175" fill="#f5f5f5" font-size="14" class="region-label">ドウロ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ドイツワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇩🇪 ドイツワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('germany')">▼</button>
+                </div>
+                <div id="germany" class="card-content">
+                    <div class="region">
+                        <h4>品質分類</h4>
+                        <ul>
+                            <li><strong>Prädikatswein（上級品質ワイン）：</strong>
+                                <ul>
+                                    <li>Kabinett - 軽やかな辛口〜やや甘口</li>
+                                    <li>Spätlese - 遅摘み</li>
+                                    <li>Auslese - 房選り</li>
+                                    <li>Beerenauslese - 粒選り（貴腐ワイン）</li>
+                                    <li>Trockenbeerenauslese - 極甘口貴腐ワイン</li>
+                                    <li>Eiswein - アイスワイン</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>主要品種と産地</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>リースリング、ミュラー・トゥルガウ、シュペートブルグンダー（ピノ・ノワール）</li>
+                            <li><strong>主要産地：</strong>モーゼル、ラインガウ、ファルツ</li>
+                        </ul>
+                    </div>
+
+                    <div class="wine-map">
+                        <h4 class="map-title">ドイツ主要ワイン産地</h4>
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <path d="M180 50 L280 80 L320 200 L300 400 L200 450 L120 380 L100 200 L140 80 Z" fill="#0a1929" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
+                            <circle cx="140" cy="200" r="8" fill="#d4af37" class="region-marker"/><text x="40" y="205" fill="#f5f5f5" font-size="14" class="region-label">モーゼル</text>
+                            <circle cx="220" cy="240" r="8" fill="#d4af37" class="region-marker"/><text x="235" y="245" fill="#f5f5f5" font-size="14" class="region-label">ラインガウ</text>
+                            <circle cx="240" cy="330" r="8" fill="#d4af37" class="region-marker"/><text x="255" y="335" fill="#f5f5f5" font-size="14" class="region-label">ファルツ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 日本ワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇯🇵 日本ワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('japan')">▼</button>
+                </div>
+                <div id="japan" class="card-content">
+                    <div class="region">
+                        <h4>主要産地</h4>
+                        <ul>
+                            <li><strong>山梨県：</strong>日本最大のワイン産地、甲州ワイン</li>
+                            <li><strong>長野県：</strong>メルロー、シャルドネ</li>
+                            <li><strong>北海道：</strong>冷涼な気候、ピノ・ノワール</li>
+                            <li><strong>山形県：</strong>デラウェア</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>日本固有品種</h4>
+                        <ul>
+                            <li><strong>甲州：</strong>日本を代表する白ブドウ品種</li>
+                            <li><strong>マスカット・ベーリーA：</strong>日本を代表する赤ブドウ品種</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ブドウ品種 -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🍇 主要ブドウ品種</h3>
+                    <button class="toggle-btn" onclick="toggleContent('grapes')">▼</button>
+                </div>
+                <div id="grapes" class="card-content">
+                    <div class="region">
+                        <h4>黒ブドウ品種</h4>
+                        <ul>
+                            <li><strong>カベルネ・ソーヴィニヨン：</strong>カシス、杉、タンニン豊富</li>
+                            <li><strong>メルロー：</strong>プラム、まろやかなタンニン</li>
+                            <li><strong>ピノ・ノワール：</strong>ラズベリー、エレガント、軽〜中程度のボディ</li>
+                            <li><strong>シラー（シラーズ）：</strong>スパイス、黒コショウ、力強い</li>
+                            <li><strong>サンジョヴェーゼ：</strong>チェリー、酸味豊か</li>
+                            <li><strong>テンプラニーリョ：</strong>イチゴ、革、スペインの代表品種</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>白ブドウ品種</h4>
+                        <ul>
+                            <li><strong>シャルドネ：</strong>柑橘類、バター、オーク樽で熟成も</li>
+                            <li><strong>ソーヴィニヨン・ブラン：</strong>グレープフルーツ、ハーブ、爽やか</li>
+                            <li><strong>リースリング：</strong>リンゴ、蜂蜜、高い酸味</li>
+                            <li><strong>ピノ・グリ（ピノ・グリージョ）：</strong>洋梨、軽やか</li>
+                            <li><strong>ゲヴュルツトラミネール：</strong>ライチ、バラ、アロマティック</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ワイン製造 -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🏭 ワインの製造</h3>
+                    <button class="toggle-btn" onclick="toggleContent('making')">▼</button>
+                </div>
+                <div id="making" class="card-content">
+                    <div class="region">
+                        <h4>赤ワインの製造</h4>
+                        <ol>
+                            <li>破砕・除梗</li>
+                            <li>発酵（果皮と共に）</li>
+                            <li>圧搾</li>
+                            <li>マロラクティック発酵</li>
+                            <li>熟成（樽またはタンク）</li>
+                            <li>瓶詰め</li>
+                        </ol>
+                    </div>
+                    <div class="region">
+                        <h4>白ワインの製造</h4>
+                        <ol>
+                            <li>破砕</li>
+                            <li>圧搾（果皮を除く）</li>
+                            <li>発酵（果汁のみ）</li>
+                            <li>熟成</li>
+                            <li>瓶詰め</li>
+                        </ol>
+                    </div>
+                    <div class="region">
+                        <h4>スパークリングワインの製造法</h4>
+                        <ul>
+                            <li><strong>瓶内二次発酵（シャンパーニュ方式）：</strong>最高品質、シャンパーニュ、カヴァなど</li>
+                            <li><strong>シャルマ方式：</strong>タンク内二次発酵、プロセッコなど</li>
+                            <li><strong>トラディショナル方式：</strong>瓶内二次発酵の伝統的製法</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- テイスティング -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>👃 テイスティング</h3>
+                    <button class="toggle-btn" onclick="toggleContent('tasting')">▼</button>
+                </div>
+                <div id="tasting" class="card-content">
+                    <div class="region">
+                        <h4>テイスティングの手順</h4>
+                        <ol>
+                            <li><strong>外観（Visual）：</strong>色調、透明度、粘性</li>
+                            <li><strong>香り（Nose）：</strong>第一アロマ（果実）、第二アロマ（発酵）、第三アロマ（熟成）</li>
+                            <li><strong>味わい（Palate）：</strong>甘味、酸味、タンニン、ボディ、余韻</li>
+                        </ol>
+                    </div>
+                    <div class="region">
+                        <h4>白ワインの色調</h4>
+                        <ul>
+                            <li>グリーンがかった - 若いワイン</li>
+                            <li>レモンイエロー - 標準的</li>
+                            <li>ゴールド - 熟成</li>
+                            <li>琥珀色 - 酸化または甘口ワイン</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>赤ワインの色調</h4>
+                        <ul>
+                            <li>紫がかった - 若いワイン</li>
+                            <li>ルビー - 標準的</li>
+                            <li>ガーネット - やや熟成</li>
+                            <li>レンガ色・オレンジがかった - 熟成</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- サービス＆マナー -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🍷 サービス＆マナー</h3>
+                    <button class="toggle-btn" onclick="toggleContent('service')">▼</button>
+                </div>
+                <div id="service" class="card-content">
+                    <div class="region">
+                        <h4>適正温度</h4>
+                        <ul>
+                            <li><strong>スパークリングワイン：</strong>6-8℃</li>
+                            <li><strong>白ワイン（軽口）：</strong>8-12℃</li>
+                            <li><strong>白ワイン（コクのある）：</strong>12-14℃</li>
+                            <li><strong>赤ワイン（軽口）：</strong>12-14℃</li>
+                            <li><strong>赤ワイン（フルボディ）：</strong>16-18℃</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>グラスの選び方</h4>
+                        <ul>
+                            <li><strong>白ワイン：</strong>小ぶりで口がすぼまったグラス</li>
+                            <li><strong>赤ワイン：</strong>大ぶりのボウル型グラス</li>
+                            <li><strong>スパークリング：</strong>フルート型またはチューリップ型</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>フードペアリングの基本</h4>
+                        <ul>
+                            <li><strong>軽い料理 ↔ 軽いワイン</strong></li>
+                            <li><strong>重い料理 ↔ フルボディのワイン</strong></li>
+                            <li><strong>白身魚 ↔ 白ワイン</strong></li>
+                            <li><strong>赤身肉 ↔ 赤ワイン</strong></li>
+                            <li><strong>地域の料理 ↔ 同じ地域のワイン</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- クイズセクション -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">実践クイズ</h2>
+            <div class="quiz-container">
+                <div id="quiz-area">
+                    <div class="quiz-question" id="question-display">
+                        <p class="question-text">「開始する」ボタンを押してクイズを始めましょう</p>
+                    </div>
+                    <div class="quiz-options" id="options-display"></div>
+                    <div class="quiz-result" id="result-display"></div>
+                    <div class="quiz-progress-info">
+                        <p class="progress-text">進捗: <span id="quiz-current">0</span> / <span id="quiz-total">15</span> 問</p>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="btn-secondary" onclick="startQuiz()">開始する</button>
+                        <button class="btn-secondary" onclick="nextQuestion()" id="next-btn" style="display:none;">次の問題</button>
+                    </div>
+                    <div class="quiz-score">
+                        <p>正解数: <span id="correct-count">0</span> / <span id="total-count">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フラッシュカード -->
+    <section id="flashcards" class="flashcard-section">
+        <div class="container">
+            <h2 class="section-title">フラッシュカード</h2>
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p id="card-front">「開始する」ボタンを押してください</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p id="card-back">答え</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="btn-secondary" onclick="prevCard()">← 前へ</button>
+                    <button class="btn-secondary" onclick="startFlashcards()">開始する</button>
+                    <button class="btn-secondary" onclick="nextCard()">次へ →</button>
+                </div>
+                <div class="flashcard-counter">
+                    <p><span id="current-card">0</span> / <span id="total-cards">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 進捗管理 -->
+    <section id="progress" class="progress-section">
+        <div class="container">
+            <h2 class="section-title">学習進捗</h2>
+            <p class="progress-note">※ 進捗はクイズの正答率に基づいて自動的に更新されます</p>
+            <div class="progress-container">
+                <div class="progress-item">
+                    <h3>フランスワイン <span class="stats-text" id="stats-france">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-france"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>イタリアワイン <span class="stats-text" id="stats-italy">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-italy"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>スペイン <span class="stats-text" id="stats-spain">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-spain"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>ポルトガル <span class="stats-text" id="stats-portugal">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-portugal"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>ドイツワイン <span class="stats-text" id="stats-germany">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-germany"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>日本ワイン <span class="stats-text" id="stats-japan">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-japan"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>ブドウ品種 <span class="stats-text" id="stats-grapes">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-grapes"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>テイスティング <span class="stats-text" id="stats-tasting">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-tasting"></div>
+                    </div>
+                </div>
+                <div class="progress-total">
+                    <h3>全体の進捗</h3>
+                    <div class="progress-bar-large">
+                        <div class="progress-fill" style="width: 0%" id="progress-total"></div>
+                    </div>
+                    <p class="progress-percentage"><span id="total-percentage">0</span>%</p>
+                </div>
+                <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Wine Silver Study. ワイン検定シルバークラス対策ガイド</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

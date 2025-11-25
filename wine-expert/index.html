@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワイン検定 エキスパートクラス 対策</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Wine Expert Study</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="closeMenu()">ホーム</a></li>
+                <li><a href="#study" onclick="closeMenu()">学習</a></li>
+                <li><a href="#quiz" onclick="closeMenu()">クイズ</a></li>
+                <li><a href="#flashcards" onclick="closeMenu()">フラッシュカード</a></li>
+                <li><a href="#vintage" onclick="closeMenu()">ヴィンテージ</a></li>
+                <li><a href="#progress" onclick="closeMenu()">進捗</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero セクション -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">ワイン検定エキスパートクラス<br>完全対策ガイド</h1>
+            <p class="hero-subtitle">世界のワインを深く学び、プロフェッショナルへ</p>
+            <a href="#study" class="btn-primary">本格的な学習を始める</a>
+        </div>
+    </section>
+
+    <!-- 学習コンテンツ -->
+    <section id="study" class="study-section">
+        <div class="container">
+            <h2 class="section-title">学習コンテンツ</h2>
+
+            <!-- フランスワイン（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇫🇷 フランスワイン（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('france')">▼</button>
+                </div>
+                <div id="france" class="card-content">
+                    <!-- フランスワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">フランス主要ワイン産地</h4>
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- フランスの簡略化された輪郭 -->
+                            <path d="M 200 50 L 350 150 L 350 350 L 280 450 L 120 450 L 50 350 L 50 150 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- シャンパーニュ (北東) -->
+                            <circle cx="280" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="295" y="125" fill="#e5e4e2" font-size="14" class="region-label">シャンパーニュ</text>
+
+                            <!-- アルザス (東) -->
+                            <circle cx="320" cy="200" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="330" y="205" fill="#e5e4e2" font-size="14" class="region-label">アルザス</text>
+
+                            <!-- ブルゴーニュ (東中央) -->
+                            <circle cx="260" cy="240" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="270" y="245" fill="#e5e4e2" font-size="14" class="region-label">ブルゴーニュ</text>
+
+                            <!-- ロワール (中央西) -->
+                            <circle cx="140" cy="220" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="225" fill="#e5e4e2" font-size="14" class="region-label">ロワール</text>
+
+                            <!-- ボルドー (南西) -->
+                            <circle cx="110" cy="350" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="355" fill="#e5e4e2" font-size="14" class="region-label">ボルドー</text>
+
+                            <!-- ローヌ (南東) -->
+                            <circle cx="250" cy="370" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="260" y="375" fill="#e5e4e2" font-size="14" class="region-label">ローヌ</text>
+                        </svg>
+                    </div>
+
+                    <div class="region">
+                        <h4>ボルドー - メドック格付け（1855年）</h4>
+                        <ul>
+                            <li><strong>第1級（Premiers Crus）：</strong>
+                                <ul>
+                                    <li>シャトー・ラフィット・ロートシルト（ポイヤック）</li>
+                                    <li>シャトー・マルゴー（マルゴー）</li>
+                                    <li>シャトー・ラトゥール（ポイヤック）</li>
+                                    <li>シャトー・オー・ブリオン（ペサック・レオニャン）</li>
+                                    <li>シャトー・ムートン・ロートシルト（ポイヤック、1973年昇格）</li>
+                                </ul>
+                            </li>
+                            <li><strong>主要AOC：</strong>ポイヤック、マルゴー、サン・ジュリアン、サン・テステフ、ポムロール、サンテミリオン</li>
+                            <li><strong>サンテミリオン格付け：</strong>プルミエ・グラン・クリュ・クラッセA（シャトー・オーゾンヌ、シャトー・シュヴァル・ブラン、シャトー・アンジェリュス、シャトー・パヴィ）</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ブルゴーニュ - グラン・クリュ</h4>
+                        <ul>
+                            <li><strong>コート・ド・ニュイのグラン・クリュ：</strong>
+                                <ul>
+                                    <li>シャンベルタン、クロ・ド・ベーズ（ジュヴレ・シャンベルタン）</li>
+                                    <li>クロ・ド・タール、クロ・デ・ランブレイ（モレ・サン・ドニ）</li>
+                                    <li>クロ・ド・ヴージョ（ヴージョ）</li>
+                                    <li>ロマネ・コンティ、ラ・ターシュ、リシュブール、ロマネ・サン・ヴィヴァン（ヴォーヌ・ロマネ）</li>
+                                </ul>
+                            </li>
+                            <li><strong>コート・ド・ボーヌのグラン・クリュ：</strong>
+                                <ul>
+                                    <li>コルトン、コルトン・シャルルマーニュ（アロース・コルトン）</li>
+                                    <li>モンラッシェ、バタール・モンラッシェ、シュヴァリエ・モンラッシェ（ピュリニー・モンラッシェ/シャサーニュ・モンラッシェ）</li>
+                                </ul>
+                            </li>
+                            <li><strong>シャブリのグラン・クリュ：</strong>ブランショ、レ・クロ、ヴォーデジール、グルヌイユ、ヴァルミュール、レ・プリューズ、ブーグロ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>シャンパーニュ - グラン・クリュ村</h4>
+                        <ul>
+                            <li><strong>モンターニュ・ド・ランス：</strong>アンボネー、ブージィ、マイィ・シャンパーニュ、ヴェルズネイ、ピュイジュー</li>
+                            <li><strong>コート・デ・ブラン：</strong>アヴィーズ、クラマン、ル・メニル・シュール・オジェ、シュイイ、オジェ、オワリー</li>
+                            <li><strong>ヴァレ・ド・ラ・マルヌ：</strong>アイ、トゥール・シュール・マルヌ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ローヌ - クリュ（特級畑）</h4>
+                        <ul>
+                            <li><strong>北ローヌ：</strong>コート・ロティ、コンドリュー、エルミタージュ、クローズ・エルミタージュ、コルナス、サン・ジョゼフ、サン・ペレイ</li>
+                            <li><strong>南ローヌ：</strong>シャトーヌフ・デュ・パプ（13品種ブレンド可）、ジゴンダス、ヴァケラス、リラック</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ロワール - 主要AOC</h4>
+                        <ul>
+                            <li><strong>中央部：</strong>サンセール、プイィ・フュメ（ソーヴィニヨン・ブラン）</li>
+                            <li><strong>トゥーレーヌ：</strong>ヴーヴレ、モンルイ（シュナン・ブラン）、シノン、ブルグイユ（カベルネ・フラン）</li>
+                            <li><strong>アンジュー：</strong>サヴニエール、コトー・デュ・レイヨン（甘口）</li>
+                            <li><strong>ペイ・ナンテ：</strong>ミュスカデ・セーヴル・エ・メーヌ</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>アルザス - グラン・クリュとVT/SGN</h4>
+                        <ul>
+                            <li><strong>グラン・クリュ：</strong>51の特級畑（例：シュロスベルグ、ランゲン、アルテンベルグ・ド・ベルグハイム）</li>
+                            <li><strong>VT（Vendanges Tardives）：</strong>遅摘みワイン</li>
+                            <li><strong>SGN（Sélection de Grains Nobles）：</strong>貴腐ワイン</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- イタリアワイン（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇮🇹 イタリアワイン（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('italy')">▼</button>
+                </div>
+                <div id="italy" class="card-content">
+                    <!-- イタリアワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">イタリア主要ワイン産地</h4>
+                        <svg viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- イタリアの簡略化された輪郭（長靴型） -->
+                            <path d="M 150 50 L 200 80 L 220 150 L 200 220 L 180 280 L 160 350 L 140 420 L 100 480 L 80 460 L 90 420 L 120 380 L 140 320 L 130 260 L 100 200 L 80 140 L 100 80 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- シチリア島 -->
+                            <path d="M 120 470 L 140 465 L 150 475 L 135 485 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="1.5" opacity="0.3"/>
+
+                            <!-- ピエモンテ (北西) -->
+                            <circle cx="110" cy="100" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="55" y="105" fill="#e5e4e2" font-size="13" class="region-label">ピエモンテ</text>
+
+                            <!-- ヴェネト (北東) -->
+                            <circle cx="190" cy="130" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="200" y="135" fill="#e5e4e2" font-size="13" class="region-label">ヴェネト</text>
+
+                            <!-- トスカーナ (中央) -->
+                            <circle cx="140" cy="240" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="150" y="245" fill="#e5e4e2" font-size="13" class="region-label">トスカーナ</text>
+
+                            <!-- プーリア (南東) -->
+                            <circle cx="180" cy="380" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="190" y="385" fill="#e5e4e2" font-size="13" class="region-label">プーリア</text>
+
+                            <!-- シチリア (南) -->
+                            <circle cx="135" cy="475" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="70" y="480" fill="#e5e4e2" font-size="13" class="region-label">シチリア</text>
+                        </svg>
+                    </div>
+
+                    <div class="region">
+                        <h4>ピエモンテ - 主要DOCG</h4>
+                        <ul>
+                            <li><strong>バローロ DOCG：</strong>ネッビオーロ100%、最低38ヶ月熟成（うち18ヶ月樽熟成）、主要コムーネ（ラ・モッラ、バローロ、セッラルンガ・ダルバ、モンフォルテ・ダルバ、カスティリオーネ・ファッレット）</li>
+                            <li><strong>バルバレスコ DOCG：</strong>ネッビオーロ100%、最低26ヶ月熟成（うち9ヶ月樽熟成）</li>
+                            <li><strong>ガッティナーラ DOCG：</strong>ネッビオーロ最低90%</li>
+                            <li><strong>ガヴィ/コルテーゼ・ディ・ガヴィ DOCG：</strong>コルテーゼ100%</li>
+                            <li><strong>アスティ DOCG：</strong>モスカート・ビアンコ、スパークリング</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>トスカーナ - 主要DOCG</h4>
+                        <ul>
+                            <li><strong>キャンティ・クラシコ DOCG：</strong>サンジョヴェーゼ最低80%、リゼルヴァは最低24ヶ月熟成、グラン・セレツィオーネは最低30ヶ月熟成</li>
+                            <li><strong>ブルネッロ・ディ・モンタルチーノ DOCG：</strong>サンジョヴェーゼ・グロッソ100%、最低5年熟成（うち2年樽熟成）、リゼルヴァは6年</li>
+                            <li><strong>ヴィーノ・ノービレ・ディ・モンテプルチャーノ DOCG：</strong>サンジョヴェーゼ最低70%</li>
+                            <li><strong>カルミニャーノ DOCG：</strong>サンジョヴェーゼ主体、カベルネ・ソーヴィニヨン/フラン最低10%</li>
+                            <li><strong>ヴェルナッチャ・ディ・サン・ジミニャーノ DOCG：</strong>ヴェルナッチャ最低85%</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ヴェネト - 主要DOC/DOCG</h4>
+                        <ul>
+                            <li><strong>アマローネ・デッラ・ヴァルポリチェッラ DOCG：</strong>陰干しブドウ、コルヴィーナ主体</li>
+                            <li><strong>ソアーヴェ・スペリオーレ DOCG：</strong>ガルガーネガ主体</li>
+                            <li><strong>プロセッコ DOC/DOCG：</strong>グレーラ最低85%、コネリアーノ・ヴァルドッビアーデネはDOCG</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>その他の重要産地</h4>
+                        <ul>
+                            <li><strong>フリウリ・ヴェネツィア・ジュリア：</strong>高品質白ワイン、フリウラーノ、リボッラ・ジャッラ</li>
+                            <li><strong>カンパーニア：</strong>タウラージ DOCG（アリアニコ）、フィアーノ・ディ・アヴェッリーノ DOCG</li>
+                            <li><strong>シチリア：</strong>エトナ DOC、ネーロ・ダーヴォラ、マルサラ DOC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スペイン・ポルトガル（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇪🇸 スペイン・ポルトガルワイン（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('spain')">▼</button>
+                </div>
+                <div id="spain" class="card-content">
+                    <!-- スペイン・ポルトガルワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">スペイン・ポルトガル主要ワイン産地</h4>
+                        <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- スペインの簡略化された輪郭 -->
+                            <path d="M 150 50 L 450 50 L 470 150 L 450 250 L 350 300 L 250 310 L 200 250 L 180 150 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- ポルトガルの簡略化された輪郭 -->
+                            <path d="M 50 80 L 150 50 L 180 150 L 150 280 L 80 300 L 50 200 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- ポルトガル - ドウロ (北) -->
+                            <circle cx="110" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="50" y="115" fill="#e5e4e2" font-size="13" class="region-label">ドウロ(PT)</text>
+
+                            <!-- スペイン - リオハ (北) -->
+                            <circle cx="280" cy="100" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="290" y="105" fill="#e5e4e2" font-size="13" class="region-label">リオハ</text>
+
+                            <!-- スペイン - リベラ・デル・ドゥエロ (中北) -->
+                            <circle cx="230" cy="130" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="180" y="125" fill="#e5e4e2" font-size="12" class="region-label">リベラ・デル・ドゥエロ</text>
+
+                            <!-- スペイン - プリオラート (北東) -->
+                            <circle cx="380" cy="120" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="315" y="140" fill="#e5e4e2" font-size="13" class="region-label">プリオラート</text>
+
+                            <!-- スペイン - ヘレス (南西) -->
+                            <circle cx="240" cy="270" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="250" y="275" fill="#e5e4e2" font-size="13" class="region-label">ヘレス</text>
+                        </svg>
+                    </div>
+
+                    <div class="region">
+                        <h4>スペイン - リオハ DOCa 熟成規定</h4>
+                        <ul>
+                            <li><strong>ホーヴェン：</strong>熟成規定なし</li>
+                            <li><strong>クリアンサ（赤）：</strong>最低24ヶ月熟成（うち12ヶ月樽熟成）</li>
+                            <li><strong>レセルバ（赤）：</strong>最低36ヶ月熟成（うち12ヶ月樽熟成）</li>
+                            <li><strong>グラン・レセルバ（赤）：</strong>最低60ヶ月熟成（うち24ヶ月樽熟成）</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>スペイン - 主要DO/DOCa</h4>
+                        <ul>
+                            <li><strong>リベラ・デル・ドゥエロ DO：</strong>ティント・フィノ（テンプラニーリョ）最低75%、ベガ・シシリア</li>
+                            <li><strong>プリオラート DOCa：</strong>ガルナッチャ、カリニェナ、スレート土壌</li>
+                            <li><strong>リアス・バイシャス DO：</strong>アルバリーニョ100%、ミネラル豊富な白</li>
+                            <li><strong>トロ DO：</strong>ティンタ・デ・トロ（テンプラニーリョ）、力強い赤</li>
+                            <li><strong>ヘレス DO：</strong>シェリー（酒精強化ワイン）、フィノ、マンサニーリャ、オロロソ、ペドロ・ヒメネス</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ポルトガル - 主要DOC</h4>
+                        <ul>
+                            <li><strong>ポート DOC：</strong>
+                                <ul>
+                                    <li>ルビー・ポート：若く果実味豊か</li>
+                                    <li>トーニー・ポート：樽熟成、酸化熟成</li>
+                                    <li>ヴィンテージ・ポート：単一年、最低2年樽熟成</li>
+                                    <li>LBV（Late Bottled Vintage）：単一年、4-6年樽熟成</li>
+                                </ul>
+                            </li>
+                            <li><strong>ドウロ DOC：</strong>非酒精強化ワイン、トウリガ・ナシオナル</li>
+                            <li><strong>ダン DOC：</strong>トウリガ・ナシオナル、エレガントな赤</li>
+                            <li><strong>ヴィーニョ・ヴェルデ DOC：</strong>アルバリーニョ、微発泡白ワイン</li>
+                            <li><strong>マデイラ DOC：</strong>酒精強化ワイン、加熱熟成、セルシアル、ヴェルデーリョ、ボアル、マルムジー</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ドイツワイン（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇩🇪 ドイツワイン（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('germany')">▼</button>
+                </div>
+                <div id="germany" class="card-content">
+                    <!-- ドイツワイン産地地図 -->
+                    <div class="wine-map">
+                        <h4 class="map-title">ドイツ主要ワイン産地</h4>
+                        <svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" class="region-map">
+                            <!-- ドイツの簡略化された輪郭 -->
+                            <path d="M 150 50 L 250 80 L 270 150 L 250 250 L 220 350 L 180 400 L 100 380 L 80 300 L 70 200 L 90 120 L 120 80 Z"
+                                  fill="#0a1929" stroke="#b8a355" stroke-width="2" opacity="0.3"/>
+
+                            <!-- モーゼル (西) -->
+                            <circle cx="100" cy="200" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="40" y="205" fill="#e5e4e2" font-size="13" class="region-label">モーゼル</text>
+
+                            <!-- ラインガウ (中西) -->
+                            <circle cx="140" cy="230" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="150" y="235" fill="#e5e4e2" font-size="13" class="region-label">ラインガウ</text>
+
+                            <!-- ラインヘッセン (中) -->
+                            <circle cx="160" cy="270" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="170" y="275" fill="#e5e4e2" font-size="12" class="region-label">ラインヘッセン</text>
+
+                            <!-- ファルツ (南西) -->
+                            <circle cx="150" cy="330" r="8" fill="#b8a355" class="region-marker"/>
+                            <text x="160" y="335" fill="#e5e4e2" font-size="13" class="region-label">ファルツ</text>
+                        </svg>
+                    </div>
+
+                    <div class="region">
+                        <h4>品質分類（糖度による分類）</h4>
+                        <ul>
+                            <li><strong>Qualitätswein：</strong>特定の生産地域、補糖可</li>
+                            <li><strong>Prädikatswein（上級品質ワイン、補糖不可）：</strong>
+                                <ul>
+                                    <li>Kabinett（カビネット）：67-82 Öchsle</li>
+                                    <li>Spätlese（シュペートレーゼ）：76-90 Öchsle、遅摘み</li>
+                                    <li>Auslese（アウスレーゼ）：83-100 Öchsle、房選り</li>
+                                    <li>Beerenauslese（ベーレンアウスレーゼ、BA）：110-128 Öchsle、粒選り、貴腐</li>
+                                    <li>Eiswein（アイスヴァイン）：110-128 Öchsle、-7℃以下で収穫</li>
+                                    <li>Trockenbeerenauslese（トロッケンベーレンアウスレーゼ、TBA）：150-154 Öchsle、極甘口貴腐</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>13のワイン生産地域</h4>
+                        <ul>
+                            <li><strong>モーゼル：</strong>リースリング、スレート土壌、急斜面、ベルンカステラー・ドクトール</li>
+                            <li><strong>ラインガウ：</strong>リースリング、ヨハニスベルク城、シュロス・フォルラーツ</li>
+                            <li><strong>ファルツ：</strong>最大の生産量、リースリング、シュペートブルグンダー</li>
+                            <li><strong>ラインヘッセン：</strong>最大の栽培面積、多様な品種</li>
+                            <li><strong>バーデン：</strong>最南端、温暖、シュペートブルグンダー、グラウブルグンダー</li>
+                            <li><strong>フランケン：</strong>ジルヴァーナー、ボックスボイテル瓶</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>VDP（ドイツ高品質ワイン生産者連盟）の格付け</h4>
+                        <ul>
+                            <li><strong>VDP.GROSSE LAGE：</strong>特級畑</li>
+                            <li><strong>VDP.ERSTE LAGE：</strong>一級畑</li>
+                            <li><strong>VDP.ORTSWEIN：</strong>村名ワイン</li>
+                            <li><strong>VDP.GUTSWEIN：</strong>地域名ワイン</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- オーストリアワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇦🇹 オーストリアワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('austria')">▼</button>
+                </div>
+                <div id="austria" class="card-content">
+                    <div class="region">
+                        <h4>主要産地とワイン</h4>
+                        <ul>
+                            <li><strong>ヴァッハウ DAC：</strong>リースリング、グリューナー・ヴェルトリーナー
+                                <ul>
+                                    <li>Steinfeder（シュタインフェーダー）：軽やか、最大11.5%アルコール</li>
+                                    <li>Federspiel（フェーダーシュピール）：中程度、11.5-12.5%</li>
+                                    <li>Smaragd（スマラクト）：フルボディ、12.5%以上</li>
+                                </ul>
+                            </li>
+                            <li><strong>ブルゲンラント：</strong>ノイジードラー湖、甘口ワイン、アウスブルッフ、トロッケンベーレンアウスレーゼ</li>
+                            <li><strong>固有品種：</strong>グリューナー・ヴェルトリーナー、ツヴァイゲルト、ブラウフレンキッシュ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 日本ワイン（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🇯🇵 日本ワイン（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('japan-detail')">▼</button>
+                </div>
+                <div id="japan-detail" class="card-content">
+                    <div class="region">
+                        <h4>GI（地理的表示）制度</h4>
+                        <ul>
+                            <li><strong>山梨 GI：</strong>2013年指定、日本初のワインGI</li>
+                            <li><strong>北海道 GI：</strong>2018年指定</li>
+                            <li><strong>長野 GI：</strong>2021年指定</li>
+                            <li><strong>山形 GI：</strong>2022年指定</li>
+                            <li><strong>大阪 GI：</strong>2023年指定</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>山梨県の主要産地</h4>
+                        <ul>
+                            <li><strong>勝沼地区：</strong>甲州ワインの中心地、石灰岩土壌</li>
+                            <li><strong>牧丘地区：</strong>標高が高く、シャルドネ、メルローに適する</li>
+                            <li><strong>明野地区：</strong>日照時間が長い、赤ワイン向き</li>
+                            <li><strong>甲府盆地：</strong>多様な品種栽培</li>
+                            <li><strong>韮崎地区：</strong>カベルネ・ソーヴィニヨン</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>長野県の主要産地</h4>
+                        <ul>
+                            <li><strong>千曲川流域：</strong>メルロー、シャルドネ、長野県最大の産地</li>
+                            <li><strong>塩尻地区：</strong>桔梗ヶ原、メルローの銘醸地</li>
+                            <li><strong>東御地区：</strong>シャルドネ</li>
+                            <li><strong>安曇野地区：</strong>冷涼な気候</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>北海道の主要産地</h4>
+                        <ul>
+                            <li><strong>余市：</strong>ピノ・ノワール、ケルナー、冷涼な気候</li>
+                            <li><strong>富良野：</strong>ピノ・ノワール</li>
+                            <li><strong>十勝：</strong>新興産地</li>
+                            <li><strong>函館：</strong>海洋性気候</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>その他の主要産地</h4>
+                        <ul>
+                            <li><strong>山形県（GI山形）：</strong>デラウェア、マスカット・ベーリーA、シャルドネ</li>
+                            <li><strong>新潟県：</strong>岩の原葡萄園、マスカット・ベーリーAの生誕地</li>
+                            <li><strong>岡山県：</strong>マスカット・オブ・アレキサンドリア</li>
+                            <li><strong>島根県：</strong>出雲地方</li>
+                            <li><strong>大阪府（GI大阪）：</strong>デラウェア主体</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>日本固有品種の詳細</h4>
+                        <ul>
+                            <li><strong>甲州：</strong>
+                                <ul>
+                                    <li>日本固有の白ブドウ品種</li>
+                                    <li>DNA解析によりヨーロッパ系品種と判明</li>
+                                    <li>OIV（国際ブドウ・ワイン機構）に品種登録（2010年）</li>
+                                    <li>柑橘系の香り、ミネラル感、繊細な味わい</li>
+                                    <li>シュール・リー製法も採用</li>
+                                </ul>
+                            </li>
+                            <li><strong>マスカット・ベーリーA：</strong>
+                                <ul>
+                                    <li>川上善兵衛が交配（ベーリー × マスカット・ハンブルグ）</li>
+                                    <li>OIVに品種登録（2013年）</li>
+                                    <li>イチゴやキャンディのような香り</li>
+                                    <li>新潟県岩の原葡萄園で誕生</li>
+                                </ul>
+                            </li>
+                            <li><strong>その他の交配品種：</strong>
+                                <ul>
+                                    <li>ヤマ・ソーヴィニヨン（山葡萄 × カベルネ・ソーヴィニヨン）</li>
+                                    <li>信濃リースリング（シャルドネ × リースリング）</li>
+                                    <li>山幸（ヤマブドウ × 清見）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>日本ワインの歴史</h4>
+                        <ul>
+                            <li><strong>1874年：</strong>大日本山梨葡萄酒会社設立（現・メルシャン）</li>
+                            <li><strong>1877年：</strong>高野正誠・土屋龍憲がフランス留学から帰国、本格的ワイン製造開始</li>
+                            <li><strong>1890年代：</strong>川上善兵衛が岩の原葡萄園でワイン製造開始</li>
+                            <li><strong>2015年：</strong>「日本ワイン」表示ルール施行</li>
+                            <li><strong>2018年：</strong>「日本ワイン」表示基準厳格化</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新世界ワイン -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🌏 新世界ワイン</h3>
+                    <button class="toggle-btn" onclick="toggleContent('newworld')">▼</button>
+                </div>
+                <div id="newworld" class="card-content">
+                    <div class="region">
+                        <h4>🇺🇸 アメリカ - カリフォルニア</h4>
+                        <ul>
+                            <li><strong>ナパ・ヴァレー AVA：</strong>
+                                <ul>
+                                    <li>主要サブAVA：スタッグス・リープ・ディストリクト、ラザフォード、オークヴィル、ホーウェル・マウンテン、カリストガ</li>
+                                    <li>カベルネ・ソーヴィニヨン、メルロー、シャルドネ</li>
+                                </ul>
+                            </li>
+                            <li><strong>ソノマ AVA：</strong>ロシアン・リヴァー・ヴァレー（ピノ・ノワール、シャルドネ）、ドライ・クリーク・ヴァレー（ジンファンデル）</li>
+                            <li><strong>セントラル・コースト：</strong>サンタ・バーバラ、サンタ・マリア・ヴァレー、パソ・ロブレス</li>
+                            <li><strong>オレゴン：</strong>ウィラメット・ヴァレー（ピノ・ノワール）</li>
+                            <li><strong>ワシントン：</strong>コロンビア・ヴァレー、ワラワラ・ヴァレー</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>🇦🇺 オーストラリア</h4>
+                        <ul>
+                            <li><strong>南オーストラリア：</strong>
+                                <ul>
+                                    <li>バロッサ・ヴァレー：シラーズ、グルナッシュ、ムールヴェードル（GSM）</li>
+                                    <li>クナワラ：テラ・ロッサ土壌、カベルネ・ソーヴィニヨン</li>
+                                    <li>クレア・ヴァレー：リースリング</li>
+                                    <li>アデレード・ヒルズ：シャルドネ、ピノ・ノワール</li>
+                                </ul>
+                            </li>
+                            <li><strong>ヴィクトリア：</strong>ヤラ・ヴァレー（ピノ・ノワール、シャルドネ）</li>
+                            <li><strong>ニュー・サウス・ウェールズ：</strong>ハンター・ヴァレー（セミヨン）</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>🇳🇿 ニュージーランド</h4>
+                        <ul>
+                            <li><strong>マールボロ：</strong>ソーヴィニヨン・ブラン、世界的に有名</li>
+                            <li><strong>セントラル・オタゴ：</strong>世界最南端のワイン産地、ピノ・ノワール</li>
+                            <li><strong>ホークス・ベイ：</strong>ボルドーブレンド、シラー</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>🇨🇱 チリ</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>カベルネ・ソーヴィニヨン、カルメネール（固有品種）、シャルドネ</li>
+                            <li><strong>主要産地：</strong>マイポ・ヴァレー、コルチャグア・ヴァレー、カサブランカ・ヴァレー（白）</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>🇦🇷 アルゼンチン</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>マルベック、トロンテス（白、アロマティック）</li>
+                            <li><strong>メンドーサ：</strong>最大の産地、高地栽培、ルハン・デ・クージョ、ウコ・ヴァレー</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>🇿🇦 南アフリカ</h4>
+                        <ul>
+                            <li><strong>主要品種：</strong>シュナン・ブラン、ピノタージュ（固有品種）、カベルネ・ソーヴィニヨン</li>
+                            <li><strong>主要産地：</strong>ステレンボッシュ、フランシュック、コンスタンシア、ウォーカー・ベイ（ピノ・ノワール）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ブドウ品種（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🍇 ブドウ品種（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('grapes')">▼</button>
+                </div>
+                <div id="grapes" class="card-content">
+                    <div class="region">
+                        <h4>国際品種 - 黒ブドウ</h4>
+                        <ul>
+                            <li><strong>カベルネ・ソーヴィニヨン：</strong>交配親：カベルネ・フラン × ソーヴィニヨン・ブラン、晩熟、小粒、厚い果皮、高タンニン</li>
+                            <li><strong>メルロー：</strong>早熟、中〜大粒、まろやかなタンニン、プラム、チョコレート</li>
+                            <li><strong>ピノ・ノワール：</strong>早熟、小粒、薄い果皮、低タンニン、冷涼な気候、クローン多数</li>
+                            <li><strong>シラー（シラーズ）：</strong>晩熟、スパイス、黒コショウ、ローヌ、オーストラリア</li>
+                            <li><strong>グルナッシュ（ガルナッチャ）：</strong>晩熟、高アルコール、酸化に弱い、温暖な気候</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>国際品種 - 白ブドウ</h4>
+                        <ul>
+                            <li><strong>シャルドネ：</strong>早熟、適応性高い、マロラクティック発酵、樽熟成との相性◎</li>
+                            <li><strong>ソーヴィニヨン・ブラン：</strong>早熟、グレープフルーツ、ハーブ、高い酸味、冷涼な気候</li>
+                            <li><strong>リースリング：</strong>晩熟、高い酸味、蜂蜜、ペトロール香、貴腐ワインにも使用</li>
+                            <li><strong>ピノ・グリ（ピノ・グリージョ）：</strong>ピノ・ノワールの変異種、灰色の果皮</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>地域固有品種</h4>
+                        <ul>
+                            <li><strong>ネッビオーロ：</strong>晩熟、高タンニン、高酸、長期熟成、バローロ、バルバレスコ</li>
+                            <li><strong>サンジョヴェーゼ：</strong>晩熟、高酸、チェリー、キャンティ、ブルネッロ</li>
+                            <li><strong>テンプラニーリョ：</strong>早熟、リオハ、リベラ・デル・ドゥエロ（ティント・フィノ）</li>
+                            <li><strong>トゥーリガ・ナシオナル：</strong>ポルトガル、ポート、ドウロ</li>
+                            <li><strong>マルベック：</strong>フランス原産、アルゼンチンで成功</li>
+                            <li><strong>ピノタージュ：</strong>南アフリカ、ピノ・ノワール × サンソー</li>
+                            <li><strong>カルメネール：</strong>チリ、ボルドー原産</li>
+                            <li><strong>ジンファンデル（プリミティーヴォ）：</strong>カリフォルニア、南イタリア</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ワイン法規 -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>📜 ワイン法規</h3>
+                    <button class="toggle-btn" onclick="toggleContent('laws')">▼</button>
+                </div>
+                <div id="laws" class="card-content">
+                    <div class="region">
+                        <h4>EU（旧世界）のワイン法</h4>
+                        <ul>
+                            <li><strong>フランス：</strong>AOC/AOP（原産地統制呼称）、IGP（地理的表示保護）、Vin de France</li>
+                            <li><strong>イタリア：</strong>DOCG、DOC、IGT、Vino</li>
+                            <li><strong>スペイン：</strong>DOCa/DOQ、DO、Vino de la Tierra、Vino</li>
+                            <li><strong>ドイツ：</strong>Prädikatswein、Qualitätswein、Landwein、Deutscher Wein</li>
+                            <li><strong>ポルトガル：</strong>DOP、IGP、Vinho</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>新世界のワイン法</h4>
+                        <ul>
+                            <li><strong>アメリカ：</strong>AVA（American Viticultural Area）、品種表示85%以上</li>
+                            <li><strong>オーストラリア：</strong>GI（Geographical Indication）、品種表示85%以上</li>
+                            <li><strong>ニュージーランド：</strong>GI、品種表示85%以上</li>
+                            <li><strong>チリ：</strong>DO、品種表示75%以上</li>
+                            <li><strong>アルゼンチン：</strong>DOC、IG、品種表示85%以上</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- テイスティング（詳細版） -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>👃 テイスティング（詳細）</h3>
+                    <button class="toggle-btn" onclick="toggleContent('tasting')">▼</button>
+                </div>
+                <div id="tasting" class="card-content">
+                    <div class="region">
+                        <h4>テイスティングの3要素と詳細</h4>
+                        <ul>
+                            <li><strong>外観（Visual）：</strong>
+                                <ul>
+                                    <li>清澄度：澄んだ、やや濁った、濁った</li>
+                                    <li>輝き：輝きのある、落ち着いた、マット</li>
+                                    <li>色調：白（グリーン、レモン、ゴールド、琥珀）、赤（紫、ルビー、ガーネット、レンガ、オレンジ）</li>
+                                    <li>濃淡：淡い、やや淡い、やや濃い、濃い</li>
+                                    <li>粘性：軽い、やや軽い、やや強い、強い</li>
+                                </ul>
+                            </li>
+                            <li><strong>香り（Nose）：</strong>
+                                <ul>
+                                    <li>第一アロマ：果実、花、ハーブ（ブドウ由来）</li>
+                                    <li>第二アロマ：酵母、バター、ヨーグルト（発酵由来）</li>
+                                    <li>第三アロマ（ブーケ）：ナッツ、キノコ、なめし革、スパイス（熟成由来）</li>
+                                    <li>強さ：弱い、やや弱い、やや強い、強い</li>
+                                </ul>
+                            </li>
+                            <li><strong>味わい（Palate）：</strong>
+                                <ul>
+                                    <li>アタック：軽い、やや軽い、やや強い、強い</li>
+                                    <li>甘味：ドライ、やや辛口、やや甘口、甘口</li>
+                                    <li>酸味：弱い、やや弱い、やや強い、強い</li>
+                                    <li>タンニン（赤のみ）：滑らか、やや滑らか、やや粗い、粗い</li>
+                                    <li>ボディ：ライト、ミディアム、フル</li>
+                                    <li>バランス：良い、普通、悪い</li>
+                                    <li>余韻：短い、やや短い、やや長い、長い</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ワインの欠陥</h4>
+                        <ul>
+                            <li><strong>コルク臭（TCA）：</strong>カビ、湿った段ボール</li>
+                            <li><strong>酸化：</strong>茶色、シェリーのような香り、鮮度の欠如</li>
+                            <li><strong>還元臭：</strong>硫黄、ゴム、卵の腐敗臭</li>
+                            <li><strong>ブレタノマイセス：</strong>馬小屋、バンドエイド</li>
+                            <li><strong>揮発酸（VA）：</strong>酢、除光液</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 日本酒 -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🍶 日本酒</h3>
+                    <button class="toggle-btn" onclick="toggleContent('sake')">▼</button>
+                </div>
+                <div id="sake" class="card-content">
+                    <div class="region">
+                        <h4>特定名称酒の分類</h4>
+                        <ul>
+                            <li><strong>純米大吟醸：</strong>精米歩合50%以下、純米、吟醸造り</li>
+                            <li><strong>純米吟醸：</strong>精米歩合60%以下、純米、吟醸造り</li>
+                            <li><strong>純米酒：</strong>米・米麹のみ使用</li>
+                            <li><strong>大吟醸：</strong>精米歩合50%以下、吟醸造り、醸造アルコール添加可</li>
+                            <li><strong>吟醸：</strong>精米歩合60%以下、吟醸造り、醸造アルコール添加可</li>
+                            <li><strong>本醸造：</strong>精米歩合70%以下、醸造アルコール添加</li>
+                            <li><strong>特別純米・特別本醸造：</strong>特別な製造方法、精米歩合60%以下または特別な製法</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>主要な日本酒の産地</h4>
+                        <ul>
+                            <li><strong>新潟県：</strong>淡麗辛口、端麗な味わい</li>
+                            <li><strong>兵庫県（灘五郷）：</strong>力強い味わい、宮水（硬水）</li>
+                            <li><strong>京都府（伏見）：</strong>やわらかな味わい、軟水</li>
+                            <li><strong>秋田県：</strong>芳醇な味わい</li>
+                            <li><strong>広島県：</strong>三大銘醸地の一つ、軟水醸造法</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>酒米の主要品種</h4>
+                        <ul>
+                            <li><strong>山田錦：</strong>兵庫県、酒米の王様</li>
+                            <li><strong>五百万石：</strong>新潟県、淡麗な酒</li>
+                            <li><strong>美山錦：</strong>長野県、すっきりとした味わい</li>
+                            <li><strong>雄町：</strong>岡山県、ふくよかな味わい</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>日本酒の製造</h4>
+                        <ul>
+                            <li><strong>精米：</strong>米の外側を削る、精米歩合が低いほど高級</li>
+                            <li><strong>麹造り：</strong>米に麹菌を繁殖させる</li>
+                            <li><strong>酒母造り：</strong>酵母を大量培養</li>
+                            <li><strong>醪（もろみ）造り：</strong>三段仕込み</li>
+                            <li><strong>上槽：</strong>醪を搾って清酒と酒粕に分ける</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- チーズ -->
+            <div class="content-card">
+                <div class="card-header">
+                    <h3>🧀 チーズ</h3>
+                    <button class="toggle-btn" onclick="toggleContent('cheese')">▼</button>
+                </div>
+                <div id="cheese" class="card-content">
+                    <div class="region">
+                        <h4>チーズの7つのタイプ</h4>
+                        <ul>
+                            <li><strong>1. フレッシュタイプ：</strong>
+                                <ul>
+                                    <li>モッツァレラ（イタリア）</li>
+                                    <li>リコッタ（イタリア）</li>
+                                    <li>フロマージュ・ブラン（フランス）</li>
+                                    <li>クリームチーズ</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. 白カビタイプ：</strong>
+                                <ul>
+                                    <li>カマンベール（フランス）</li>
+                                    <li>ブリー・ド・モー（フランス）</li>
+                                    <li>ブリヤ・サヴァラン（フランス）</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. 青カビタイプ：</strong>
+                                <ul>
+                                    <li>ロックフォール（フランス）</li>
+                                    <li>ゴルゴンゾーラ（イタリア）</li>
+                                    <li>スティルトン（イギリス）</li>
+                                </ul>
+                            </li>
+                            <li><strong>4. ウォッシュタイプ：</strong>
+                                <ul>
+                                    <li>エポワス（フランス）</li>
+                                    <li>マンステール（フランス）</li>
+                                    <li>タレッジョ（イタリア）</li>
+                                </ul>
+                            </li>
+                            <li><strong>5. シェーブルタイプ（山羊乳）：</strong>
+                                <ul>
+                                    <li>ヴァランセ（フランス）</li>
+                                    <li>クロタン・ド・シャヴィニョル（フランス）</li>
+                                    <li>サント・モール・ド・トゥーレーヌ（フランス）</li>
+                                </ul>
+                            </li>
+                            <li><strong>6. セミハードタイプ：</strong>
+                                <ul>
+                                    <li>ゴーダ（オランダ）</li>
+                                    <li>チェダー（イギリス）</li>
+                                    <li>ラクレット（スイス）</li>
+                                </ul>
+                            </li>
+                            <li><strong>7. ハードタイプ：</strong>
+                                <ul>
+                                    <li>パルミジャーノ・レッジャーノ（イタリア）</li>
+                                    <li>コンテ（フランス）</li>
+                                    <li>エメンタール（スイス）</li>
+                                    <li>グリュイエール（スイス）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>フランスのAOP チーズ</h4>
+                        <ul>
+                            <li><strong>ロックフォール：</strong>羊乳、青カビ、最古のAOP（1925年）</li>
+                            <li><strong>カマンベール・ド・ノルマンディ：</strong>白カビ、ノルマンディ地方</li>
+                            <li><strong>コンテ：</strong>ハード、ジュラ山脈</li>
+                            <li><strong>ブリー・ド・モー：</strong>白カビ、「チーズの王様」</li>
+                            <li><strong>エポワス：</strong>ウォッシュ、マール・ド・ブルゴーニュで洗う</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>イタリアのDOP チーズ</h4>
+                        <ul>
+                            <li><strong>パルミジャーノ・レッジャーノ：</strong>ハード、最低12ヶ月熟成</li>
+                            <li><strong>ゴルゴンゾーラ：</strong>青カビ、ピカンテ（辛口）・ドルチェ（甘口）</li>
+                            <li><strong>モッツァレラ・ディ・ブッファラ・カンパーナ：</strong>水牛乳、カンパーニア州</li>
+                            <li><strong>ペコリーノ・ロマーノ：</strong>羊乳、ハード</li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h4>ワインとチーズのペアリング</h4>
+                        <ul>
+                            <li><strong>白カビ × シャンパーニュ：</strong>カマンベール × シャンパーニュ</li>
+                            <li><strong>青カビ × 甘口ワイン：</strong>ロックフォール × ソーテルヌ</li>
+                            <li><strong>シェーブル × ソーヴィニヨン・ブラン：</strong>クロタン × サンセール</li>
+                            <li><strong>ハード × 赤ワイン：</strong>コンテ × ブルゴーニュ赤</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- クイズセクション -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">エキスパート実践クイズ</h2>
+            <div class="quiz-container">
+                <div id="quiz-area">
+                    <div class="quiz-question" id="question-display">
+                        <p class="question-text">「開始する」ボタンを押してクイズを始めましょう</p>
+                    </div>
+                    <div class="quiz-options" id="options-display"></div>
+                    <div class="quiz-result" id="result-display"></div>
+                    <div class="quiz-progress-info">
+                        <p class="progress-text">進捗: <span id="quiz-current">0</span> / <span id="quiz-total">25</span> 問</p>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="btn-secondary" onclick="startQuiz()">開始する</button>
+                        <button class="btn-secondary" onclick="nextQuestion()" id="next-btn" style="display:none;">次の問題</button>
+                    </div>
+                    <div class="quiz-score">
+                        <p>正解数: <span id="correct-count">0</span> / <span id="total-count">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フラッシュカード -->
+    <section id="flashcards" class="flashcard-section">
+        <div class="container">
+            <h2 class="section-title">エキスパート・フラッシュカード</h2>
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p id="card-front">「開始する」ボタンを押してください</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p id="card-back">答え</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="btn-secondary" onclick="prevCard()">← 前へ</button>
+                    <button class="btn-secondary" onclick="startFlashcards()">開始する</button>
+                    <button class="btn-secondary" onclick="nextCard()">次へ →</button>
+                </div>
+                <div class="flashcard-counter">
+                    <p><span id="current-card">0</span> / <span id="total-cards">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ヴィンテージチャート -->
+    <section id="vintage" class="vintage-section">
+        <div class="container">
+            <h2 class="section-title">主要産地ヴィンテージチャート</h2>
+            <div class="vintage-container">
+                <div class="vintage-card">
+                    <h3>ボルドー（赤）</h3>
+                    <ul class="vintage-list">
+                        <li><span class="year">2020</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2019</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2018</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2016</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2015</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2010</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2009</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2005</span> <span class="rating excellent">秀逸</span></li>
+                    </ul>
+                </div>
+                <div class="vintage-card">
+                    <h3>ブルゴーニュ（赤）</h3>
+                    <ul class="vintage-list">
+                        <li><span class="year">2020</span> <span class="rating good">良</span></li>
+                        <li><span class="year">2019</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2018</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2017</span> <span class="rating good">良</span></li>
+                        <li><span class="year">2016</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2015</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2010</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2009</span> <span class="rating excellent">秀逸</span></li>
+                    </ul>
+                </div>
+                <div class="vintage-card">
+                    <h3>シャンパーニュ</h3>
+                    <ul class="vintage-list">
+                        <li><span class="year">2015</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2012</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2008</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2004</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2002</span> <span class="rating excellent">秀逸</span></li>
+                    </ul>
+                </div>
+                <div class="vintage-card">
+                    <h3>バローロ</h3>
+                    <ul class="vintage-list">
+                        <li><span class="year">2019</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2016</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2015</span> <span class="rating good">良</span></li>
+                        <li><span class="year">2013</span> <span class="rating excellent">優良</span></li>
+                        <li><span class="year">2010</span> <span class="rating excellent">秀逸</span></li>
+                        <li><span class="year">2006</span> <span class="rating excellent">秀逸</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 進捗管理 -->
+    <section id="progress" class="progress-section">
+        <div class="container">
+            <h2 class="section-title">学習進捗</h2>
+            <div class="progress-container">
+                <p class="progress-note">※ 進捗はクイズの正答率に基づいて自動的に更新されます</p>
+                <div class="progress-item">
+                    <h3>フランスワイン <span class="stats-text" id="stats-france">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-france"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>イタリアワイン <span class="stats-text" id="stats-italy">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-italy"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>スペイン・ポルトガル <span class="stats-text" id="stats-spain">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-spain"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>ドイツ・オーストリア <span class="stats-text" id="stats-germany">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-germany"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>新世界ワイン <span class="stats-text" id="stats-newworld">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-newworld"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>ブドウ品種・法規 <span class="stats-text" id="stats-grapes">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-grapes"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <h3>テイスティング <span class="stats-text" id="stats-tasting">(未挑戦)</span></h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progress-tasting"></div>
+                    </div>
+                </div>
+                <div class="progress-total">
+                    <h3>全体の進捗</h3>
+                    <div class="progress-bar-large">
+                        <div class="progress-fill" style="width: 0%" id="progress-total"></div>
+                    </div>
+                    <p class="progress-percentage"><span id="total-percentage">0</span>%</p>
+                </div>
+                <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Wine Expert Study. ワイン検定エキスパートクラス完全対策ガイド</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

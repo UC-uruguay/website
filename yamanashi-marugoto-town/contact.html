@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contact-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .contact-header h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .contact-header p {
+            font-size: 15px;
+            color: #7f8c8d;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #4a90e2;
+        }
+
+        .required {
+            color: #e74c3c;
+            margin-left: 4px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            background: #fafafa;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4a90e2;
+            background: white;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 14px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .submit-button:hover {
+            background: #357abd;
+        }
+
+        .info-box {
+            background: white;
+            padding: 30px;
+            margin-top: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .info-box h2 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-header {
+                padding: 30px 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 26px;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">山梨まるごとタウン</a>
+            <a href="index.html" class="back-button">← ホームに戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-header">
+            <h1>お問い合わせ</h1>
+            <p>山梨まるごとタウンに関するご質問、ご意見、ご要望などお気軽にお問い合わせください。</p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="alert('お問い合わせを受け付けました。ありがとうございます。'); return false;">
+            <div class="form-group">
+                <label for="name">お名前<span class="required">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="山梨 太郎">
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+            </div>
+
+            <div class="form-group">
+                <label for="city">興味のある市町村</label>
+                <select id="city" name="city">
+                    <option value="">選択してください</option>
+                    <optgroup label="市">
+                        <option value="kofu">甲府市</option>
+                        <option value="fujiyoshida">富士吉田市</option>
+                        <option value="tsuru">都留市</option>
+                        <option value="yamanashi">山梨市</option>
+                        <option value="otsuki">大月市</option>
+                        <option value="nirasaki">韮崎市</option>
+                        <option value="minamialps">南アルプス市</option>
+                        <option value="hokuto">北杜市</option>
+                        <option value="kai">甲斐市</option>
+                        <option value="fuefuki">笛吹市</option>
+                        <option value="uenohara">上野原市</option>
+                        <option value="koshu">甲州市</option>
+                        <option value="chuo">中央市</option>
+                    </optgroup>
+                    <optgroup label="町">
+                        <option value="ichikawamisato">市川三郷町</option>
+                        <option value="hayakawa">早川町</option>
+                        <option value="minobu">身延町</option>
+                        <option value="nambu">南部町</option>
+                        <option value="fujikawa">富士川町</option>
+                        <option value="showa">昭和町</option>
+                        <option value="nishikatsura">西桂町</option>
+                        <option value="fujikawaguchiko">富士河口湖町</option>
+                    </optgroup>
+                    <optgroup label="村">
+                        <option value="doshi">道志村</option>
+                        <option value="oshino">忍野村</option>
+                        <option value="yamanakako">山中湖村</option>
+                        <option value="narusawa">鳴沢村</option>
+                        <option value="kosuge">小菅村</option>
+                        <option value="tabayama">丹波山村</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="category">お問い合わせの種類<span class="required">*</span></label>
+                <select id="category" name="category" required>
+                    <option value="">選択してください</option>
+                    <option value="question">ご質問</option>
+                    <option value="shop">アンテナショップについて</option>
+                    <option value="event">イベント情報</option>
+                    <option value="product">商品について</option>
+                    <option value="access">アクセス方法</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">お問い合わせ内容<span class="required">*</span></label>
+                <textarea id="message" name="message" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">送信する</button>
+        </form>
+
+        <div class="info-box">
+            <h2>アクセス情報</h2>
+            <p><strong>住所</strong> - 山梨県甲州市塩山駅周辺</p>
+            <p><strong>アクセス</strong> - JR中央本線「塩山駅」下車すぐ</p>
+            <p><strong>営業時間</strong> - 9:00〜18:00（各アンテナショップにより異なります）</p>
+            <p><strong>定休日</strong> - 年中無休（年末年始を除く）</p>
+            <p><strong>電話</strong> - 055-XXX-XXXX（代表）</p>
+            <p><strong>メール</strong> - info@yamanashi-marugoto-town.jp</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山梨まるごとタウン - 塩山駅から山梨27市町村の魅力を発見！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: linear-gradient(to bottom, #f0f9ff 0%, #fef3c7 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ヘッダー */
+        header {
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
+            padding: 20px 0;
+            box-shadow: 0 2px 12px rgba(74, 144, 226, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd54f;
+        }
+
+        /* ヒーローセクション */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)),
+                        url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1600&q=80') center/cover;
+            padding: 100px 20px 80px;
+            border-bottom: 1px solid #e8eef3;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #2d3748;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #7f8c8d;
+            text-align: center;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+        }
+
+        /* メインコンテンツ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #2d3748;
+            font-weight: 600;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        /* 市町村カードグリッド */
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .city-card {
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            padding: 0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .city-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .city-content {
+            padding: 24px;
+        }
+
+        .city-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a90e2, #6366f1, #a855f7);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .city-card:hover {
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.2);
+            transform: translateY(-4px);
+            border-color: #e0e7ff;
+        }
+
+        .city-card:hover::before {
+            opacity: 1;
+        }
+
+        .city-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .city-card p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .city-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #4a90e2 0%, #6366f1 100%);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+        }
+
+        .city-link:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+        }
+
+        /* カテゴリー別セクション */
+        .category-section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .category-section h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2d3748;
+            font-weight: 600;
+            display: inline-block;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #4a90e2;
+        }
+
+        /* フッター */
+        footer {
+            background: #2d3748;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .cities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-section {
+                padding: 30px 20px;
+            }
+        }
+
+        /* アクセス情報 */
+        .access-info {
+            background: linear-gradient(135deg, #dbeafe 0%, #fef3c7 100%);
+            border-left: 5px solid #4a90e2;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+        }
+
+        .access-info h2 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .access-info p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🏔️ 山梨まるごとタウン</div>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#cities">市町村を探す</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>山梨まるごとタウン</h1>
+        <p>塩山駅周辺で山梨県27市町村の魅力を発見</p>
+        <a href="#cities" class="hero-button">市町村を探す</a>
+    </section>
+
+    <div class="container">
+        <div class="access-info">
+            <h2>📍 アクセス</h2>
+            <p>
+                <strong>場所：</strong>JR塩山駅周辺<br>
+                山梨県の全27市町村のアンテナショップが集結！<br>
+                各市町村の特産品・名産品をその場で体験できる、山梨の魅力が詰まった場所です。
+            </p>
+        </div>
+
+        <h2 class="section-title" id="cities">🏘️ 山梨27市町村アンテナショップ</h2>
+
+        <!-- 市 -->
+        <div class="category-section">
+            <h2>🏙️ 市（13市）</h2>
+            <div class="cities-grid">
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1566232392379-afd9298e6a46?w=600&q=80" alt="甲府市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲府市</h3>
+                        <p>県庁所在地。甲府ブランド製品や武田信玄ゆかりの品々が魅力。</p>
+                        <a href="cities/kofu.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="富士吉田市" class="city-image">
+                    <div class="city-content">
+                        <h3>富士吉田市</h3>
+                        <p>富士山の麓の街。有名な「吉田のうどん」が自慢です。</p>
+                        <a href="cities/fujiyoshida.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="笛吹市" class="city-image">
+                    <div class="city-content">
+                        <h3>笛吹市</h3>
+                        <p>フルーツ王国。桔梗屋信玄餅の工場テーマパークがあります。</p>
+                        <a href="cities/fuefuki.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80" alt="甲州市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲州市</h3>
+                        <p>ワインと干し柿（ころ柿）の名産地。歴史ある街並みが魅力。</p>
+                        <a href="cities/koshu.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="北杜市" class="city-image">
+                    <div class="city-content">
+                        <h3>北杜市</h3>
+                        <p>八ヶ岳の麓。北杜米を使った上質なスイーツが人気。</p>
+                        <a href="cities/hokuto.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&q=80" alt="南アルプス市" class="city-image">
+                    <div class="city-content">
+                        <h3>南アルプス市</h3>
+                        <p>南アルプスの玄関口。ころ柿や果物が有名です。</p>
+                        <a href="cities/minamialps.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="都留市" class="city-image">
+                    <div class="city-content">
+                        <h3>都留市</h3>
+                        <p>豊かな自然と水の都。大学の街としても知られています。</p>
+                        <a href="cities/tsuru.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&q=80" alt="大月市" class="city-image">
+                    <div class="city-content">
+                        <h3>大月市</h3>
+                        <p>富士山の眺望が美しい街。鉄道ファンに人気の地域です。</p>
+                        <a href="cities/otsuki.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=600&q=80" alt="韮崎市" class="city-image">
+                    <div class="city-content">
+                        <h3>韮崎市</h3>
+                        <p>武田家ゆかりの地。桜と歴史が息づく街です。</p>
+                        <a href="cities/nirasaki.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="甲斐市" class="city-image">
+                    <div class="city-content">
+                        <h3>甲斐市</h3>
+                        <p>文化芸術が盛んな街。快適な住環境が魅力です。</p>
+                        <a href="cities/kai.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=600&q=80" alt="山梨市" class="city-image">
+                    <div class="city-content">
+                        <h3>山梨市</h3>
+                        <p>フルーツの宝庫。桃やぶどうの名産地です。</p>
+                        <a href="cities/yamanashi.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600&q=80" alt="上野原市" class="city-image">
+                    <div class="city-content">
+                        <h3>上野原市</h3>
+                        <p>神奈川県境の街。自然豊かで都心へのアクセスも良好。</p>
+                        <a href="cities/uenohara.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="中央市" class="city-image">
+                    <div class="city-content">
+                        <h3>中央市</h3>
+                        <p>県の中央に位置する新しい市。農業が盛んです。</p>
+                        <a href="cities/chuo.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 町 -->
+        <div class="category-section">
+            <h2>🏘️ 町（8町）</h2>
+            <div class="cities-grid">
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1533094602577-198d3beab8ea?w=600&q=80" alt="市川三郷町" class="city-image">
+                    <div class="city-content">
+                        <h3>市川三郷町</h3>
+                        <p>花火の町として有名。伝統工芸品も豊富です。</p>
+                        <a href="cities/ichikawamisato.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600&q=80" alt="早川町" class="city-image">
+                    <div class="city-content">
+                        <h3>早川町</h3>
+                        <p>日本一人口の少ない町。手つかずの自然が魅力。</p>
+                        <a href="cities/hayakawa.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600&q=80" alt="身延町" class="city-image">
+                    <div class="city-content">
+                        <h3>身延町</h3>
+                        <p>日蓮宗総本山・身延山久遠寺で有名。あけぼの大豆が特産品。</p>
+                        <a href="cities/minobu.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=80" alt="南部町" class="city-image">
+                    <div class="city-content">
+                        <h3>南部町</h3>
+                        <p>南部茶や南部の火祭りで知られる町です。</p>
+                        <a href="cities/nambu.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80" alt="富士川町" class="city-image">
+                    <div class="city-content">
+                        <h3>富士川町</h3>
+                        <p>富士川沿いの町。豊かな自然と温泉が魅力。</p>
+                        <a href="cities/fujikawa.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="昭和町" class="city-image">
+                    <div class="city-content">
+                        <h3>昭和町</h3>
+                        <p>県内で最も面積が小さい町。住みやすさが魅力です。</p>
+                        <a href="cities/showa.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=600&q=80" alt="西桂町" class="city-image">
+                    <div class="city-content">
+                        <h3>西桂町</h3>
+                        <p>富士山の眺望が素晴らしい町。織物産業の歴史があります。</p>
+                        <a href="cities/nishikatsura.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=600&q=80" alt="富士河口湖町" class="city-image">
+                    <div class="city-content">
+                        <h3>富士河口湖町</h3>
+                        <p>河口湖と富士山の絶景。国際的な観光地です。</p>
+                        <a href="cities/fujikawaguchiko.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 村 -->
+        <div class="category-section">
+            <h2>🌳 村（6村）</h2>
+            <div class="cities-grid">
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80" alt="道志村" class="city-image">
+                    <div class="city-content">
+                        <h3>道志村</h3>
+                        <p>道志川の清流が美しい村。キャンプで人気です。</p>
+                        <a href="cities/doshi.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="忍野村" class="city-image">
+                    <div class="city-content">
+                        <h3>忍野村</h3>
+                        <p>忍野八海で有名。富士山の湧水が豊富です。</p>
+                        <a href="cities/oshino.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=600&q=80" alt="山中湖村" class="city-image">
+                    <div class="city-content">
+                        <h3>山中湖村</h3>
+                        <p>富士五湖最大の山中湖がある村。観光とレジャーの中心地。</p>
+                        <a href="cities/yamanakako.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="鳴沢村" class="city-image">
+                    <div class="city-content">
+                        <h3>鳴沢村</h3>
+                        <p>鳴沢氷穴や富岳風穴が有名。自然の神秘を体験できます。</p>
+                        <a href="cities/narusawa.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=600&q=80" alt="小菅村" class="city-image">
+                    <div class="city-content">
+                        <h3>小菅村</h3>
+                        <p>多摩川源流の村。清らかな水と森林が魅力です。</p>
+                        <a href="cities/kosuge.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="丹波山村" class="city-image">
+                    <div class="city-content">
+                        <h3>丹波山村</h3>
+                        <p>県の最東端の村。手つかずの自然が残る秘境です。</p>
+                        <a href="cities/tabayama.html" class="city-link">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン - All Rights Reserved</p>
+        <p>塩山駅周辺で山梨県27市町村の魅力を発見</p>
+        <div class="footer-links">
+            <a href="#home">ホーム</a>
+            <a href="#cities">市町村を探す</a>
+            <a href="contact.html">お問い合わせ</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>市川三郷町 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>市川三郷町</h1>
+            <p>花火の町として有名。伝統工芸品も豊富です</p>
+        </div>
+
+        <div class="content-section">
+            <h2>市川三郷町の魅力</h2>
+            <p>
+                市川三郷町は、日本の花火製造の発祥の地として知られ、江戸時代から続く花火づくりの伝統が息づいています。
+                毎年8月に開催される「神明の花火大会」は、県内最大級の規模を誇り、約2万発の花火が夜空を彩ります。
+            </p>
+            <p>
+                また、和紙や印章、はんこの製造も盛んで、「市川和紙」は伝統工芸品として高い評価を受けています。
+                富士川沿いの自然豊かな環境の中、伝統文化と現代が調和した魅力的な町です。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>花火</h3>
+                    <p>日本の花火製造発祥の地。伝統の技術で作られる美しい花火。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>市川和紙</h3>
+                    <p>400年以上の歴史を持つ伝統工芸品。丈夫で美しい和紙。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>印章・はんこ</h3>
+                    <p>全国一の生産量を誇る印章。高い技術力で作られる品質の証。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>あけぼの大豆</h3>
+                    <p>大粒で甘みが強い希少な在来種の大豆。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ゆず</h3>
+                    <p>香り高い柚子。加工品も多く、柚子味噌や柚子茶が人気。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桃・ぶどう</h3>
+                    <p>富士川の恵みを受けた甘くて美味しいフルーツ。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>神明の花火大会</strong> - 毎年8月開催。県内最大級の花火大会で約2万発が打ち上げられます。</p>
+            <p><strong>市川和紙の里</strong> - 和紙づくり体験ができる施設。伝統の技を間近で見学できます。</p>
+            <p><strong>大塚にんじん畑</strong> - 大塚人参の発祥地。歴史ある農業地帯を散策できます。</p>
+            <p><strong>歌舞伎文化公園</strong> - 歌舞伎をテーマにした公園。イベントも定期的に開催。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>市川三郷町の特産品の購入</p>
+            <p>花火グッズの販売</p>
+            <p>市川和紙製品の展示販売</p>
+            <p>印章・はんこの相談</p>
+            <p>柚子加工品の試食</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

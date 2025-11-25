@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲府市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>甲府市</h1>
+            <p>山梨県の県庁所在地。武田信玄公ゆかりの歴史と文化が息づく街</p>
+        </div>
+
+        <div class="content-section">
+            <h2>甲府市の魅力</h2>
+            <p>
+                甲府市は山梨県の県庁所在地であり、政治・経済・文化の中心地です。
+                戦国時代の名将・武田信玄公ゆかりの地として知られ、武田氏館跡（武田神社）や
+                甲府城跡など、歴史的な見どころが多数あります。
+            </p>
+            <p>
+                盆地特有の気候により、昼夜の寒暖差が大きく、これがフルーツ栽培に適した環境を生み出しています。
+                また、県の玄関口として、様々な山梨の特産品が集まる場所でもあります。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>甲府盆地で育つ甘くてジューシーな桃。夏の風物詩です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>シャインマスカットや巨峰など、高品質なぶどうが豊富。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ワイン</h3>
+                    <p>県内各地のワイナリーの商品が集まる、ワインの宝庫。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>甲州水晶</h3>
+                    <p>国の伝統工芸品に指定されている水晶細工。美しい輝きが魅力。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ほうとう</h3>
+                    <p>武田信玄が陣中食にしたとされる山梨の郷土料理。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>甲府鳥もつ煮</h3>
+                    <p>B級グルメの王様。鶏のモツを甘辛く煮込んだ絶品料理。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>武田神社</strong> - 武田信玄公を祀る神社。パワースポットとしても人気。</p>
+            <p><strong>甲府城跡（舞鶴城公園）</strong> - 江戸時代の甲府城の跡地。桜の名所としても有名。</p>
+            <p><strong>昇仙峡</strong> - 日本一の渓谷美を誇る景勝地。四季折々の自然が楽しめます。</p>
+            <p><strong>甲州夢小路</strong> - 大正・昭和初期の甲府城下町を再現した商店街。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>甲府市の特産品の購入</p>
+            <p>観光情報の収集</p>
+            <p>ワインの試飲（期間限定）</p>
+            <p>鳥もつ煮の試食</p>
+            <p>武田信玄グッズの販売</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>

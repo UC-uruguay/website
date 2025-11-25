@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笛吹市 - 山梨まるごとタウン</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            background: #fafbfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #357abd;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .back-button:hover {
+            background: #3d566e;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .city-header {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .city-header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .city-header p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .specialty-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .specialty-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .specialty-item p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #357abd;
+            color: white;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #ecf0f1;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #ecf0f1;
+            padding: 24px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa726;
+        }
+
+        .highlight-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .highlight-box p {
+            font-size: 15px;
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .city-header {
+                padding: 30px 20px;
+            }
+
+            .city-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">山梨まるごとタウン</a>
+            <a href="../index.html" class="back-button">← 戻る</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="city-header">
+            <h1>笛吹市</h1>
+            <p>日本一のフルーツ王国、桃とぶどうの里</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>桔梗屋 信玄餅</h3>
+            <p>山梨を代表する銘菓。黒蜜ときな粉が絡む、もちもちのお餅。笛吹市にある「桔梗屋信玄餅工場テーマパーク」は大人気の観光スポット。</p>
+        </div>
+
+        <div class="content-section">
+            <h2>笛吹市の魅力</h2>
+            <p>
+                笛吹市は、山梨県のほぼ中央に位置し、日本一の桃・ぶどうの生産量を誇る「フルーツ王国」です。
+                笛吹川とその支流沿いに広がる肥沃な土地と、盆地特有の気候が、
+                甘くておいしいフルーツを育てています。
+            </p>
+            <p>
+                春には桃の花が一面に咲き誇り、「桃源郷」と称される美しい景色が広がります。
+                また、石和温泉郷など、温泉地としても有名で、観光客に人気のエリアです。
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>特産品・名産品</h2>
+            <div class="specialty-grid">
+                <div class="specialty-item">
+                    <h3>桃</h3>
+                    <p>日本一の生産量。甘くてジューシーな桃は絶品です。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ぶどう</h3>
+                    <p>シャインマスカット、巨峰、ピオーネなど多種多様。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桔梗屋信玄餅</h3>
+                    <p>山梨を代表する銘菓。黒蜜ときな粉が絶妙。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>ワイン</h3>
+                    <p>地元産ぶどうで造られた上質なワイン。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>温泉まんじゅう</h3>
+                    <p>石和温泉の名物。ふわふわのお饅頭。</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>桃スイーツ</h3>
+                    <p>桃を使ったケーキ、タルト、ゼリーなど多彩。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>観光スポット</h2>
+            <p><strong>桔梗屋信玄餅工場テーマパーク</strong> - 信玄餅の製造過程を見学できる人気施設。</p>
+            <p><strong>石和温泉郷</strong> - 山梨県最大の温泉街。フルーツ狩りと温泉を楽しめる。</p>
+            <p><strong>桃の花観光</strong> - 春には一面桃の花が咲き誇る「桃源郷」の絶景。</p>
+            <p><strong>笛吹川フルーツ公園</strong> - 新日本三大夜景の一つ。果物をテーマにした公園。</p>
+        </div>
+
+        <div class="info-box">
+            <h3>塩山駅前アンテナショップ</h3>
+            <p>桔梗屋信玄餅の購入</p>
+            <p>季節のフルーツ（桃、ぶどう）の販売</p>
+            <p>フルーツを使ったスイーツの試食・購入</p>
+            <p>笛吹産ワインの試飲・購入</p>
+            <p>フルーツ狩り情報の提供</p>
+            <p>石和温泉の割引券配布</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 山梨まるごとタウン</p>
+    </footer>
+</body>
+</html>
