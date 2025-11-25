@@ -365,7 +365,10 @@ function loadQuestion() {
         `<p class="question-text"><strong>問題 ${usedQuestions.length} / ${quizQuestions.length}</strong><br><br>${question.question}</p>`;
 
     const optionsHtml = question.options.map((option, index) =>
-        `<button class="option-btn" onclick="checkAnswer(${randomIndex}, ${index})">${option}</button>`
+        `<label class="option-label">
+            <input type="radio" name="quiz-option" value="${index}" class="option-radio" onchange="checkAnswer(${randomIndex}, ${index})">
+            <span class="option-text">${option}</span>
+        </label>`
     ).join('');
 
     document.getElementById('options-display').innerHTML = optionsHtml;
@@ -461,17 +464,23 @@ function updateProgressFromQuizHistory() {
 
 function checkAnswer(questionIndex, selectedIndex) {
     const question = quizQuestions[questionIndex];
-    const buttons = document.querySelectorAll('.option-btn');
+    const labels = document.querySelectorAll('.option-label');
+    const radios = document.querySelectorAll('.option-radio');
 
     totalQuestions++;
     const isCorrect = selectedIndex === question.correct;
 
-    buttons.forEach((btn, index) => {
-        btn.disabled = true;
+    // すべてのラジオボタンを無効化
+    radios.forEach(radio => {
+        radio.disabled = true;
+    });
+
+    // 正解・不正解のクラスをラベルに追加
+    labels.forEach((label, index) => {
         if (index === question.correct) {
-            btn.classList.add('correct');
+            label.classList.add('correct');
         } else if (index === selectedIndex) {
-            btn.classList.add('incorrect');
+            label.classList.add('incorrect');
         }
     });
 

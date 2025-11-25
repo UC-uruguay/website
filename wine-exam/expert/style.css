@@ -504,47 +504,63 @@ body {
     gap: var(--space-2);
 }
 
-.option-btn {
+.option-label {
+    display: flex;
+    align-items: center;
     background: var(--neutral-800);
     border: 1px solid var(--neutral-600);
-    color: var(--neutral-300);
     padding: var(--space-3);
-    text-align: left;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
     border-radius: 15px;
+    position: relative;
 }
 
-.option-btn:hover {
+.option-label:hover {
     background: var(--neutral-700);
     border-color: var(--gold-primary);
+}
+
+.option-label:hover .option-text {
     color: var(--neutral-100);
 }
 
-.option-btn.selected {
-    background: var(--gold-dark);
-    border-color: var(--gold-primary);
-    color: var(--neutral-100);
-}
-
-.option-btn.correct {
+.option-label.correct {
     background: var(--success);
     border-color: var(--success);
+}
+
+.option-label.correct .option-text {
     color: var(--neutral-100);
 }
 
-.option-btn.incorrect {
+.option-label.incorrect {
     background: var(--error);
     border-color: var(--error);
+}
+
+.option-label.incorrect .option-text {
     color: var(--neutral-100);
 }
 
-.option-btn:disabled {
+.option-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: var(--space-2);
+    cursor: pointer;
+    flex-shrink: 0;
+    accent-color: var(--gold-primary);
+}
+
+.option-radio:disabled {
     cursor: not-allowed;
-    opacity: 0.7;
+}
+
+.option-text {
+    color: var(--neutral-300);
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
 }
 
 .quiz-controls {
