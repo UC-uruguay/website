@@ -2,10 +2,12 @@
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
+    const overlay = document.querySelector('.menu-overlay');
     const body = document.body;
 
     navMenu.classList.toggle('active');
     hamburger.classList.toggle('active');
+    overlay.classList.toggle('active');
 
     // メニューが開いている時はbodyのスクロールを無効化
     if (navMenu.classList.contains('active')) {
@@ -18,10 +20,12 @@ function toggleMenu() {
 function closeMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
+    const overlay = document.querySelector('.menu-overlay');
     const body = document.body;
 
     navMenu.classList.remove('active');
     hamburger.classList.remove('active');
+    overlay.classList.remove('active');
     body.style.overflow = '';
 }
 
