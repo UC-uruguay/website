@@ -85,9 +85,7 @@ body {
     transform: translateY(0);
 }
 
-.navbar.hidden {
-    transform: translateY(-100%);
-}
+/* Navbar always visible - hidden state removed */
 
 .navbar .container {
     display: flex;
@@ -487,6 +485,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     position: relative;
+    border-radius: 15px;
 }
 
 .option-btn:hover {
@@ -629,60 +628,124 @@ body {
     background: var(--neutral-800);
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-3);
+.progress-note {
+    text-align: center;
+    color: var(--neutral-400);
+    font-size: 14px;
     margin-bottom: var(--space-6);
 }
 
-.stat-card {
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+}
+
+.progress-card {
     background: var(--neutral-900);
     border: 1px solid var(--neutral-700);
-    border-left: 3px solid var(--silver-primary);
     padding: var(--space-4);
+    text-align: center;
+    border-radius: 15px;
     box-shadow: var(--shadow-sm);
 }
 
-.stat-label {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: var(--neutral-400);
-    margin-bottom: var(--space-1);
-    font-weight: 700;
-    letter-spacing: 1px;
+.progress-card h3 {
+    font-size: 16px;
+    color: var(--silver-light);
+    margin: var(--space-2) 0 var(--space-1) 0;
+    font-weight: 600;
 }
 
-.stat-value {
-    font-size: 36px;
+.stats-text {
+    font-size: 12px;
+    color: var(--neutral-400);
+    font-style: italic;
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--space-2);
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+}
+
+.progress-bg {
+    fill: none;
+    stroke: var(--neutral-700);
+    stroke-width: 8;
+}
+
+.progress-ring {
+    fill: none;
+    stroke: var(--silver-primary);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
     font-weight: 700;
     color: var(--silver-light);
 }
 
-.progress-bar-container {
-    margin-top: var(--space-4);
+.progress-total-card {
+    background: var(--neutral-900);
+    border: 2px solid var(--silver-primary);
+    padding: var(--space-6);
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: var(--space-4);
+    box-shadow: var(--shadow-lg);
 }
 
-.progress-bar-label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--space-1);
-    font-size: 14px;
-    color: var(--neutral-300);
-    font-weight: 600;
+.progress-total-card h2 {
+    color: var(--silver-light);
+    font-size: 24px;
+    margin-top: var(--space-3);
 }
 
-.progress-bar-bg {
-    height: 8px;
-    background: var(--neutral-700);
+.progress-circle-large {
     position: relative;
-    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
 }
 
-.progress-bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--silver-dark), var(--silver-light));
-    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+.progress-circle-large svg {
+    transform: rotate(-90deg);
+}
+
+.progress-circle-large .progress-bg {
+    stroke-width: 12;
+}
+
+.progress-circle-large .progress-ring {
+    stroke-width: 12;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.progress-value-large {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--silver-light);
 }
 
 /* ===== 正答率表示 ===== */

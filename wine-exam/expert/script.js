@@ -605,9 +605,15 @@ function updateAllProgress() {
     // 各カテゴリーの進捗を更新
     categories.forEach(category => {
         const percentage = progressData[category] || 0;
-        const element = document.getElementById(`progress-${category}`);
-        if (element) {
-            element.style.width = percentage + '%';
+        const circleElement = document.getElementById(`progress-${category}`);
+        const textElement = document.getElementById(`progress-${category}-text`);
+
+        if (circleElement && textElement) {
+            // 円周: 2 * π * r = 2 * 3.14159 * 50 = 314.159
+            const circumference = 314;
+            const offset = circumference - (percentage / 100) * circumference;
+            circleElement.style.strokeDashoffset = offset;
+            textElement.textContent = Math.round(percentage) + '%';
         }
 
         // 詳細統計を表示（正解数/総問題数）
@@ -629,7 +635,14 @@ function updateAllProgress() {
         ? validCategories.reduce((a, b) => a + b, 0) / categories.length
         : 0;
 
-    document.getElementById('progress-total').style.width = totalPercentage + '%';
+    const totalCircle = document.getElementById('progress-total');
+    if (totalCircle) {
+        // 円周: 2 * π * r = 2 * 3.14159 * 70 = 439.822
+        const circumference = 440;
+        const offset = circumference - (totalPercentage / 100) * circumference;
+        totalCircle.style.strokeDashoffset = offset;
+    }
+
     document.getElementById('total-percentage').textContent = Math.round(totalPercentage);
 }
 
@@ -676,25 +689,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ナビバー自動非表示機能
-let lastScrollTop = 0;
-let scrollThreshold = 10;
-
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    // スクロール量が閾値より小さい場合は何もしない
-    if (Math.abs(currentScroll - lastScrollTop) < scrollThreshold) {
-        return;
-    }
-
-    // 下にスクロールしている場合は非表示
-    if (currentScroll > lastScrollTop && currentScroll > 80) {
-        navbar.classList.add('hidden');
-    } else {
-        // 上にスクロールしている場合は表示
-        navbar.classList.remove('hidden');
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+// Navbar remains fixed and always visible - scroll behavior removed

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ワイン検定 ブロンズクラス 対策</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%238b2332' d='M50 20 Q40 30 40 45 L40 70 Q40 75 45 75 L55 75 Q60 75 60 70 L60 45 Q60 30 50 20 Z'/><path fill='%238b2332' d='M35 75 L65 75 L60 85 Q55 90 50 90 Q45 90 40 85 Z'/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23333' stroke='%23333' stroke-width='2' d='M50 15 Q38 28 38 45 L38 72 Q38 76 42 76 L58 76 Q62 76 62 72 L62 45 Q62 28 50 15 Z'/><path fill='%238b2332' d='M39 45 Q39 50 40 54 L60 54 Q61 50 61 45 Q61 35 55 28 Q50 23 45 28 Q39 35 39 45 Z'/><path fill='%23333' d='M35 76 L65 76 L62 86 Q58 92 50 92 Q42 92 38 86 Z'/></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,9 +47,9 @@
 
             <!-- ブドウ品種（白） -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('white-grapes')">
                     <h3>🍇 白ブドウ品種 (14種)</h3>
-                    <button class="toggle-btn" onclick="toggleContent('white-grapes')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('white-grapes')">▼</button>
                 </div>
                 <div id="white-grapes" class="card-content">
                     <div class="region">
@@ -169,9 +169,9 @@
 
             <!-- ブドウ品種（黒） -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('red-grapes')">
                     <h3>🍇 黒ブドウ品種 (14種)</h3>
-                    <button class="toggle-btn" onclick="toggleContent('red-grapes')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('red-grapes')">▼</button>
                 </div>
                 <div id="red-grapes" class="card-content">
                     <div class="region">
@@ -291,9 +291,9 @@
 
             <!-- ワインの基礎知識 -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('basics')">
                     <h3>📚 ワインの分類と製法</h3>
-                    <button class="toggle-btn" onclick="toggleContent('basics')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('basics')">▼</button>
                 </div>
                 <div id="basics" class="card-content">
                     <div class="region">
@@ -339,9 +339,9 @@
 
             <!-- 保存とテイスティング -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('storage')">
                     <h3>🍷 保存とテイスティング基礎</h3>
-                    <button class="toggle-btn" onclick="toggleContent('storage')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('storage')">▼</button>
                 </div>
                 <div id="storage" class="card-content">
                     <div class="region">
@@ -377,9 +377,9 @@
 
             <!-- ボトルとラベル -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('bottle')">
                     <h3>🍾 ボトルとラベルの読み方</h3>
-                    <button class="toggle-btn" onclick="toggleContent('bottle')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('bottle')">▼</button>
                 </div>
                 <div id="bottle" class="card-content">
                     <div class="region">
@@ -415,9 +415,9 @@
 
             <!-- 食事とのペアリング -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('pairing')">
                     <h3>🍽️ 食事との組み合わせ基礎</h3>
-                    <button class="toggle-btn" onclick="toggleContent('pairing')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('pairing')">▼</button>
                 </div>
                 <div id="pairing" class="card-content">
                     <div class="region">
@@ -459,9 +459,9 @@
 
             <!-- ワイン史 -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent('history')">
                     <h3>📖 ワインの歴史</h3>
-                    <button class="toggle-btn" onclick="toggleContent('history')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('history')">▼</button>
                 </div>
                 <div id="history" class="card-content">
                     <div class="region">
@@ -554,58 +554,98 @@
         <div class="container">
             <h2 class="section-title">学習進捗</h2>
             <p class="progress-note">※ 進捗はクイズの正答率に基づいて自動的に更新されます</p>
-            <div class="progress-container">
-                <div class="progress-item">
-                    <h3>白ブドウ品種 <span class="stats-text" id="stats-white">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-white"></div>
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-white"/>
+                        </svg>
+                        <div class="progress-value" id="progress-white-text">0%</div>
                     </div>
+                    <h3>白ブドウ品種</h3>
+                    <p class="stats-text" id="stats-white">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>黒ブドウ品種 <span class="stats-text" id="stats-red">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-red"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-red"/>
+                        </svg>
+                        <div class="progress-value" id="progress-red-text">0%</div>
                     </div>
+                    <h3>黒ブドウ品種</h3>
+                    <p class="stats-text" id="stats-red">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ワインの分類・製法 <span class="stats-text" id="stats-basics">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-basics"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-basics"/>
+                        </svg>
+                        <div class="progress-value" id="progress-basics-text">0%</div>
                     </div>
+                    <h3>ワインの分類・製法</h3>
+                    <p class="stats-text" id="stats-basics">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>保存・テイスティング <span class="stats-text" id="stats-tasting">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-tasting"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-tasting"/>
+                        </svg>
+                        <div class="progress-value" id="progress-tasting-text">0%</div>
                     </div>
+                    <h3>保存・テイスティング</h3>
+                    <p class="stats-text" id="stats-tasting">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ボトル・ラベル <span class="stats-text" id="stats-bottle">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-bottle"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-bottle"/>
+                        </svg>
+                        <div class="progress-value" id="progress-bottle-text">0%</div>
                     </div>
+                    <h3>ボトル・ラベル</h3>
+                    <p class="stats-text" id="stats-bottle">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ワイン史 <span class="stats-text" id="stats-history">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-history"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-history"/>
+                        </svg>
+                        <div class="progress-value" id="progress-history-text">0%</div>
                     </div>
+                    <h3>ワイン史</h3>
+                    <p class="stats-text" id="stats-history">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>食事との組み合わせ <span class="stats-text" id="stats-pairing">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-pairing"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-pairing"/>
+                        </svg>
+                        <div class="progress-value" id="progress-pairing-text">0%</div>
                     </div>
+                    <h3>食事との組み合わせ</h3>
+                    <p class="stats-text" id="stats-pairing">(未挑戦)</p>
                 </div>
-                <div class="progress-total">
-                    <h3>全体の進捗</h3>
-                    <div class="progress-bar-large">
-                        <div class="progress-fill" style="width: 0%" id="progress-total"></div>
-                    </div>
-                    <p class="progress-percentage"><span id="total-percentage">0</span>%</p>
-                </div>
-                <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
             </div>
+            <div class="progress-total-card">
+                <div class="progress-circle-large">
+                    <svg viewBox="0 0 160 160">
+                        <circle class="progress-bg" cx="80" cy="80" r="70"/>
+                        <circle class="progress-ring" cx="80" cy="80" r="70" id="progress-total"/>
+                    </svg>
+                    <div class="progress-value-large">
+                        <span id="total-percentage">0</span>%
+                    </div>
+                </div>
+                <h2>全体の進捗</h2>
+            </div>
+            <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
         </div>
     </section>
 

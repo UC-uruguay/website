@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ワイン検定 シルバークラス 対策</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%238b2332' d='M50 20 Q40 30 40 45 L40 70 Q40 75 45 75 L55 75 Q60 75 60 70 L60 45 Q60 30 50 20 Z'/><path fill='%238b2332' d='M35 75 L65 75 L60 85 Q55 90 50 90 Q45 90 40 85 Z'/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23333' stroke='%23333' stroke-width='2' d='M50 15 Q38 28 38 45 L38 72 Q38 76 42 76 L58 76 Q62 76 62 72 L62 45 Q62 28 50 15 Z'/><path fill='%238b2332' d='M39 45 Q39 50 40 54 L60 54 Q61 50 61 45 Q61 35 55 28 Q50 23 45 28 Q39 35 39 45 Z'/><path fill='%23333' d='M35 76 L65 76 L62 86 Q58 92 50 92 Q42 92 38 86 Z'/></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,9 +47,9 @@
 
             <!-- フランスワイン -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🇫🇷 フランスワイン</h3>
-                    <button class="toggle-btn" onclick="toggleContent('france')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('france')">▼</button>
                 </div>
                 <div id="france" class="card-content">
                     <div class="region">
@@ -108,9 +108,9 @@
 
             <!-- イタリアワイン -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🇮🇹 イタリアワイン</h3>
-                    <button class="toggle-btn" onclick="toggleContent('italy')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('italy')">▼</button>
                 </div>
                 <div id="italy" class="card-content">
                     <div class="region">
@@ -161,9 +161,9 @@
 
             <!-- スペイン・ポルトガル -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🇪🇸 スペイン・ポルトガルワイン</h3>
-                    <button class="toggle-btn" onclick="toggleContent('spain')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('spain')">▼</button>
                 </div>
                 <div id="spain" class="card-content">
                     <div class="region">
@@ -206,9 +206,9 @@
 
             <!-- ドイツワイン -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🇩🇪 ドイツワイン</h3>
-                    <button class="toggle-btn" onclick="toggleContent('germany')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('germany')">▼</button>
                 </div>
                 <div id="germany" class="card-content">
                     <div class="region">
@@ -248,9 +248,9 @@
 
             <!-- 日本ワイン -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🇯🇵 日本ワイン</h3>
-                    <button class="toggle-btn" onclick="toggleContent('japan')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('japan')">▼</button>
                 </div>
                 <div id="japan" class="card-content">
                     <div class="region">
@@ -274,9 +274,9 @@
 
             <!-- ブドウ品種 -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🍇 主要ブドウ品種</h3>
-                    <button class="toggle-btn" onclick="toggleContent('grapes')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('grapes')">▼</button>
                 </div>
                 <div id="grapes" class="card-content">
                     <div class="region">
@@ -305,9 +305,9 @@
 
             <!-- ワイン製造 -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🏭 ワインの製造</h3>
-                    <button class="toggle-btn" onclick="toggleContent('making')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('making')">▼</button>
                 </div>
                 <div id="making" class="card-content">
                     <div class="region">
@@ -344,9 +344,9 @@
 
             <!-- テイスティング -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>👃 テイスティング</h3>
-                    <button class="toggle-btn" onclick="toggleContent('tasting')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('tasting')">▼</button>
                 </div>
                 <div id="tasting" class="card-content">
                     <div class="region">
@@ -380,9 +380,9 @@
 
             <!-- サービス＆マナー -->
             <div class="content-card">
-                <div class="card-header">
+                <div class="card-header" onclick="toggleContent(this.nextElementSibling.id)">
                     <h3>🍷 サービス＆マナー</h3>
-                    <button class="toggle-btn" onclick="toggleContent('service')">▼</button>
+                    <button class="toggle-btn" onclick="event.stopPropagation(); toggleContent('service')">▼</button>
                 </div>
                 <div id="service" class="card-content">
                     <div class="region">
@@ -479,64 +479,109 @@
         <div class="container">
             <h2 class="section-title">学習進捗</h2>
             <p class="progress-note">※ 進捗はクイズの正答率に基づいて自動的に更新されます</p>
-            <div class="progress-container">
-                <div class="progress-item">
-                    <h3>フランスワイン <span class="stats-text" id="stats-france">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-france"></div>
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-france"/>
+                        </svg>
+                        <div class="progress-value" id="progress-france-text">0%</div>
                     </div>
+                    <h3>🇫🇷 フランスワイン</h3>
+                    <p class="stats-text" id="stats-france">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>イタリアワイン <span class="stats-text" id="stats-italy">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-italy"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-italy"/>
+                        </svg>
+                        <div class="progress-value" id="progress-italy-text">0%</div>
                     </div>
+                    <h3>🇮🇹 イタリアワイン</h3>
+                    <p class="stats-text" id="stats-italy">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>スペイン <span class="stats-text" id="stats-spain">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-spain"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-spain"/>
+                        </svg>
+                        <div class="progress-value" id="progress-spain-text">0%</div>
                     </div>
+                    <h3>🇪🇸 スペイン</h3>
+                    <p class="stats-text" id="stats-spain">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ポルトガル <span class="stats-text" id="stats-portugal">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-portugal"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-portugal"/>
+                        </svg>
+                        <div class="progress-value" id="progress-portugal-text">0%</div>
                     </div>
+                    <h3>🇵🇹 ポルトガル</h3>
+                    <p class="stats-text" id="stats-portugal">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ドイツワイン <span class="stats-text" id="stats-germany">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-germany"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-germany"/>
+                        </svg>
+                        <div class="progress-value" id="progress-germany-text">0%</div>
                     </div>
+                    <h3>🇩🇪 ドイツワイン</h3>
+                    <p class="stats-text" id="stats-germany">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>日本ワイン <span class="stats-text" id="stats-japan">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-japan"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-japan"/>
+                        </svg>
+                        <div class="progress-value" id="progress-japan-text">0%</div>
                     </div>
+                    <h3>🇯🇵 日本ワイン</h3>
+                    <p class="stats-text" id="stats-japan">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>ブドウ品種 <span class="stats-text" id="stats-grapes">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-grapes"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-grapes"/>
+                        </svg>
+                        <div class="progress-value" id="progress-grapes-text">0%</div>
                     </div>
+                    <h3>🍇 ブドウ品種</h3>
+                    <p class="stats-text" id="stats-grapes">(未挑戦)</p>
                 </div>
-                <div class="progress-item">
-                    <h3>テイスティング <span class="stats-text" id="stats-tasting">(未挑戦)</span></h3>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%" id="progress-tasting"></div>
+                <div class="progress-card">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-bg" cx="60" cy="60" r="50"/>
+                            <circle class="progress-ring" cx="60" cy="60" r="50" id="progress-tasting"/>
+                        </svg>
+                        <div class="progress-value" id="progress-tasting-text">0%</div>
                     </div>
+                    <h3>🍷 テイスティング</h3>
+                    <p class="stats-text" id="stats-tasting">(未挑戦)</p>
                 </div>
-                <div class="progress-total">
-                    <h3>全体の進捗</h3>
-                    <div class="progress-bar-large">
-                        <div class="progress-fill" style="width: 0%" id="progress-total"></div>
-                    </div>
-                    <p class="progress-percentage"><span id="total-percentage">0</span>%</p>
-                </div>
-                <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
             </div>
+            <div class="progress-total-card">
+                <div class="progress-circle-large">
+                    <svg viewBox="0 0 160 160">
+                        <circle class="progress-bg" cx="80" cy="80" r="70"/>
+                        <circle class="progress-ring" cx="80" cy="80" r="70" id="progress-total"/>
+                    </svg>
+                    <div class="progress-value-large">
+                        <span id="total-percentage">0</span>%
+                    </div>
+                </div>
+                <h2>全体の進捗</h2>
+            </div>
+            <button class="btn-secondary" onclick="resetProgress()">進捗をリセット</button>
         </div>
     </section>
 
