@@ -132,7 +132,7 @@ body {
     border: none;
     cursor: pointer;
     padding: var(--space-1);
-    z-index: 1001;
+    z-index: 1002;
 }
 
 .hamburger span {
@@ -173,7 +173,8 @@ body {
         gap: 0;
         box-shadow: var(--shadow-xl);
         transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 999;
+        z-index: 1001;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
