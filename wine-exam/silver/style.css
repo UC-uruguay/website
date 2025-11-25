@@ -6,16 +6,18 @@
 }
 
 :root {
-    --primary-burgundy: #6b1b3d;
-    --dark-burgundy: #4a1229;
-    --light-burgundy: #8b2450;
+    --primary-silver: #a8b8c8;
+    --dark-silver: #6b7c8c;
+    --light-silver: #c8d5e0;
+    --silver-accent: #9ba8b5;
     --gold: #d4af37;
     --light-gold: #f4e5a8;
-    --dark-gray: #2b2b2b;
-    --medium-gray: #4a4a4a;
+    --dark-gray: #1a1a1a;
+    --medium-gray: #2d2d2d;
     --light-gray: #e8e8e8;
-    --background-dark: #1a1a1a;
-    --text-light: #f5f5f5;
+    --background-dark: #0d0d0d;
+    --background-medium: #1a1a1a;
+    --text-light: #e5e4e2;
     --text-dark: #333;
 }
 
@@ -35,7 +37,7 @@ body {
 
 /* ===== ナビゲーション ===== */
 .navbar {
-    background: linear-gradient(135deg, var(--dark-burgundy) 0%, var(--primary-burgundy) 100%);
+    background: linear-gradient(135deg, #1a2028 0%, #2d3540 100%);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -43,6 +45,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
+    border-bottom: 2px solid var(--primary-silver);
 }
 
 .navbar.hidden {
@@ -126,7 +129,7 @@ body {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: linear-gradient(135deg, var(--dark-burgundy) 0%, var(--primary-burgundy) 100%);
+        background: linear-gradient(135deg, #1a2028 0%, #2d3540 100%);
         flex-direction: column;
         padding: 80px 20px 20px;
         gap: 0;
@@ -155,11 +158,12 @@ body {
 
 /* ===== Hero セクション ===== */
 .hero {
-    background: linear-gradient(135deg, var(--primary-burgundy) 0%, var(--dark-burgundy) 100%);
+    background: linear-gradient(135deg, #1a1d24 0%, #252b36 100%);
     padding: 8rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-bottom: 3px solid var(--primary-silver);
 }
 
 .hero::before {
@@ -275,31 +279,33 @@ section {
 
 /* ===== 学習コンテンツカード ===== */
 .study-section {
-    background-color: var(--dark-gray);
+    background-color: var(--background-dark);
 }
 
 .content-card {
-    background: linear-gradient(135deg, var(--medium-gray) 0%, var(--dark-gray) 100%);
-    border: 1px solid var(--primary-burgundy);
+    background: linear-gradient(135deg, var(--background-medium) 0%, #151515 100%);
+    border: 2px solid rgba(168, 184, 200, 0.3);
     border-radius: 12px;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
 
 .content-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 6px 20px rgba(168, 184, 200, 0.4);
+    border-color: rgba(168, 184, 200, 0.6);
 }
 
 .card-header {
-    background: linear-gradient(135deg, var(--primary-burgundy) 0%, var(--dark-burgundy) 100%);
+    background: linear-gradient(135deg, #252b36 0%, #1a1d24 100%);
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    border-bottom: 2px solid rgba(168, 184, 200, 0.3);
 }
 
 .card-header h3 {
