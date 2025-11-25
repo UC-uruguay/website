@@ -2,15 +2,27 @@
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
+    const body = document.body;
+
     navMenu.classList.toggle('active');
     hamburger.classList.toggle('active');
+
+    // メニューが開いている時はbodyのスクロールを無効化
+    if (navMenu.classList.contains('active')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = '';
+    }
 }
 
 function closeMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
+    const body = document.body;
+
     navMenu.classList.remove('active');
     hamburger.classList.remove('active');
+    body.style.overflow = '';
 }
 
 // ===== コンテンツカードのトグル機能 =====
