@@ -459,7 +459,7 @@ body {
     display: flex;
     align-items: center;
     background: var(--neutral-800);
-    border: 1px solid var(--neutral-600);
+    border: none;
     padding: var(--space-3);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -469,7 +469,6 @@ body {
 
 .option-label:hover {
     background: var(--neutral-700);
-    border-color: var(--bronze-primary);
 }
 
 .option-radio {
@@ -494,7 +493,6 @@ body {
 
 .option-label.correct {
     background: var(--success);
-    border-color: var(--success);
 }
 
 .option-label.correct .option-text {
@@ -503,7 +501,6 @@ body {
 
 .option-label.incorrect {
     background: var(--error);
-    border-color: var(--error);
 }
 
 .option-label.incorrect .option-text {
